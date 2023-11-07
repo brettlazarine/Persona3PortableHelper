@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "57bBb3uQZRdAZ+UoYVE0yCkcaY47XDwZ51nAwDudRsxBQZmmyM1BgnVhN17Qp+ARoIDlMon7VjNjjAuwtLw0Qg==",
+  "dgSpecHash": "m6qlQj6KreQTdgFawKZmFGKExmgRF+TPKMpQHB4a7Vzz7rj1Uyja5rOxGgB+ED2DJsx8OVCehpWd+872kqnGpA==",
   "success": true,
-  "projectFilePath": "C:\\GitHubRepos\\Persona3PHelper\\P3PHelper\\P3PHelper\\P3PHelper.csproj",
+  "projectFilePath": "C:\\GitHubRepos\\Persona3PHelper\\Persona3PortableHelper\\P3PHelper\\P3PHelper\\P3PHelper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jblaz\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",

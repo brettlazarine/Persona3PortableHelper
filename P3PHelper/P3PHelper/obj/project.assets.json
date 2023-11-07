@@ -24019,11 +24019,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitHubRepos\\Persona3PHelper\\P3PHelper\\P3PHelper\\P3PHelper.csproj",
+      "projectUniqueName": "C:\\GitHubRepos\\Persona3PHelper\\Persona3PortableHelper\\P3PHelper\\P3PHelper\\P3PHelper.csproj",
       "projectName": "P3PHelper",
-      "projectPath": "C:\\GitHubRepos\\Persona3PHelper\\P3PHelper\\P3PHelper\\P3PHelper.csproj",
+      "projectPath": "C:\\GitHubRepos\\Persona3PHelper\\Persona3PortableHelper\\P3PHelper\\P3PHelper\\P3PHelper.csproj",
       "packagesPath": "C:\\Users\\jblaz\\.nuget\\packages\\",
-      "outputPath": "C:\\GitHubRepos\\Persona3PHelper\\P3PHelper\\P3PHelper\\obj\\",
+      "outputPath": "C:\\GitHubRepos\\Persona3PHelper\\Persona3PortableHelper\\P3PHelper\\P3PHelper\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
