@@ -34,9 +34,9 @@
                     Grid.Column="0">
 
                     <ImageButton
-                        Grid.Row="0"
                         Source="aeon" 
-                        HeightRequest="100" />
+                        HeightRequest="100" 
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Grid.Row="1"
                         Text="Aeon" 
@@ -48,7 +48,8 @@
                     
                     <ImageButton
                         Source="chariot" 
-                        HeightRequest="100" />
+                        HeightRequest="100" 
+                        Clicked="Interaction_Clicked"  />
                     <Label
                         Text="Chariot" 
                         HorizontalOptions="Center"
@@ -59,7 +60,8 @@
                     
                     <ImageButton
                         Source="death" 
-                        HeightRequest="100" />
+                        HeightRequest="100" 
+                        Clicked="Story_Clicked"/>
                     <Label
                         Text="Death" 
                         HorizontalOptions="Center"
@@ -70,7 +72,8 @@
                     
                     <ImageButton
                         Source="devil" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Text="Devil" 
                         HorizontalOptions="Center"
@@ -86,7 +89,8 @@
 
                     <ImageButton
                         Source="emperor" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Text="Emperor" 
                         HorizontalOptions="Center"
@@ -97,7 +101,8 @@
 
                     <ImageButton
                         Source="empress" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Text="Empress" 
                         HorizontalOptions="Center"
@@ -108,7 +113,8 @@
 
                     <ImageButton
                         Source="fool" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Story_Clicked" />
                     <Label
                         Text="Fool" 
                         HorizontalOptions="Center"
@@ -119,7 +125,8 @@
 
                     <ImageButton
                         Source="fortune" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Text="Fortune" 
                         HorizontalOptions="Center"
@@ -135,7 +142,8 @@
 
                     <ImageButton
                         Source="hangedman" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Text="Hanged Man" 
                         HorizontalOptions="Center"
@@ -146,7 +154,8 @@
 
                     <ImageButton
                         Source="hermit" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Text="Hermit" 
                         HorizontalOptions="Center"
@@ -157,7 +166,8 @@
 
                     <ImageButton
                         Source="hierophant" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Text="Hierophant" 
                         HorizontalOptions="Center"
@@ -168,7 +178,8 @@
 
                     <ImageButton
                         Source="judgment" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Story_Clicked" />
                     <Label
                         Text="Judgment" 
                         HorizontalOptions="Center"
@@ -184,7 +195,8 @@
 
                     <ImageButton
                         Source="justice" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Text="Justice" 
                         HorizontalOptions="Center"
@@ -195,7 +207,8 @@
 
                     <ImageButton
                         Source="lovers" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Text="Lovers" 
                         HorizontalOptions="Center"
@@ -206,7 +219,8 @@
 
                     <ImageButton
                         Source="magician" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Text="Magician" 
                         HorizontalOptions="Center"
@@ -217,7 +231,8 @@
 
                     <ImageButton
                         Source="moon" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Text="Moon" 
                         HorizontalOptions="Center"
@@ -233,7 +248,8 @@
 
                     <ImageButton
                         Source="priestess" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Text="Priestess" 
                         HorizontalOptions="Center"
@@ -244,7 +260,8 @@
 
                     <ImageButton
                         Source="star" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Text="Star" 
                         HorizontalOptions="Center"
@@ -255,7 +272,8 @@
 
                     <ImageButton
                         Source="strength" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Text="Strength" 
                         HorizontalOptions="Center"
@@ -266,7 +284,8 @@
 
                     <ImageButton
                         Source="sun" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Text="Sun" 
                         HorizontalOptions="Center"
@@ -282,7 +301,8 @@
 
                     <ImageButton
                         Source="temperance" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Text="Temperance" 
                         HorizontalOptions="Center"
@@ -293,7 +313,8 @@
 
                     <ImageButton
                         Source="tower" 
-                        HeightRequest="100" />
+                        HeightRequest="100"  
+                        Clicked="Interaction_Clicked" />
                     <Label
                         Text="Tower" 
                         HorizontalOptions="Center"
