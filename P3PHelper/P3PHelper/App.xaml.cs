@@ -1,4 +1,6 @@
-﻿namespace P3PHelper;
+﻿using P3PHelper.MVVM.Views;
+
+namespace P3PHelper;
 
 public partial class App : Application
 {
@@ -6,6 +8,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
+		MainPage = new SocialLinksView();
 	}
 }

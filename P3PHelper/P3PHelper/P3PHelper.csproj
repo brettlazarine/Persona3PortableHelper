@@ -49,7 +49,47 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\PTSerif-Regular.ttf" />
+	  <None Remove="Resources\Images\aeon.png" />
+	  <None Remove="Resources\Images\chariot.png" />
+	  <None Remove="Resources\Images\death.png" />
+	  <None Remove="Resources\Images\devil.png" />
+	  <None Remove="Resources\Images\emperor.png" />
+	  <None Remove="Resources\Images\empress.png" />
+	  <None Remove="Resources\Images\fool.png" />
+	  <None Remove="Resources\Images\fortune.png" />
+	  <None Remove="Resources\Images\hangedman.png" />
+	  <None Remove="Resources\Images\hermit.png" />
+	  <None Remove="Resources\Images\hierophant.png" />
+	  <None Remove="Resources\Images\judgment.png" />
+	  <None Remove="Resources\Images\justice.png" />
+	  <None Remove="Resources\Images\lovers.png" />
+	  <None Remove="Resources\Images\magician.png" />
+	  <None Remove="Resources\Images\moon.png" />
+	  <None Remove="Resources\Images\priestess.png" />
+	  <None Remove="Resources\Images\star.png" />
+	  <None Remove="Resources\Images\strength.png" />
+	  <None Remove="Resources\Images\sun.png" />
+	  <None Remove="Resources\Images\temperance.png" />
+	  <None Remove="Resources\Images\tower.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="MVVM\Models\" />
+	  <Folder Include="MVVM\ViewModels\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="MVVM\Views\SocialLinksView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\AppStyles.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
