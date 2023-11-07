@@ -8,6 +8,11 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new SocialLinksView();
+		MainPage = new AppShell();
+	}
+
+	private void RegisterRoutes()
+	{
+		Routing.RegisterRoute("socialLinks", typeof(SocialLinksView));
 	}
 }
