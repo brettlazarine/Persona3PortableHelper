@@ -9,7 +9,6 @@
         <VerticalStackLayout>
             <!--Title Label-->
             <Label
-                Grid.Row="0"
                 Padding="10"
                 Margin="0,0,0,10"
                 HorizontalOptions="Center"

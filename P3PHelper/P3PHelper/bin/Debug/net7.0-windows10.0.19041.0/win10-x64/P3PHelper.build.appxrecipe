@@ -703,6 +703,249 @@
     <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+      <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+      <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+      <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+      <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+      <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+      <PackagePath>OpenSans-Regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+      <PackagePath>OpenSans-Semibold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\PTSerif-Regular.ttf">
+      <PackagePath>PTSerif-Regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\aeon.scale-100.png">
+      <PackagePath>aeon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+      <PackagePath>appicon.ico</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+      <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+      <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+      <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+      <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+      <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+      <PackagePath>appiconLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+      <PackagePath>appiconLogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+      <PackagePath>appiconLogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+      <PackagePath>appiconLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+      <PackagePath>appiconLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+      <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+      <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+      <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+      <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+      <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+      <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+      <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+      <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+      <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+      <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+      <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+      <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+      <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+      <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+      <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+      <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+      <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+      <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+      <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+      <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+      <PackagePath>appiconWideTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+      <PackagePath>appiconWideTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+      <PackagePath>appiconWideTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+      <PackagePath>appiconWideTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+      <PackagePath>appiconWideTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\chariot.scale-100.png">
+      <PackagePath>chariot.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\death.scale-100.png">
+      <PackagePath>death.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\devil.scale-100.png">
+      <PackagePath>devil.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\emperor.scale-100.png">
+      <PackagePath>emperor.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\empress.scale-100.png">
+      <PackagePath>empress.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fool.scale-100.png">
+      <PackagePath>fool.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fortune.scale-100.png">
+      <PackagePath>fortune.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\hangedman.scale-100.png">
+      <PackagePath>hangedman.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\hermit.scale-100.png">
+      <PackagePath>hermit.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\hierophant.scale-100.png">
+      <PackagePath>hierophant.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\judgment.scale-100.png">
+      <PackagePath>judgment.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\justice.scale-100.png">
+      <PackagePath>justice.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\lovers.scale-100.png">
+      <PackagePath>lovers.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\magician.scale-100.png">
+      <PackagePath>magician.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\moon.scale-100.png">
+      <PackagePath>moon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\priestess.scale-100.png">
+      <PackagePath>priestess.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\star.scale-100.png">
+      <PackagePath>star.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\strength.scale-100.png">
+      <PackagePath>strength.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\sun.scale-100.png">
+      <PackagePath>sun.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\temperance.scale-100.png">
+      <PackagePath>temperance.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tower.scale-100.png">
+      <PackagePath>tower.scale-100.png</PackagePath>
+    </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
     <ResolvedSDKReference Include="C:\Users\jblaz\.nuget\packages\microsoft.windowsappsdk\1.2.221209.1\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.2.msix">
