@@ -26,42 +26,72 @@
                         Radius="1"/>
                 </Label.Shadow>
             </Label>
+
+            <CollectionView 
+                ItemsSource="{Binding TapInfo}"
+                VerticalOptions="FillAndExpand">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="2" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout>
+                            <ImageButton
+                                AutomationId="{Binding ArcanaName}"
+                                Source="{Binding ImageSource}"  
+                                Clicked="ImageButton_Clicked"/>
+                            <Label
+                                Text="{Binding ArcanaName}" 
+                                HorizontalOptions="Center"
+                                Style="{StaticResource ArcanaLabel}" />
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            
             <!--Row 1-->
-            <Grid
+            <!--<Grid
                 ColumnDefinitions="*, *, *, *">
 
                 <VerticalStackLayout
                     Grid.Column="0">
+                    
 
                     <ImageButton
                         Source="aeon" 
                         HeightRequest="100" 
-                        Clicked="Interaction_Clicked" />
+                        Clicked="ImageButton_Clicked"/>
                     <Label
                         Grid.Row="1"
                         Text="Aeon" 
                         HorizontalOptions="Center"
                         Style="{StaticResource ArcanaLabel}" />
                 </VerticalStackLayout>
-                <VerticalStackLayout
+                <VerticalStackLayout x:Name="Chariot"
                     Grid.Column="1">
-                    
-                    <ImageButton
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="TapGestureRecognizer_Tapped" />
+                    </VerticalStackLayout.GestureRecognizers>
+
+                    <Image
                         Source="chariot" 
-                        HeightRequest="100" 
-                        Clicked="Interaction_Clicked"  />
+                        HeightRequest="100" />
                     <Label
                         Text="Chariot" 
                         HorizontalOptions="Center"
                         Style="{StaticResource ArcanaLabel}" />
                 </VerticalStackLayout>
-                <VerticalStackLayout
+                <VerticalStackLayout x:Name="Death"
                     Grid.Column="2">
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="TapGestureRecognizer_Tapped" />
+                    </VerticalStackLayout.GestureRecognizers>
                     
-                    <ImageButton
+                    <Image
                         Source="death" 
-                        HeightRequest="100" 
-                        Clicked="Story_Clicked"/>
+                        HeightRequest="100" />
                     <Label
                         Text="Death" 
                         HorizontalOptions="Center"
@@ -69,18 +99,21 @@
                 </VerticalStackLayout>
                 <VerticalStackLayout
                     Grid.Column="3">
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="TapGestureRecognizer_Tapped" />
+                    </VerticalStackLayout.GestureRecognizers>
                     
-                    <ImageButton
+                    <Image
                         Source="devil" 
-                        HeightRequest="100"  
-                        Clicked="Interaction_Clicked" />
+                        HeightRequest="100" />
                     <Label
                         Text="Devil" 
                         HorizontalOptions="Center"
                         Style="{StaticResource ArcanaLabel}" />
                 </VerticalStackLayout>
             </Grid>
-            <!--Row 2-->
+            --><!--Row 2--><!--
             <Grid
                 ColumnDefinitions="*, *, *, *">
 
@@ -133,7 +166,7 @@
                         Style="{StaticResource ArcanaLabel}" />
                 </VerticalStackLayout>
             </Grid>
-            <!--Row 3-->
+            --><!--Row 3--><!--
             <Grid
                 ColumnDefinitions="*, *, *, *">
 
@@ -186,7 +219,7 @@
                         Style="{StaticResource ArcanaLabel}" />
                 </VerticalStackLayout>
             </Grid>
-            <!--Row 4-->
+            --><!--Row 4--><!--
             <Grid
                 ColumnDefinitions="*, *, *, *">
 
@@ -239,7 +272,7 @@
                         Style="{StaticResource ArcanaLabel}" />
                 </VerticalStackLayout>
             </Grid>
-            <!--Row 5-->
+            --><!--Row 5--><!--
             <Grid
                 ColumnDefinitions="*, *, *, *">
 
@@ -292,7 +325,7 @@
                         Style="{StaticResource ArcanaLabel}" />
                 </VerticalStackLayout>
             </Grid>
-            <!--Row 6-->
+            --><!--Row 6--><!--
             <Grid
                 ColumnDefinitions="*, *, *, *">
 
@@ -320,7 +353,7 @@
                         HorizontalOptions="Center"
                         Style="{StaticResource ArcanaLabel}" />
                 </VerticalStackLayout>
-            </Grid>
+            </Grid>-->
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

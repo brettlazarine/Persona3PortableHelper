@@ -1,21 +1,37 @@
+using Microsoft.Maui.Controls.Xaml;
+using P3PHelper.MVVM.ViewModels;
 using P3PHelper.MVVM.Views.SLinks;
+using System.Diagnostics;
 
 namespace P3PHelper.MVVM.Views;
 
 public partial class SocialLinksView : ContentPage
 {
+    public string ArcanaName { get; set; }
+    public List<string> StorySLinks { get; set; } = new()
+    {
+        "death",
+        "fool",
+        "judgment"
+    };
 	public SocialLinksView()
 	{
 		InitializeComponent();
+        BindingContext = new SocialLinksViewModel();
 	}
 
-    private async void Interaction_Clicked(object sender, EventArgs e)
+    private async void ImageButton_Clicked(object sender, EventArgs e)
     {
-		await Navigation.PushAsync(new SLinkInteraction());
-    }
+        ArcanaName = (sender as ImageButton).AutomationId.ToString().ToLower();
+        Debug.WriteLine("*********" + ArcanaName);
 
-    private async void Story_Clicked(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new SLinkStory());
+        if (StorySLinks.Contains(ArcanaName))
+        {
+            await Navigation.PushAsync(new SLinkStory());
+        }
+        else
+        {
+            await Navigation.PushAsync(new SLinkInteraction());
+        }
     }
 }

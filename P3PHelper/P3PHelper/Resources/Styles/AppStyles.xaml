@@ -6,5 +6,6 @@
         <Setter Property="TextColor" Value="{x:StaticResource PrimaryBlue}" />
         <Setter Property="FontFamily" Value="Regular" />
         <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="FontSize" Value="Large" />
     </Style>
 </ResourceDictionary>

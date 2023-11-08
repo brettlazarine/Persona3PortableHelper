@@ -6,4 +6,9 @@ public partial class SLinkStory : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    public SLinkStory(string name)
+    {
+        
+    }
 }
