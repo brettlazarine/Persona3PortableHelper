@@ -10,8 +10,9 @@
         <converters:SLinkNeedsPersonaConverter x:Key="SLinkNeedsPersonaConverter" />
     </ContentPage.Resources>
     <ScrollView>
-        <StackLayout>
-
+        <StackLayout
+            Padding="10">
+            <!--ARCANA and IMAGE-->
             <VerticalStackLayout>
                 <Label
                     Style="{StaticResource SLinkArcana}"
@@ -22,52 +23,79 @@
 
             <Grid
                 ColumnDefinitions=".45*, .1*, .45*">
-
+                
                 <VerticalStackLayout
                     Grid.Column="0"
                     HorizontalOptions="Center">
-                    <Label
-                        
-                        Text="{Binding MaleName}" />
-
+                    <!--MALE NAME-->
                     <VerticalStackLayout>
                         <Label
-                            
+                            Style="{StaticResource MalePropertyTitles}"
+                            Text="Name" />
+                        <Label
+                            Style="{StaticResource MalePropertyValues}"
+                            Text="{Binding MaleName}" />
+                    </VerticalStackLayout>
+                    <!--MALE DATE-->
+                    <VerticalStackLayout>
+                        <Label
+                            Style="{StaticResource MalePropertyTitles}"
                             Text="Unlock Date" />
                         <Image
                             Style="{StaticResource DownArrow}"
-                            Source="downarrow" />
+                            Source="bluedownarrow">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="MaleDate_Tapped" />
+                            </Image.GestureRecognizers>
+                        </Image>
                         <Label
-                            
+                            x:Name="MaleDate"
+                            Style="{StaticResource MalePropertyValues}"
+                            IsVisible="false"
                             Text="{Binding MaleUnlockDate}" />
                     </VerticalStackLayout>
-                    
+                    <!--MALE HOW-->
                     <VerticalStackLayout>
                         <Label
-                            
+                            Style="{StaticResource MalePropertyTitles}"
                             Text="How to Unlock" />
                         <Image
                             Style="{StaticResource DownArrow}"
-                            Source="downarrow" />
+                            Source="bluedownarrow">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="MaleHow_Tapped" />
+                            </Image.GestureRecognizers>
+                        </Image>
                         <Label
-                            
+                            x:Name="MaleHow"
+                            Style="{StaticResource MalePropertyValues}"
+                            IsVisible="false"
                             Text="{Binding MaleHowToUnlock}" />
                     </VerticalStackLayout>
-
+                    <!--MALE AVAILABILITY-->
                     <VerticalStackLayout>
                         <Label
-                            
+                            Style="{StaticResource MalePropertyTitles}"
                             Text="Availability" />
                         <Image
                             Style="{StaticResource DownArrow}"
-                            Source="downarrow" />
+                            Source="bluedownarrow">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="MaleAvailability_Tapped" />
+                            </Image.GestureRecognizers>
+                        </Image>
                         <Label
-                            
+                            x:Name="MaleAvailability"
+                            Style="{StaticResource MalePropertyValues}"
+                            IsVisible="false"
                             Text="{Binding MaleAvailability}" />
                     </VerticalStackLayout>
-
+                    <!--MALE REQUIRES PERSONA-->
                     <Label
-                        
+                        Style="{StaticResource MalePropertyTitles}"
                         Text="{Binding MaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
                 </VerticalStackLayout>
             </Grid>
