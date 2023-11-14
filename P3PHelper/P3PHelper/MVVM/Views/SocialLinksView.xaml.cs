@@ -20,18 +20,22 @@ public partial class SocialLinksView : ContentPage
         BindingContext = new SocialLinksViewModel();
 	}
 
-    private async void ImageButton_Clicked(object sender, EventArgs e)
+    public async void NavigateToSLink(object sender, EventArgs e)
     {
         ArcanaName = (sender as ImageButton).AutomationId.ToString().ToLower();
-        Debug.WriteLine("*********" + ArcanaName);
-
-        if (StorySLinks.Contains(ArcanaName))
+        Debug.WriteLine("********* " + ArcanaName);
+        // The hangedman nav causing errors, this wil work but is not clean
+        if (ArcanaName == "hanged man")
         {
-            await Navigation.PushAsync(new SLinkStory());
+            await Navigation.PushAsync(new SLinkInteraction("hangedman"));
+        }
+        else if (StorySLinks.Contains(ArcanaName))
+        {
+            await Navigation.PushAsync(new SLinkStory(ArcanaName));
         }
         else
         {
-            await Navigation.PushAsync(new SLinkInteraction());
+            await Navigation.PushAsync(new SLinkInteraction(ArcanaName));
         }
     }
 }

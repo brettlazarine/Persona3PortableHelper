@@ -1,3 +1,7 @@
+using P3PHelper.MVVM.Models;
+using P3PHelper.MVVM.ViewModels;
+using P3PHelper.Repositories;
+
 namespace P3PHelper.MVVM.Views.SLinks;
 
 public partial class SLinkStory : ContentPage
@@ -7,8 +11,13 @@ public partial class SLinkStory : ContentPage
 		InitializeComponent();
 	}
 
-    public SLinkStory(string name)
+    public SLinkStory(string arcanaName)
     {
-        
+        InitializeComponent();
+
+        var sLinkRepo = DependencyService.Get<SLinkRepository>();
+        var sLink = sLinkRepo.GetSLink(arcanaName);
+
+        BindingContext = sLink;
     }
 }

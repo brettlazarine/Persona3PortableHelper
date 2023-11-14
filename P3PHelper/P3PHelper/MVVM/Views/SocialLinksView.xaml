@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="P3PHelper.MVVM.Views.SocialLinksView"
-             Title="SocialLinksView">
+             Title="">
 
     <ScrollView
         Margin="10">
@@ -27,6 +27,7 @@
             </Label>
 
             <CollectionView 
+                 
                 ItemsSource="{Binding TapInfo}"
                 VerticalOptions="FillAndExpand">
                 <CollectionView.ItemsLayout>
@@ -34,11 +35,12 @@
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <VerticalStackLayout>
+                        <VerticalStackLayout
+                            Padding="0,10">
                             <ImageButton
                                 AutomationId="{Binding ArcanaName}"
                                 Source="{Binding ImageSource}"  
-                                Clicked="ImageButton_Clicked"/>
+                                Clicked="NavigateToSLink"/>
                             <Label
                                 Text="{Binding ArcanaName}" 
                                 HorizontalOptions="Center"

@@ -8,4 +8,21 @@
         <Setter Property="FontAttributes" Value="Bold" />
         <Setter Property="FontSize" Value="Large" />
     </Style>
+
+    <!--SLink Interaction and Story Pages-->
+    <Style x:Key="SLinkArcana" TargetType="Label">
+        <Setter Property="TextColor" Value="{x:StaticResource PrimaryBlue}" />
+        <Setter Property="FontFamily" Value="Regular" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="FontSize" Value="50" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+        <Setter Property="VerticalTextAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="DownArrow" TargetType="Image">
+        <Setter Property="WidthRequest" Value="20" />
+        <Setter Property="HeightRequest" Value="20" />
+    </Style>
 </ResourceDictionary>

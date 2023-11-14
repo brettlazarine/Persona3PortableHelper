@@ -54,6 +54,7 @@
 	  <None Remove="Resources\Images\chariot.png" />
 	  <None Remove="Resources\Images\death.png" />
 	  <None Remove="Resources\Images\devil.png" />
+	  <None Remove="Resources\Images\downArrow.png" />
 	  <None Remove="Resources\Images\emperor.png" />
 	  <None Remove="Resources\Images\empress.png" />
 	  <None Remove="Resources\Images\fool.png" />
