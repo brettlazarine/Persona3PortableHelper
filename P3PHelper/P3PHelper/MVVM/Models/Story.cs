@@ -25,7 +25,8 @@ namespace P3PHelper.MVVM.Models
 
         public Story()
         {
-           
+            MaleRequiresPersona = true;
+            FemaleRequiresPersona = true;
         }
     }
 }

@@ -7,14 +7,70 @@
 
     <ContentPage.Resources>
         <converters:SLinkImageConverter x:Key="SLinkImageConverter" />
+        <converters:SLinkNeedsPersonaConverter x:Key="SLinkNeedsPersonaConverter" />
     </ContentPage.Resources>
     <ScrollView>
-        <VerticalStackLayout>
-            <Label
-                Style="{StaticResource SLinkArcana}"
-                Text="{Binding Arcana}" />
-            <Image 
-                Source="{Binding Arcana, Converter={StaticResource SLinkImageConverter}}"/>
-        </VerticalStackLayout>
+        <StackLayout>
+
+            <VerticalStackLayout>
+                <Label
+                    Style="{StaticResource SLinkArcana}"
+                    Text="{Binding Arcana}" />
+                <Image 
+                    Source="{Binding Arcana, Converter={StaticResource SLinkImageConverter}}"/>
+            </VerticalStackLayout>
+
+            <Grid
+                ColumnDefinitions=".45*, .1*, .45*">
+
+                <VerticalStackLayout
+                    Grid.Column="0"
+                    HorizontalOptions="Center">
+                    <Label
+                        
+                        Text="{Binding MaleName}" />
+
+                    <VerticalStackLayout>
+                        <Label
+                            
+                            Text="Unlock Date" />
+                        <Image
+                            Style="{StaticResource DownArrow}"
+                            Source="downarrow" />
+                        <Label
+                            
+                            Text="{Binding MaleUnlockDate}" />
+                    </VerticalStackLayout>
+                    
+                    <VerticalStackLayout>
+                        <Label
+                            
+                            Text="How to Unlock" />
+                        <Image
+                            Style="{StaticResource DownArrow}"
+                            Source="downarrow" />
+                        <Label
+                            
+                            Text="{Binding MaleHowToUnlock}" />
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout>
+                        <Label
+                            
+                            Text="Availability" />
+                        <Image
+                            Style="{StaticResource DownArrow}"
+                            Source="downarrow" />
+                        <Label
+                            
+                            Text="{Binding MaleAvailability}" />
+                    </VerticalStackLayout>
+
+                    <Label
+                        
+                        Text="{Binding MaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
+                </VerticalStackLayout>
+            </Grid>
+        </StackLayout>
     </ScrollView>
 </ContentPage>
