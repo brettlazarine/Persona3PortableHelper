@@ -23,7 +23,7 @@ public partial class SocialLinksView : ContentPage
     public async void NavigateToSLink(object sender, EventArgs e)
     {
         ArcanaName = (sender as ImageButton).AutomationId.ToString().ToLower();
-        Debug.WriteLine("********* " + ArcanaName);
+        //Debug.WriteLine("********* " + ArcanaName);
         // The hangedman nav causing errors, this wil work but is not clean
         if (ArcanaName == "hanged man")
         {

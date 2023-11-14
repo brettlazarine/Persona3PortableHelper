@@ -17,6 +17,9 @@ public partial class SLinkInteraction : ContentPage
         var sLinkRepo = DependencyService.Get<SLinkRepository>();
         var sLink = sLinkRepo.GetSLink(arcanaName);
 
+        var rankUp = sLink.MaleRankUps[0];
+        Debug.WriteLine("***** " + rankUp.RankInteractions[0].Question);
+
         BindingContext = sLink;
     }
 

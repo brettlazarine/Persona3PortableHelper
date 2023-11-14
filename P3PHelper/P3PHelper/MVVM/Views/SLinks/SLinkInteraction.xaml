@@ -22,11 +22,14 @@
             </VerticalStackLayout>
 
             <Grid
-                ColumnDefinitions=".45*, .1*, .45*">
-                
+                ColumnDefinitions=".45*, .1*, .45*"
+                RowDefinitions="auto, auto">
+
                 <VerticalStackLayout
+                    Grid.Row="0"
                     Grid.Column="0"
-                    HorizontalOptions="Center">
+                    HorizontalOptions="Center"
+                    Padding="0, 15">
                     <!--MALE NAME-->
                     <VerticalStackLayout>
                         <Label
@@ -98,6 +101,50 @@
                         Style="{StaticResource MalePropertyTitles}"
                         Text="{Binding MaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
                 </VerticalStackLayout>
+                <CollectionView>
+                    
+                </CollectionView>
+                <CollectionView
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    ItemsSource="{Binding MaleRankUps}">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout
+                            Orientation="Vertical" 
+                            ItemSpacing="10" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <VerticalStackLayout>
+                                <HorizontalStackLayout
+                                    HorizontalOptions="FillAndExpand"
+                                    Padding="10, 0"
+                                    VerticalOptions="Center"
+                                    Spacing="5"
+                                    BackgroundColor="{StaticResource PrimaryBlue}">
+                                    <Label
+                                        Style="{StaticResource SLinkQuestion}"
+                                        Text="{Binding RankNumber, StringFormat='Rank {0}'}" />
+                                    <CheckBox 
+                                        IsChecked="{Binding IsCompleted}" />
+                                    <Image
+                                        Style="{StaticResource DownArrow}"
+                                        Source="downarrow" />
+                                </HorizontalStackLayout>
+                                <VerticalStackLayout>
+                                    <Label
+                                        
+                                        Text="Question" />
+                                    <!--CONSIDER A CONVERTER FOR THIS-->
+                                    <!--ORRRRR NEST COLLECTIONVIEWS MaleRankUps > RankInteractions > Question/Response-->
+                                    <Label
+                                        
+                                        Text="{Binding RankInteractions[0]}" />
+                                </VerticalStackLayout>
+                            </VerticalStackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
             </Grid>
         </StackLayout>
     </ScrollView>
