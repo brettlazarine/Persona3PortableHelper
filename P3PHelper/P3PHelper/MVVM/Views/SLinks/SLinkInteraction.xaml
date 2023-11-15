@@ -101,9 +101,7 @@
                         Style="{StaticResource MalePropertyTitles}"
                         Text="{Binding MaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
                 </VerticalStackLayout>
-                <CollectionView>
-                    
-                </CollectionView>
+                
                 <CollectionView
                     Grid.Row="1"
                     Grid.Column="0"
@@ -141,14 +139,21 @@
                                         </CollectionView.ItemsLayout>
                                         <CollectionView.ItemTemplate>
                                             <DataTemplate>
-                                                <VerticalStackLayout>
+                                                <VerticalStackLayout
+                                                    x:Name="RankResponseStack"
+                                                    BackgroundColor="{StaticResource SecondaryBlue}"
+                                                    Padding="10">
                                                     <Label
+                                                        Style="{StaticResource MaleQuestionTitle}"
                                                         Text="Question" />
                                                     <Label
+                                                        Style="{StaticResource MaleQuestion}"
                                                         Text="{Binding [0]}" />
                                                     <Label
+                                                        Style="{StaticResource MaleResponseTitle}"
                                                         Text="Response" />
                                                     <Label
+                                                        Style="{StaticResource MaleResponse}"
                                                         Text="{Binding [1]}" />
                                                 </VerticalStackLayout>
                                             </DataTemplate>

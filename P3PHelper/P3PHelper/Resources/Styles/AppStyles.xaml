@@ -8,8 +8,8 @@
         <Setter Property="FontAttributes" Value="Bold" />
         <Setter Property="FontSize" Value="Large" />
     </Style>
-
-    <!--SLink Interaction and Story Pages-->
+    
+    <!--#region SLinkInteraction/Story General-->
     <Style x:Key="SLinkArcana" TargetType="Label">
         <Setter Property="TextColor" Value="{x:StaticResource PrimaryBlue}" />
         <Setter Property="FontFamily" Value="Regular" />
@@ -20,12 +20,10 @@
         <Setter Property="HorizontalTextAlignment" Value="Center" />
         <Setter Property="VerticalTextAlignment" Value="Center" />
     </Style>
-
     <Style x:Key="DownArrow" TargetType="Image">
         <Setter Property="WidthRequest" Value="20" />
         <Setter Property="HeightRequest" Value="20" />
     </Style>
-
     <Style x:Key="SLinkQuestion" TargetType="Label">
         <Setter Property="TextColor" Value="White" />
         <Setter Property="FontFamily" Value="Regular" />
@@ -33,7 +31,10 @@
         <Setter Property="HorizontalOptions" Value="Center" />
         <Setter Property="VerticalOptions" Value="Center" />
     </Style>
-
+    <!--#endregion-->
+    
+    <!--#region Male SLink-->
+    <!--PROPERTY-->
     <Style x:Key="MalePropertyTitles" TargetType="Label">
         <Setter Property="FontFamily" Value="Regular" />
         <Setter Property="FontAttributes" Value="Bold" />
@@ -43,7 +44,6 @@
         <Setter Property="VerticalOptions" Value="Center" />
         <Setter Property="HorizontalTextAlignment" Value="Center" />
     </Style>
-
     <Style x:Key="MalePropertyValues" TargetType="Label">
         <Setter Property="FontFamily" Value="Regular" />
         <Setter Property="FontSize" Value="20" />
@@ -52,4 +52,94 @@
         <Setter Property="VerticalOptions" Value="Center" />
         <Setter Property="HorizontalTextAlignment" Value="Center" />
     </Style>
+    <!--QUESTION-->
+    <Style x:Key="MaleQuestionTitle" TargetType="Label">
+        <Setter Property="FontFamily" Value="Regular" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="FontSize" Value="Medium" />
+        <Setter Property="TextColor" Value="{x:StaticResource PrimaryBlue}" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+    </Style>
+    <Style x:Key="MaleQuestion" TargetType="Label">
+        <Setter Property="FontFamily" Value="Regular" />
+        <Setter Property="FontSize" Value="Small" />
+        <Setter Property="TextColor" Value="{x:StaticResource PrimaryBlue}" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+    </Style>
+    <!--RESPONSE-->
+    <Style x:Key="MaleResponseTitle" TargetType="Label">
+        <Setter Property="FontFamily" Value="Regular" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="FontSize" Value="Medium" />
+        <Setter Property="TextColor" Value="{x:StaticResource PrimaryBlue}" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+    </Style>
+    <Style x:Key="MaleResponse" TargetType="Label">
+        <Setter Property="FontFamily" Value="Regular" />
+        <Setter Property="FontSize" Value="Small" />
+        <Setter Property="TextColor" Value="{x:StaticResource PrimaryBlue}" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+    </Style>
+    <!--#endregion-->
+    
+    <!--#region Female SLink-->
+    <!--PROPERTY-->
+    <Style x:Key="FemalePropertyTitles" TargetType="Label">
+        <Setter Property="FontFamily" Value="Regular" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="FontSize" Value="Large" />
+        <Setter Property="TextColor" Value="{x:StaticResource PrimaryBlue}" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+    </Style>
+    <Style x:Key="FemalePropertyValues" TargetType="Label">
+        <Setter Property="FontFamily" Value="Regular" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="TextColor" Value="{x:StaticResource TertiaryBlue}" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+    </Style>
+    <!--QUESTION-->
+    <Style x:Key="FemaleQuestionTitle" TargetType="Label">
+        <Setter Property="FontFamily" Value="Regular" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="FontSize" Value="Medium" />
+        <Setter Property="TextColor" Value="{x:StaticResource PrimaryBlue}" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+    </Style>
+    <Style x:Key="FemaleQuestion" TargetType="Label">
+        <Setter Property="FontFamily" Value="Regular" />
+        <Setter Property="FontSize" Value="Small" />
+        <Setter Property="TextColor" Value="{x:StaticResource PrimaryBlue}" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+    </Style>
+    <!--RESPONSE-->
+    <Style x:Key="FemaleResponseTitle" TargetType="Label">
+        <Setter Property="FontFamily" Value="Regular" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="FontSize" Value="Medium" />
+        <Setter Property="TextColor" Value="{x:StaticResource PrimaryBlue}" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+    </Style>
+    <Style x:Key="FemaleResponse" TargetType="Label">
+        <Setter Property="FontFamily" Value="Regular" />
+        <Setter Property="FontSize" Value="Small" />
+        <Setter Property="TextColor" Value="{x:StaticResource PrimaryBlue}" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+    </Style>
+    <!--#endregion-->
 </ResourceDictionary>
