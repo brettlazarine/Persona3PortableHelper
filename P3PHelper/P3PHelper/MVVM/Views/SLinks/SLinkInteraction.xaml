@@ -132,14 +132,28 @@
                                         Source="downarrow" />
                                 </HorizontalStackLayout>
                                 <VerticalStackLayout>
-                                    <Label
-                                        
-                                        Text="Question" />
-                                    <!--CONSIDER A CONVERTER FOR THIS-->
-                                    <!--ORRRRR NEST COLLECTIONVIEWS MaleRankUps > RankInteractions > Question/Response-->
-                                    <Label
-                                        
-                                        Text="{Binding RankInteractions[0]}" />
+                                    <CollectionView
+                                        ItemsSource="{Binding RankInteractions}">
+                                        <CollectionView.ItemsLayout>
+                                            <LinearItemsLayout
+                                                Orientation="Vertical" 
+                                                ItemSpacing="10" />
+                                        </CollectionView.ItemsLayout>
+                                        <CollectionView.ItemTemplate>
+                                            <DataTemplate>
+                                                <VerticalStackLayout>
+                                                    <Label
+                                                        Text="Question" />
+                                                    <Label
+                                                        Text="{Binding [0]}" />
+                                                    <Label
+                                                        Text="Response" />
+                                                    <Label
+                                                        Text="{Binding [1]}" />
+                                                </VerticalStackLayout>
+                                            </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
                                 </VerticalStackLayout>
                             </VerticalStackLayout>
                         </DataTemplate>
