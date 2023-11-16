@@ -16,9 +16,9 @@
             <VerticalStackLayout>
                 <Label
                     Style="{StaticResource SLinkArcana}"
-                    Text="{Binding Arcana}" />
+                    Text="{Binding SLinkBC.Arcana}" />
                 <Image 
-                    Source="{Binding Arcana, Converter={StaticResource SLinkImageConverter}}"/>
+                    Source="{Binding SLinkBC.Arcana, Converter={StaticResource SLinkImageConverter}}"/>
             </VerticalStackLayout>
 
             <Grid
@@ -37,7 +37,7 @@
                             Text="Name" />
                         <Label
                             Style="{StaticResource MalePropertyValues}"
-                            Text="{Binding MaleName}" />
+                            Text="{Binding SLinkBC.MaleName}" />
                     </VerticalStackLayout>
                     <!--MALE DATE-->
                     <VerticalStackLayout>
@@ -56,7 +56,7 @@
                             x:Name="MaleDate"
                             Style="{StaticResource MalePropertyValues}"
                             IsVisible="false"
-                            Text="{Binding MaleUnlockDate}" />
+                            Text="{Binding SLinkBC.MaleUnlockDate}" />
                     </VerticalStackLayout>
                     <!--MALE HOW-->
                     <VerticalStackLayout>
@@ -75,7 +75,7 @@
                             x:Name="MaleHow"
                             Style="{StaticResource MalePropertyValues}"
                             IsVisible="false"
-                            Text="{Binding MaleHowToUnlock}" />
+                            Text="{Binding SLinkBC.MaleHowToUnlock}" />
                     </VerticalStackLayout>
                     <!--MALE AVAILABILITY-->
                     <VerticalStackLayout>
@@ -94,18 +94,18 @@
                             x:Name="MaleAvailability"
                             Style="{StaticResource MalePropertyValues}"
                             IsVisible="false"
-                            Text="{Binding MaleAvailability}" />
+                            Text="{Binding SLinkBC.MaleAvailability}" />
                     </VerticalStackLayout>
                     <!--MALE REQUIRES PERSONA-->
                     <Label
                         Style="{StaticResource MalePropertyTitles}"
-                        Text="{Binding MaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
+                        Text="{Binding SLinkBC.MaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
                 </VerticalStackLayout>
                 
                 <CollectionView
                     Grid.Row="1"
                     Grid.Column="0"
-                    ItemsSource="{Binding MaleRankUps}">
+                    ItemsSource="{Binding SLinkBC.MaleRankUps}">
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout
                             Orientation="Vertical" 

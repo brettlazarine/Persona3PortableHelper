@@ -1,4 +1,5 @@
 ﻿using P3PHelper.MVVM.Models;
+using P3PHelper.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,10 +11,11 @@ namespace P3PHelper.MVVM.ViewModels
 {
     public class InteractionStoryViewModel
     {
-
-        public InteractionStoryViewModel()
+        public Story SLinkBC { get; set; }
+        public InteractionStoryViewModel(string arcanaName)
         {
-            //IDK what to do with this right now, find a use or consider removing
+            var sLinkRepo = DependencyService.Get<SLinkRepository>();
+            SLinkBC = sLinkRepo.GetSLink(arcanaName);
         }
     }
 }

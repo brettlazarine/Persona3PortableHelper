@@ -1,3 +1,4 @@
+using P3PHelper.MVVM.ViewModels;
 using P3PHelper.Repositories;
 using System.Diagnostics;
 
@@ -5,6 +6,7 @@ namespace P3PHelper.MVVM.Views.SLinks;
 
 public partial class SLinkInteraction : ContentPage
 {
+    public InteractionStoryViewModel vm { get; set; }
 	public SLinkInteraction()
 	{
 		InitializeComponent();
@@ -14,10 +16,9 @@ public partial class SLinkInteraction : ContentPage
     {
         InitializeComponent();
 
-        var sLinkRepo = DependencyService.Get<SLinkRepository>();
-        var sLink = sLinkRepo.GetSLink(arcanaName);
+        vm = new InteractionStoryViewModel(arcanaName);
 
-        BindingContext = sLink;
+        BindingContext = vm;
     }
 
     private void MaleDate_Tapped(object sender, TappedEventArgs e)
