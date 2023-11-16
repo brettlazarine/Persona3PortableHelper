@@ -1,4 +1,5 @@
-﻿using P3PHelper.MVVM.Models;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using P3PHelper.MVVM.Models;
 using P3PHelper.Repositories;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace P3PHelper.MVVM.ViewModels
 {
-    public class InteractionStoryViewModel
+    public partial class InteractionStoryViewModel : ObservableObject
     {
         public Story SLinkBC { get; set; }
         public InteractionStoryViewModel(string arcanaName)
