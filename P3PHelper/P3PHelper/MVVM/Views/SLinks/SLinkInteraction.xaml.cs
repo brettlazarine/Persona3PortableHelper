@@ -3,10 +3,14 @@ using P3PHelper.Repositories;
 using System.Diagnostics;
 
 namespace P3PHelper.MVVM.Views.SLinks;
+<<<<<<< HEAD
 // Main Test
+=======
+// propchange branch
+>>>>>>> 075410cad2422a7f7f7adc55fc3c08dfcc907739
 public partial class SLinkInteraction : ContentPage
 {
-    public InteractionStoryViewModel vm { get; set; }
+    public InteractionStoryViewModel Vm { get; set; }
 	public SLinkInteraction()
 	{
 		InitializeComponent();
@@ -16,9 +20,9 @@ public partial class SLinkInteraction : ContentPage
     {
         InitializeComponent();
 
-        vm = new InteractionStoryViewModel(arcanaName);
+        Vm = new InteractionStoryViewModel(arcanaName);
 
-        BindingContext = vm;
+        BindingContext = Vm;
     }
 
     private void MaleDate_Tapped(object sender, TappedEventArgs e)

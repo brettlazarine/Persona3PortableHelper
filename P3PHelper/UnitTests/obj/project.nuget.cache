@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Ok0VmOPf8CkYF6CEGvLTd3tbgjXKWYQaRb90Qy3GPutjpcLNNprRrh7F8y1ax9rDW6d3mWKxv/4XrOYXnEwDVA==",
+  "dgSpecHash": "WCz3lk8S7ecDtUex/2sPWN0p9Q5wtWtOh68zJZ3KDtqNWFkCyEPlm1FmODqOxax97mRTHrwIW1AYXKWCgyPyAA==",
   "success": true,
   "projectFilePath": "C:\\GitHubRepos\\Persona3PHelper\\Persona3PortableHelper\\P3PHelper\\UnitTests\\UnitTests.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jblaz\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
