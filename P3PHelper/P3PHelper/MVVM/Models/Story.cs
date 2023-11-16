@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using P3PHelper.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -7,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace P3PHelper.MVVM.Models
 {
-    public class Story
+    public class Story : ObservableObject , ISLinks
     {
         public string Arcana { get; set; }
         public string MaleName { get; set; }
