@@ -8,6 +8,7 @@
     <ContentPage.Resources>
         <converters:SLinkImageConverter x:Key="SLinkImageConverter" />
         <converters:SLinkNeedsPersonaConverter x:Key="SLinkNeedsPersonaConverter" />
+        <converters:ResponseStackConverter x:Key="ResponseStackConverter" />
     </ContentPage.Resources>
     <ScrollView>
         <StackLayout
@@ -102,7 +103,7 @@
                         Text="{Binding SLinkBC.MaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
                 </VerticalStackLayout>
                 
-                <CollectionView
+                <CollectionView 
                     Grid.Row="1"
                     Grid.Column="0"
                     ItemsSource="{Binding SLinkBC.MaleRankUps}">
@@ -125,22 +126,28 @@
                                         Text="{Binding RankNumber, StringFormat='Rank {0}'}" />
                                     <CheckBox 
                                         IsChecked="{Binding IsCompleted}" />
-                                    <Image
+                                    <Image x:Name="RankStackArrow"
                                         Style="{StaticResource DownArrow}"
-                                        Source="downarrow" />
+                                        Source="downarrow">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                                Tapped="RankStackArrow_Tapped" />
+                                        </Image.GestureRecognizers>
+                                    </Image>
                                 </HorizontalStackLayout>
-                                <VerticalStackLayout>
+                                <VerticalStackLayout 
+                                    AutomationId="MaleQuestionResponse"
+                                    IsVisible="false">
                                     <CollectionView
                                         ItemsSource="{Binding RankInteractions}">
                                         <CollectionView.ItemsLayout>
                                             <LinearItemsLayout
                                                 Orientation="Vertical" 
-                                                ItemSpacing="10" />
+                                                ItemSpacing="0" />
                                         </CollectionView.ItemsLayout>
                                         <CollectionView.ItemTemplate>
                                             <DataTemplate>
                                                 <VerticalStackLayout
-                                                    x:Name="RankResponseStack"
                                                     BackgroundColor="{StaticResource SecondaryBlue}"
                                                     Padding="10">
                                                     <Label

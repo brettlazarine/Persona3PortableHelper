@@ -1,13 +1,11 @@
+using Microsoft.Maui;
+using P3PHelper.Converters;
+using P3PHelper.MVVM.Models;
 using P3PHelper.MVVM.ViewModels;
 using P3PHelper.Repositories;
 using System.Diagnostics;
 
 namespace P3PHelper.MVVM.Views.SLinks;
-<<<<<<< HEAD
-// Main Test
-=======
-// propchange branch
->>>>>>> 075410cad2422a7f7f7adc55fc3c08dfcc907739
 public partial class SLinkInteraction : ContentPage
 {
     public InteractionStoryViewModel Vm { get; set; }
@@ -24,7 +22,7 @@ public partial class SLinkInteraction : ContentPage
 
         BindingContext = Vm;
     }
-
+    #region Male Arrow Tap Events
     private void MaleDate_Tapped(object sender, TappedEventArgs e)
     {
         var arrow = sender as Image;
@@ -46,4 +44,27 @@ public partial class SLinkInteraction : ContentPage
         MaleAvailability.IsVisible = !MaleAvailability.IsVisible;
         arrow.Rotation = MaleAvailability.IsVisible ? 180 : 0;
     }
+    private void RankStackArrow_Tapped(object sender, EventArgs e)
+    {
+        var arrow = sender as Image;
+
+        var arrowParent = arrow.Parent as Layout;
+        var container = arrowParent.Parent as Layout;
+        VerticalStackLayout maleQuestionResponseStack;
+
+        foreach (var child in container.Children)
+        {
+            Debug.WriteLine(child.AutomationId);
+            if (child.AutomationId == "MaleQuestionResponse")
+            {
+                maleQuestionResponseStack = child as VerticalStackLayout;
+                maleQuestionResponseStack.IsVisible = !maleQuestionResponseStack.IsVisible;
+            }
+        }
+
+        arrow.Rotation = Vm.ArrowRotated ? 180 : 0;
+    }
+    #endregion
+
+
 }

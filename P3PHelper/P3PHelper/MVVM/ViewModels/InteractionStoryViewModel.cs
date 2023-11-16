@@ -12,7 +12,14 @@ namespace P3PHelper.MVVM.ViewModels
 {
     public partial class InteractionStoryViewModel : ObservableObject
     {
-        public Story SLinkBC { get; set; }
+        [ObservableProperty]
+        public Story _sLinkBC;
+        [ObservableProperty]
+        public bool _arrowRotated;
+        public InteractionStoryViewModel()
+        {
+            
+        }
         public InteractionStoryViewModel(string arcanaName)
         {
             var sLinkRepo = DependencyService.Get<SLinkRepository>();
