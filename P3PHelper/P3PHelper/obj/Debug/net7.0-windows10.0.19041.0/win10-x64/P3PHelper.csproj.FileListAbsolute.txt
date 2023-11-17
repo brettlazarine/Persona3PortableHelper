@@ -218,7 +218,6 @@ C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\bin\De
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\hostfxr.dll
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\hostpolicy.dll
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore.dll
-C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.923.32018.dll
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordbi.dll
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscorrc.dll
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\msquic.dll
@@ -352,3 +351,5 @@ C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\De
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\aeon.scale-150.png
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\aeon.scale-200.png
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\aeon.scale-400.png
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.1423.51910.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\P3PHelper.sourcelink.json

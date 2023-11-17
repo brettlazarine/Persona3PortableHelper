@@ -1975,3 +1975,4 @@ C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\De
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\aeon.png
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\aeon.png
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\aeon.png
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\P3PHelper.sourcelink.json

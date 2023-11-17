@@ -9,6 +9,8 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = P3PHelper
 build_property.ProjectDir = C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 
 [C:/GitHubRepos/Persona3PHelper/Persona3PortableHelper/P3PHelper/P3PHelper/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
