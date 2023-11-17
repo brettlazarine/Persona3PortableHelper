@@ -116,3 +116,4 @@ C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\De
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\Microsoft.Maui.Controls.Xaml.dll
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\Microsoft.Maui.Controls.dll
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\Microsoft.Maui.Essentials.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\obj\Debug\net7.0\UnitTests.sourcelink.json

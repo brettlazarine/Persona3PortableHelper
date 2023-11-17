@@ -51,7 +51,7 @@
                             Text="Unlock Date" />
                         <Image
                             Style="{StaticResource DownArrow}"
-                            Source="bluedownarrow">
+                            Source="bluedownarrow.png">
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer
                                     Tapped="MaleDate_Tapped" />
@@ -70,7 +70,7 @@
                             Text="How to Unlock" />
                         <Image
                             Style="{StaticResource DownArrow}"
-                            Source="bluedownarrow">
+                            Source="bluedownarrow.png">
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer
                                     Tapped="MaleHow_Tapped" />
@@ -89,7 +89,7 @@
                             Text="Availability" />
                         <Image
                             Style="{StaticResource DownArrow}"
-                            Source="bluedownarrow">
+                            Source="bluedownarrow.png">
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer
                                     Tapped="MaleAvailability_Tapped" />
@@ -118,29 +118,36 @@
                     </CollectionView.ItemsLayout>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <VerticalStackLayout>
-                                <HorizontalStackLayout
-                                    HorizontalOptions="FillAndExpand"
+                            <Grid RowDefinitions="auto, auto">
+                                <!--Rank Check Arrow-->
+                                <Grid AutomationId="RankCheckArrow"
+                                    ColumnDefinitions="auto, auto, auto"
+                                    HorizontalOptions="Fill"
                                     Padding="10, 0"
                                     VerticalOptions="Center"
-                                    Spacing="5"
                                     BackgroundColor="{StaticResource PrimaryBlue}">
                                     <Label
+                                        Grid.Column="0"
                                         Style="{StaticResource SLinkQuestion}"
                                         Text="{Binding RankNumber, StringFormat='Rank {0}'}" />
                                     <CheckBox 
+                                        Grid.Column="1"
                                         IsChecked="{Binding IsCompleted}" />
-                                    <Image x:Name="RankStackArrow"
+                                    <Image
+                                        Grid.Column="2"
                                         Style="{StaticResource DownArrow}"
-                                        Source="downarrow">
+                                        VerticalOptions="Center"
+                                        HorizontalOptions="End"
+                                        Source="downarrow.png">
                                         <Image.GestureRecognizers>
                                             <TapGestureRecognizer
                                                 Tapped="RankStackArrow_Tapped" />
                                         </Image.GestureRecognizers>
                                     </Image>
-                                </HorizontalStackLayout>
-                                <VerticalStackLayout 
+                                </Grid>
+                                <VerticalStackLayout Grid.Row="1"
                                     AutomationId="MaleQuestionResponse"
+                                    HorizontalOptions="CenterAndExpand"
                                     IsVisible="false">
                                     <CollectionView
                                         ItemsSource="{Binding RankInteractions}">
@@ -171,7 +178,7 @@
                                         </CollectionView.ItemTemplate>
                                     </CollectionView>
                                 </VerticalStackLayout>
-                            </VerticalStackLayout>
+                            </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>

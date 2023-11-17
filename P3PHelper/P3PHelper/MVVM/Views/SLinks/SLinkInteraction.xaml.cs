@@ -48,6 +48,8 @@ public partial class SLinkInteraction : ContentPage
     {
         var arrow = sender as Image;
 
+        Vm.ArrowRotated = !Vm.ArrowRotated;
+
         var arrowParent = arrow.Parent as Layout;
         var container = arrowParent.Parent as Layout;
         VerticalStackLayout maleQuestionResponseStack;
