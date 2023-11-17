@@ -39,6 +39,7 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Include="Resources\Images\Arcana\*" />
 		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
 
 		<!-- Custom Fonts -->
@@ -50,7 +51,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\PTSerif-Regular.ttf" />
-	  <None Remove="Resources\Images\aeon.png" />
+	  <None Remove="Resources\Images\aeon.svg" />
 	  <None Remove="Resources\Images\blueDownArrow.png" />
 	  <None Remove="Resources\Images\chariot.png" />
 	  <None Remove="Resources\Images\death.png" />
@@ -94,6 +95,10 @@
 	  <MauiXaml Update="Resources\Styles\AppStyles.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Images\Arcana\aeon.svg" />
 	</ItemGroup>
 
 </Project>

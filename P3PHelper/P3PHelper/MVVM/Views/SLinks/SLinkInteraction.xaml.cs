@@ -66,5 +66,7 @@ public partial class SLinkInteraction : ContentPage
     }
     #endregion
 
+    #region Female Arrow Tap Events
 
+    #endregion
 }

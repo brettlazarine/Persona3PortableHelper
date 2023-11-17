@@ -37,7 +37,7 @@
                     <DataTemplate>
                         <VerticalStackLayout
                             Padding="0,10">
-                            <ImageButton
+                            <ImageButton HeightRequest="100" WidthRequest="100"
                                 AutomationId="{Binding ArcanaName}"
                                 Source="{Binding ImageSource}"  
                                 Clicked="NavigateToSLink"/>

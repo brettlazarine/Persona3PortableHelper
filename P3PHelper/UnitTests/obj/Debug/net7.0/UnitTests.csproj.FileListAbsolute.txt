@@ -102,3 +102,17 @@ C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\De
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\Microsoft.Extensions.Logging.Debug.dll
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\P3PHelper.dll
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\P3PHelper.pdb
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\CommunityToolkit.Mvvm.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\Microsoft.Extensions.Configuration.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\Microsoft.Maui.Graphics.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\Microsoft.Maui.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\Microsoft.Maui.Controls.Compatibility.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\Microsoft.Maui.Controls.Xaml.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\Microsoft.Maui.Controls.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\UnitTests\bin\Debug\net7.0\Microsoft.Maui.Essentials.dll
