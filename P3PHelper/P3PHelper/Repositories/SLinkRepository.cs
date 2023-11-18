@@ -27,6 +27,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -35,6 +36,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -43,6 +45,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -51,6 +54,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -59,6 +63,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -67,6 +72,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -75,6 +81,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -83,6 +90,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -91,6 +99,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -99,6 +108,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -116,6 +126,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -124,6 +135,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -132,6 +144,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -140,6 +153,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -148,6 +162,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -156,6 +171,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -164,6 +180,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -172,6 +189,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -180,6 +198,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -188,6 +207,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Aeon",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -208,6 +228,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -216,6 +237,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -225,6 +247,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -235,6 +258,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -243,6 +267,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -252,6 +277,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -262,6 +288,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -272,6 +299,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -280,6 +308,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -288,6 +317,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -305,6 +335,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -313,6 +344,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -321,6 +353,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -329,6 +362,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -340,6 +374,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -348,6 +383,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -356,6 +392,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -365,6 +402,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -373,6 +411,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -381,6 +420,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Chariot",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -402,6 +442,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -410,6 +451,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -418,6 +460,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -426,6 +469,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -434,6 +478,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -442,6 +487,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -450,6 +496,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -458,6 +505,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -466,6 +514,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -474,6 +523,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -492,6 +542,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -500,6 +551,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -508,6 +560,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -516,6 +569,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -524,6 +578,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -532,6 +587,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -540,6 +596,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -548,6 +605,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -556,6 +614,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -564,6 +623,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Death",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -587,6 +647,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -595,6 +656,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -604,6 +666,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -612,6 +675,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -621,6 +685,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -631,6 +696,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -639,6 +705,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -648,6 +715,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -656,6 +724,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -665,6 +734,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -685,6 +755,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -693,6 +764,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -702,6 +774,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -710,6 +783,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -720,6 +794,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -729,6 +804,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -737,6 +813,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -746,6 +823,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -754,6 +832,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -763,6 +842,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Devil",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -784,6 +864,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -792,6 +873,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -801,6 +883,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -809,6 +892,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -817,6 +901,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -825,6 +910,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -833,6 +919,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -841,6 +928,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -849,6 +937,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -858,6 +947,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -876,6 +966,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -884,6 +975,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -893,6 +985,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -901,6 +994,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -909,6 +1003,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -917,6 +1012,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -925,6 +1021,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -933,6 +1030,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -941,6 +1039,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -950,6 +1049,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Emperor",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -971,6 +1071,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -979,6 +1080,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -987,6 +1089,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -999,6 +1102,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1008,6 +1112,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1019,6 +1124,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1029,6 +1135,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1037,6 +1144,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1046,6 +1154,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1054,6 +1163,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1072,6 +1182,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1080,6 +1191,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1088,6 +1200,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1100,6 +1213,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1109,6 +1223,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1120,6 +1235,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1130,6 +1246,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1138,6 +1255,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1146,6 +1264,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1155,6 +1274,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Empress",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1176,6 +1296,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1184,6 +1305,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1192,6 +1314,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1200,6 +1323,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1208,6 +1332,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1216,6 +1341,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1224,6 +1350,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1232,6 +1359,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1240,6 +1368,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1248,6 +1377,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1266,6 +1396,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1274,6 +1405,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1282,6 +1414,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1290,6 +1423,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1298,6 +1432,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1306,6 +1441,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1314,6 +1450,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1322,6 +1459,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1330,6 +1468,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1338,6 +1477,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fool",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1358,6 +1498,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1366,6 +1507,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1374,6 +1516,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1382,6 +1525,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1390,6 +1534,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1398,6 +1543,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1406,6 +1552,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1414,6 +1561,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1422,6 +1570,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1430,6 +1579,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1448,6 +1598,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1456,6 +1607,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1464,6 +1616,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1472,6 +1625,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1480,6 +1634,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1493,6 +1648,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1501,6 +1657,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1509,6 +1666,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1520,6 +1678,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1528,6 +1687,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Fortune",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1552,6 +1712,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1560,6 +1721,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1568,6 +1730,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1576,6 +1739,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1584,6 +1748,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1593,6 +1758,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1602,6 +1768,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1610,6 +1777,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1620,6 +1788,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1628,6 +1797,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1648,6 +1818,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1656,6 +1827,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1664,6 +1836,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1672,6 +1845,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1680,6 +1854,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1689,6 +1864,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1698,6 +1874,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1706,6 +1883,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1716,6 +1894,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1724,6 +1903,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hanged Man",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1745,6 +1925,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1753,6 +1934,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1762,6 +1944,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1771,6 +1954,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1779,6 +1963,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1788,6 +1973,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1796,6 +1982,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1805,6 +1992,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1814,6 +2002,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1823,6 +2012,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1841,6 +2031,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1849,6 +2040,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1859,6 +2051,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1868,6 +2061,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1877,6 +2071,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1885,6 +2080,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1894,6 +2090,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1902,6 +2099,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1911,6 +2109,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1920,6 +2119,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hermit",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1944,6 +2144,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1952,6 +2153,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1961,6 +2163,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1971,6 +2174,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1980,6 +2184,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1989,6 +2194,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1998,6 +2204,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2009,6 +2216,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2017,6 +2225,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2025,6 +2234,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2046,6 +2256,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2054,6 +2265,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2064,6 +2276,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2074,6 +2287,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2083,6 +2297,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2092,6 +2307,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2100,6 +2316,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2110,6 +2327,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2118,6 +2336,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2126,6 +2345,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Hierophant",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2147,6 +2367,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2155,6 +2376,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2163,6 +2385,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2171,6 +2394,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2179,6 +2403,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2187,6 +2412,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2195,6 +2421,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2203,6 +2430,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2211,6 +2439,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2219,6 +2448,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2237,6 +2467,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2245,6 +2476,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2253,6 +2485,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2261,6 +2494,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2269,6 +2503,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2277,6 +2512,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2285,6 +2521,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2293,6 +2530,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2301,6 +2539,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2309,6 +2548,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Judgment",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2329,6 +2569,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2340,6 +2581,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2350,6 +2592,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2359,6 +2602,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2367,6 +2611,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2378,6 +2623,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2387,6 +2633,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2396,6 +2643,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2404,6 +2652,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2414,6 +2663,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2431,6 +2681,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2439,6 +2690,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2450,6 +2702,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2462,6 +2715,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2471,6 +2725,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2483,6 +2738,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2493,6 +2749,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2502,6 +2759,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2510,6 +2768,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2518,6 +2777,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Justice",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2538,6 +2798,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2546,6 +2807,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2556,6 +2818,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2564,6 +2827,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2572,6 +2836,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2581,6 +2846,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2589,6 +2855,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2597,6 +2864,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2605,6 +2873,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2613,6 +2882,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2630,6 +2900,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2638,6 +2909,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2647,6 +2919,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2655,6 +2928,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2663,6 +2937,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2671,6 +2946,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2680,6 +2956,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2688,6 +2965,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2696,6 +2974,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2704,6 +2983,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Lovers",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2724,6 +3004,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2732,6 +3013,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2742,6 +3024,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2751,6 +3034,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2759,6 +3043,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2768,6 +3053,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2777,6 +3063,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2787,6 +3074,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2797,6 +3085,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2805,6 +3094,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2822,6 +3112,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2830,6 +3121,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2839,6 +3131,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2851,6 +3144,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2860,6 +3154,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2868,6 +3163,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2876,6 +3172,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2887,6 +3184,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2899,6 +3197,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2908,6 +3207,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Magician",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2928,6 +3228,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2938,6 +3239,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2946,6 +3248,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2954,6 +3257,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2962,6 +3266,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2970,6 +3275,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2978,6 +3284,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2986,6 +3293,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2994,6 +3302,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3002,6 +3311,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3020,6 +3330,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3028,6 +3339,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3037,6 +3349,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3045,6 +3358,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3053,6 +3367,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3062,6 +3377,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3071,6 +3387,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3081,6 +3398,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3089,6 +3407,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3098,6 +3417,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Moon",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3118,6 +3438,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3126,6 +3447,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3134,6 +3456,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3142,6 +3465,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3151,6 +3475,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3160,6 +3485,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3168,6 +3494,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3176,6 +3503,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3184,6 +3512,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3192,6 +3521,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3209,6 +3539,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3217,6 +3548,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3225,6 +3557,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3233,6 +3566,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3241,6 +3575,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3250,6 +3585,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3258,6 +3594,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3266,6 +3603,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3274,6 +3612,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3282,6 +3621,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Priestess",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3302,6 +3642,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3310,6 +3651,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3319,6 +3661,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3327,6 +3670,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3337,6 +3681,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3346,6 +3691,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3354,6 +3700,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3363,6 +3710,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3371,6 +3719,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3381,6 +3730,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3398,6 +3748,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3406,6 +3757,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3415,6 +3767,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3425,6 +3778,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3435,6 +3789,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3444,6 +3799,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3453,6 +3809,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3462,6 +3819,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3471,6 +3829,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3482,6 +3841,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Star",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3502,6 +3862,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3510,6 +3871,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3520,6 +3882,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3531,6 +3894,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3540,6 +3904,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3549,6 +3914,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3557,6 +3923,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3567,6 +3934,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3575,6 +3943,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3584,6 +3953,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3601,6 +3971,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3609,6 +3980,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3617,6 +3989,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3625,6 +3998,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3633,6 +4007,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3642,6 +4017,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3650,6 +4026,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3658,6 +4035,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3667,6 +4045,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3675,6 +4054,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Strength",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3698,6 +4078,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3706,6 +4087,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3716,6 +4098,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3725,6 +4108,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3734,6 +4118,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3742,6 +4127,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3751,6 +4137,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3759,6 +4146,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3769,6 +4157,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3778,6 +4167,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3798,6 +4188,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3806,6 +4197,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3816,6 +4208,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3825,6 +4218,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3834,6 +4228,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3842,6 +4237,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3851,6 +4247,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3859,6 +4256,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3869,6 +4267,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3878,6 +4277,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Sun",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3900,6 +4300,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3908,6 +4309,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3918,6 +4320,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3928,6 +4331,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3936,6 +4340,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3945,6 +4350,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3955,6 +4361,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3964,6 +4371,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3973,6 +4381,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3982,6 +4391,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4001,6 +4411,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4009,6 +4420,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4019,6 +4431,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4028,6 +4441,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4036,6 +4450,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4045,6 +4460,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4055,6 +4471,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4064,6 +4481,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4073,6 +4491,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4081,6 +4500,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Temperance",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4104,6 +4524,7 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4112,6 +4533,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4121,6 +4543,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4130,6 +4553,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4139,6 +4563,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4149,6 +4574,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4158,6 +4584,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4167,6 +4594,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4179,6 +4607,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4187,6 +4616,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4207,6 +4637,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4215,6 +4646,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4224,6 +4656,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4233,6 +4666,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4241,6 +4675,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4251,6 +4686,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4260,6 +4696,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4269,6 +4706,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4281,6 +4719,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4289,6 +4728,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        SLinkArcana = "Tower",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
