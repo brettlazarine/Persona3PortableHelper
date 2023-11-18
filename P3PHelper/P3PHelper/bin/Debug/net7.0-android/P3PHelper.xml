@@ -4,12 +4,6 @@
         <name>P3PHelper</name>
     </assembly>
     <members>
-        <member name="T:P3PHelper.MVVM.Models.RankUp">
-            <inheritdoc/>
-        </member>
-        <member name="P:P3PHelper.MVVM.Models.RankUp.IsCompleted">
-            <inheritdoc cref="F:P3PHelper.MVVM.Models.RankUp._isCompleted"/>
-        </member>
         <member name="T:P3PHelper.MVVM.ViewModels.InteractionStoryViewModel">
             <inheritdoc/>
         </member>
@@ -25,9 +19,6 @@
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsCompleted">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsCompleted" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SLinkBC">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SLinkBC" generated properties.</summary>
         </member>
@@ -39,9 +30,6 @@
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsCompleted">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsCompleted" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SLinkBC">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SLinkBC" generated properties.</summary>

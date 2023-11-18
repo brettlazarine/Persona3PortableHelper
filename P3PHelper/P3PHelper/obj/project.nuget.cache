@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RcmAqn7uWs2gdtc2+mqPt8OoiroVu+qdvwxDyFE0GXu+6seajOuJXiLjZZucBcEjlkq+ckr4Zt4SQjWYa5QTpQ==",
+  "dgSpecHash": "uJiY9Q2YymJQD8gXw9EqjithFVubLZ32nqK9xm7zMqVnmCQ41WfJjlK/cA2udDcULVYmZCGhjQL7jcopacGenA==",
   "success": true,
   "projectFilePath": "C:\\GitHubRepos\\Persona3PHelper\\Persona3PortableHelper\\P3PHelper\\P3PHelper\\P3PHelper.csproj",
   "expectedPackageFiles": [
@@ -24,10 +24,10 @@
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
-    "C:\\Users\\jblaz\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "C:\\Users\\jblaz\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.android\\2.0.4\\sqlitepclraw.lib.e_sqlite3.android.2.0.4.nupkg.sha512",
-    "C:\\Users\\jblaz\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
+    "C:\\Users\\jblaz\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.1.6\\sqlitepclraw.provider.dynamic_cdecl.2.1.6.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.4\\sqlitepclraw.provider.e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",

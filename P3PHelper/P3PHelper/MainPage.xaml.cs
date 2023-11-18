@@ -1,24 +1,34 @@
-﻿namespace P3PHelper;
+﻿using P3PHelper.Repositories;
+using System.Diagnostics;
+
+namespace P3PHelper;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
-
+	ProgressRepository ProgressRepo;
 	public MainPage()
 	{
 		InitializeComponent();
+
+		ProgressRepo = App.ProgressRepo;
+
+		BindingContext = ProgressRepo.GetSLinks();
+
+		//Debug.WriteLine(ProgressRepo.GetSLinks().Count);
+		//foreach (var item in ProgressRepo.GetSLinks())
+		//{
+  //          Debug.WriteLine("********** " + item.Arcana);
+  //      }
+
+		foreach (var item in ProgressRepo.GetRankUps())
+		{
+            Debug.WriteLine($"Arcana: {item.SLinkArcana}, " +
+				$"Rank: {item.RankNumber}, " +
+				$"Male: {item.IsCompletedMale}, " +
+				$"Female: {item.IsCompletedFemale}");
+        }
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+	
 }
 

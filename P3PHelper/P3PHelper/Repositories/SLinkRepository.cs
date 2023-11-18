@@ -3,6 +3,7 @@ using P3PHelper.MVVM.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -4737,6 +4738,40 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
+
+            //foreach (var sLink in SLinkArcana.Values)
+            //{
+            //    App.ProgressRepo.InsertSlink(sLink.Arcana);
+            //}
+
+            //foreach (var sLink in SLinkArcana.Values)
+            //{
+            //   foreach (var rankUp in sLink.MaleRankUps)
+            //    {
+            //        App.ProgressRepo.InsertRankUp(rankUp.SLinkArcana, rankUp.RankNumber, rankUp.IsCompletedMale, rankUp.IsCompletedFemale);
+            //    }
+            //   foreach (var rankUp in sLink.FemaleRankUps)
+            //    {
+            //        App.ProgressRepo.InsertRankUp(rankUp.SLinkArcana, rankUp.RankNumber, rankUp.IsCompletedMale, rankUp.IsCompletedFemale);
+            //    }
+            //}
+
+            foreach (var sLink in SLinkArcana.Values)
+            {
+                var arcana = sLink.Arcana;
+                string arcanaName;
+                int rankNumber;
+                bool isCompletedMale;
+                bool isCompletedFemale;
+                foreach (var rankUp in sLink.MaleRankUps)
+                {
+                    arcanaName = rankUp.SLinkArcana;
+                    rankNumber = rankUp.RankNumber;
+                    isCompletedMale = rankUp.IsCompletedMale;
+                    isCompletedFemale = rankUp.IsCompletedFemale;
+                    App.ProgressRepo.InsertRankUp(arcanaName, rankNumber, isCompletedMale, isCompletedFemale);
+                }
+            }
         }
 
         public SLink GetSLink(string arcana)
