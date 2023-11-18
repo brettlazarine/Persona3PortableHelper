@@ -110,14 +110,23 @@ namespace P3PHelper.Repositories
         {
             try
             {
-                connection.Insert(new SLink { Arcana = arcana });
-                connection.Insert(new RankUp
+                var existingSLink = connection.Table<SLink>().Where(s => s.Arcana == arcana).FirstOrDefault();
+                if (existingSLink == null)
                 {
-                    SLinkArcana = arcanaName,
-                    RankNumber = rankNumber,
-                    IsCompletedMale = isCompletedMale,
-                    IsCompletedFemale = isCompletedFemale
-                });
+                    connection.Insert(new SLink { Arcana = arcana });
+                }
+                
+                var existingRankUp = connection.Table<RankUp>().Where(r => r.SLinkArcana == arcanaName).FirstOrDefault();
+                if (existingRankUp == null)
+                {
+                    connection.Insert(new RankUp
+                    {
+                        SLinkArcana = arcanaName,
+                        RankNumber = rankNumber,
+                        IsCompletedMale = isCompletedMale,
+                        IsCompletedFemale = isCompletedFemale
+                    });
+                }
             }
             catch (Exception ex)
             {

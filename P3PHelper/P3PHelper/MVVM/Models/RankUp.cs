@@ -14,10 +14,10 @@ namespace P3PHelper.MVVM.Models
         private bool _isCompletedMale;
         private bool _isCompletedFemale;
 
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey, AutoIncrement, Unique]
         public int RankUpId { get; set; }
 
-        [ForeignKey(nameof(SLink))]
+        [ForeignKey(nameof(SLink)), Indexed]
         public string SLinkArcana { get; set; }
         
 

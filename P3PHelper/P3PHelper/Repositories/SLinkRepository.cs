@@ -4755,21 +4755,25 @@ namespace P3PHelper.Repositories
             //        App.ProgressRepo.InsertRankUp(rankUp.SLinkArcana, rankUp.RankNumber, rankUp.IsCompletedMale, rankUp.IsCompletedFemale);
             //    }
             //}
-
-            foreach (var sLink in SLinkArcana.Values)
+            if (App.ProgressRepo.GetRankUps().Count == 0)
             {
-                var arcana = sLink.Arcana;
-                string arcanaName;
-                int rankNumber;
-                bool isCompletedMale;
-                bool isCompletedFemale;
-                foreach (var rankUp in sLink.MaleRankUps)
+                foreach (var sLink in SLinkArcana.Values)
                 {
-                    arcanaName = rankUp.SLinkArcana;
-                    rankNumber = rankUp.RankNumber;
-                    isCompletedMale = rankUp.IsCompletedMale;
-                    isCompletedFemale = rankUp.IsCompletedFemale;
-                    App.ProgressRepo.InsertRankUp(arcanaName, rankNumber, isCompletedMale, isCompletedFemale);
+                    var arcana = sLink.Arcana;
+                    App.ProgressRepo.InsertSlink(arcana);
+
+                    string arcanaName;
+                    int rankNumber;
+                    bool isCompletedMale;
+                    bool isCompletedFemale;
+                    foreach (var rankUp in sLink.MaleRankUps)
+                    {
+                        arcanaName = rankUp.SLinkArcana;
+                        rankNumber = rankUp.RankNumber;
+                        isCompletedMale = rankUp.IsCompletedMale;
+                        isCompletedFemale = rankUp.IsCompletedFemale;
+                        App.ProgressRepo.InsertRankUp(arcanaName, rankNumber, isCompletedMale, isCompletedFemale);
+                    }
                 }
             }
         }

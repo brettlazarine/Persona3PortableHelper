@@ -12,21 +12,25 @@ public partial class MainPage : ContentPage
 
 		ProgressRepo = App.ProgressRepo;
 
-		BindingContext = ProgressRepo.GetSLinks();
+		var sLinks = ProgressRepo.GetSLinks();
 
-		//Debug.WriteLine(ProgressRepo.GetSLinks().Count);
-		//foreach (var item in ProgressRepo.GetSLinks())
-		//{
-  //          Debug.WriteLine("********** " + item.Arcana);
-  //      }
+		BindingContext = sLinks.ToString();
 
+		Debug.WriteLine("***** SLinks *****");
+		foreach (var sLink in sLinks)
+		{
+			Debug.WriteLine($"* {sLink.Arcana} *");
+		}
+
+		Debug.WriteLine("***** RankUps *****");
 		foreach (var item in ProgressRepo.GetRankUps())
 		{
-            Debug.WriteLine($"Arcana: {item.SLinkArcana}, " +
-				$"Rank: {item.RankNumber}, " +
-				$"Male: {item.IsCompletedMale}, " +
-				$"Female: {item.IsCompletedFemale}");
-        }
+			Debug.WriteLine($"* ID: {item.RankUpId} " +
+			$"Arcana: {item.SLinkArcana}, " +
+			$"Rank: {item.RankNumber}, " +
+			$"Male: {item.IsCompletedMale}, " +
+			$"Female: {item.IsCompletedFemale} *");
+		}
 	}
 
 	
