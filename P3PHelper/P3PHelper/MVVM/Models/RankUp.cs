@@ -11,11 +11,8 @@ namespace P3PHelper.MVVM.Models
     {
         [ObservableProperty]
         public bool _isCompleted;
-        [ObservableProperty]
-        public bool _isVisible = false;
         public int RankNumber { get; set; }
-        [ObservableProperty]
-        public List<(string Question, string Answer)> _rankInteractions;
+        public List<(string Question, string Answer)> RankInteractions { get; set; }
 
         public RankUp()
         {
