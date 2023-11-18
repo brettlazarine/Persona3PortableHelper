@@ -131,7 +131,8 @@
                                         Text="{Binding RankNumber, StringFormat='Rank {0}'}" />
                                     <CheckBox 
                                         Grid.Column="1"
-                                        IsChecked="{Binding IsCompleted}" />
+                                        IsChecked="{Binding IsCompletedMale}" 
+                                        CheckedChanged="IsCompletedMaleCheckBox_CheckedChanged"/>
                                     <Image
                                         Grid.Column="2"
                                         Style="{StaticResource DownArrow}"

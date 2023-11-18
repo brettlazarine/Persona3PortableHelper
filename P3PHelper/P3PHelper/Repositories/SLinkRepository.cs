@@ -4739,22 +4739,6 @@ namespace P3PHelper.Repositories
                 }
             };
 
-            //foreach (var sLink in SLinkArcana.Values)
-            //{
-            //    App.ProgressRepo.InsertSlink(sLink.Arcana);
-            //}
-
-            //foreach (var sLink in SLinkArcana.Values)
-            //{
-            //   foreach (var rankUp in sLink.MaleRankUps)
-            //    {
-            //        App.ProgressRepo.InsertRankUp(rankUp.SLinkArcana, rankUp.RankNumber, rankUp.IsCompletedMale, rankUp.IsCompletedFemale);
-            //    }
-            //   foreach (var rankUp in sLink.FemaleRankUps)
-            //    {
-            //        App.ProgressRepo.InsertRankUp(rankUp.SLinkArcana, rankUp.RankNumber, rankUp.IsCompletedMale, rankUp.IsCompletedFemale);
-            //    }
-            //}
             if (App.ProgressRepo.GetRankUps().Count == 0)
             {
                 foreach (var sLink in SLinkArcana.Values)
@@ -4762,17 +4746,27 @@ namespace P3PHelper.Repositories
                     var arcana = sLink.Arcana;
                     App.ProgressRepo.InsertSlink(arcana);
 
+                    int id = 1;
+
                     string arcanaName;
                     int rankNumber;
                     bool isCompletedMale;
                     bool isCompletedFemale;
                     foreach (var rankUp in sLink.MaleRankUps)
                     {
+                        rankUp.RankUpId = id++;
                         arcanaName = rankUp.SLinkArcana;
                         rankNumber = rankUp.RankNumber;
                         isCompletedMale = rankUp.IsCompletedMale;
+                        App.ProgressRepo.InsertRankUpMale(id, arcanaName, rankNumber, isCompletedMale);
+                    }
+                    foreach( var rankUp in sLink.FemaleRankUps)
+                    {
+                        rankUp.RankUpId = id++;
+                        arcanaName = rankUp.SLinkArcana;
+                        rankNumber = rankUp.RankNumber;
                         isCompletedFemale = rankUp.IsCompletedFemale;
-                        App.ProgressRepo.InsertRankUp(arcanaName, rankNumber, isCompletedMale, isCompletedFemale);
+                        App.ProgressRepo.InsertRankUpMale(id, arcanaName, rankNumber, isCompletedFemale);
                     }
                 }
             }

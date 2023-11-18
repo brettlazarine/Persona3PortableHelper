@@ -14,7 +14,7 @@ namespace P3PHelper.MVVM.Models
         private bool _isCompletedMale;
         private bool _isCompletedFemale;
 
-        [PrimaryKey, AutoIncrement, Unique]
+        [PrimaryKey, Unique]
         public int RankUpId { get; set; }
 
         [ForeignKey(nameof(SLink)), Indexed]

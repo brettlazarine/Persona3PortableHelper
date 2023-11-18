@@ -74,12 +74,12 @@ namespace P3PHelper.Repositories
             }
         }
 
-        public RankUp GetRankUp(string arcanaName)
+        public RankUp GetRankUp(int rankUpId)
         {
             try
             {
 
-            return connection.Table<RankUp>().Where(r => r.SLinkArcana == arcanaName).FirstOrDefault();
+            return connection.Table<RankUp>().Where(r => r.RankUpId == rankUpId).FirstOrDefault();
             }
             catch (Exception ex)
             {
@@ -88,15 +88,33 @@ namespace P3PHelper.Repositories
             }
         }
 
-        public void InsertRankUp(string arcanaName, int rankNumber, bool isCompletedMale, bool isCompletedFemale)
+        public void InsertRankUpMale(int id, string arcanaName, int rankNumber, bool isCompletedMale)
         {
             try
             {
                 connection.Insert(new RankUp
                 { 
+                    RankUpId = id,
                     SLinkArcana = arcanaName,
                     RankNumber = rankNumber,
                     IsCompletedMale = isCompletedMale,
+                });
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+        }
+
+        public void InsertRankUpFemale(int id, string arcanaName, int rankNumber, bool isCompletedFemale)
+        {
+            try
+            {
+                connection.Insert(new RankUp
+                {
+                    RankUpId = id,
+                    SLinkArcana = arcanaName,
+                    RankNumber = rankNumber,
                     IsCompletedFemale = isCompletedFemale
                 });
             }
@@ -106,27 +124,17 @@ namespace P3PHelper.Repositories
             }
         }
 
-        public void InsertSLinkAndRankUp(string arcana, string arcanaName, int rankNumber, bool isCompletedMale, bool isCompletedFemale)
+        public void UpdateRankUp(int rankId, bool isCompleted, bool isMale)
         {
             try
             {
-                var existingSLink = connection.Table<SLink>().Where(s => s.Arcana == arcana).FirstOrDefault();
-                if (existingSLink == null)
-                {
-                    connection.Insert(new SLink { Arcana = arcana });
-                }
-                
-                var existingRankUp = connection.Table<RankUp>().Where(r => r.SLinkArcana == arcanaName).FirstOrDefault();
-                if (existingRankUp == null)
-                {
-                    connection.Insert(new RankUp
-                    {
-                        SLinkArcana = arcanaName,
-                        RankNumber = rankNumber,
-                        IsCompletedMale = isCompletedMale,
-                        IsCompletedFemale = isCompletedFemale
-                    });
-                }
+                string columnName = isMale ? "IsCompletedMale" : "IsCompletedFemale";
+
+                string query = $"UPDATE RankUp SET {columnName} = @IsCompleted WHERE RankUpId = @RankId";
+                Debug.WriteLine($"Executing query: {query}, IsCompleted: {isCompleted}, RankId: {rankId}");
+
+                connection.Execute($"UPDATE RankUp SET {columnName} = @IsCompleted WHERE RankUpId = @RankId",
+                    new { IsCompleted = isCompleted, RankId = rankId });
             }
             catch (Exception ex)
             {

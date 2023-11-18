@@ -1,4 +1,5 @@
-﻿using P3PHelper.Repositories;
+﻿using P3PHelper.MVVM.Models;
+using P3PHelper.Repositories;
 using System.Diagnostics;
 
 namespace P3PHelper;
@@ -14,7 +15,7 @@ public partial class MainPage : ContentPage
 
 		var sLinks = ProgressRepo.GetSLinks();
 
-		BindingContext = sLinks.ToString();
+		BindingContext = sLinks;
 
 		Debug.WriteLine("***** SLinks *****");
 		foreach (var sLink in sLinks)
