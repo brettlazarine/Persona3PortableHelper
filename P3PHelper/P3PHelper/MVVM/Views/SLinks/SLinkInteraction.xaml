@@ -8,7 +8,6 @@
     <ContentPage.Resources>
         <converters:SLinkImageConverter x:Key="SLinkImageConverter" />
         <converters:SLinkNeedsPersonaConverter x:Key="SLinkNeedsPersonaConverter" />
-        <converters:ResponseStackConverter x:Key="ResponseStackConverter" />
     </ContentPage.Resources>
     <ScrollView>
         <StackLayout
@@ -146,7 +145,7 @@
                                     </Image>
                                 </Grid>
                                 <VerticalStackLayout Grid.Row="1"
-                                    AutomationId="MaleQuestionResponse"
+                                    AutomationId="QuestionResponse"
                                     HorizontalOptions="CenterAndExpand"
                                     IsVisible="false">
                                     <CollectionView

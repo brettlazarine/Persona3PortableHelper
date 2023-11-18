@@ -13,7 +13,7 @@ namespace P3PHelper.MVVM.ViewModels
     public partial class InteractionStoryViewModel : ObservableObject
     {
         [ObservableProperty]
-        public Story _sLinkBC;
+        public SLink _sLinkBC;
         [ObservableProperty]
         public bool _arrowRotated;
         public InteractionStoryViewModel()
