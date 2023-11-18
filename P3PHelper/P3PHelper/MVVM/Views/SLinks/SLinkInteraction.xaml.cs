@@ -52,15 +52,15 @@ public partial class SLinkInteraction : ContentPage
 
         var arrowParent = arrow.Parent as Layout;
         var container = arrowParent.Parent as Layout;
-        VerticalStackLayout maleQuestionResponseStack;
+        VerticalStackLayout questionResponseStack;
 
         foreach (var child in container.Children)
         {
             Debug.WriteLine(child.AutomationId);
-            if (child.AutomationId == "MaleQuestionResponse")
+            if (child.AutomationId == "QuestionResponse")
             {
-                maleQuestionResponseStack = child as VerticalStackLayout;
-                maleQuestionResponseStack.IsVisible = !maleQuestionResponseStack.IsVisible;
+                questionResponseStack = child as VerticalStackLayout;
+                questionResponseStack.IsVisible = !questionResponseStack.IsVisible;
             }
         }
 
