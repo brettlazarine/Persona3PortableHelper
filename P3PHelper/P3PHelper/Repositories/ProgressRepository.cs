@@ -88,16 +88,17 @@ namespace P3PHelper.Repositories
             }
         }
 
-        public void InsertRankUpMale(int id, string arcanaName, int rankNumber, bool isCompletedMale)
+        public void InsertRankUp(int id, string arcanaName, int rankNumber, bool isCompleted)
         {
             try
             {
                 connection.Insert(new RankUp
                 { 
-                    RankUpId = id,
+                    //RankUpId = id,
                     SLinkArcana = arcanaName,
                     RankNumber = rankNumber,
-                    IsCompletedMale = isCompletedMale,
+                    IsCompleted = isCompleted,
+                    RankInteractions = new List<(string Question, string Answer)>()
                 });
             }
             catch (Exception ex)
@@ -106,16 +107,16 @@ namespace P3PHelper.Repositories
             }
         }
 
-        public void InsertRankUpFemale(int id, string arcanaName, int rankNumber, bool isCompletedFemale)
+        public void InsertRankUpFemale(string arcanaName, int rankNumber, bool isCompleted)
         {
             try
             {
                 connection.Insert(new RankUp
                 {
-                    RankUpId = id,
+                    //RankUpId = id,
                     SLinkArcana = arcanaName,
                     RankNumber = rankNumber,
-                    IsCompletedFemale = isCompletedFemale
+                    IsCompleted = isCompleted
                 });
             }
             catch (Exception ex)
@@ -123,7 +124,7 @@ namespace P3PHelper.Repositories
                 Debug.WriteLine(ex.Message);
             }
         }
-
+        // NO LONGER USING MALE/FEMALE, NEED TO UPDATE THIS
         public void UpdateRankUp(int rankId, bool isCompleted, bool isMale)
         {
             try
@@ -133,7 +134,7 @@ namespace P3PHelper.Repositories
                 string query = $"UPDATE RankUp SET {columnName} = @IsCompleted WHERE RankUpId = @RankId";
                 Debug.WriteLine($"Executing query: {query}, IsCompleted: {isCompleted}, RankId: {rankId}");
 
-                connection.Execute($"UPDATE RankUp SET {columnName} = @IsCompleted WHERE RankUpId = @RankId",
+                connection.Execute($"UPDATE RankUp SET IsCompleted = @IsCompleted WHERE RankUpId = @RankId",
                     new { IsCompleted = isCompleted, RankId = rankId });
             }
             catch (Exception ex)

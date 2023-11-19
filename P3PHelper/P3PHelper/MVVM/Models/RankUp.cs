@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Newtonsoft.Json;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -11,30 +12,38 @@ namespace P3PHelper.MVVM.Models
 {
     public partial class RankUp : ObservableObject
     {
-        private bool _isCompletedMale;
-        private bool _isCompletedFemale;
+        private bool _isCompleted;
+        //private bool _isCompletedFemale;
 
-        [PrimaryKey, Unique]
+        [PrimaryKey, Unique, AutoIncrement]
         public int RankUpId { get; set; }
 
         [ForeignKey(nameof(SLink)), Indexed]
         public string SLinkArcana { get; set; }
-        
 
-        public bool IsCompletedMale
+        
+        public bool IsCompleted
         {
-            get { return _isCompletedMale; }
-            set { SetProperty(ref _isCompletedMale, value); }
+            get { return _isCompleted; }
+            set { SetProperty(ref _isCompleted, value); }
         }
-        public bool IsCompletedFemale
-        {
-            get { return _isCompletedFemale; }
-            set { SetProperty(ref _isCompletedFemale, value); }
-        }
+        //public bool IsCompletedFemale
+        //{
+        //    get { return _isCompletedFemale; }
+        //    set { SetProperty(ref _isCompletedFemale, value); }
+        //}
 
         public int RankNumber { get; set; }
+
         [Ignore]
         public List<(string Question, string Answer)> RankInteractions { get; set; }
+
+        // Serialized property for storing in the database
+        public string SerializedRankInteractions
+        {
+            get => JsonConvert.SerializeObject(RankInteractions);
+            set => RankInteractions = JsonConvert.DeserializeObject<List<(string, string)>>(value);
+        }
 
         public RankUp()
         {

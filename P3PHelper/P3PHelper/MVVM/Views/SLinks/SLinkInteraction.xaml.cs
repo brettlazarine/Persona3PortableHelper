@@ -18,6 +18,8 @@ public partial class SLinkInteraction : ContentPage
     {
         InitializeComponent();
 
+        App.ProgressRepo.GetRankUps();
+
         Vm = new InteractionStoryViewModel(arcanaName);
 
         BindingContext = Vm;
@@ -74,12 +76,15 @@ public partial class SLinkInteraction : ContentPage
 
     private void IsCompletedMaleCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
     {
-        foreach (var item in Vm.SLinkBC.FemaleRankUps)
-        {
-            Debug.WriteLine($"*** RankUpId: {item.RankUpId} ***");
-        }
+        var it = (CheckBox)sender;
+        var rankUp = it.BindingContext as RankUp;
+        Debug.WriteLine($"RankUpId: {rankUp.RankUpId}");
 
-        var val = e.Value;
+        //var data = App.ProgressRepo.GetRankUps();
+        //foreach (var item in  data)
+        //{
+        //    Debug.WriteLine($"Arcana: {item.SLinkArcana}, ID: {item.RankUpId}, #: {item.RankNumber}, Bool: {item.IsCompleted}");
+        //}
 
         //if (sender is CheckBox checkBox)
         //{
@@ -96,16 +101,16 @@ public partial class SLinkInteraction : ContentPage
         //}
 
 
-        var bc = Vm.SLinkBC.MaleRankUps;
-        var checkbox = sender as CheckBox;
-        if (bc != null && bc.Any())
-        {
+        //var bc = Vm.SLinkBC.MaleRankUps;
+        //var checkbox = sender as CheckBox;
+        //if (bc != null && bc.Any())
+        //{
 
-            App.ProgressRepo.UpdateRankUp(bc.FirstOrDefault().RankUpId, checkbox.IsChecked, true);
-        }
-        else
-        {
-            Debug.WriteLine("BindingContext is null");
-        }
+        //    App.ProgressRepo.UpdateRankUp(bc.FirstOrDefault().RankUpId, checkbox.IsChecked, true);
+        //}
+        //else
+        //{
+        //    Debug.WriteLine("BindingContext is null");
+        //}
     }
 }

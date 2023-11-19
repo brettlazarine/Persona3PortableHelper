@@ -29,8 +29,7 @@ public partial class MainPage : ContentPage
 			Debug.WriteLine($"* ID: {item.RankUpId} " +
 			$"Arcana: {item.SLinkArcana}, " +
 			$"Rank: {item.RankNumber}, " +
-			$"Male: {item.IsCompletedMale}, " +
-			$"Female: {item.IsCompletedFemale} *");
+			$"Male: {item.IsCompleted} *");
 		}
 	}
 
