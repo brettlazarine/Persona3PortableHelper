@@ -32,7 +32,7 @@ public partial class MainPage : ContentPage
 		//	$"Male: {item.IsCompleted} *");
 		//}
 
-		var test = ProgressRepo.GetSLink("Fool");
+		var test = ProgressRepo.GetSLink("fool");
 		try
 		{
 			Debug.WriteLine($"****** {test.Arcana} *****");

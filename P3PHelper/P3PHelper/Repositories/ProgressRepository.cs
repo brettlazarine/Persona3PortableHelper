@@ -1,8 +1,10 @@
 ﻿using P3PHelper.MVVM.Models;
 using SQLite;
+using SQLiteNetExtensions.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,8 +26,14 @@ namespace P3PHelper.Repositories
         {
             try
             {
-
-            return connection.Table<SLink>().ToList();
+                //return connection.GetAllWithChildren<SLink>(recursive: true);
+                var SLinks = connection.Table<SLink>().ToList();
+                foreach (var link in SLinks)
+                {
+                    link.MaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == link.Arcana).ToList();
+                    link.FemaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == link.Arcana).ToList();
+                }
+                return SLinks;
             }
             catch (Exception ex)
             {
@@ -38,8 +46,19 @@ namespace P3PHelper.Repositories
         {
             try
             {
-
-            return connection.Table<SLink>().Where(s => s.Arcana.ToLower() == arcanaName).FirstOrDefault();
+                TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
+                arcanaName = textInfo.ToTitleCase(arcanaName);
+                //return connection.Table<SLink>().Where(s => s.Arcana == arcanaName).FirstOrDefault();
+                var link = connection.GetWithChildren<SLink>(arcanaName, true);
+                foreach (var rank in link.MaleRankUps)
+                {
+                    rank.RankInteractions = connection.Table<RankUp>().Where(r => r.RankUpId == rank.RankUpId).FirstOrDefault().RankInteractions;
+                }
+                foreach (var rank in link.FemaleRankUps)
+                {
+                    rank.RankInteractions = connection.Table<RankUp>().Where(r => r.RankUpId == rank.RankUpId).FirstOrDefault().RankInteractions;
+                }
+                return link;
             }
             catch (Exception ex)
             {

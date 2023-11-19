@@ -4764,7 +4764,7 @@ namespace P3PHelper.Repositories
 
         public void LoadDb(Dictionary<string, SLink> sLinkCollection)
         {
-            var id = 1;
+            //var id = 1;
             if (App.ProgressRepo.GetRankUps().Count == 0)
             {
                 foreach (var link in sLinkCollection.Values)

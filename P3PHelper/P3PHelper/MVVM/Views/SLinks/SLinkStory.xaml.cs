@@ -18,14 +18,21 @@ public partial class SLinkStory : ContentPage
     {
         InitializeComponent();
 
+        var sLinkRepo = App.ProgressRepo.GetSLinks();
+
         //var sLinkRepo = DependencyService.Get<SLinkRepository>();
         //Link = sLinkRepo.GetSLink(arcanaName);
-
+        TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
+        arcanaName = textInfo.ToTitleCase(arcanaName);
         Link = App.ProgressRepo.GetSLink(arcanaName);
 
         BindingContext = Link;
 
-        Debug.WriteLine($"***** {Link.Arcana}, {Link.MaleName} *****");
+        //foreach (var rank in Link.MaleRankUps)
+        {
+        //Debug.WriteLine($"***** {rank.RankInteractions} *****");
+
+        }
     }
 
     #region Male Arrow Tap Events
