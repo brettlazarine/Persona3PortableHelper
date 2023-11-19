@@ -40,6 +40,9 @@ namespace P3PHelper.MVVM.Models
         [OneToMany(CascadeOperations = CascadeOperation.All)]
         public List<RankUp> FemaleRankUps { get; set; }
 
+        //[OneToMany(CascadeOperations = CascadeOperation.All)]
+        //public List<RankUp> Ranks { get; set; }
+
 
         public SLink()
         {

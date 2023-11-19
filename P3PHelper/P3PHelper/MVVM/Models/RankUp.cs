@@ -20,7 +20,7 @@ namespace P3PHelper.MVVM.Models
         [ForeignKey(nameof(Arcana)), Indexed]
         public string Arcana { get; set; }
 
-
+        public bool IsMale;
         
         public int IsCompleted
         {
@@ -40,14 +40,17 @@ namespace P3PHelper.MVVM.Models
             set => RankInteractions = JsonConvert.DeserializeObject<List<(string, string)>>(value);
         }
 
+        //[Ignore]
+        //public List<(string Question, string Answer)> FemaleRankInteractions { get; set; }
+        //public string FemaleSerializedRankInteractions
+        //{
+        //    get => JsonConvert.SerializeObject(RankInteractions);
+        //    set => RankInteractions = JsonConvert.DeserializeObject<List<(string, string)>>(value);
+        //}
+
         public RankUp()
         {
-            
+            IsMale = true;
         }
-    }
-
-    public class RankComplete
-    {
-        public int IsCompleted { get; set; }
     }
 }

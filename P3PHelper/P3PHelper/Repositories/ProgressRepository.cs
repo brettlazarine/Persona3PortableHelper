@@ -46,18 +46,15 @@ namespace P3PHelper.Repositories
         {
             try
             {
-                TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
-                arcanaName = textInfo.ToTitleCase(arcanaName);
-                //return connection.Table<SLink>().Where(s => s.Arcana == arcanaName).FirstOrDefault();
-                var link = connection.GetWithChildren<SLink>(arcanaName, true);
+                //TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
+                //arcanaName = textInfo.ToTitleCase(arcanaName);
+                var link = connection.Table<SLink>().Where(s => s.Arcana == arcanaName).FirstOrDefault();
                 foreach (var rank in link.MaleRankUps)
                 {
-                    rank.RankInteractions = connection.Table<RankUp>().Where(r => r.RankUpId == rank.RankUpId).FirstOrDefault().RankInteractions;
+                    link.MaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == arcanaName && r.IsMale).ToList();
+                    link.FemaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == arcanaName && !r.IsMale).ToList();
                 }
-                foreach (var rank in link.FemaleRankUps)
-                {
-                    rank.RankInteractions = connection.Table<RankUp>().Where(r => r.RankUpId == rank.RankUpId).FirstOrDefault().RankInteractions;
-                }
+                
                 return link;
             }
             catch (Exception ex)
@@ -132,7 +129,8 @@ namespace P3PHelper.Repositories
                     Arcana = rank.Arcana,
                     IsCompleted = rank.IsCompleted,
                     RankInteractions = rank.RankInteractions,
-                    RankUpId = rank.RankUpId
+                    RankUpId = rank.RankUpId, 
+                    IsMale = rank.IsMale
                 });
             }
             catch (Exception ex)

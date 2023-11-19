@@ -23,5 +23,6 @@ namespace P3PHelper.Abstractions
         bool FemaleRequiresPersona { get; set; }
         List<RankUp> MaleRankUps { get; set; }
         List<RankUp> FemaleRankUps { get; set; }
+        //public List<RankUp> Ranks { get; set; }
     }
 }

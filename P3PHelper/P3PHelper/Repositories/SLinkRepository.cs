@@ -129,6 +129,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Aeon",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -138,6 +139,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Aeon",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -147,6 +149,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Aeon",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -156,6 +159,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Aeon",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -165,6 +169,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Aeon",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -174,6 +179,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Aeon",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -183,6 +189,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Aeon",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -192,6 +199,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Aeon",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -201,6 +209,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Aeon",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -210,6 +219,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Aeon",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -338,6 +348,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Chariot",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -347,6 +358,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Chariot",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -356,6 +368,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Chariot",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -365,6 +378,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Chariot",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -377,6 +391,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Chariot",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -386,6 +401,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Chariot",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -395,6 +411,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Chariot",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -405,6 +422,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Chariot",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -414,6 +432,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Chariot",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -423,6 +442,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Chariot",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -546,6 +566,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Death",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -555,6 +576,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Death",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -564,6 +586,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Death",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -573,6 +596,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Death",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -582,6 +606,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Death",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -591,6 +616,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Death",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -600,6 +626,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Death",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -609,6 +636,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Death",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -618,6 +646,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Death",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -627,6 +656,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Death",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -759,6 +789,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Devil",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -768,6 +799,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Devil",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -778,6 +810,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Devil",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -787,6 +820,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Devil",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -798,6 +832,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Devil",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -808,6 +843,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Devil",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -817,6 +853,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Devil",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -827,6 +864,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Devil",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -836,6 +874,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Devil",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -846,6 +885,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Devil",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -970,6 +1010,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Emperor",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -979,6 +1020,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Emperor",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -989,6 +1031,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Emperor",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -998,6 +1041,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Emperor",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -1007,6 +1051,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Emperor",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -1016,6 +1061,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Emperor",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -1025,6 +1071,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Emperor",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -1034,6 +1081,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Emperor",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -1043,6 +1091,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Emperor",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -1053,6 +1102,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Emperor",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -1186,6 +1236,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Empress",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -1195,6 +1246,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Empress",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -1204,6 +1256,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Empress",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -1217,6 +1270,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Empress",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -1227,6 +1281,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Empress",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -1239,6 +1294,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Empress",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -1250,6 +1306,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Empress",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -1259,6 +1316,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Empress",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -1268,6 +1326,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Empress",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -1278,6 +1337,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Empress",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -1400,6 +1460,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fool",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -1409,6 +1470,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fool",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -1418,6 +1480,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fool",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -1427,6 +1490,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fool",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -1436,6 +1500,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fool",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -1445,6 +1510,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fool",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -1454,6 +1520,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fool",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -1463,6 +1530,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fool",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -1472,6 +1540,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fool",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -1481,6 +1550,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fool",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -1602,6 +1672,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fortune",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -1611,6 +1682,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fortune",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -1620,6 +1692,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fortune",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -1629,6 +1702,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fortune",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -1638,6 +1712,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fortune",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -1652,6 +1727,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fortune",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -1661,6 +1737,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fortune",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -1670,6 +1747,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fortune",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -1682,6 +1760,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fortune",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -1691,6 +1770,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Fortune",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -1822,6 +1902,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hanged Man",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -1831,6 +1912,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hanged Man",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -1840,6 +1922,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hanged Man",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -1849,6 +1932,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hanged Man",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -1858,6 +1942,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hanged Man",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -1868,6 +1953,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hanged Man",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -1878,6 +1964,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hanged Man",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -1887,6 +1974,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hanged Man",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -1898,6 +1986,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hanged Man",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -1907,6 +1996,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hanged Man",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -2035,6 +2125,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hermit",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -2044,6 +2135,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hermit",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -2055,6 +2147,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hermit",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -2065,6 +2158,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hermit",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -2075,6 +2169,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hermit",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -2084,6 +2179,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hermit",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -2094,6 +2190,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hermit",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -2103,6 +2200,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hermit",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -2113,6 +2211,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hermit",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -2123,6 +2222,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hermit",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -2260,6 +2360,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hierophant",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -2269,6 +2370,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hierophant",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -2280,6 +2382,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hierophant",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -2291,6 +2394,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hierophant",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -2301,6 +2405,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hierophant",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -2311,6 +2416,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hierophant",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -2320,6 +2426,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hierophant",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -2331,6 +2438,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hierophant",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -2340,6 +2448,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hierophant",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -2349,6 +2458,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Hierophant",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -2471,6 +2581,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Judgment",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -2480,6 +2591,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Judgment",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -2489,6 +2601,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Judgment",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -2498,6 +2611,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Judgment",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -2507,6 +2621,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Judgment",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -2516,6 +2631,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Judgment",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -2525,6 +2641,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Judgment",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -2534,6 +2651,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Judgment",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -2543,6 +2661,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Judgment",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -2552,6 +2671,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Judgment",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -2685,6 +2805,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Justice",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -2694,6 +2815,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Justice",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -2706,6 +2828,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Justice",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -2719,6 +2842,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Justice",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -2729,6 +2853,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Justice",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -2742,6 +2867,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Justice",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -2753,6 +2879,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Justice",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -2763,6 +2890,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Justice",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -2772,6 +2900,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Justice",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -2781,6 +2910,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Justice",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -2904,6 +3034,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Lovers",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -2913,6 +3044,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Lovers",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -2923,6 +3055,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Lovers",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -2932,6 +3065,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Lovers",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -2941,6 +3075,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Lovers",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -2950,6 +3085,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Lovers",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -2960,6 +3096,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Lovers",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -2969,6 +3106,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Lovers",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -2978,6 +3116,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Lovers",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -2987,6 +3126,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Lovers",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -3116,6 +3256,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Magician",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -3125,6 +3266,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Magician",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -3135,6 +3277,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Magician",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -3148,6 +3291,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Magician",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -3158,6 +3302,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Magician",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -3167,6 +3312,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Magician",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -3176,6 +3322,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Magician",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -3188,6 +3335,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Magician",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -3201,6 +3349,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Magician",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -3211,6 +3360,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Magician",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -3334,6 +3484,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Moon",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -3343,6 +3494,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Moon",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -3353,6 +3505,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Moon",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -3362,6 +3515,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Moon",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -3371,6 +3525,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Moon",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -3381,6 +3536,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Moon",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -3391,6 +3547,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Moon",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -3402,6 +3559,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Moon",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -3411,6 +3569,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Moon",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -3421,6 +3580,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Moon",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -3543,6 +3703,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Priestess",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -3552,6 +3713,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Priestess",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -3561,6 +3723,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Priestess",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -3570,6 +3733,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Priestess",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -3579,6 +3743,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Priestess",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -3589,6 +3754,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Priestess",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -3598,6 +3764,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Priestess",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -3607,6 +3774,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Priestess",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -3616,6 +3784,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Priestess",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -3625,6 +3794,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Priestess",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -3752,6 +3922,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Star",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -3761,6 +3932,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Star",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -3771,6 +3943,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Star",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -3782,6 +3955,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Star",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -3793,6 +3967,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Star",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -3803,6 +3978,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Star",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -3813,6 +3989,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Star",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -3823,6 +4000,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Star",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -3833,6 +4011,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Star",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -3845,6 +4024,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Star",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -3975,6 +4155,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Strength",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -3984,6 +4165,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Strength",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -3993,6 +4175,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Strength",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -4002,6 +4185,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Strength",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -4011,6 +4195,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Strength",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -4021,6 +4206,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Strength",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -4030,6 +4216,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Strength",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -4049,6 +4236,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Strength",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -4058,6 +4246,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Strength",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -4192,6 +4381,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Sun",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -4201,6 +4391,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Sun",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -4212,6 +4403,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Sun",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -4222,6 +4414,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Sun",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -4232,6 +4425,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Sun",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -4241,6 +4435,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Sun",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -4251,6 +4446,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Sun",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -4260,6 +4456,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Sun",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -4271,6 +4468,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Sun",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -4281,6 +4479,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Sun",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -4415,6 +4614,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Temperance",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -4424,6 +4624,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Temperance",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -4435,6 +4636,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Temperance",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -4445,6 +4647,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Temperance",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -4454,6 +4657,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Temperance",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -4464,6 +4668,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Temperance",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -4475,6 +4680,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Temperance",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -4485,6 +4691,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Temperance",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -4495,6 +4702,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Temperance",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -4504,6 +4712,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Temperance",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -4643,6 +4852,7 @@ namespace P3PHelper.Repositories
 
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Tower",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -4652,6 +4862,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Tower",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -4662,6 +4873,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Tower",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -4672,6 +4884,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Tower",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -4681,6 +4894,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Tower",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -4692,6 +4906,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Tower",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -4702,6 +4917,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Tower",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -4712,6 +4928,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Tower",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -4725,6 +4942,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Tower",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -4734,6 +4952,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
+                        IsMale = false,
                         Arcana = "Tower",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -4774,10 +4993,6 @@ namespace P3PHelper.Repositories
 
                     foreach (var rankUp in link.MaleRankUps)
                     {                        
-                        App.ProgressRepo.InsertRankUp(rankUp);
-                    }
-                    foreach (var rankUp in link.FemaleRankUps)
-                    {
                         App.ProgressRepo.InsertRankUp(rankUp);
                     }
                 }
