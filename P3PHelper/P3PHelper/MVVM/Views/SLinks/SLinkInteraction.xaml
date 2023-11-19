@@ -18,7 +18,7 @@
                                 Margin="-10, -10, -10, 0"
                                 CornerRadius="50"/>
                 <Label Grid.Row="0"
-                    Style="{StaticResource SLinkArcana}"
+                    Style="{StaticResource Arcana}"
                     Text="{Binding SLinkBC.Arcana}" />
                 <Image Grid.Row="1"
                     HeightRequest="150"

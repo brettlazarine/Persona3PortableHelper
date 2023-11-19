@@ -12,11 +12,11 @@ namespace P3PHelper.Repositories
 {
     public class SLinkRepository
     {
-        private Dictionary<string, SLink> SLinkArcana = new();
+        private Dictionary<string, SLink> Arcana = new();
 
         public SLinkRepository()
         {
-            SLinkArcana["aeon"] = new SLink()
+            Arcana["aeon"] = new SLink()
             {
                 Arcana = "Aeon",
                 // Male
@@ -24,12 +24,12 @@ namespace P3PHelper.Repositories
                 MaleUnlockDate = "1/8",
                 MaleHowToUnlock = "Talk to her in the Classroom on 1/8.",
                 MaleAvailability = "Can be found in the Classroom every day except Sunday.",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
                         //RankUpId = 1,
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -39,7 +39,7 @@ namespace P3PHelper.Repositories
                     new RankUp()
                     {
                         //RankUpId = 2,
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -48,7 +48,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -57,7 +57,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -66,7 +66,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -75,7 +75,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -84,7 +84,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -93,7 +93,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -102,7 +102,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -111,7 +111,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -124,12 +124,12 @@ namespace P3PHelper.Repositories
                 FemaleUnlockDate = "1/8",
                 FemaleHowToUnlock = "Talk to her in the Classroom on 1/8.",
                 FemaleAvailability = "Can be found in the Classroom every day except Sunday.",
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -138,7 +138,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -147,7 +147,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -156,7 +156,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -165,7 +165,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -174,7 +174,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -183,7 +183,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -192,7 +192,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -201,7 +201,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -210,7 +210,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Aeon",
+                        Arcana = "Aeon",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -219,7 +219,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["chariot"] = new SLink()
+            Arcana["chariot"] = new SLink()
             {
                 Arcana = "Chariot",
                 // Male
@@ -227,11 +227,11 @@ namespace P3PHelper.Repositories
                 MaleUnlockDate = "4/24",
                 MaleHowToUnlock = "Join a sports club.",
                 MaleAvailability = "Can be found in the Classroom on Monday, Tuesday, Thursday, and Friday.",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -240,7 +240,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -250,7 +250,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -261,7 +261,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -270,7 +270,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -280,7 +280,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -291,7 +291,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -302,7 +302,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -311,7 +311,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -320,7 +320,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -333,12 +333,12 @@ namespace P3PHelper.Repositories
                 FemaleUnlockDate = "4/24",
                 FemaleHowToUnlock = "Join a sports club.",
                 FemaleAvailability = "Can be found outside the Classroom on Monday, Wednesday, and Friday.",
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -347,7 +347,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -356,7 +356,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -365,7 +365,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -377,7 +377,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -386,7 +386,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -395,7 +395,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -405,7 +405,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -414,7 +414,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -423,7 +423,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Chariot",
+                        Arcana = "Chariot",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -432,7 +432,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["death"] = new SLink()
+            Arcana["death"] = new SLink()
             {
                 Arcana = "Death",
                 MaleRequiresPersona = false,
@@ -441,11 +441,12 @@ namespace P3PHelper.Repositories
                 MaleUnlockDate = "6/12",
                 MaleHowToUnlock = "Story related.",
                 MaleAvailability = "Story related.",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        RankUpId = 41,
+                        Arcana = "Death",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -454,7 +455,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -463,7 +464,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -472,7 +473,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -481,7 +482,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -490,7 +491,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -499,7 +500,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -508,7 +509,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -517,7 +518,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -526,7 +527,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -540,12 +541,12 @@ namespace P3PHelper.Repositories
                 FemaleUnlockDate = "6/12",
                 FemaleHowToUnlock = "Story related.",
                 FemaleAvailability = "Story related.",
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -554,7 +555,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -563,7 +564,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -572,7 +573,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -581,7 +582,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -590,7 +591,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -599,7 +600,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -608,7 +609,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -617,7 +618,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -626,7 +627,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Death",
+                        Arcana = "Death",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -635,7 +636,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["devil"] = new SLink()
+            Arcana["devil"] = new SLink()
             {
                 Arcana = "Devil",
                 // Male
@@ -646,11 +647,11 @@ namespace P3PHelper.Repositories
                     "10,000 yen.",
                 MaleAvailability = "Can be found at Paulownia Mall at night on Tuesday, Thursday, and Saturday.",
                 MaleRequiresPersona = false,
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -659,7 +660,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -669,7 +670,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -678,7 +679,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -688,7 +689,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -699,7 +700,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -708,7 +709,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -718,7 +719,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -727,7 +728,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -737,7 +738,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -753,12 +754,12 @@ namespace P3PHelper.Repositories
                     "and pay him another 10,000 yen.",
                 FemaleAvailability = "Can be found at Paulownia Mall at night on Tuesday, Thursday, and Saturday.",
                 FemaleRequiresPersona = false,
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -767,7 +768,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -777,7 +778,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -786,7 +787,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -797,7 +798,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -807,7 +808,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -816,7 +817,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -826,7 +827,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -835,7 +836,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -845,7 +846,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Devil",
+                        Arcana = "Devil",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -854,7 +855,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["emperor"] = new SLink()
+            Arcana["emperor"] = new SLink()
             {
                 Arcana = "Emperor",
                 // Male
@@ -863,11 +864,11 @@ namespace P3PHelper.Repositories
                 MaleHowToUnlock = "Starting on 4/27, talk to Ms. Toriumi in the Faculty Office about joining the Student Council." +
                     "Then go to the Student Council Room on the 2nd Floor.",
                 MaleAvailability = "Can be found in the Student Council Room on Monday, Wednesday, and Friday.",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -876,7 +877,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -886,7 +887,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -895,7 +896,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -904,7 +905,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -913,7 +914,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -922,7 +923,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -931,7 +932,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -940,7 +941,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -950,7 +951,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -964,12 +965,12 @@ namespace P3PHelper.Repositories
                 FemaleHowToUnlock = "Starting on 4/27, talk to Ms. Toriumi in the Faculty Office about joining the Student Council." +
                     "Then go to the Student Council Room on the 2nd Floor.",
                 FemaleAvailability = "Can be found in the Student Council Room on Monday, Wednesday, and Friday.",
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -978,7 +979,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -988,7 +989,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -997,7 +998,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1006,7 +1007,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1015,7 +1016,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1024,7 +1025,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1033,7 +1034,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1042,7 +1043,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1052,7 +1053,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Emperor",
+                        Arcana = "Emperor",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1061,7 +1062,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["empress"] = new SLink()
+            Arcana["empress"] = new SLink()
             {
                 Arcana = "Empress",
                 // Male
@@ -1070,11 +1071,11 @@ namespace P3PHelper.Repositories
                 MaleHowToUnlock = "Must have Academics at level 6, then talk to her in front of Faculty Office. When she asks if you " +
                 "have any spare time, say 'Sure'.",
                 MaleAvailability = "Can be found in front of the Faculty Office on Tuesday, Thursday, and Saturday.",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1083,7 +1084,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1092,7 +1093,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1105,7 +1106,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1115,7 +1116,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1127,7 +1128,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1138,7 +1139,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1147,7 +1148,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1157,7 +1158,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1166,7 +1167,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1180,12 +1181,12 @@ namespace P3PHelper.Repositories
                 FemaleHowToUnlock = "Must have Academics at level 6, then talk to her in front of Faculty Office. When she asks if you " +
                     "have any spare time, say 'Sure'.",
                 FemaleAvailability = "Can be found in front of the Faculty Office on Tuesday, Thursday, and Saturday.",
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1194,7 +1195,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1203,7 +1204,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1216,7 +1217,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1226,7 +1227,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1238,7 +1239,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1249,7 +1250,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1258,7 +1259,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1267,7 +1268,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1277,7 +1278,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Empress",
+                        Arcana = "Empress",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1286,7 +1287,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["fool"] = new SLink()
+            Arcana["fool"] = new SLink()
             {
                 Arcana = "Fool",
                 // Male
@@ -1295,11 +1296,11 @@ namespace P3PHelper.Repositories
                 MaleHowToUnlock = "Story related.",
                 MaleAvailability = "Story related.",
                 MaleRequiresPersona = false,
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1308,7 +1309,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1317,7 +1318,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1326,7 +1327,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1335,7 +1336,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1344,7 +1345,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1353,7 +1354,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1362,7 +1363,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1371,7 +1372,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1380,7 +1381,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1394,12 +1395,12 @@ namespace P3PHelper.Repositories
                 FemaleHowToUnlock = "Story related.",
                 FemaleAvailability = "Story related.",
                 FemaleRequiresPersona = false,
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1408,7 +1409,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1417,7 +1418,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1426,7 +1427,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1435,7 +1436,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1444,7 +1445,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1453,7 +1454,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1462,7 +1463,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1471,7 +1472,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1480,7 +1481,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fool",
+                        Arcana = "Fool",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1489,7 +1490,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["fortune"] = new SLink()
+            Arcana["fortune"] = new SLink()
             {
                 Arcana = "Fortune",
                 // Male
@@ -1497,11 +1498,11 @@ namespace P3PHelper.Repositories
                 MaleUnlockDate = "6/17",
                 MaleHowToUnlock = "Join one of the culture clubs.",
                 MaleAvailability = "Can be found outside the entrance to the culture club you chose on Tuesday, Wednesday, and Thursday.",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1510,7 +1511,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1519,7 +1520,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1528,7 +1529,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1537,7 +1538,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1546,7 +1547,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1555,7 +1556,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1564,7 +1565,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1573,7 +1574,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1582,7 +1583,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1596,12 +1597,12 @@ namespace P3PHelper.Repositories
                 FemaleHowToUnlock = "SLink related.",
                 FemaleAvailability = "You MUST agree to each of his requests to spend time together. REFUSING WILL END THE SOCIAL LINK!",
                 FemaleRequiresPersona = false,
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1610,7 +1611,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1619,7 +1620,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1628,7 +1629,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1637,7 +1638,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1651,7 +1652,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1660,7 +1661,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1669,7 +1670,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1681,7 +1682,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1690,7 +1691,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Fortune",
+                        Arcana = "Fortune",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1700,7 +1701,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["hangedman"] = new SLink()
+            Arcana["hangedman"] = new SLink()
             {
                 Arcana = "Hanged Man",
                 // Male
@@ -1711,11 +1712,11 @@ namespace P3PHelper.Repositories
                 "her again another day after giving her the Mad Bull and Weird Takoyaki to get the first rank.",
                 MaleAvailability = "Can be found at Naganaki Shrine by the playground Monday, Wednesday, and Saturday. She must also " +
                 "be rescued from Tartarus between 10/21 and 11/3.",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1724,7 +1725,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1733,7 +1734,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1742,7 +1743,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1751,7 +1752,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1761,7 +1762,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1771,7 +1772,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1780,7 +1781,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1791,7 +1792,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1800,7 +1801,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1816,12 +1817,12 @@ namespace P3PHelper.Repositories
                 "her again another day after giving her the Mad Bull and Weird Takoyaki to get the first rank.",
                 FemaleAvailability = "Can be found at Naganaki Shrine by the playground Monday, Wednesday, and Saturday. She must also " +
                 "be rescued from Tartarus between 10/21 and 11/3.",
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1830,7 +1831,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1839,7 +1840,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1848,7 +1849,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1857,7 +1858,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1867,7 +1868,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1877,7 +1878,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1886,7 +1887,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1897,7 +1898,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1906,7 +1907,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hanged Man",
+                        Arcana = "Hanged Man",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1915,7 +1916,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["hermit"] = new SLink()
+            Arcana["hermit"] = new SLink()
             {
                 Arcana = "Hermit",
                 // Male
@@ -1924,11 +1925,11 @@ namespace P3PHelper.Repositories
                 MaleHowToUnlock = "Talk to Junepi on the evening of 4/28 at the Dormitory to get a copy of " +
                 "the Innocent Sin Online MMORPG.",
                 MaleAvailability = "Can be interacted with on the computer on the desk in your room on Sunday.",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1937,7 +1938,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1947,7 +1948,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1957,7 +1958,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1966,7 +1967,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1976,7 +1977,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1985,7 +1986,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -1995,7 +1996,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2005,7 +2006,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2015,7 +2016,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2029,12 +2030,12 @@ namespace P3PHelper.Repositories
                 FemaleHowToUnlock = "Join either the Library or Health committee.",
                 FemaleAvailability = "Can be found outside either the Library (Library committee)" +
                     " or the Nurse's Office (Health committee) on Tuesday and Thursday.",
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2043,7 +2044,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2054,7 +2055,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2064,7 +2065,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2074,7 +2075,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2083,7 +2084,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2093,7 +2094,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2102,7 +2103,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2112,7 +2113,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2122,7 +2123,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hermit",
+                        Arcana = "Hermit",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2131,7 +2132,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["hierophant"] = new SLink()
+            Arcana["hierophant"] = new SLink()
             {
                 Arcana = "Hierophant",
                 // Male
@@ -2143,11 +2144,11 @@ namespace P3PHelper.Repositories
                     "Bookworms and deliver the leaf to Bunkichi and Mitsuko.",
                 MaleAvailability = "Can be found in Bookworms at Iwatodai Strip Mall every day except Monday. Must be rescued " +
                     "from Tartarus between 9/12 and 10/4.",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2156,7 +2157,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2166,7 +2167,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2177,7 +2178,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2187,7 +2188,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2197,7 +2198,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2207,7 +2208,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2219,7 +2220,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2228,7 +2229,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2237,7 +2238,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2254,12 +2255,12 @@ namespace P3PHelper.Repositories
                     "Bookworms and deliver the leaf to Bunkichi and Mitsuko.",
                 FemaleAvailability = "Can be found in Bookworms at Iwatodai Strip Mall every day except Monday. Must be rescued " +
                     "from Tartarus between 9/12 and 10/4.",
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2268,7 +2269,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2279,7 +2280,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2290,7 +2291,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2300,7 +2301,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2310,7 +2311,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2319,7 +2320,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2330,7 +2331,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2339,7 +2340,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2348,7 +2349,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Hierophant",
+                        Arcana = "Hierophant",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2357,7 +2358,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["judgment"] = new SLink()
+            Arcana["judgment"] = new SLink()
             {
                 Arcana = "Judgment",
                 // Male
@@ -2366,11 +2367,11 @@ namespace P3PHelper.Repositories
                 MaleHowToUnlock = "Let Ryoji live.",
                 MaleAvailability = "Story related.",
                 MaleRequiresPersona = false,
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2379,7 +2380,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2388,7 +2389,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2397,7 +2398,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2406,7 +2407,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2415,7 +2416,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2424,7 +2425,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2433,7 +2434,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2442,7 +2443,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2451,7 +2452,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2465,12 +2466,12 @@ namespace P3PHelper.Repositories
                 FemaleHowToUnlock = "Let Ryoji live.",
                 FemaleAvailability = "Story related.",
                 FemaleRequiresPersona = false,
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2479,7 +2480,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2488,7 +2489,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2497,7 +2498,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2506,7 +2507,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2515,7 +2516,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2524,7 +2525,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2533,7 +2534,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2542,7 +2543,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2551,7 +2552,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Judgment",
+                        Arcana = "Judgment",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2560,7 +2561,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["justice"] = new SLink()
+            Arcana["justice"] = new SLink()
             {
                 Arcana = "Justice",
                 // Male
@@ -2568,11 +2569,11 @@ namespace P3PHelper.Repositories
                 MaleUnlockDate = "5/7",
                 MaleHowToUnlock = "Unlock Emperor rank 1, then talk to her 4 times.",
                 MaleAvailability = "Can be found in the 2nd Floor Hallway on Tuesday, Thursday, and Saturday.",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2584,7 +2585,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2595,7 +2596,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2605,7 +2606,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2614,7 +2615,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2626,7 +2627,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2636,7 +2637,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2646,7 +2647,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2655,7 +2656,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2666,7 +2667,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2679,12 +2680,12 @@ namespace P3PHelper.Repositories
                 FemaleUnlockDate = "9/1",
                 FemaleHowToUnlock = "Must have level 6 Courage.",
                 FemaleAvailability = "Can be found in the Dormitory Lounge at night on Tuesday and Thursday.",
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2693,7 +2694,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2705,7 +2706,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2718,7 +2719,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2728,7 +2729,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2741,7 +2742,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2752,7 +2753,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2762,7 +2763,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2771,7 +2772,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2780,7 +2781,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Justice",
+                        Arcana = "Justice",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2789,7 +2790,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["lovers"] = new SLink()
+            Arcana["lovers"] = new SLink()
             {
                 Arcana = "Lovers",
                 // Male
@@ -2797,11 +2798,11 @@ namespace P3PHelper.Repositories
                 MaleUnlockDate = "7/25",
                 MaleHowToUnlock = "Charm must be level 6.",
                 MaleAvailability = "Can be found in the Classroom on Monday, Wednesday, Thursday, and Saturday.",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2810,7 +2811,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2821,7 +2822,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2830,7 +2831,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2839,7 +2840,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2849,7 +2850,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2858,7 +2859,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2867,7 +2868,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2876,7 +2877,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2885,7 +2886,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2898,12 +2899,12 @@ namespace P3PHelper.Repositories
                 FemaleUnlockDate = "4/28",
                 FemaleHowToUnlock = "No requirements, just talk to her in the Classroom.",
                 FemaleAvailability = "Can be found in the Classroom on Monday, Wednesday, Thursday, and Saturday.",
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2912,7 +2913,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2922,7 +2923,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2931,7 +2932,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2940,7 +2941,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2949,7 +2950,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2959,7 +2960,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2968,7 +2969,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2977,7 +2978,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2986,7 +2987,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Lovers",
+                        Arcana = "Lovers",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -2995,7 +2996,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["magician"] = new SLink()
+            Arcana["magician"] = new SLink()
             {
                 Arcana = "Magician",
                 // Male
@@ -3003,11 +3004,11 @@ namespace P3PHelper.Repositories
                 MaleUnlockDate = "4/23",
                 MaleHowToUnlock = "SLink related.",
                 MaleAvailability = "Can be found in the Classroom on Tuesday, Thursday, and Friday.",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3016,7 +3017,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3027,7 +3028,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3037,7 +3038,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3046,7 +3047,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3056,7 +3057,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3066,7 +3067,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3077,7 +3078,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3088,7 +3089,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3097,7 +3098,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3110,12 +3111,12 @@ namespace P3PHelper.Repositories
                 FemaleUnlockDate = "4/23",
                 FemaleHowToUnlock = "SLink related.",
                 FemaleAvailability = "Can be found in the Classroom on Tuesday, Wednesday, Thursday.",
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3124,7 +3125,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3134,7 +3135,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3147,7 +3148,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3157,7 +3158,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3166,7 +3167,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3175,7 +3176,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3187,7 +3188,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3200,7 +3201,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3210,7 +3211,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Magician",
+                        Arcana = "Magician",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3219,7 +3220,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["moon"] = new SLink()
+            Arcana["moon"] = new SLink()
             {
                 Arcana = "Moon",
                 // Male
@@ -3227,11 +3228,11 @@ namespace P3PHelper.Repositories
                 MaleUnlockDate = "After reaching Magician rank 4.",
                 MaleHowToUnlock = "Must have Charm at level 3, answer his RankInteractions about food, and then give him an Odd Morsel.",
                 MaleAvailability = "Can be found at Paulownia Mall every day during the day.",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3242,7 +3243,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3251,7 +3252,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3260,7 +3261,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3269,7 +3270,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3278,7 +3279,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3287,7 +3288,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3296,7 +3297,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3305,7 +3306,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3314,7 +3315,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3328,12 +3329,12 @@ namespace P3PHelper.Repositories
                 FemaleHowToUnlock = "Talk to him in the Dormitory Lounge at night.",
                 FemaleAvailability = "",
                 FemaleRequiresPersona = false,
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3342,7 +3343,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3352,7 +3353,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3361,7 +3362,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3370,7 +3371,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3380,7 +3381,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3390,7 +3391,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3401,7 +3402,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3410,7 +3411,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3420,7 +3421,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Moon",
+                        Arcana = "Moon",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3429,7 +3430,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["priestess"] = new SLink()
+            Arcana["priestess"] = new SLink()
             {
                 Arcana = "Priestess",
                 // Male
@@ -3437,11 +3438,11 @@ namespace P3PHelper.Repositories
                 MaleUnlockDate = "6/15",
                 MaleHowToUnlock = "Courage must be level 2 and the Fortune Social Link must be at least rank 1.",
                 MaleAvailability = "Can be found on the school's 2nd floor on Monday, Friday, and Saturday.",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3450,7 +3451,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3459,7 +3460,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3468,7 +3469,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3478,7 +3479,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3488,7 +3489,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3497,7 +3498,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3506,7 +3507,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3515,7 +3516,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3524,7 +3525,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3537,12 +3538,12 @@ namespace P3PHelper.Repositories
                 FemaleUnlockDate = "6/15",
                 FemaleHowToUnlock = "Courage must be level 2 and the Fortune Social Link must be at least rank 1.",
                 FemaleAvailability = "Can be found on the school's 2nd floor on Monday, Thursday, and Saturday.",
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3551,7 +3552,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3560,7 +3561,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3569,7 +3570,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3578,7 +3579,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3588,7 +3589,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3597,7 +3598,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3606,7 +3607,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3615,7 +3616,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3624,7 +3625,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Priestess",
+                        Arcana = "Priestess",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3633,7 +3634,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["star"] = new SLink()
+            Arcana["star"] = new SLink()
             {
                 Arcana = "Star",
                 // Male
@@ -3641,11 +3642,11 @@ namespace P3PHelper.Repositories
                 MaleUnlockDate = "8/9",
                 MaleHowToUnlock = "Talk to Mamoru at Iwatodai Strip Mall during the day after the sports meet.",
                 MaleAvailability = "Can be found at Iwatodai Strip Mall during the day every day except Thursday. ",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3654,7 +3655,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3664,7 +3665,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3673,7 +3674,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3684,7 +3685,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3694,7 +3695,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3703,7 +3704,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3713,7 +3714,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3722,7 +3723,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3733,7 +3734,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3746,12 +3747,12 @@ namespace P3PHelper.Repositories
                 FemaleUnlockDate = "5/9",
                 FemaleHowToUnlock = "Must have Charm at level 4.",
                 FemaleAvailability = "Can be found in the 1F Laboratory Hallway on Monday and Friday.",
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3760,7 +3761,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3770,7 +3771,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3781,7 +3782,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3792,7 +3793,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3802,7 +3803,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3812,7 +3813,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3822,7 +3823,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3832,7 +3833,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3844,7 +3845,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Star",
+                        Arcana = "Star",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3853,7 +3854,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["strength"] = new SLink()
+            Arcana["strength"] = new SLink()
             {
                 Arcana = "Strength",
                 // Male
@@ -3861,11 +3862,11 @@ namespace P3PHelper.Repositories
                 MaleUnlockDate = "4/28",
                 MaleHowToUnlock = "Offer to walk Yuko home on ranks 2 and 3 of the Chariot Social Link.",
                 MaleAvailability = "Can be found outside the Classroom on Wednesday and Saturday.",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3874,7 +3875,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3885,7 +3886,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3897,7 +3898,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3907,7 +3908,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3917,7 +3918,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3926,7 +3927,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3937,7 +3938,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3946,7 +3947,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3956,7 +3957,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3969,12 +3970,12 @@ namespace P3PHelper.Repositories
                 FemaleUnlockDate = "8/15",
                 FemaleHowToUnlock = "Priestess Social Link must be at least rank 1, then give Koromaru the Dog Food from Fuuka.",
                 FemaleAvailability = "Can be found in the Dormitory Lounge every night.",
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3983,7 +3984,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -3992,7 +3993,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4001,7 +4002,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4010,7 +4011,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4020,7 +4021,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4029,7 +4030,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4038,7 +4039,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4048,7 +4049,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4057,7 +4058,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Strength",
+                        Arcana = "Strength",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4066,7 +4067,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["sun"] = new SLink()
+            Arcana["sun"] = new SLink()
             {
                 Arcana = "Sun",
                 // Male
@@ -4077,11 +4078,11 @@ namespace P3PHelper.Repositories
                 "Lounge after he joins SEES to get the Red Fountain Pen, and then return the pen to Akinari.",
                 MaleAvailability = "Can be found at Naganaki Shrine every Sunday during the day.",
                 MaleRequiresPersona = false,
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4090,7 +4091,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4101,7 +4102,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4111,7 +4112,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4121,7 +4122,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4130,7 +4131,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4140,7 +4141,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4149,7 +4150,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4160,7 +4161,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4170,7 +4171,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4186,12 +4187,12 @@ namespace P3PHelper.Repositories
                 "Lounge after he joins SEES to get the Red Fountain Pen, and then return the pen to Akinari.",
                 FemaleAvailability = "Can be found at Naganaki Shrine every Sunday during the day.",
                 FemaleRequiresPersona = false,
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4200,7 +4201,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4211,7 +4212,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4221,7 +4222,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4231,7 +4232,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4240,7 +4241,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4250,7 +4251,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4259,7 +4260,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4270,7 +4271,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4280,7 +4281,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Sun",
+                        Arcana = "Sun",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4289,7 +4290,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["temperance"] = new SLink()
+            Arcana["temperance"] = new SLink()
             {
                 Arcana = "Temperance",
                 // Male
@@ -4299,11 +4300,11 @@ namespace P3PHelper.Repositories
                 "Has to be started before the third Full Moon or the Social Link will be missed.",
                 MaleAvailability = "Can be found in or outside of the Home Economics Room on Tuesday, Wednesday, and " +
                 "Friday.",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4312,7 +4313,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4323,7 +4324,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4334,7 +4335,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4343,7 +4344,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4353,7 +4354,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4364,7 +4365,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4374,7 +4375,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4384,7 +4385,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4394,7 +4395,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4409,12 +4410,12 @@ namespace P3PHelper.Repositories
                 "Has to be started before the third Full Moon or the Social Link will be missed.",
                 FemaleAvailability = "Can be found in or outside of the Home Economics Room on Tuesday, Wednesday, and " +
                 "Friday.",
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4423,7 +4424,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4434,7 +4435,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4444,7 +4445,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4453,7 +4454,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4463,7 +4464,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4474,7 +4475,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4484,7 +4485,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4494,7 +4495,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4503,7 +4504,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Temperance",
+                        Arcana = "Temperance",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4512,7 +4513,7 @@ namespace P3PHelper.Repositories
                     }
                 }
             };
-            SLinkArcana["tower"] = new SLink()
+            Arcana["tower"] = new SLink()
             {
                 Arcana = "Tower",
                 // Male
@@ -4523,12 +4524,12 @@ namespace P3PHelper.Repositories
                 "Give him the orders: Bloody Mary, Margarita, Screwdriver, and Oolong Tea. Go back to Mutatsu after.",
                 MaleAvailability = "Can be found in Club Escapade on the 2nd floor on Thursday, Friday, Saturday," +
                 "and Sunday nights.",
-                MaleRankUps = new ObservableCollection<RankUp>
+                MaleRankUps = new List<RankUp>
                 {
                     new RankUp()
                     {
                         //RankUpId = 1,
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4538,7 +4539,7 @@ namespace P3PHelper.Repositories
                     new RankUp()
                     {
                         //RankUpId = 2,
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4548,7 +4549,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4558,7 +4559,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4568,7 +4569,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4579,7 +4580,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4589,7 +4590,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4599,7 +4600,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4612,7 +4613,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4621,7 +4622,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4637,12 +4638,12 @@ namespace P3PHelper.Repositories
                 "Give him the orders: Bloody Mary, Margarita, Screwdriver, and Oolong Tea. Go back to Mutatsu after.",
                 FemaleAvailability = "Can be found in Club Escapade on the 2nd floor on Thursday, Friday, Saturday, " +
                 "and Sunday nights.",
-                FemaleRankUps = new ObservableCollection<RankUp>
+                FemaleRankUps = new List<RankUp>
                 {
 
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4651,7 +4652,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4661,7 +4662,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4671,7 +4672,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4680,7 +4681,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4691,7 +4692,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4701,7 +4702,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4711,7 +4712,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4724,7 +4725,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4733,7 +4734,7 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        SLinkArcana = "Tower",
+                        Arcana = "Tower",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
                         {
@@ -4745,15 +4746,15 @@ namespace P3PHelper.Repositories
 
             if (App.ProgressRepo.GetRankUps().Count == 0)
             {
-                LoadDb(SLinkArcana);
+                LoadDb(Arcana);
             }
         }
 
         public SLink GetSLink(string arcana)
         {
-            if (SLinkArcana.ContainsKey(arcana))
+            if (Arcana.ContainsKey(arcana.ToLower()))
             {
-                return SLinkArcana[arcana];
+                return Arcana[arcana.ToLower()];
             }
             else
             {
@@ -4768,30 +4769,16 @@ namespace P3PHelper.Repositories
             {
                 foreach (var link in sLinkCollection.Values)
                 {
-                    var arcana = link.Arcana;
-                    App.ProgressRepo.InsertSlink(arcana);
+                    //var arcana = link.Arcana;
+                    App.ProgressRepo.InsertSlink(link);
 
                     foreach (var rankUp in link.MaleRankUps)
-                    {
-                        var arcanaName = rankUp.SLinkArcana;
-                        var rankNumber = rankUp.RankNumber;
-                        var isCompleted = rankUp.IsCompleted;
-
-                        rankUp.RankUpId = id++;
-                        var rankId = rankUp.RankUpId;
-                        
-                        App.ProgressRepo.InsertRankUp(rankId, arcanaName, rankNumber, isCompleted);
+                    {                        
+                        App.ProgressRepo.InsertRankUp(rankUp);
                     }
                     foreach (var rankUp in link.FemaleRankUps)
                     {
-                        var arcanaName = rankUp.SLinkArcana;
-                        var rankNumber = rankUp.RankNumber;
-                        var isCompleted = rankUp.IsCompleted;
-
-                        rankUp.RankUpId = id++;
-                        var rankId = rankUp.RankUpId;
-
-                        App.ProgressRepo.InsertRankUp(rankId, arcanaName, rankNumber, isCompleted);
+                        App.ProgressRepo.InsertRankUp(rankUp);
                     }
                 }
             }

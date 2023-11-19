@@ -7,6 +7,7 @@
     <ContentPage.Resources>
         <converters:SLinkImageConverter x:Key="SLinkImageConverter" />
         <converters:SLinkNeedsPersonaConverter x:Key="SLinkNeedsPersonaConverter" />
+        <converters:IsCompletedBoolConverter x:Key="IsCompletedBoolConverter" />
     </ContentPage.Resources>
     <ScrollView>
         <StackLayout
@@ -17,7 +18,7 @@
                             Margin="-10, -10, -10, 0"
                             CornerRadius="50"/>
                 <Label Grid.Row="0"
-                Style="{StaticResource SLinkArcana}"
+                Style="{StaticResource Arcana}"
                 Text="{Binding Arcana}" />
                 <Image Grid.Row="1"
                 HeightRequest="150"
@@ -130,8 +131,8 @@
                                     Text="{Binding RankNumber, StringFormat='Rank {0}'}" />
                                     <CheckBox 
                                     Grid.Column="1"
-                                    IsChecked="{Binding IsCompleted}" 
-                                    CheckedChanged="IsCompletedMaleCheckBox_CheckedChanged"/>
+                                    IsChecked="{Binding IsCompleted, Converter={StaticResource IsCompletedBoolConverter}}" 
+                                    CheckedChanged="IsCompletedCheckBox_CheckedChanged"/>
                                     <Label
                                     Text="{Binding IsCompleted}" />
                                     <Image

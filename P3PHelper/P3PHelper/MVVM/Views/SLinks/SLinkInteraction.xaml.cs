@@ -83,7 +83,7 @@ public partial class SLinkInteraction : ContentPage
         //var data = App.ProgressRepo.GetRankUps();
         //foreach (var item in  data)
         //{
-        //    Debug.WriteLine($"Arcana: {item.SLinkArcana}, ID: {item.RankUpId}, #: {item.RankNumber}, Bool: {item.IsCompleted}");
+        //    Debug.WriteLine($"Arcana: {item.Arcana}, ID: {item.RankUpId}, #: {item.RankNumber}, Bool: {item.IsCompleted}");
         //}
 
         //if (sender is CheckBox checkBox)
@@ -96,7 +96,7 @@ public partial class SLinkInteraction : ContentPage
         //    {
         //        Debug.WriteLine($"*** BC is rankup ***");
         //        Debug.WriteLine($"*** RankUpId: {rankUp.RankUpId} ***");
-        //        Debug.WriteLine($"*** Arcana: {rankUp.SLinkArcana} ***");
+        //        Debug.WriteLine($"*** Arcana: {rankUp.Arcana} ***");
         //    }
         //}
 

@@ -39,7 +39,7 @@ namespace P3PHelper.Repositories
             try
             {
 
-            return connection.Table<SLink>().Where(s => s.Arcana == arcanaName).FirstOrDefault();
+            return connection.Table<SLink>().Where(s => s.Arcana.ToLower() == arcanaName).FirstOrDefault();
             }
             catch (Exception ex)
             {
@@ -48,11 +48,26 @@ namespace P3PHelper.Repositories
             }
         }
 
-        public void InsertSlink(string arcanaName)
+        public void InsertSlink(SLink link)
         {
             try
             {
-                connection.Insert(new SLink { Arcana = arcanaName });
+                connection.Insert(new SLink 
+                { 
+                    Arcana = link.Arcana,
+                    MaleName = link.MaleName,
+                    FemaleName = link.FemaleName,
+                    MaleUnlockDate = link.MaleUnlockDate,
+                    FemaleUnlockDate = link.FemaleUnlockDate,
+                    MaleHowToUnlock = link.MaleHowToUnlock,
+                    FemaleHowToUnlock = link.FemaleHowToUnlock,
+                    MaleAvailability = link.MaleAvailability,
+                    FemaleAvailability = link.FemaleAvailability,
+                    MaleRequiresPersona = link.MaleRequiresPersona,
+                    FemaleRequiresPersona = link.FemaleRequiresPersona,
+                    MaleRankUps = link.MaleRankUps,
+                    FemaleRankUps = link.FemaleRankUps
+                });
             }
             catch (Exception ex)
             {
@@ -88,17 +103,17 @@ namespace P3PHelper.Repositories
             }
         }
 
-        public void InsertRankUp(int id, string arcanaName, int rankNumber, bool isCompleted)
+        public void InsertRankUp(RankUp rank)
         {
             try
             {
                 connection.Insert(new RankUp
                 { 
-                    //RankUpId = id,
-                    SLinkArcana = arcanaName,
-                    RankNumber = rankNumber,
-                    IsCompleted = isCompleted,
-                    RankInteractions = new List<(string Question, string Answer)>()
+                    RankNumber = rank.RankNumber,
+                    Arcana = rank.Arcana,
+                    IsCompleted = rank.IsCompleted,
+                    RankInteractions = rank.RankInteractions,
+                    RankUpId = rank.RankUpId
                 });
             }
             catch (Exception ex)
@@ -107,14 +122,14 @@ namespace P3PHelper.Repositories
             }
         }
 
-        public void InsertRankUpFemale(string arcanaName, int rankNumber, bool isCompleted)
+        public void InsertRankUpFemale(string arcanaName, int rankNumber, int isCompleted)
         {
             try
             {
                 connection.Insert(new RankUp
                 {
                     //RankUpId = id,
-                    SLinkArcana = arcanaName,
+                    Arcana = arcanaName,
                     RankNumber = rankNumber,
                     IsCompleted = isCompleted
                 });
@@ -125,17 +140,23 @@ namespace P3PHelper.Repositories
             }
         }
         // NO LONGER USING MALE/FEMALE, NEED TO UPDATE THIS
-        public void UpdateRankUp(int rankId, bool isCompleted, bool isMale)
+        public void UpdateRankUp(int rankId, int isCompleted)
         {
             try
             {
-                string columnName = isMale ? "IsCompletedMale" : "IsCompletedFemale";
+                RankUp newData = new RankUp
+                {
+                    RankUpId = rankId,
+                    IsCompleted = isCompleted
+                };
 
-                string query = $"UPDATE RankUp SET {columnName} = @IsCompleted WHERE RankUpId = @RankId";
+                string query = $"UPDATE RankUp SET IsCompleted = @IsCompleted WHERE RankUpId = @RankId";
                 Debug.WriteLine($"Executing query: {query}, IsCompleted: {isCompleted}, RankId: {rankId}");
 
-                connection.Execute($"UPDATE RankUp SET IsCompleted = @IsCompleted WHERE RankUpId = @RankId",
-                    new { IsCompleted = isCompleted, RankId = rankId });
+                //connection.Execute($"UPDATE RankUp SET IsCompleted = @IsCompleted WHERE RankUpId = @RankId",
+                //    new { IsCompleted = newData.IsCompleted, RankUpId = newData.RankUpId });
+
+                connection.Execute($"UPDATE RankUp SET IsCompleted = {newData.IsCompleted} WHERE RankUpId = {newData.RankUpId};");
             }
             catch (Exception ex)
             {

@@ -17,19 +17,29 @@ public partial class MainPage : ContentPage
 
 		BindingContext = sLinks;
 
-		Debug.WriteLine("***** SLinks *****");
-		foreach (var sLink in sLinks)
-		{
-			Debug.WriteLine($"* {sLink.Arcana} *");
-		}
+		//Debug.WriteLine("***** SLinks *****");
+		//foreach (var sLink in sLinks)
+		//{
+		//	Debug.WriteLine($"* {sLink.Arcana} *");
+		//}
 
-		Debug.WriteLine("***** RankUps *****");
-		foreach (var item in ProgressRepo.GetRankUps())
+		//Debug.WriteLine("***** RankUps *****");
+		//foreach (var item in ProgressRepo.GetRankUps())
+		//{
+		//	Debug.WriteLine($"* ID: {item.RankUpId} " +
+		//	$"Arcana: {item.Arcana}, " +
+		//	$"Rank: {item.RankNumber}, " +
+		//	$"Male: {item.IsCompleted} *");
+		//}
+
+		var test = ProgressRepo.GetSLink("Fool");
+		try
 		{
-			Debug.WriteLine($"* ID: {item.RankUpId} " +
-			$"Arcana: {item.SLinkArcana}, " +
-			$"Rank: {item.RankNumber}, " +
-			$"Male: {item.IsCompleted} *");
+			Debug.WriteLine($"****** {test.Arcana} *****");
+		}
+		catch
+		{
+			Debug.WriteLine("***** DID NOT WORK *****");
 		}
 	}
 

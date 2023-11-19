@@ -21,7 +21,7 @@ namespace P3PHelper.Abstractions
         string FemaleAvailability { get; set; }
         bool MaleRequiresPersona { get; set; }
         bool FemaleRequiresPersona { get; set; }
-        ObservableCollection<RankUp> MaleRankUps { get; set; }
-        ObservableCollection<RankUp> FemaleRankUps { get; set; }
+        List<RankUp> MaleRankUps { get; set; }
+        List<RankUp> FemaleRankUps { get; set; }
     }
 }

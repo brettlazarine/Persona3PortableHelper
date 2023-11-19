@@ -2,11 +2,13 @@ using P3PHelper.MVVM.Models;
 using P3PHelper.MVVM.ViewModels;
 using P3PHelper.Repositories;
 using System.Diagnostics;
+using System.Globalization;
 
 namespace P3PHelper.MVVM.Views.SLinks;
 
 public partial class SLinkStory : ContentPage
 {
+    public SLink Link { get; set; }
 	public SLinkStory()
 	{
 		InitializeComponent();
@@ -16,10 +18,14 @@ public partial class SLinkStory : ContentPage
     {
         InitializeComponent();
 
-        var sLinkRepo = DependencyService.Get<SLinkRepository>();
-        var link = sLinkRepo.GetSLink(arcanaName);
+        //var sLinkRepo = DependencyService.Get<SLinkRepository>();
+        //Link = sLinkRepo.GetSLink(arcanaName);
 
-        BindingContext = link;
+        Link = App.ProgressRepo.GetSLink(arcanaName);
+
+        BindingContext = Link;
+
+        Debug.WriteLine($"***** {Link.Arcana}, {Link.MaleName} *****");
     }
 
     #region Male Arrow Tap Events
@@ -70,8 +76,21 @@ public partial class SLinkStory : ContentPage
 
 
 
-    private void IsCompletedMaleCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
+    private void IsCompletedCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
     {
-        
+        var box = sender as CheckBox;
+        var rank = box.BindingContext as RankUp;
+        if (rank != null)
+        {
+            Debug.WriteLine($"*** ID: {rank.RankUpId} ***");
+            Debug.WriteLine("**********");
+            App.ProgressRepo.UpdateRankUp(rank.RankUpId, e.Value == true ? 1 : 0);
+        }
+
+        //var male = Link.MaleRankUps;
+        //foreach (var item in male)
+        //{
+        //    Debug.WriteLine(item.RankUpId);
+        //}
     }
 }

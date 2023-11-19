@@ -12,26 +12,21 @@ namespace P3PHelper.MVVM.Models
 {
     public partial class RankUp : ObservableObject
     {
-        private bool _isCompleted;
-        //private bool _isCompletedFemale;
+        private int _isCompleted;
 
         [PrimaryKey, Unique, AutoIncrement]
         public int RankUpId { get; set; }
 
-        [ForeignKey(nameof(SLink)), Indexed]
-        public string SLinkArcana { get; set; }
+        [ForeignKey(nameof(Arcana)), Indexed]
+        public string Arcana { get; set; }
+
 
         
-        public bool IsCompleted
+        public int IsCompleted
         {
             get { return _isCompleted; }
             set { SetProperty(ref _isCompleted, value); }
         }
-        //public bool IsCompletedFemale
-        //{
-        //    get { return _isCompletedFemale; }
-        //    set { SetProperty(ref _isCompletedFemale, value); }
-        //}
 
         public int RankNumber { get; set; }
 
@@ -49,5 +44,10 @@ namespace P3PHelper.MVVM.Models
         {
             
         }
+    }
+
+    public class RankComplete
+    {
+        public int IsCompleted { get; set; }
     }
 }
