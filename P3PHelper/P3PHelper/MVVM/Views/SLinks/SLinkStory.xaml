@@ -107,6 +107,7 @@
                 </VerticalStackLayout>
 
                 <CollectionView 
+                    x:Name="collectionView"
                 Grid.Row="1"
                 Grid.Column="0"
                 ItemsSource="{Binding MaleRankUps}">

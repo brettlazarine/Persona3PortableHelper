@@ -53,9 +53,9 @@ public partial class SLinkInteraction : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Error", "Error handling MaleDate tap", "OK");
-
             Debug.WriteLine($"*** Error handling MaleDate tap: {ex.Message} ***");
+
+            DisplayAlert("Error", "Error handling MaleDate tap", "OK");
         }
     }
 
@@ -74,9 +74,9 @@ public partial class SLinkInteraction : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Error", "Error handling MaleHow tap", "OK");
-
             Debug.WriteLine($"*** Error handling MaleHow tap: {ex.Message} ***");
+
+            DisplayAlert("Error", "Error handling MaleHow tap", "OK");
         }
     }
 
@@ -95,9 +95,9 @@ public partial class SLinkInteraction : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Error", "Error handling MaleAvailability tap", "OK");
-
             Debug.WriteLine($"*** Error handling MaleAvailability tap: {ex.Message} ***");
+
+            DisplayAlert("Error", "Error handling MaleAvailability tap", "OK");
         }
     }
     #endregion
@@ -107,7 +107,6 @@ public partial class SLinkInteraction : ContentPage
     {
         if (sender is not Image arrow)
         {
-            // If sender is not an Image
             Debug.WriteLine("*** Unexpected sender type in FemaleDate_Tapped ***");
             return;
         }
@@ -119,9 +118,9 @@ public partial class SLinkInteraction : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Error", "Error handling FemaleDate tap", "OK");
-
             Debug.WriteLine($"*** Error handling FemaleDate tap: {ex.Message} ***");
+
+            DisplayAlert("Error", "Error handling FemaleDate tap", "OK");
         }
     }
     private void FemaleHow_Tapped(object sender, TappedEventArgs e)
@@ -139,9 +138,9 @@ public partial class SLinkInteraction : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Error", "Error handling FemaleHow tap", "OK");
-
             Debug.WriteLine($"*** Error handling FemaleHow tap: {ex.Message} ***");
+
+            DisplayAlert("Error", "Error handling FemaleHow tap", "OK");
         }
     }
     private void FemaleAvailability_Tapped(object sender, TappedEventArgs e)
@@ -159,9 +158,9 @@ public partial class SLinkInteraction : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Error", "Error handling FemaleAvailability tap", "OK");
-
             Debug.WriteLine($"*** Error handling FemaleAvailability tap: {ex.Message} ***");
+
+            DisplayAlert("Error", "Error handling FemaleAvailability tap", "OK");
         }
     }
     #endregion
