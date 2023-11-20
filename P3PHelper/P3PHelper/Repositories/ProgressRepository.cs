@@ -30,8 +30,8 @@ namespace P3PHelper.Repositories
                 var SLinks = connection.Table<SLink>().ToList();
                 foreach (var link in SLinks)
                 {
-                    link.MaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == link.Arcana).ToList();
-                    link.FemaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == link.Arcana).ToList();
+                    link.MaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == link.Arcana && r.IsMale == 1).ToList();
+                    link.FemaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == link.Arcana && r.IsMale == 0).ToList();
                 }
                 return SLinks;
             }
@@ -49,11 +49,8 @@ namespace P3PHelper.Repositories
                 //TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
                 //arcanaName = textInfo.ToTitleCase(arcanaName);
                 var link = connection.Table<SLink>().Where(s => s.Arcana == arcanaName).FirstOrDefault();
-                foreach (var rank in link.MaleRankUps)
-                {
-                    link.MaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == arcanaName && r.IsMale).ToList();
-                    link.FemaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == arcanaName && !r.IsMale).ToList();
-                }
+                link.MaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == link.Arcana && r.IsMale == 1).ToList();
+                link.FemaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == link.Arcana && r.IsMale == 0).ToList();
                 
                 return link;
             }
@@ -119,7 +116,7 @@ namespace P3PHelper.Repositories
             }
         }
 
-        public void InsertRankUp(RankUp rank)
+        public void InsertMaleRankUp(RankUp rank)
         {
             try
             {
@@ -129,6 +126,7 @@ namespace P3PHelper.Repositories
                     Arcana = rank.Arcana,
                     IsCompleted = rank.IsCompleted,
                     RankInteractions = rank.RankInteractions,
+                    //FemaleRankInteractions = rank.FemaleRankInteractions,
                     RankUpId = rank.RankUpId, 
                     IsMale = rank.IsMale
                 });
@@ -139,16 +137,20 @@ namespace P3PHelper.Repositories
             }
         }
 
-        public void InsertRankUpFemale(string arcanaName, int rankNumber, int isCompleted)
+        // May be redundant, remove if so when refactorin
+        public void InsertFemaleRankUp(RankUp rank)
         {
             try
             {
                 connection.Insert(new RankUp
                 {
-                    //RankUpId = id,
-                    Arcana = arcanaName,
-                    RankNumber = rankNumber,
-                    IsCompleted = isCompleted
+                    RankNumber = rank.RankNumber,
+                    Arcana = rank.Arcana,
+                    IsCompleted = rank.IsCompleted,
+                    //MaleRankInteractions = rank.MaleRankInteractions,
+                    RankInteractions = rank.RankInteractions,
+                    RankUpId = rank.RankUpId,
+                    IsMale = rank.IsMale
                 });
             }
             catch (Exception ex)

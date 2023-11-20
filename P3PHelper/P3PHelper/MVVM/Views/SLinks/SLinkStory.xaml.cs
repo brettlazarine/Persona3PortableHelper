@@ -26,6 +26,8 @@ public partial class SLinkStory : ContentPage
         arcanaName = textInfo.ToTitleCase(arcanaName);
         Link = App.ProgressRepo.GetSLink(arcanaName);
 
+        var ranks = App.ProgressRepo.GetRankUps();
+
         BindingContext = Link;
 
         //foreach (var rank in Link.MaleRankUps)
