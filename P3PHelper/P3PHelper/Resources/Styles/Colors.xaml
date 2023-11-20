@@ -46,9 +46,9 @@
     <Color x:Key="DarkBlue">#0c0f56</Color>
     <Color x:Key="TertiaryBlue">#0d3bc4</Color>
 
-    <Color x:Key="PrimaryPink">#</Color>
-    <Color x:Key="SecondaryPink">#</Color>
-    <Color x:Key="DarkPink">#</Color>
-    <Color x:Key="TertiaryPink">#</Color>
+    <Color x:Key="PrimaryPink">#f3659b</Color>
+    <Color x:Key="SecondaryPink">#f9b6dd</Color>
+    <Color x:Key="DarkPink">#600109</Color>
+    <Color x:Key="TertiaryPink">#ab3554</Color>
 
 </ResourceDictionary>

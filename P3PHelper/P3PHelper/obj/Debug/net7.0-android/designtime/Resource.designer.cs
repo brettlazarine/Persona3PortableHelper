@@ -8314,34 +8314,37 @@ namespace P3PHelper
 			public const int notify_panel_notification_icon_bg = 2131165409;
 			
 			// aapt resource value: 0x7F0700E2
-			public const int priestess = 2131165410;
+			public const int pinkdownarrow = 2131165410;
 			
 			// aapt resource value: 0x7F0700E3
-			public const int splash = 2131165411;
+			public const int priestess = 2131165411;
 			
 			// aapt resource value: 0x7F0700E4
-			public const int star = 2131165412;
+			public const int splash = 2131165412;
 			
 			// aapt resource value: 0x7F0700E5
-			public const int strength = 2131165413;
+			public const int star = 2131165413;
 			
 			// aapt resource value: 0x7F0700E6
-			public const int sun = 2131165414;
+			public const int strength = 2131165414;
 			
 			// aapt resource value: 0x7F0700E7
-			public const int temperance = 2131165415;
+			public const int sun = 2131165415;
 			
 			// aapt resource value: 0x7F0700E8
-			public const int test_level_drawable = 2131165416;
+			public const int temperance = 2131165416;
 			
 			// aapt resource value: 0x7F0700E9
-			public const int tooltip_frame_dark = 2131165417;
+			public const int test_level_drawable = 2131165417;
 			
 			// aapt resource value: 0x7F0700EA
-			public const int tooltip_frame_light = 2131165418;
+			public const int tooltip_frame_dark = 2131165418;
 			
 			// aapt resource value: 0x7F0700EB
-			public const int tower = 2131165419;
+			public const int tooltip_frame_light = 2131165419;
+			
+			// aapt resource value: 0x7F0700EC
+			public const int tower = 2131165420;
 			
 			static Drawable()
 			{

@@ -83,7 +83,29 @@ public partial class SLinkStory : ContentPage
     }
     #endregion
 
+    #region Female Arrow Tap Events
+    private void FemaleDate_Tapped(object sender, TappedEventArgs e)
+    {
+        var arrow = sender as Image;
 
+        FemaleDate.IsVisible = !FemaleDate.IsVisible;
+        arrow.Rotation = FemaleDate.IsVisible ? 180 : 0;
+    }
+    private void FemaleHow_Tapped(object sender, TappedEventArgs e)
+    {
+        var arrow = sender as Image;
+
+        FemaleHow.IsVisible = !FemaleHow.IsVisible;
+        arrow.Rotation = FemaleHow.IsVisible ? 180 : 0;
+    }
+    private void FemaleAvailability_Tapped(object sender, TappedEventArgs e)
+    {
+        var arrow = sender as Image;
+
+        FemaleAvailability.IsVisible = !FemaleAvailability.IsVisible;
+        arrow.Rotation = FemaleAvailability.IsVisible ? 180 : 0;
+    }
+    #endregion
 
     private void IsCompletedCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
     {
