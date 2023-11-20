@@ -241,7 +241,7 @@
                         </Image>
                         <Label
                             x:Name="FemaleHow"
-                            Style="{StaticResource MalePropertyValues}"
+                            Style="{StaticResource FemalePropertyValues}"
                             IsVisible="false"
                             Text="{Binding FemaleHowToUnlock}" />
                     </VerticalStackLayout>
