@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using P3PHelper.Repositories;
 
 namespace P3PHelper;
 
@@ -19,6 +20,8 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+		builder.Services.AddSingleton<ProgressRepository>();
+		builder.Services.AddSingleton<SLinkRepository>();
 
 		return builder.Build();
 	}

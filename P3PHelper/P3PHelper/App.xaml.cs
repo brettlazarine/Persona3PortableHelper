@@ -6,10 +6,13 @@ namespace P3PHelper;
 
 public partial class App : Application
 {
-	public App()
+	public static ProgressRepository ProgressRepo { get; private set; }
+	public App(ProgressRepository repo)
 	{
 		InitializeComponent();
-        DependencyService.RegisterSingleton<SLinkRepository>(new SLinkRepository());
+		ProgressRepo = repo;
+        SLinkRepository sLinkRepository = new SLinkRepository();
+        DependencyService.RegisterSingleton(sLinkRepository);
 
         MainPage = new AppShell();
 	}

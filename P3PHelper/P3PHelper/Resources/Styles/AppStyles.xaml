@@ -10,7 +10,7 @@
     </Style>
     
     <!--#region SLinkInteraction/Story General-->
-    <Style x:Key="SLinkArcana" TargetType="Label">
+    <Style x:Key="Arcana" TargetType="Label">
         <Setter Property="TextColor" Value="{x:StaticResource PrimaryBlue}" />
         <Setter Property="FontFamily" Value="Regular" />
         <Setter Property="FontAttributes" Value="Bold" />

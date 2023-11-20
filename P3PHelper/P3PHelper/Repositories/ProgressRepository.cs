@@ -1,0 +1,186 @@
+﻿using P3PHelper.MVVM.Models;
+using SQLite;
+using SQLiteNetExtensions.Extensions;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace P3PHelper.Repositories
+{
+    public class ProgressRepository
+    {
+        SQLiteConnection connection;
+
+        public ProgressRepository()
+        {
+            connection = new SQLiteConnection(Constants.DatabasePath, Constants.Flags);
+            connection.CreateTable<SLink>();
+            connection.CreateTable<RankUp>();
+        }
+
+        public List<SLink> GetSLinks()
+        {
+            try
+            {
+                //return connection.GetAllWithChildren<SLink>(recursive: true);
+                var SLinks = connection.Table<SLink>().ToList();
+                foreach (var link in SLinks)
+                {
+                    link.MaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == link.Arcana && r.IsMale == 1).ToList();
+                    link.FemaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == link.Arcana && r.IsMale == 0).ToList();
+                }
+                return SLinks;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
+        public SLink GetSLink(string arcanaName)
+        {
+            try
+            {
+                //TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
+                //arcanaName = textInfo.ToTitleCase(arcanaName);
+                var link = connection.Table<SLink>().Where(s => s.Arcana == arcanaName).FirstOrDefault();
+                link.MaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == link.Arcana && r.IsMale == 1).ToList();
+                link.FemaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == link.Arcana && r.IsMale == 0).ToList();
+                
+                return link;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
+        public void InsertSlink(SLink link)
+        {
+            try
+            {
+                connection.Insert(new SLink 
+                { 
+                    Arcana = link.Arcana,
+                    MaleName = link.MaleName,
+                    FemaleName = link.FemaleName,
+                    MaleUnlockDate = link.MaleUnlockDate,
+                    FemaleUnlockDate = link.FemaleUnlockDate,
+                    MaleHowToUnlock = link.MaleHowToUnlock,
+                    FemaleHowToUnlock = link.FemaleHowToUnlock,
+                    MaleAvailability = link.MaleAvailability,
+                    FemaleAvailability = link.FemaleAvailability,
+                    MaleRequiresPersona = link.MaleRequiresPersona,
+                    FemaleRequiresPersona = link.FemaleRequiresPersona,
+                    MaleRankUps = link.MaleRankUps,
+                    FemaleRankUps = link.FemaleRankUps
+                });
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+        }
+
+        public List<RankUp> GetRankUps()
+        {
+            try
+            {
+
+            return connection.Table<RankUp>().ToList();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
+        public RankUp GetRankUp(int rankUpId)
+        {
+            try
+            {
+
+            return connection.Table<RankUp>().Where(r => r.RankUpId == rankUpId).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
+        public void InsertMaleRankUp(RankUp rank)
+        {
+            try
+            {
+                connection.Insert(new RankUp
+                { 
+                    RankNumber = rank.RankNumber,
+                    Arcana = rank.Arcana,
+                    IsCompleted = rank.IsCompleted,
+                    RankInteractions = rank.RankInteractions,
+                    //FemaleRankInteractions = rank.FemaleRankInteractions,
+                    RankUpId = rank.RankUpId, 
+                    IsMale = rank.IsMale
+                });
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+        }
+
+        // May be redundant, remove if so when refactorin
+        public void InsertFemaleRankUp(RankUp rank)
+        {
+            try
+            {
+                connection.Insert(new RankUp
+                {
+                    RankNumber = rank.RankNumber,
+                    Arcana = rank.Arcana,
+                    IsCompleted = rank.IsCompleted,
+                    //MaleRankInteractions = rank.MaleRankInteractions,
+                    RankInteractions = rank.RankInteractions,
+                    RankUpId = rank.RankUpId,
+                    IsMale = rank.IsMale
+                });
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+        }
+        // NO LONGER USING MALE/FEMALE, NEED TO UPDATE THIS
+        public void UpdateRankUp(int rankId, int isCompleted)
+        {
+            try
+            {
+                RankUp newData = new RankUp
+                {
+                    RankUpId = rankId,
+                    IsCompleted = isCompleted
+                };
+
+                string query = $"UPDATE RankUp SET IsCompleted = @IsCompleted WHERE RankUpId = @RankId";
+                Debug.WriteLine($"Executing query: {query}, IsCompleted: {isCompleted}, RankId: {rankId}");
+
+                //connection.Execute($"UPDATE RankUp SET IsCompleted = @IsCompleted WHERE RankUpId = @RankId",
+                //    new { IsCompleted = newData.IsCompleted, RankUpId = newData.RankUpId });
+
+                connection.Execute($"UPDATE RankUp SET IsCompleted = {newData.IsCompleted} WHERE RankUpId = {newData.RankUpId};");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+        }
+    }
+}
