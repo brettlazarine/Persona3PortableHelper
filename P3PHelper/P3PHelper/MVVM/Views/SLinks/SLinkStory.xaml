@@ -165,13 +165,13 @@
                                                 Padding="10">
                                                     <Label
                                                     Style="{StaticResource MaleQuestionTitle}"
-                                                    Text="Question" />
+                                                    Text="How" />
                                                     <Label
                                                     Style="{StaticResource MaleQuestion}"
                                                     Text="{Binding [0]}" />
                                                     <Label
                                                     Style="{StaticResource MaleResponseTitle}"
-                                                    Text="Response" />
+                                                    Text="Date" />
                                                     <Label
                                                     Style="{StaticResource MaleResponse}"
                                                     Text="{Binding [1]}" />
