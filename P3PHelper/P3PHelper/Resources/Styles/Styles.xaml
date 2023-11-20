@@ -377,9 +377,9 @@
     </Style>
 
     <Style TargetType="Shell" ApplyToDerivedTypes="True">
-        <Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Light=White, Dark=White}" />
-        <Setter Property="Shell.ForegroundColor" Value="{OnPlatform WinUI={StaticResource Primary}, Default={StaticResource PrimaryBlue}}" />
-        <Setter Property="Shell.TitleColor" Value="{AppThemeBinding Light={StaticResource PrimaryBlue}, Dark={StaticResource White}}" />
+        <Setter Property="Shell.BackgroundColor" Value="{StaticResource PrimaryBlue}" />
+        <Setter Property="Shell.ForegroundColor" Value="{OnPlatform WinUI={StaticResource White}, Default={StaticResource White}}" />
+        <Setter Property="Shell.TitleColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource White}}" />
         <Setter Property="Shell.DisabledColor" Value="{AppThemeBinding Light=White, Dark=White}" />
         <Setter Property="Shell.UnselectedColor" Value="{AppThemeBinding Light=White, Dark=White}" />
         <Setter Property="Shell.NavBarHasShadow" Value="False" />
