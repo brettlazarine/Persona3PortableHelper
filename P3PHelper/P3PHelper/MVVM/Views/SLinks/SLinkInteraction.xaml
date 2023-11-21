@@ -9,7 +9,7 @@
         <converters:SLinkNeedsPersonaConverter x:Key="SLinkNeedsPersonaConverter" />
         <converters:IsCompletedBoolConverter x:Key="IsCompletedBoolConverter" />
     </ContentPage.Resources>
-    <ScrollView>
+    <ScrollView x:Name="scrollView">
         <StackLayout
     Padding="10">
             <Label 
@@ -110,7 +110,7 @@
                 Text="{Binding MaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
                 </VerticalStackLayout>
 
-                <CollectionView 
+                <CollectionView x:Name="collectionView"
             Grid.Row="1"
             Grid.Column="0"
             ItemsSource="{Binding MaleRankUps}">
@@ -164,7 +164,7 @@
                                         </CollectionView.ItemsLayout>
                                         <CollectionView.ItemTemplate>
                                             <DataTemplate>
-                                                <VerticalStackLayout
+                                                <VerticalStackLayout AutomationId="CollectionStack"
                                             BackgroundColor="{StaticResource SecondaryBlue}"
                                             Padding="10">
                                                     <Label
@@ -176,7 +176,7 @@
                                                     <Label
                                                 Style="{StaticResource MaleResponseTitle}"
                                                 Text="Response" />
-                                                    <Label
+                                                    <Label AutomationId="ResponseBottom"
                                                 Style="{StaticResource MaleResponse}"
                                                 Text="{Binding [1]}" />
                                                 </VerticalStackLayout>

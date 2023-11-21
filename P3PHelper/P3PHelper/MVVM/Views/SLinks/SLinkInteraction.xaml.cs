@@ -1,4 +1,6 @@
 using Microsoft.Maui;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Platform;
 using P3PHelper.Converters;
 using P3PHelper.MVVM.Models;
 using P3PHelper.MVVM.ViewModels;
@@ -10,6 +12,8 @@ namespace P3PHelper.MVVM.Views.SLinks;
 public partial class SLinkInteraction : ContentPage
 {
     public SLink Link { get; set; }
+    public double TappedY { get; set; }
+    private bool Tapped { get; set; }
     public SLinkInteraction()
 	{
 		InitializeComponent();
@@ -165,7 +169,7 @@ public partial class SLinkInteraction : ContentPage
     }
     #endregion
 
-    private void RankStackArrow_Tapped(object sender, EventArgs e)
+    private async void RankStackArrow_Tapped(object sender, EventArgs e)
     {
         if (sender is not Image arrow)
         {
@@ -191,6 +195,18 @@ public partial class SLinkInteraction : ContentPage
             if (questionResponseStack != null)
             {
                 questionResponseStack.IsVisible = !questionResponseStack.IsVisible;
+                arrow.Rotation = questionResponseStack.IsVisible ? 180 : 0;
+
+                double bottomY = scrollView.ContentSize.Height - scrollView.Height;
+
+                if (questionResponseStack.IsVisible)
+                {
+                    // May require changing in future, would like to stop scrolling when screen is touched by user
+
+                    //while (bottomY <= scrollView.ContentSize.Height - scrollView.Height)
+                    bottomY += 100;
+                    await scrollView.ScrollToAsync(0, bottomY, true);
+                }
             }
             else
             {
@@ -199,9 +215,9 @@ public partial class SLinkInteraction : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Error", "Error handling RankStackArrow tap", "OK");
-
             Debug.WriteLine($"*** Error handling RankStackArrow tap: {ex.Message} ***");
+
+            await DisplayAlert("Error", "Error handling RankStackArrow tap", "OK");
         }
     }
 
@@ -226,9 +242,9 @@ public partial class SLinkInteraction : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Error", "Error updating RankUp", "OK");
-
             Debug.WriteLine($"*** Error updating RankUp: {ex.Message}   ***");
+
+            DisplayAlert("Error", "Error updating RankUp", "OK");
         }
     }
 }
