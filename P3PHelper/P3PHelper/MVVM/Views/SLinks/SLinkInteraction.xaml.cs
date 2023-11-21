@@ -14,6 +14,8 @@ public partial class SLinkInteraction : ContentPage
     public SLink Link { get; set; }
     public double TappedY { get; set; }
     private bool Tapped { get; set; }
+    public double HeightBefore { get; set; }
+    public double HeightAfter { get; set; }
     public SLinkInteraction()
 	{
 		InitializeComponent();
@@ -35,11 +37,11 @@ public partial class SLinkInteraction : ContentPage
 
         BindingContext = Link;
 
-        Debug.WriteLine($"*** Height: {scrollView.Height} ***");
-        Debug.WriteLine($"*** ContentHeight: {scrollView.Content.Height} ***");
+        //Debug.WriteLine($"*** Height: {scrollView.Height} ***");
+        //Debug.WriteLine($"*** ContentHeight: {scrollView.Content.Height} ***");
 
-        var viewHeight = scrollView.Height;
     }
+
     #region Male Arrow Tap Events
     private void MaleDate_Tapped(object sender, TappedEventArgs e)
     {
@@ -170,7 +172,8 @@ public partial class SLinkInteraction : ContentPage
 
     private async void RankStackArrow_Tapped(object sender, EventArgs e)
     {
-        var height = scrollView.Content.Height;
+        //HeightBefore = scrollView.Content.Height;
+        //Debug.WriteLine($"*** Before Height: {HeightBefore} ***");
         if (sender is not Image arrow)
         {
             Debug.WriteLine("*** Unexpected sender type in RankStackArrow_Tapped ***");
@@ -195,6 +198,11 @@ public partial class SLinkInteraction : ContentPage
             if (questionResponseStack != null)
             {
                 questionResponseStack.IsVisible = !questionResponseStack.IsVisible;
+
+
+                
+                
+
                 arrow.Rotation = questionResponseStack.IsVisible ? 180 : 0;
 
                 double bottomY = scrollView.ContentSize.Height - scrollView.Height;
@@ -206,20 +214,37 @@ public partial class SLinkInteraction : ContentPage
                         .FirstOrDefault(child => child.AutomationId == "RankHolder");
                     var txt2 = txt.Text;
 
+
+                    //await Task.Delay(100);
+                    //HeightAfter = scrollView.Content.Height;
+                    //Debug.WriteLine($"*** After Height: {HeightAfter} ***");
+
+                    //if (HeightAfter - HeightBefore > 100)
+                    //{
+                    //    await scrollView.ScrollToAsync(0, bottomY + 100, true);
+                    //}
+
                     // May be something to this, but needs further exploration
                     //if (scrollView.Content.Height >= height)
                     //{
                     //    await scrollView.ScrollToAsync(0, bottomY + 100, true);
                     //}
 
-                    var vm = new InteractionStoryViewModel();
+
                     // May require changing in future, would like to stop scrolling when screen is touched by user
                     // When user testing, ask if they would take as is or no scrolling at all
-                    
+
+                    var vm = new InteractionStoryViewModel();
                     await scrollView.ScrollToAsync(0, vm.AdjustY(txt2, bottomY), true);
+
+                    
 
                     //Debug.WriteLine($"*** Height: {scrollView.Height} ***");
                     //Debug.WriteLine($"*** ContentHeight: {scrollView.Content.Height} ***");
+
+                    // Consider a more complex arrangement, comparing the rank tapped to the current rank?
+
+                   
                 }
             }
             else
@@ -261,25 +286,4 @@ public partial class SLinkInteraction : ContentPage
             DisplayAlert("Error", "Error updating RankUp", "OK");
         }
     }
-
-    //private double AdjustY(string rankNumber, double y)
-    //{
-    //    switch (rankNumber)
-    //    {
-    //        case "Rank 1":
-    //        case "Rank 2":
-    //        case "Rank 3":
-    //        case "Rank 4":
-    //            return y - 10;
-    //        case "Rank 5":
-    //        case "Rank 6":
-    //        case "Rank 7":
-    //        case "Rank 8":
-    //        case "Rank 9":
-    //        case "Rank 10":
-    //            return y + 100;
-    //        default:
-    //            return 0;
-    //    }
-    //}
 }
