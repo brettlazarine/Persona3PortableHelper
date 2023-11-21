@@ -35,11 +35,10 @@ public partial class SLinkInteraction : ContentPage
 
         BindingContext = Link;
 
-        //foreach (var rank in Link.MaleRankUps)
-        {
-            //Debug.WriteLine($"***** {rank.RankInteractions} *****");
+        Debug.WriteLine($"*** Height: {scrollView.Height} ***");
+        Debug.WriteLine($"*** ContentHeight: {scrollView.Content.Height} ***");
 
-        }
+        var viewHeight = scrollView.Height;
     }
     #region Male Arrow Tap Events
     private void MaleDate_Tapped(object sender, TappedEventArgs e)
@@ -171,6 +170,7 @@ public partial class SLinkInteraction : ContentPage
 
     private async void RankStackArrow_Tapped(object sender, EventArgs e)
     {
+        var height = scrollView.Content.Height;
         if (sender is not Image arrow)
         {
             Debug.WriteLine("*** Unexpected sender type in RankStackArrow_Tapped ***");
@@ -201,11 +201,25 @@ public partial class SLinkInteraction : ContentPage
 
                 if (questionResponseStack.IsVisible)
                 {
-                    // May require changing in future, would like to stop scrolling when screen is touched by user
+                    var txt = arrowParent.Children
+                        .OfType<Label>()
+                        .FirstOrDefault(child => child.AutomationId == "RankHolder");
+                    var txt2 = txt.Text;
 
-                    //while (bottomY <= scrollView.ContentSize.Height - scrollView.Height)
-                    bottomY += 100;
-                    await scrollView.ScrollToAsync(0, bottomY, true);
+                    // May be something to this, but needs further exploration
+                    //if (scrollView.Content.Height >= height)
+                    //{
+                    //    await scrollView.ScrollToAsync(0, bottomY + 100, true);
+                    //}
+
+                    var vm = new InteractionStoryViewModel();
+                    // May require changing in future, would like to stop scrolling when screen is touched by user
+                    // When user testing, ask if they would take as is or no scrolling at all
+                    
+                    await scrollView.ScrollToAsync(0, vm.AdjustY(txt2, bottomY), true);
+
+                    //Debug.WriteLine($"*** Height: {scrollView.Height} ***");
+                    //Debug.WriteLine($"*** ContentHeight: {scrollView.Content.Height} ***");
                 }
             }
             else
@@ -247,4 +261,25 @@ public partial class SLinkInteraction : ContentPage
             DisplayAlert("Error", "Error updating RankUp", "OK");
         }
     }
+
+    //private double AdjustY(string rankNumber, double y)
+    //{
+    //    switch (rankNumber)
+    //    {
+    //        case "Rank 1":
+    //        case "Rank 2":
+    //        case "Rank 3":
+    //        case "Rank 4":
+    //            return y - 10;
+    //        case "Rank 5":
+    //        case "Rank 6":
+    //        case "Rank 7":
+    //        case "Rank 8":
+    //        case "Rank 9":
+    //        case "Rank 10":
+    //            return y + 100;
+    //        default:
+    //            return 0;
+    //    }
+    //}
 }

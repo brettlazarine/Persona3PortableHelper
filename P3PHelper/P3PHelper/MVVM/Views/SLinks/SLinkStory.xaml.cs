@@ -167,6 +167,7 @@ public partial class SLinkStory : ContentPage
 
     private async void RankStackArrow_Tapped(object sender, EventArgs e)
     {
+        var height = scrollView.Content.Height;
         if (sender is not Image arrow)
         {
             Debug.WriteLine("*** Unexpected sender type in RankStackArrow_Tapped ***");
@@ -197,11 +198,25 @@ public partial class SLinkStory : ContentPage
 
                 if (questionResponseStack.IsVisible)
                 {
-                    // May require changing in future, would like to stop scrolling when screen is touched by user
+                    var txt = arrowParent.Children
+                        .OfType<Label>()
+                        .FirstOrDefault(child => child.AutomationId == "RankHolder");
+                    var txt2 = txt.Text;
 
-                    //while (bottomY <= scrollView.ContentSize.Height - scrollView.Height)
-                    bottomY += 100;
-                    await scrollView.ScrollToAsync(0, bottomY, true);
+                    // May be something to this, but needs further exploration
+                    //if (scrollView.Content.Height >= height)
+                    //{
+                    //    await scrollView.ScrollToAsync(0, bottomY + 100, true);
+                    //}
+
+                    var vm = new InteractionStoryViewModel();
+                    // May require changing in future, would like to stop scrolling when screen is touched by user
+                    // When user testing, ask if they would take as is or no scrolling at all
+
+                    await scrollView.ScrollToAsync(0, vm.AdjustY(txt2, bottomY), true);
+
+                    //Debug.WriteLine($"*** Height: {scrollView.Height} ***");
+                    //Debug.WriteLine($"*** ContentHeight: {scrollView.Content.Height} ***");
                 }
             }
             else

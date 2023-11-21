@@ -128,7 +128,7 @@
                                 Padding="20, 0"
                                 VerticalOptions="Center"
                                 BackgroundColor="{StaticResource PrimaryBlue}">
-                                    <Label
+                                    <Label x:Name="Rank"
                                     Grid.Column="0"
                                     Style="{StaticResource SLinkQuestion}"
                                     Text="{Binding RankNumber, StringFormat='Rank {0}'}" />
@@ -136,8 +136,10 @@
                                     Grid.Column="1"
                                     IsChecked="{Binding IsCompleted, Converter={StaticResource IsCompletedBoolConverter}}" 
                                     CheckedChanged="IsCompletedCheckBox_CheckedChanged"/>
-                                    <Label
-                                    Text="{Binding IsCompleted}" />
+
+                                    <Label AutomationId="RankHolder" IsVisible="false"
+Text="{Binding Source={x:Reference Rank}, Path=Text}" />
+                                    
                                     <Image
                                     Grid.Column="2"
                                     Style="{StaticResource DownArrow}"
@@ -292,7 +294,7 @@
                                     Padding="20, 0"
                                     VerticalOptions="Center"
                                     BackgroundColor="{StaticResource PrimaryPink}">
-                                    <Label
+                                    <Label x:Name="Rank"
                                         Grid.Column="0"
                                         Style="{StaticResource SLinkQuestion}"
                                         Text="{Binding RankNumber, StringFormat='Rank {0}'}" />
@@ -300,8 +302,10 @@
                                         Grid.Column="1"
                                         IsChecked="{Binding IsCompleted, Converter={StaticResource IsCompletedBoolConverter}}" 
                                         CheckedChanged="IsCompletedCheckBox_CheckedChanged"/>
-                                    <Label
-                                        Text="{Binding IsCompleted}" />
+                                    
+                                    <Label AutomationId="RankHolder" IsVisible="false"
+Text="{Binding Source={x:Reference Rank}, Path=Text}" />
+                                    
                                     <Image
                                         Grid.Column="2"
                                         Style="{StaticResource DownArrow}"
