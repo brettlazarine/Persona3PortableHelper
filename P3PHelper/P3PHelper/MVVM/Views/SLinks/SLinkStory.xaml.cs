@@ -53,9 +53,9 @@ public partial class SLinkStory : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Error", "Error handling MaleDate tap", "OK");
-
             Debug.WriteLine($"*** Error handling MaleDate tap: {ex.Message} ***");
+
+            DisplayAlert("Error", "Error handling MaleDate tap", "OK");
         }
     }
 
@@ -74,9 +74,9 @@ public partial class SLinkStory : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Error", "Error handling MaleHow tap", "OK");
-
             Debug.WriteLine($"*** Error handling MaleHow tap: {ex.Message} ***");
+
+            DisplayAlert("Error", "Error handling MaleHow tap", "OK");
         }
     }
 
@@ -95,9 +95,9 @@ public partial class SLinkStory : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Error", "Error handling MaleAvailability tap", "OK");
-
             Debug.WriteLine($"*** Error handling MaleAvailability tap: {ex.Message} ***");
+
+            DisplayAlert("Error", "Error handling MaleAvailability tap", "OK");
         }
     }
     #endregion
@@ -107,7 +107,6 @@ public partial class SLinkStory : ContentPage
     {
         if (sender is not Image arrow)
         {
-            // If sender is not an Image
             Debug.WriteLine("*** Unexpected sender type in FemaleDate_Tapped ***");
             return;
         }
@@ -119,9 +118,9 @@ public partial class SLinkStory : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Error", "Error handling FemaleDate tap", "OK");
-
             Debug.WriteLine($"*** Error handling FemaleDate tap: {ex.Message} ***");
+
+            DisplayAlert("Error", "Error handling FemaleDate tap", "OK");
         }
     }
     private void FemaleHow_Tapped(object sender, TappedEventArgs e)
@@ -139,9 +138,9 @@ public partial class SLinkStory : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Error", "Error handling FemaleHow tap", "OK");
-
             Debug.WriteLine($"*** Error handling FemaleHow tap: {ex.Message} ***");
+
+            DisplayAlert("Error", "Error handling FemaleHow tap", "OK");
         }
     }
     private void FemaleAvailability_Tapped(object sender, TappedEventArgs e)
@@ -159,15 +158,16 @@ public partial class SLinkStory : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Error", "Error handling FemaleAvailability tap", "OK");
-
             Debug.WriteLine($"*** Error handling FemaleAvailability tap: {ex.Message} ***");
+
+            DisplayAlert("Error", "Error handling FemaleAvailability tap", "OK");
         }
     }
     #endregion
 
-    private void RankStackArrow_Tapped(object sender, EventArgs e)
+    private async void RankStackArrow_Tapped(object sender, EventArgs e)
     {
+        var height = scrollView.Content.Height;
         if (sender is not Image arrow)
         {
             Debug.WriteLine("*** Unexpected sender type in RankStackArrow_Tapped ***");
@@ -192,6 +192,32 @@ public partial class SLinkStory : ContentPage
             if (questionResponseStack != null)
             {
                 questionResponseStack.IsVisible = !questionResponseStack.IsVisible;
+                arrow.Rotation = questionResponseStack.IsVisible ? 180 : 0;
+
+                double bottomY = scrollView.ContentSize.Height - scrollView.Height;
+
+                if (questionResponseStack.IsVisible)
+                {
+                    var txt = arrowParent.Children
+                        .OfType<Label>()
+                        .FirstOrDefault(child => child.AutomationId == "RankHolder");
+                    var txt2 = txt.Text;
+
+                    // May be something to this, but needs further exploration
+                    //if (scrollView.Content.Height >= height)
+                    //{
+                    //    await scrollView.ScrollToAsync(0, bottomY + 100, true);
+                    //}
+
+                    var vm = new InteractionStoryViewModel();
+                    // May require changing in future, would like to stop scrolling when screen is touched by user
+                    // When user testing, ask if they would take as is or no scrolling at all
+
+                    await scrollView.ScrollToAsync(0, vm.AdjustY(txt2, bottomY), true);
+
+                    //Debug.WriteLine($"*** Height: {scrollView.Height} ***");
+                    //Debug.WriteLine($"*** ContentHeight: {scrollView.Content.Height} ***");
+                }
             }
             else
             {
@@ -200,9 +226,9 @@ public partial class SLinkStory : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Error", "Error handling RankStackArrow tap", "OK");
-
             Debug.WriteLine($"*** Error handling RankStackArrow tap: {ex.Message} ***");
+
+            await DisplayAlert("Error", "Error handling RankStackArrow tap", "OK");
         }
     }
 
@@ -228,7 +254,7 @@ public partial class SLinkStory : ContentPage
         catch (Exception ex)
         {
             DisplayAlert("Error", "Error updating RankUp", "OK");
-           
+
             Debug.WriteLine($"*** Error updating RankUp: {ex.Message}   ***");
         }
     }

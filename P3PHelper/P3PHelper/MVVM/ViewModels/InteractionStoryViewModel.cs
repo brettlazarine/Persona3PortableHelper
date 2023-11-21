@@ -25,5 +25,26 @@ namespace P3PHelper.MVVM.ViewModels
             var sLinkRepo = DependencyService.Get<SLinkRepository>();
             SLinkBC = sLinkRepo.GetSLink(arcanaName);
         }
+
+        public double AdjustY(string rankNumber, double y)
+        {
+            switch (rankNumber)
+            {
+                case "Rank 1":
+                case "Rank 2":
+                case "Rank 3":
+                case "Rank 4":
+                    return y - 10;
+                case "Rank 5":
+                case "Rank 6":
+                case "Rank 7":
+                case "Rank 8":
+                case "Rank 9":
+                case "Rank 10":
+                    return y + 100;
+                default:
+                    return 0;
+            }
+        }
     }
 }

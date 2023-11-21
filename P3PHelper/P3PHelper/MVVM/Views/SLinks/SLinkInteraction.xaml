@@ -9,7 +9,7 @@
         <converters:SLinkNeedsPersonaConverter x:Key="SLinkNeedsPersonaConverter" />
         <converters:IsCompletedBoolConverter x:Key="IsCompletedBoolConverter" />
     </ContentPage.Resources>
-    <ScrollView>
+    <ScrollView x:Name="scrollView">
         <StackLayout
     Padding="10">
             <Label 
@@ -110,7 +110,7 @@
                 Text="{Binding MaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
                 </VerticalStackLayout>
 
-                <CollectionView 
+                <CollectionView x:Name="collectionView"
             Grid.Row="1"
             Grid.Column="0"
             ItemsSource="{Binding MaleRankUps}">
@@ -129,7 +129,7 @@
                             Padding="20, 0"
                             VerticalOptions="Center"
                             BackgroundColor="{StaticResource PrimaryBlue}">
-                                    <Label
+                                    <Label x:Name="Rank"
                                 Grid.Column="0"
                                 Style="{StaticResource SLinkQuestion}"
                                 Text="{Binding RankNumber, StringFormat='Rank {0}'}" />
@@ -137,8 +137,10 @@
                                 Grid.Column="1"
                                 IsChecked="{Binding IsCompleted, Converter={StaticResource IsCompletedBoolConverter}}" 
                                 CheckedChanged="IsCompletedCheckBox_CheckedChanged"/>
-                                    <Label
-                                Text="{Binding IsCompleted}" />
+                                    
+                                    <Label AutomationId="RankHolder" IsVisible="false"
+                                        Text="{Binding Source={x:Reference Rank}, Path=Text}" />
+                                    
                                     <Image
                                 Grid.Column="2"
                                 Style="{StaticResource DownArrow}"
@@ -164,7 +166,7 @@
                                         </CollectionView.ItemsLayout>
                                         <CollectionView.ItemTemplate>
                                             <DataTemplate>
-                                                <VerticalStackLayout
+                                                <VerticalStackLayout AutomationId="CollectionStack"
                                             BackgroundColor="{StaticResource SecondaryBlue}"
                                             Padding="10">
                                                     <Label
@@ -176,7 +178,7 @@
                                                     <Label
                                                 Style="{StaticResource MaleResponseTitle}"
                                                 Text="Response" />
-                                                    <Label
+                                                    <Label AutomationId="ResponseBottom"
                                                 Style="{StaticResource MaleResponse}"
                                                 Text="{Binding [1]}" />
                                                 </VerticalStackLayout>
@@ -293,7 +295,7 @@
                                 Padding="20, 0"
                                 VerticalOptions="Center"
                                 BackgroundColor="{StaticResource PrimaryPink}">
-                                    <Label
+                                    <Label x:Name="Rank"
                                     Grid.Column="0"
                                     Style="{StaticResource SLinkQuestion}"
                                     Text="{Binding RankNumber, StringFormat='Rank {0}'}" />
@@ -301,8 +303,10 @@
                                     Grid.Column="1"
                                     IsChecked="{Binding IsCompleted, Converter={StaticResource IsCompletedBoolConverter}}" 
                                     CheckedChanged="IsCompletedCheckBox_CheckedChanged"/>
-                                    <Label
-                                    Text="{Binding IsCompleted}" />
+                                    
+                                    <Label AutomationId="RankHolder" IsVisible="false"
+    Text="{Binding Source={x:Reference Rank}, Path=Text}" />
+                                    
                                     <Image
                                     Grid.Column="2"
                                     Style="{StaticResource DownArrow}"
