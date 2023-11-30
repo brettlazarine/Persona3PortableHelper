@@ -14,7 +14,7 @@ namespace P3PHelper.MVVM.ViewModels
     {
         public List<String> ScrollRanks = new()
         {
-            "Rank 7", "Rank 8", "Rank 9", "Rank 10"
+            "Rank 8", "Rank 9", "Rank 10"
         };
         [ObservableProperty]
         public SLink _sLinkBC;
@@ -32,7 +32,7 @@ namespace P3PHelper.MVVM.ViewModels
 
         public double AdjustY(double y)
         {
-            return y + 100;
+            return y + 1000;
         }
     }
 }
