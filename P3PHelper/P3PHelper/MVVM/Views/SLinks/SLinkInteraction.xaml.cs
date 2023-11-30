@@ -1,10 +1,5 @@
-using Microsoft.Maui;
-using Microsoft.Maui.Controls;
-using Microsoft.Maui.Platform;
-using P3PHelper.Converters;
 using P3PHelper.MVVM.Models;
 using P3PHelper.MVVM.ViewModels;
-using P3PHelper.Repositories;
 using System.Diagnostics;
 using System.Globalization;
 
@@ -12,10 +7,6 @@ namespace P3PHelper.MVVM.Views.SLinks;
 public partial class SLinkInteraction : ContentPage
 {
     public SLink Link { get; set; }
-    public double TappedY { get; set; }
-    private bool Tapped { get; set; }
-    public double HeightBefore { get; set; }
-    public double HeightAfter { get; set; }
     public SLinkInteraction()
 	{
 		InitializeComponent();
@@ -25,21 +16,11 @@ public partial class SLinkInteraction : ContentPage
     {
         InitializeComponent();
 
-        var sLinkRepo = App.ProgressRepo.GetSLinks();
-
-        //var sLinkRepo = DependencyService.Get<SLinkRepository>();
-        //Link = sLinkRepo.GetSLink(arcanaName);
         TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
         arcanaName = textInfo.ToTitleCase(arcanaName);
+
         Link = App.ProgressRepo.GetSLink(arcanaName);
-
-        var ranks = App.ProgressRepo.GetRankUps();
-
         BindingContext = Link;
-
-        //Debug.WriteLine($"*** Height: {scrollView.Height} ***");
-        //Debug.WriteLine($"*** ContentHeight: {scrollView.Content.Height} ***");
-
     }
 
     #region Male Arrow Tap Events
@@ -172,8 +153,6 @@ public partial class SLinkInteraction : ContentPage
 
     private async void RankStackArrow_Tapped(object sender, EventArgs e)
     {
-        //HeightBefore = scrollView.Content.Height;
-        //Debug.WriteLine($"*** Before Height: {HeightBefore} ***");
         if (sender is not Image arrow)
         {
             Debug.WriteLine("*** Unexpected sender type in RankStackArrow_Tapped ***");
@@ -198,11 +177,6 @@ public partial class SLinkInteraction : ContentPage
             if (questionResponseStack != null)
             {
                 questionResponseStack.IsVisible = !questionResponseStack.IsVisible;
-
-
-                
-                
-
                 arrow.Rotation = questionResponseStack.IsVisible ? 180 : 0;
 
                 double bottomY = scrollView.ContentSize.Height - scrollView.Height;
@@ -212,42 +186,15 @@ public partial class SLinkInteraction : ContentPage
                     var txt = arrowParent.Children
                         .OfType<Label>()
                         .FirstOrDefault(child => child.AutomationId == "RankHolder");
+
                     var txt2 = txt.Text;
 
-
-                    //await Task.Delay(100);
-                    //HeightAfter = scrollView.Content.Height;
-                    //Debug.WriteLine($"*** After Height: {HeightAfter} ***");
-
-                    //if (HeightAfter - HeightBefore > 100)
-                    //{
-                    //    await scrollView.ScrollToAsync(0, bottomY + 100, true);
-                    //}
-
-                    // May be something to this, but needs further exploration
-                    //if (scrollView.Content.Height >= height)
-                    //{
-                    //    await scrollView.ScrollToAsync(0, bottomY + 100, true);
-                    //}
-
-
-                    // May require changing in future, would like to stop scrolling when screen is touched by user
-                    // When user testing, ask if they would take as is or no scrolling at all
-
                     var vm = new InteractionStoryViewModel();
+
                     if (vm.ScrollRanks.Contains(txt2))
                     {
                         await scrollView.ScrollToAsync(0, vm.AdjustY(bottomY), true);
                     }
-
-
-
-                    //Debug.WriteLine($"*** Height: {scrollView.Height} ***");
-                    //Debug.WriteLine($"*** ContentHeight: {scrollView.Content.Height} ***");
-
-                    // Consider a more complex arrangement, comparing the rank tapped to the current rank?
-
-
                 }
             }
             else

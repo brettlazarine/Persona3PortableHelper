@@ -1,12 +1,6 @@
 ﻿using P3PHelper.Abstractions;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace P3PHelper.MVVM.Models
 {
@@ -39,10 +33,6 @@ namespace P3PHelper.MVVM.Models
         public List<RankUp> MaleRankUps { get; set; }
         [OneToMany(CascadeOperations = CascadeOperation.All)]
         public List<RankUp> FemaleRankUps { get; set; }
-
-        //[OneToMany(CascadeOperations = CascadeOperation.All)]
-        //public List<RankUp> Ranks { get; set; }
-
 
         public SLink()
         {

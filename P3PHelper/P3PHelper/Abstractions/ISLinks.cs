@@ -1,10 +1,4 @@
 ﻿using P3PHelper.MVVM.Models;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace P3PHelper.Abstractions
 {
@@ -23,6 +17,5 @@ namespace P3PHelper.Abstractions
         bool FemaleRequiresPersona { get; set; }
         List<RankUp> MaleRankUps { get; set; }
         List<RankUp> FemaleRankUps { get; set; }
-        //public List<RankUp> Ranks { get; set; }
     }
 }
