@@ -235,16 +235,19 @@ public partial class SLinkInteraction : ContentPage
                     // When user testing, ask if they would take as is or no scrolling at all
 
                     var vm = new InteractionStoryViewModel();
-                    await scrollView.ScrollToAsync(0, vm.AdjustY(txt2, bottomY), true);
+                    if (vm.ScrollRanks.Contains(txt2))
+                    {
+                        await scrollView.ScrollToAsync(0, vm.AdjustY(bottomY), true);
+                    }
 
-                    
+
 
                     //Debug.WriteLine($"*** Height: {scrollView.Height} ***");
                     //Debug.WriteLine($"*** ContentHeight: {scrollView.Content.Height} ***");
 
                     // Consider a more complex arrangement, comparing the rank tapped to the current rank?
 
-                   
+
                 }
             }
             else

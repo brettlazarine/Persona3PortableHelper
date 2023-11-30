@@ -12,6 +12,10 @@ namespace P3PHelper.MVVM.ViewModels
 {
     public partial class InteractionStoryViewModel : ObservableObject
     {
+        public List<String> ScrollRanks = new()
+        {
+            "Rank 7", "Rank 8", "Rank 9", "Rank 10"
+        };
         [ObservableProperty]
         public SLink _sLinkBC;
         [ObservableProperty]
@@ -26,25 +30,9 @@ namespace P3PHelper.MVVM.ViewModels
             SLinkBC = sLinkRepo.GetSLink(arcanaName);
         }
 
-        public double AdjustY(string rankNumber, double y)
+        public double AdjustY(double y)
         {
-            switch (rankNumber)
-            {
-                case "Rank 1":
-                case "Rank 2":
-                case "Rank 3":
-                case "Rank 4":
-                    return y - 10;
-                case "Rank 5":
-                case "Rank 6":
-                case "Rank 7":
-                case "Rank 8":
-                case "Rank 9":
-                case "Rank 10":
-                    return y + 100;
-                default:
-                    return 0;
-            }
+            return y + 100;
         }
     }
 }
