@@ -9,6 +9,7 @@ namespace P3PHelper.MVVM.Views.SLinks;
 public partial class SLinkStory : ContentPage
 {
     public SLink Link { get; set; }
+    
 	public SLinkStory()
 	{
 		InitializeComponent();
@@ -212,8 +213,10 @@ public partial class SLinkStory : ContentPage
                     var vm = new InteractionStoryViewModel();
                     // May require changing in future, would like to stop scrolling when screen is touched by user
                     // When user testing, ask if they would take as is or no scrolling at all
-
-                    await scrollView.ScrollToAsync(0, vm.AdjustY(txt2, bottomY), true);
+                    if (vm.ScrollRanks.Contains(txt2))
+                    {
+                        await scrollView.ScrollToAsync(0, vm.AdjustY(bottomY), true);
+                    }
 
                     //Debug.WriteLine($"*** Height: {scrollView.Height} ***");
                     //Debug.WriteLine($"*** ContentHeight: {scrollView.Content.Height} ***");
