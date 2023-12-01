@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="P3PHelper.MVVM.Views.SocialLinksView"
-             Title="">
+             x:Class="P3PHelper.MVVM.Views.SocialLinksView">
 
     <ScrollView
         Margin="10">
@@ -26,17 +25,19 @@
                 </Label.Shadow>
             </Label>
 
-            <CollectionView 
-                 
+            <CollectionView
                 ItemsSource="{Binding TapInfo}"
                 VerticalOptions="FillAndExpand">
+
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Vertical" Span="2" />
                 </CollectionView.ItemsLayout>
+
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <VerticalStackLayout
                             Padding="0,10">
+
                             <ImageButton
                                 HeightRequest="150"
                                 AutomationId="{Binding ArcanaName}"
@@ -50,312 +51,6 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            
-            <!--Row 1-->
-            <!--<Grid
-                ColumnDefinitions="*, *, *, *">
-
-                <VerticalStackLayout
-                    Grid.Column="0">
-                    
-
-                    <ImageButton
-                        Source="aeon" 
-                        HeightRequest="100" 
-                        Clicked="ImageButton_Clicked"/>
-                    <Label
-                        Grid.Row="1"
-                        Text="Aeon" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-                <VerticalStackLayout x:Name="Chariot"
-                    Grid.Column="1">
-                    <VerticalStackLayout.GestureRecognizers>
-                        <TapGestureRecognizer
-                            Tapped="TapGestureRecognizer_Tapped" />
-                    </VerticalStackLayout.GestureRecognizers>
-
-                    <Image
-                        Source="chariot" 
-                        HeightRequest="100" />
-                    <Label
-                        Text="Chariot" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-                <VerticalStackLayout x:Name="Death"
-                    Grid.Column="2">
-                    <VerticalStackLayout.GestureRecognizers>
-                        <TapGestureRecognizer
-                            Tapped="TapGestureRecognizer_Tapped" />
-                    </VerticalStackLayout.GestureRecognizers>
-                    
-                    <Image
-                        Source="death" 
-                        HeightRequest="100" />
-                    <Label
-                        Text="Death" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-                <VerticalStackLayout
-                    Grid.Column="3">
-                    <VerticalStackLayout.GestureRecognizers>
-                        <TapGestureRecognizer
-                            Tapped="TapGestureRecognizer_Tapped" />
-                    </VerticalStackLayout.GestureRecognizers>
-                    
-                    <Image
-                        Source="devil" 
-                        HeightRequest="100" />
-                    <Label
-                        Text="Devil" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-            </Grid>
-            --><!--Row 2--><!--
-            <Grid
-                ColumnDefinitions="*, *, *, *">
-
-                <VerticalStackLayout
-                    Grid.Column="0">
-
-                    <ImageButton
-                        Source="emperor" 
-                        HeightRequest="100"  
-                        Clicked="Interaction_Clicked" />
-                    <Label
-                        Text="Emperor" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-                <VerticalStackLayout
-                    Grid.Column="1">
-
-                    <ImageButton
-                        Source="empress" 
-                        HeightRequest="100"  
-                        Clicked="Interaction_Clicked" />
-                    <Label
-                        Text="Empress" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-                <VerticalStackLayout
-                    Grid.Column="2">
-
-                    <ImageButton
-                        Source="fool" 
-                        HeightRequest="100"  
-                        Clicked="Story_Clicked" />
-                    <Label
-                        Text="Fool" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-                <VerticalStackLayout
-                    Grid.Column="3">
-
-                    <ImageButton
-                        Source="fortune" 
-                        HeightRequest="100"  
-                        Clicked="Interaction_Clicked" />
-                    <Label
-                        Text="Fortune" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-            </Grid>
-            --><!--Row 3--><!--
-            <Grid
-                ColumnDefinitions="*, *, *, *">
-
-                <VerticalStackLayout
-                    Grid.Column="0">
-
-                    <ImageButton
-                        Source="hangedman" 
-                        HeightRequest="100"  
-                        Clicked="Interaction_Clicked" />
-                    <Label
-                        Text="Hanged Man" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-                <VerticalStackLayout
-                    Grid.Column="1">
-
-                    <ImageButton
-                        Source="hermit" 
-                        HeightRequest="100"  
-                        Clicked="Interaction_Clicked" />
-                    <Label
-                        Text="Hermit" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-                <VerticalStackLayout
-                    Grid.Column="2">
-
-                    <ImageButton
-                        Source="hierophant" 
-                        HeightRequest="100"  
-                        Clicked="Interaction_Clicked" />
-                    <Label
-                        Text="Hierophant" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-                <VerticalStackLayout
-                    Grid.Column="3">
-
-                    <ImageButton
-                        Source="judgment" 
-                        HeightRequest="100"  
-                        Clicked="Story_Clicked" />
-                    <Label
-                        Text="Judgment" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-            </Grid>
-            --><!--Row 4--><!--
-            <Grid
-                ColumnDefinitions="*, *, *, *">
-
-                <VerticalStackLayout
-                    Grid.Column="0">
-
-                    <ImageButton
-                        Source="justice" 
-                        HeightRequest="100"  
-                        Clicked="Interaction_Clicked" />
-                    <Label
-                        Text="Justice" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-                <VerticalStackLayout
-                    Grid.Column="1">
-
-                    <ImageButton
-                        Source="lovers" 
-                        HeightRequest="100"  
-                        Clicked="Interaction_Clicked" />
-                    <Label
-                        Text="Lovers" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-                <VerticalStackLayout
-                    Grid.Column="2">
-
-                    <ImageButton
-                        Source="magician" 
-                        HeightRequest="100"  
-                        Clicked="Interaction_Clicked" />
-                    <Label
-                        Text="Magician" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-                <VerticalStackLayout
-                    Grid.Column="3">
-
-                    <ImageButton
-                        Source="moon" 
-                        HeightRequest="100"  
-                        Clicked="Interaction_Clicked" />
-                    <Label
-                        Text="Moon" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-            </Grid>
-            --><!--Row 5--><!--
-            <Grid
-                ColumnDefinitions="*, *, *, *">
-
-                <VerticalStackLayout
-                    Grid.Column="0">
-
-                    <ImageButton
-                        Source="priestess" 
-                        HeightRequest="100"  
-                        Clicked="Interaction_Clicked" />
-                    <Label
-                        Text="Priestess" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-                <VerticalStackLayout
-                    Grid.Column="1">
-
-                    <ImageButton
-                        Source="star" 
-                        HeightRequest="100"  
-                        Clicked="Interaction_Clicked" />
-                    <Label
-                        Text="Star" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-                <VerticalStackLayout
-                    Grid.Column="2">
-
-                    <ImageButton
-                        Source="strength" 
-                        HeightRequest="100"  
-                        Clicked="Interaction_Clicked" />
-                    <Label
-                        Text="Strength" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-                <VerticalStackLayout
-                    Grid.Column="3">
-
-                    <ImageButton
-                        Source="sun" 
-                        HeightRequest="100"  
-                        Clicked="Interaction_Clicked" />
-                    <Label
-                        Text="Sun" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-            </Grid>
-            --><!--Row 6--><!--
-            <Grid
-                ColumnDefinitions="*, *, *, *">
-
-                <VerticalStackLayout
-                    Grid.Column="1">
-
-                    <ImageButton
-                        Source="temperance" 
-                        HeightRequest="100"  
-                        Clicked="Interaction_Clicked" />
-                    <Label
-                        Text="Temperance" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-                <VerticalStackLayout
-                    Grid.Column="2">
-
-                    <ImageButton
-                        Source="tower" 
-                        HeightRequest="100"  
-                        Clicked="Interaction_Clicked" />
-                    <Label
-                        Text="Tower" 
-                        HorizontalOptions="Center"
-                        Style="{StaticResource ArcanaLabel}" />
-                </VerticalStackLayout>
-            </Grid>-->
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

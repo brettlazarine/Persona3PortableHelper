@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,7 +29,6 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
-                        //IsMale = 1,
                         Arcana = "Aeon",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -38,7 +38,6 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        //IsMale = 1,
                         Arcana = "Aeon",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -48,7 +47,6 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        //IsMale = 1,
                         Arcana = "Aeon",
                         RankNumber = 3,
                         RankInteractions = new List<(string, string)>
@@ -58,7 +56,6 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        //IsMale = 1,
                         Arcana = "Aeon",
                         RankNumber = 4,
                         RankInteractions = new List<(string, string)>
@@ -68,7 +65,6 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        //IsMale = 1,
                         Arcana = "Aeon",
                         RankNumber = 5,
                         RankInteractions = new List<(string, string)>
@@ -78,7 +74,6 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        //IsMale = 1,
                         Arcana = "Aeon",
                         RankNumber = 6,
                         RankInteractions = new List<(string, string)>
@@ -88,7 +83,6 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        //IsMale = 1,
                         Arcana = "Aeon",
                         RankNumber = 7,
                         RankInteractions = new List<(string, string)>
@@ -98,7 +92,6 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        //IsMale = 1,
                         Arcana = "Aeon",
                         RankNumber = 8,
                         RankInteractions = new List<(string, string)>
@@ -108,7 +101,6 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        //IsMale = 1,
                         Arcana = "Aeon",
                         RankNumber = 9,
                         RankInteractions = new List<(string, string)>
@@ -118,7 +110,6 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        //IsMale = 1,
                         Arcana = "Aeon",
                         RankNumber = 10,
                         RankInteractions = new List<(string, string)>
@@ -4745,7 +4736,6 @@ namespace P3PHelper.Repositories
                 {
                     new RankUp()
                     {
-                        //RankUpId = 1,
                         Arcana = "Tower",
                         RankNumber = 1,
                         RankInteractions = new List<(string, string)>
@@ -4755,7 +4745,6 @@ namespace P3PHelper.Repositories
                     },
                     new RankUp()
                     {
-                        //RankUpId = 2,
                         Arcana = "Tower",
                         RankNumber = 2,
                         RankInteractions = new List<(string, string)>
@@ -4977,38 +4966,33 @@ namespace P3PHelper.Repositories
             }
         }
 
-        // May be redundant with the swap to SQLite
-        public SLink GetSLink(string arcana)
+        static void LoadDb(Dictionary<string, SLink> sLinkCollection)
         {
-            if (Arcana.ContainsKey(arcana.ToLower()))
+            try
             {
-                return Arcana[arcana.ToLower()];
-            }
-            else
-            {
-                return null;
-            }
-        }
-
-        public void LoadDb(Dictionary<string, SLink> sLinkCollection)
-        {
-            //var id = 1;
-            if (App.ProgressRepo.GetRankUps().Count == 0)
-            {
-                foreach (var link in sLinkCollection.Values)
+                if (App.ProgressRepo.GetRankUps().Count == 0)
                 {
-                    //var arcana = link.Arcana;
-                    App.ProgressRepo.InsertSlink(link);
-
-                    foreach (var rankUp in link.MaleRankUps)
-                    {                        
-                        App.ProgressRepo.InsertMaleRankUp(rankUp);
-                    }
-                    foreach (var rankUp in link.FemaleRankUps)
+                    foreach (var link in sLinkCollection.Values)
                     {
-                        App.ProgressRepo.InsertFemaleRankUp(rankUp);
+                        // Insert SLink
+                        App.ProgressRepo.InsertSLink(link);
+                        // Insert male Ranks
+                        foreach (var rankUp in link.MaleRankUps)
+                        {                        
+                            App.ProgressRepo.InsertMaleRankUp(rankUp);
+                        }
+                        // Insert female Ranks
+                        foreach (var rankUp in link.FemaleRankUps)
+                        {
+                            App.ProgressRepo.InsertFemaleRankUp(rankUp);
+                        }
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** LoadDb: " + ex.Message + " ***");
+                return;
             }
         }
     }
