@@ -11,6 +11,7 @@ public partial class App : Application
 	{
 		InitializeComponent();
 		ProgressRepo = repo;
+
         SLinkRepository sLinkRepository = new SLinkRepository();
         DependencyService.RegisterSingleton(sLinkRepository);
 

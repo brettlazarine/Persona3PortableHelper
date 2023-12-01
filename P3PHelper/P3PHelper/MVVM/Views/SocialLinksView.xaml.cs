@@ -14,6 +14,7 @@ public partial class SocialLinksView : ContentPage
         "fool",
         "judgment"
     };
+
 	public SocialLinksView()
 	{
 		InitializeComponent();
@@ -22,21 +23,35 @@ public partial class SocialLinksView : ContentPage
 
     public async void NavigateToSLink(object sender, EventArgs e)
     {
-        ArcanaName = (sender as ImageButton).AutomationId.ToString().ToLower();
-        //Debug.WriteLine("********* " + ArcanaName);
-        // The hangedman nav causing errors, this will work but is not clean
-        // Consider trying source again when refactoring
-        if (ArcanaName == "hanged man")
+        if (sender is not ImageButton)
         {
-            await Navigation.PushAsync(new SLinkInteraction("hangedman"));
+            Debug.WriteLine("*** Unexpected sender type in NavigateToSLink ***");
+            return;
         }
-        else if (StorySLinks.Contains(ArcanaName))
+
+        try
         {
-            await Navigation.PushAsync(new SLinkStory(ArcanaName));
+            ArcanaName = (sender as ImageButton).AutomationId.ToString().ToLower();
+            // The hangedman nav causing errors, this will work but is not clean
+            // Consider trying source again when refactoring
+            if (ArcanaName == "hanged man")
+            {
+                await Navigation.PushAsync(new SLinkInteraction("hangedman"));
+            }
+            else if (StorySLinks.Contains(ArcanaName))
+            {
+                await Navigation.PushAsync(new SLinkStory(ArcanaName));
+            }
+            else
+            {
+                await Navigation.PushAsync(new SLinkInteraction(ArcanaName));
+            }
         }
-        else
+        catch (Exception ex)
         {
-            await Navigation.PushAsync(new SLinkInteraction(ArcanaName));
+            Debug.WriteLine($"*** Error handling SLink navigation: {ex.Message} ***");
+            await DisplayAlert("Error", "Error navigating to SLink", "OK");
         }
+        
     }
 }

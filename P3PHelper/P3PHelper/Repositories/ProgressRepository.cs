@@ -26,7 +26,6 @@ namespace P3PHelper.Repositories
         {
             try
             {
-                //return connection.GetAllWithChildren<SLink>(recursive: true);
                 var SLinks = connection.Table<SLink>().ToList();
                 foreach (var link in SLinks)
                 {
@@ -37,7 +36,7 @@ namespace P3PHelper.Repositories
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.Message);
+                Debug.WriteLine("*** GetSLinks: " + ex.Message + " ***");
                 return null;
             }
         }
@@ -46,8 +45,6 @@ namespace P3PHelper.Repositories
         {
             try
             {
-                //TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
-                //arcanaName = textInfo.ToTitleCase(arcanaName);
                 var link = connection.Table<SLink>().Where(s => s.Arcana == arcanaName).FirstOrDefault();
                 link.MaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == link.Arcana && r.IsMale == 1).ToList();
                 link.FemaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == link.Arcana && r.IsMale == 0).ToList();
@@ -56,12 +53,12 @@ namespace P3PHelper.Repositories
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.Message);
+                Debug.WriteLine("*** GetSLink: " + ex.Message + " ***");
                 return null;
             }
         }
 
-        public void InsertSlink(SLink link)
+        public void InsertSLink(SLink link)
         {
             try
             {
@@ -84,7 +81,7 @@ namespace P3PHelper.Repositories
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.Message);
+                Debug.WriteLine("*** InsertSLink: " + ex.Message + " ***");
             }
         }
 
@@ -92,12 +89,11 @@ namespace P3PHelper.Repositories
         {
             try
             {
-
             return connection.Table<RankUp>().ToList();
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.Message);
+                Debug.WriteLine("*** GetRankUps: " + ex.Message + " ***");
                 return null;
             }
         }
@@ -106,12 +102,11 @@ namespace P3PHelper.Repositories
         {
             try
             {
-
             return connection.Table<RankUp>().Where(r => r.RankUpId == rankUpId).FirstOrDefault();
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.Message);
+                Debug.WriteLine("*** GetRankUp: " + ex.Message + " ***");
                 return null;
             }
         }
@@ -126,14 +121,13 @@ namespace P3PHelper.Repositories
                     Arcana = rank.Arcana,
                     IsCompleted = rank.IsCompleted,
                     RankInteractions = rank.RankInteractions,
-                    //FemaleRankInteractions = rank.FemaleRankInteractions,
                     RankUpId = rank.RankUpId, 
                     IsMale = rank.IsMale
                 });
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.Message);
+                Debug.WriteLine("*** InsertMaleRankUp: " + ex.Message + " ***");
             }
         }
 
@@ -147,7 +141,6 @@ namespace P3PHelper.Repositories
                     RankNumber = rank.RankNumber,
                     Arcana = rank.Arcana,
                     IsCompleted = rank.IsCompleted,
-                    //MaleRankInteractions = rank.MaleRankInteractions,
                     RankInteractions = rank.RankInteractions,
                     RankUpId = rank.RankUpId,
                     IsMale = rank.IsMale
@@ -155,10 +148,10 @@ namespace P3PHelper.Repositories
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.Message);
+                Debug.WriteLine("*** InsertFemaleRankUp: " + ex.Message + " ***");
             }
         }
-        // NO LONGER USING MALE/FEMALE, NEED TO UPDATE THIS
+        
         public void UpdateRankUp(int rankId, int isCompleted)
         {
             try
@@ -169,17 +162,11 @@ namespace P3PHelper.Repositories
                     IsCompleted = isCompleted
                 };
 
-                string query = $"UPDATE RankUp SET IsCompleted = @IsCompleted WHERE RankUpId = @RankId";
-                Debug.WriteLine($"Executing query: {query}, IsCompleted: {isCompleted}, RankId: {rankId}");
-
-                //connection.Execute($"UPDATE RankUp SET IsCompleted = @IsCompleted WHERE RankUpId = @RankId",
-                //    new { IsCompleted = newData.IsCompleted, RankUpId = newData.RankUpId });
-
                 connection.Execute($"UPDATE RankUp SET IsCompleted = {newData.IsCompleted} WHERE RankUpId = {newData.RankUpId};");
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.Message);
+                Debug.WriteLine("*** UpdateRankUp: " + ex.Message + " ***");
             }
         }
     }
