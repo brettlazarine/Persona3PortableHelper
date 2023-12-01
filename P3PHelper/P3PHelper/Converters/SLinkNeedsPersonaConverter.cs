@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Globalization;
 
 namespace P3PHelper.Converters
 {
     public class SLinkNeedsPersonaConverter : IValueConverter
     {
+        // Convert from SQLite int to bool => string for Label
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             var needsPersona = (bool)value;
