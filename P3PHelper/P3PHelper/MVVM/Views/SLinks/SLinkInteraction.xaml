@@ -17,10 +17,12 @@
             <Grid 
                 RowDefinitions="auto, auto">
                 
-                <Label Grid.Row="0"
+                <Label 
+                    Grid.Row="0"
                     Style="{StaticResource Arcana}"
                     Text="{Binding Arcana}" />
-                <Image Grid.Row="1"
+                <Image 
+                    Grid.Row="1"
                     HeightRequest="150"
                     Source="{Binding Arcana, StringFormat='{0}.png', Converter={StaticResource SLinkImageConverter}}"  />
             </Grid>
@@ -56,8 +58,7 @@
                                     Tapped="MaleDate_Tapped" />
                             </Image.GestureRecognizers>
                         </Image>
-                        <Label
-                            x:Name="MaleDate"
+                        <Label x:Name="MaleDate"
                             Style="{StaticResource MalePropertyValues}"
                             IsVisible="false"
                             Text="{Binding MaleUnlockDate}" />
@@ -75,8 +76,7 @@
                                     Tapped="MaleHow_Tapped" />
                             </Image.GestureRecognizers>
                         </Image>
-                        <Label
-                            x:Name="MaleHow"
+                        <Label x:Name="MaleHow"
                             Style="{StaticResource MalePropertyValues}"
                             IsVisible="false"
                             Text="{Binding MaleHowToUnlock}" />
@@ -94,8 +94,7 @@
                                     Tapped="MaleAvailability_Tapped" />
                             </Image.GestureRecognizers>
                         </Image>
-                        <Label
-                            x:Name="MaleAvailability"
+                        <Label x:Name="MaleAvailability"
                             Style="{StaticResource MalePropertyValues}"
                             IsVisible="false"
                             Text="{Binding MaleAvailability}" />
@@ -105,7 +104,7 @@
                         Style="{StaticResource MalePropertyTitles}"
                         Text="{Binding MaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
                 </VerticalStackLayout>
-
+                
                 <CollectionView
                     Grid.Row="1"
                     Grid.Column="0"
@@ -119,7 +118,8 @@
                     
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <Grid RowDefinitions="auto, auto">
+                            <Grid 
+                                RowDefinitions="auto, auto">
                                 <!--Rank Check Arrow-->
                                 <Grid
                                     ColumnDefinitions="auto, auto, auto"
@@ -139,7 +139,7 @@
                                     
                                     <!--Bind for AutoScroll-->
                                     <Label AutomationId="RankHolder" 
-                                           IsVisible="false"
+                                        IsVisible="false"
                                         Text="{Binding Source={x:Reference Rank}, Path=Text}" />
                                     
                                     <Image
@@ -155,9 +155,8 @@
                                     </Image>
                                 </Grid>
                                 <!--Question and Response-->
-                                <VerticalStackLayout 
+                                <VerticalStackLayout AutomationId="QuestionResponse"
                                     Grid.Row="1"
-                                    AutomationId="QuestionResponse"
                                     HorizontalOptions="CenterAndExpand"
                                     IsVisible="false">
                                     
@@ -236,8 +235,7 @@
                                     Tapped="FemaleDate_Tapped" />
                             </Image.GestureRecognizers>
                         </Image>
-                        <Label
-                            x:Name="FemaleDate"
+                        <Label x:Name="FemaleDate"
                             Style="{StaticResource FemalePropertyValues}"
                             IsVisible="false"
                             Text="{Binding FemaleUnlockDate}" />
@@ -255,8 +253,7 @@
                                     Tapped="FemaleHow_Tapped" />
                             </Image.GestureRecognizers>
                         </Image>
-                        <Label
-                            x:Name="FemaleHow"
+                        <Label x:Name="FemaleHow"
                             Style="{StaticResource FemalePropertyValues}"
                             IsVisible="false"
                             Text="{Binding FemaleHowToUnlock}" />
@@ -274,8 +271,7 @@
                                     Tapped="FemaleAvailability_Tapped" />
                             </Image.GestureRecognizers>
                         </Image>
-                        <Label
-                            x:Name="FemaleAvailability"
+                        <Label x:Name="FemaleAvailability"
                             Style="{StaticResource FemalePropertyValues}"
                             IsVisible="false"
                             Text="{Binding FemaleAvailability}" />
@@ -336,11 +332,11 @@
                                     </Image>
                                 </Grid>
                                 <!--Question and Response-->
-                                <VerticalStackLayout 
+                                <VerticalStackLayout AutomationId="QuestionResponse"
                                     Grid.Row="1"
-                                    AutomationId="QuestionResponse"
                                     HorizontalOptions="CenterAndExpand"
                                     IsVisible="false">
+                                    
                                     <CollectionView
                                         ItemsSource="{Binding RankInteractions}">
                                         
