@@ -21,7 +21,8 @@ jobs:
         dotnet-version: 7.0.x
 
     - name: Install .NET MAUI workload
-      run: dotnet workload install maui
+      run: echo '{"sdk":{"version":"7.0.100-preview.9",  "rollForward":"latestPatch"}}'  >  global.json
+
 
     - name: Restore dependencies
       run: dotnet restore P3PHelper/P3PHelper.sln
