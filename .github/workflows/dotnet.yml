@@ -21,14 +21,13 @@ jobs:
         dotnet-version: 7.0.x
 
     - name: Install .NET MAUI workload
-      run: echo '{"sdk":{"version":"7.0.100-preview.9","rollForward":"latestPatch","excludeWorkloads":["maui-tizen"]}}' > global.json
-
+      run: echo '{"sdk":{"version":"7.0.100-preview.9", "rollForward":"latestPatch", "excludeWorkloads":["maui-tizen"]}}' > global.json
 
     - name: Restore dependencies
-      run: dotnet restore P3PHelper/P3PHelper.sln
-
+      run: dotnet restore
+    
     - name: Build
-      run: dotnet build P3PHelper/P3PHelper.sln --no-restore
-
+      run: dotnet build --no-restore
+    
     - name: Test
-      run: dotnet test P3PHelper/UnitTests/UnitTests.csproj --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal
