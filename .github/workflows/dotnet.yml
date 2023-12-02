@@ -21,10 +21,10 @@ jobs:
         dotnet-version: 7.0.x
 
     - name: Restore dependencies
-      run: dotnet restore P3PHelper.sln
+      run: dotnet restore P3PHelper/P3PHelper.sln
 
     - name: Build
-      run: dotnet build P3PHelper.sln --no-restore
+      run: dotnet build P3PHelper/P3PHelper.sln --no-restore
 
     - name: Test
-      run: dotnet test UnitTests/UnitTests.csproj --no-build --verbosity normal
+      run: dotnet test P3PHelper/UnitTests/UnitTests.csproj --no-build --verbosity normal
