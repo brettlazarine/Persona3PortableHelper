@@ -21,7 +21,7 @@ jobs:
         dotnet-version: 7.0.x
 
     - name: Install .NET MAUI workload
-      run: echo '{"sdk":{"version":"7.0.100-preview.9",  "rollForward":"latestPatch"}}'  >  global.json
+      run: echo '{"sdk":{"version":"7.0.100-preview.9","rollForward":"latestPatch","excludeWorkloads":["maui-tizen"]}}' > global.json
 
 
     - name: Restore dependencies
