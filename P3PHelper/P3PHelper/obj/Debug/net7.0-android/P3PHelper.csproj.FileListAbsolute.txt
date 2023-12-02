@@ -1987,3 +1987,13 @@ C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\De
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\assets\System.Xml.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\assets\Microsoft.AppCenter.Analytics.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\assets\Microsoft.AppCenter.Crashes.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\assets\Microsoft.AppCenter.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\src\crc64350623dcb797cc38\AndroidHttpClientAdapter.java
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\src\crc64350623dcb797cc38\ServiceCall.java
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\src\crc64a4555f9f70c213ae\Crashes_AndroidCrashListener.java
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\src\mono\com\microsoft\appcenter\analytics\channel\AnalyticsListenerImplementor.java
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\src\mono\com\microsoft\appcenter\channel\Channel_GroupListenerImplementor.java
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\src\mono\com\microsoft\appcenter\channel\Channel_ListenerImplementor.java
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\src\mono\com\microsoft\appcenter\crashes\CrashesListenerImplementor.java

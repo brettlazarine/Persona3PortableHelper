@@ -156,3 +156,9 @@ maui.aar
 Microsoft.Maui.aar
 Microsoft.Maui.Essentials.aar
 Xamarin.Google.Crypto.Tink.Android.aar
+Microsoft.AppCenter.Crashes.dll
+Microsoft.AppCenter.dll
+appcenter-crashes-release.aar
+appcenter-release.aar
+Microsoft.AppCenter.Analytics.dll
+appcenter-analytics-release.aar
