@@ -8,17 +8,13 @@ namespace P3PHelper.MVVM.Views;
 public partial class SocialLinksView : ContentPage
 {
     public string ArcanaName { get; set; }
-    public List<string> StorySLinks { get; set; } = new()
-    {
-        "death",
-        "fool",
-        "judgment"
-    };
+    public SocialLinksViewModel Vm { get; set; }
 
 	public SocialLinksView()
 	{
 		InitializeComponent();
-        BindingContext = new SocialLinksViewModel();
+        Vm = new SocialLinksViewModel();
+        BindingContext = Vm;
 	}
 
     public async void NavigateToSLink(object sender, EventArgs e)
@@ -38,7 +34,7 @@ public partial class SocialLinksView : ContentPage
             {
                 await Navigation.PushAsync(new SLinkInteraction("hangedman"));
             }
-            else if (StorySLinks.Contains(ArcanaName))
+            else if (Vm.StorySLinks.Contains(ArcanaName))
             {
                 await Navigation.PushAsync(new SLinkStory(ArcanaName));
             }

@@ -5,6 +5,12 @@ namespace P3PHelper.MVVM.ViewModels
     public class SocialLinksViewModel
     {
         public List<SLinkTapInfo> TapInfo { get; set; }
+        public List<string> StorySLinks { get; set; } = new()
+        {
+            "death",
+            "fool",
+            "judgment"
+        };
 
         public SocialLinksViewModel()
         {

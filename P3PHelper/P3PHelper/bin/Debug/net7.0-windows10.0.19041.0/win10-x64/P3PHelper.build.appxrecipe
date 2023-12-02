@@ -973,6 +973,9 @@
     <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\moon.scale-100.png">
       <PackagePath>moon.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\pinkdownarrow.scale-100.png">
+      <PackagePath>pinkdownarrow.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\priestess.scale-100.png">
       <PackagePath>priestess.scale-100.png</PackagePath>
     </AppxPackagedFile>
