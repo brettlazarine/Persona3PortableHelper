@@ -24,7 +24,8 @@ jobs:
       run: echo '{"sdk":{"version":"7.0.100-preview.9", "rollForward":"latestPatch"}}' > global.json
 
     - name: Restore dependencies
-      run: dotnet restore P3PHelper/P3PHelper.sln --ignore-failed-workloads
+      run: DOTNET_NOLOGO=1 dotnet restore P3PHelper/P3PHelper.sln --verbosity minimal
+
 
     - name: Build
       run: dotnet build P3PHelper/P3PHelper.sln --no-restore --ignore-failed-workloads
