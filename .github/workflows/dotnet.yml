@@ -24,10 +24,10 @@ jobs:
       run: echo '{"sdk":{"version":"7.0.100-preview.9", "rollForward":"latestPatch", "excludeWorkloads":["maui-tizen"]}}' > global.json
 
     - name: Restore dependencies
-      run: dotnet restore
-    
+      run: dotnet restore P3PHelper/P3PHelper.sln
+
     - name: Build
-      run: dotnet build --no-restore
-    
+      run: dotnet build P3PHelper/P3PHelper.sln --no-restore
+
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test P3PHelper/UnitTests/UnitTests.csproj --no-build --verbosity normal
