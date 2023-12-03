@@ -25,6 +25,7 @@ public static class MauiProgram
 #endif
 		builder.Services.AddSingleton<ProgressRepository>();
 		builder.Services.AddSingleton<SLinkRepository>();
+		builder.Services.AddSingleton<RequestRepository>();
 		// Consider Azure Key Vault
         AppCenter.Start("android=72336151-3efa-4251-8590-b1744bec9ddc;" +
                   "windowsdesktop={Your UWP App secret here};" +

@@ -4962,11 +4962,11 @@ namespace P3PHelper.Repositories
 
             if (App.ProgressRepo.GetRankUps().Count == 0)
             {
-                LoadDb(Arcana);
+                LoadSLinkDb(Arcana);
             }
         }
 
-        static void LoadDb(Dictionary<string, SLink> sLinkCollection)
+        static void LoadSLinkDb(Dictionary<string, SLink> sLinkCollection)
         {
             try
             {
@@ -4991,7 +4991,7 @@ namespace P3PHelper.Repositories
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("*** LoadDb: " + ex.Message + " ***");
+                Debug.WriteLine("*** LoadSLinkDb: " + ex.Message + " ***");
                 return;
             }
         }

@@ -14,6 +14,8 @@ public partial class App : Application
 
         SLinkRepository sLinkRepository = new SLinkRepository();
         DependencyService.RegisterSingleton(sLinkRepository);
+		RequestRepository requestRepository = new RequestRepository();
+		DependencyService.RegisterSingleton(requestRepository);
 
         MainPage = new AppShell();
 	}

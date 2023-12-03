@@ -20,8 +20,10 @@ namespace P3PHelper.Repositories
             connection = new SQLiteConnection(Constants.DatabasePath, Constants.Flags);
             connection.CreateTable<SLink>();
             connection.CreateTable<RankUp>();
+            connection.CreateTable<Request>();
         }
 
+        #region SLinks
         public List<SLink> GetSLinks()
         {
             try
@@ -84,7 +86,9 @@ namespace P3PHelper.Repositories
                 Debug.WriteLine("*** InsertSLink: " + ex.Message + " ***");
             }
         }
+        #endregion
 
+        #region RankUps
         public List<RankUp> GetRankUps()
         {
             try
@@ -169,5 +173,66 @@ namespace P3PHelper.Repositories
                 Debug.WriteLine("*** UpdateRankUp: " + ex.Message + " ***");
             }
         }
+        #endregion
+
+        #region Requests
+        public List<Request> GetRequests()
+        {
+            try
+            {
+                return connection.Table<Request>().ToList();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetRequests: " + ex.Message + " ***");
+                return null;
+            }
+        }
+
+        public Request GetRequest(int questNumber)
+        {
+            try
+            {
+                return connection.Table<Request>().Where(r => r.QuestNumber == questNumber).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetRequest: " + ex.Message + " ***");
+                return null;
+            }
+        }
+
+        public void InsertRequest(Request request)
+        {
+            try
+            {
+                connection.Insert(new Request
+                {
+                    QuestNumber = request.QuestNumber,
+                    QuestName = request.QuestName,
+                    Reward = request.Reward,
+                    Available = request.Available,
+                    Deadline = request.Deadline,
+                    HowToComplete = request.HowToComplete
+                });
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** InsertRequest: " + ex.Message + " ***");
+            }
+        }
+
+        public void UpdateRequest(int questNumber, int isCompleted)
+        {
+            try
+            {
+                connection.Execute($"UPDATE Request SET IsCompleted = {isCompleted} WHERE QuestNumber = {questNumber};");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** UpdateRequest: " + ex.Message + " ***");
+            }
+        }
+        #endregion
     }
 }
