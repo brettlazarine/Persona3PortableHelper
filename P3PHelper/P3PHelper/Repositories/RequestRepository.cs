@@ -592,92 +592,99 @@ namespace P3PHelper.Repositories
                 new Request()
                 {
                    QuestNumber = 61,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Bring me a Sengoku-era helm",
+                   Reward = "Final Armor (male)\n---\nKnee-High Maid (female)",
+                   Available = "10/5",
+                   Deadline = "None",
+                   HowToComplete = "Visit the Faculty Room in Gekkoukan High School after accepting the request"
                 },
                 new Request()
                 {
                    QuestNumber = 62,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "I'd like to try Oden Juice",
+                   Reward = "Maid Outfit (A)",
+                   Available = "11/5",
+                   Deadline = "None",
+                   HowToComplete = "Buy one of every drink from the vending machine on the Second Floor of Godaigo " +
+                                    "during the Kyoto trip, then talk to the girl by the Persimmon Tree at Gekkoukan High School " +
+                                    "after returning from the trip"
                 },
                 new Request()
                 {
                    QuestNumber = 63,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Bring me food fit for a wolf",
+                   Reward = "Cross Dog Suit",
+                   Available = "11/5",
+                   Deadline = "11/30",
+                   HowToComplete = "Can be obtained from Koromaru on 11/12"
                 },
                 new Request()
                 {
                    QuestNumber = 64,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Please go scrub the bathroom",
+                   Reward = "Maid Outfit (Y)",
+                   Available = "11/5",
+                   Deadline = "None",
+                   HowToComplete = "Clean the Port Island Restrooms with the Scrub Brush from #38, choose scrub harder"
                 },
                 new Request()
                 {
                    QuestNumber = 65,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Please go water the flowers",
+                   Reward = "Maid Outfit (M)",
+                   Available = "11/5",
+                   Deadline = "None",
+                   HowToComplete = "Water the flowers on the Rooftop of Gekkoukan High"
                 },
                 new Request()
                 {
                    QuestNumber = 66,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Please go feed the cat",
+                   Reward = "S.Outfit Yukari",
+                   Available = "7/8",
+                   Deadline = "None",
+                   HowToComplete = "Purchase x4 Super Cat Food from Aohige Pharmacy in Paulownia Mall, " +
+                                    "then head to the Station Outskirts of " +
+                                    "Port Island Station and feed the weak cat on 4 separate days"
                 },
                 new Request()
                 {
                    QuestNumber = 67,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Bring me a Featherman figure",
+                   Reward = "Ningen Mukotsu",
+                   Available = "11/5",
+                   Deadline = "11/30",
+                   HowToComplete = "Get it from Ken on 11/21"
                 },
                 new Request()
                 {
                    QuestNumber = 68,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Bring me a Juzumaru",
+                   Reward = "Maragi Skill Card",
+                   Available = "4/30",
+                   Deadline = "None",
+                   HowToComplete = "Can be found in rare chests on Floors 4 and 11\n---\nHigher drops after accepting the request"
                 },
                 new Request()
                 {
                    QuestNumber = 69,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Bring me an Onimaru Kunitsuna",
+                   Reward = "Opal x3",
+                   Available = "7/8",
+                   Deadline = "None",
+                   HowToComplete = "Can be found in rare chests on Floors 69, 74, and 82\n---\nHigher drops after accepting " +
+                                    "the request"
                 },
                 new Request()
                 {
                    QuestNumber = 70,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Bring me a Mikazuki Munechika",
+                   Reward = "Malachite x15",
+                   Available = "9/6",
+                   Deadline = "None",
+                   HowToComplete = "Can be found in rare chests on Floors 118, 128, and 132" +
+                                    "\n---\n" +
+                                    "Higher drops after accepting the request"
                 },
                 #endregion
                 #region 71-80
