@@ -20,92 +20,92 @@ namespace P3PHelper.Repositories
                 new Request()
                 {
                    QuestNumber = 1,
-                   QuestName = "Name",
-                   Reward = "Reward",
-                   Available = "Available",
-                   Deadline = "Deadline",
-                   HowToComplete = "How to complete"
+                   QuestName = "Retrieve 1 Beetle Shell",
+                   Reward = "¥12,000",
+                   Available = "4/30",
+                   Deadline = "5/7",
+                   HowToComplete = "Dropped by Grave Beetle on Floors 6 - 15"
                 },
                 new Request()
                 {
                    QuestNumber = 2,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve the first old document",
+                   Reward = "Bead Chain",
+                   Available = "4/30",
+                   Deadline = "5/7",
+                   HowToComplete = "Reach the top of Thebel Block before the Full Moon"
                 },
                 new Request()
                 {
                    QuestNumber = 3,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "I'd like to sip a Muscle Drink",
+                   Reward = "Dark Jacket (male) \n---\n Angora Sweater (female)",
+                   Available = "4/30",
+                   Deadline = "None",
+                   HowToComplete = "Can be found in chests in Tartarus or bought from Pharmacy"
                 },
                 new Request()
                 {
                    QuestNumber = 4,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 3 Old Lanterns",
+                   Reward = "Umugi Water x2",
+                   Available = "5/10",
+                   Deadline = "6/6",
+                   HowToComplete = "Dropped by Phantom Mage on Floors 17 - 24"
                 },
                 new Request()
                 {
                    QuestNumber = 5,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve the second old document",
+                   Reward = "Recarm Card",
+                   Available = "5/10",
+                   Deadline = "6/6",
+                   HowToComplete = "Reach the 40th Floor of Tartarus before the Full Moon"
                 },
                 new Request()
                 {
                    QuestNumber = 6,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Create Jack Frost with Dia",
+                   Reward = "Battle Panties",
+                   Available = "5/10",
+                   Deadline = "None",
+                   HowToComplete = "Fuse Pixie and Unicorn"
                 },
                 new Request()
                 {
                    QuestNumber = 7,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 1 Lead Medal",
+                   Reward = "Toy Bow",
+                   Available = "5/10",
+                   Deadline = "None",
+                   HowToComplete = "Dropped by Gold Shadows in Thebel Block"
                 },
                 new Request()
                 {
                    QuestNumber = 8,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Create Valkyrie with Tarukaja",
+                   Reward = "Torn Black Cloth",
+                   Available = "After Completing #6",
+                   Deadline = "None",
+                   HowToComplete = "Fuse Forneus and Yomotsu Shikome"
                 },
                 new Request()
                 {
                    QuestNumber = 9,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 5 Bronze Figurines",
+                   Reward = "Sigma Drive",
+                   Available = "6/13",
+                   Deadline = "7/5",
+                   HowToComplete = "Dropped by Bronze Dice on Floors 41 - 46"
                 },
                 new Request()
                 {
                    QuestNumber = 10,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 3 Snake Scale",
+                   Reward = "¥46,000",
+                   Available = "6/13",
+                   Deadline = "7/5",
+                   HowToComplete = "Dropped by Lustful Snakes (Red Shadows) on Floors 41-63"
                 },
                 #endregion
                 #region 11-20
