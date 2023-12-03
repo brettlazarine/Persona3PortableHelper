@@ -20,11 +20,11 @@ namespace P3PHelper.Repositories
                 new Request()
                 {
                    QuestNumber = 1,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Name",
+                   Reward = "Reward",
+                   Available = "Available",
+                   Deadline = "Deadline",
+                   HowToComplete = "How to complete"
                 },
                 new Request()
                 {
