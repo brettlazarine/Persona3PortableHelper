@@ -690,93 +690,100 @@ namespace P3PHelper.Repositories
                 #region 71-80
                 new Request()
                 {
-                   QuestNumber = 1,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestNumber = 71,
+                   QuestName = "Bring me an Outenta Mitsuyo",
+                   Reward = "Ruby x3",
+                   Available = "10/10",
+                   Deadline = "None",
+                   HowToComplete = "Can be found in rare chests on Floors 142, 150, and 156" +
+                                    "\n---\n" +
+                                    "Higher drops after accepting the request"
                 },
                 new Request()
                 {
-                   QuestNumber = 2,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestNumber = 72,
+                   QuestName = "Bring me a Myohou Muramasa",
+                   Reward = "Soma x2",
+                   Available = "After Completing #54",
+                   Deadline = "None",
+                   HowToComplete = "Can be found in rare chests in the Monad Depths on Floors 3 and 8" +
+                                    "\n---\n" +
+                                    "Chests appear in duos in the Monad Depths, so if there is no chest on Floor 3, " +
+                                    "then leave the dungeon and come back because there will be no chest on Floor 8 either" +
+                                    "\n---\n" +
+                                    "Higher drops after accepting the request"
                 },
                 new Request()
                 {
-                   QuestNumber = 3,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestNumber = 73,
+                   QuestName = "Bring me pine resin",
+                   Reward = "Siren's Song",
+                   Available = "4/30",
+                   Deadline = "5/7",
+                   HowToComplete = "Get it from Yukari on 5/2"
                 },
                 new Request()
                 {
-                   QuestNumber = 4,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestNumber = 74,
+                   QuestName = "Bring me a handheld game system",
+                   Reward = "Two-Handed Sword",
+                   Available = "5/10",
+                   Deadline = "6/6",
+                   HowToComplete = "Get it from Junpei on 5/14"
                 },
                 new Request()
                 {
-                   QuestNumber = 5,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestNumber = 75,
+                   QuestName = "Bring me a triangular sword",
+                   Reward = "Bulletproof Vest",
+                   Available = "5/10",
+                   Deadline = "6/6",
+                   HowToComplete = "Get it from Mitsuru on 5/26"
                 },
                 new Request()
                 {
-                   QuestNumber = 6,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestNumber = 76,
+                   QuestName = "Bring me a protein not for pros",
+                   Reward = "Bladefist",
+                   Available = "6/10",
+                   Deadline = "7/5",
+                   HowToComplete = "Get it from Akihiko on 6/16"
                 },
                 new Request()
                 {
-                   QuestNumber = 7,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestNumber = 77,
+                   QuestName = "Bring me a glasses wipe",
+                   Reward = "Amigo Poncho",
+                   Available = "6/10",
+                   Deadline = "7/5",
+                   HowToComplete = "Get it from Ikutsuki on 6/20"
                 },
                 new Request()
                 {
-                   QuestNumber = 8,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestNumber = 78,
+                   QuestName = "Bring me a Christmas Star",
+                   Reward = "Cyber Shoes",
+                   Available = "6/10",
+                   Deadline = "7/5",
+                   HowToComplete = "Get from Fuuka on 6/27"
                 },
                 new Request()
                 {
-                   QuestNumber = 9,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestNumber = 79,
+                   QuestName = "Bring me a fruit knife",
+                   Reward = "Guillotine Axe",
+                   Available = "9/6",
+                   Deadline = "10/2",
+                   HowToComplete = "Get it from Shinjiro on 9/17"
                 },
                 new Request()
                 {
-                   QuestNumber = 10,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestNumber = 80,
+                   QuestName = "Bring me oil",
+                   Reward = "Railgun",
+                   Available = "9/6",
+                   Deadline = "10/2",
+                   HowToComplete = "Get from Aigis on 10/1"
                 },
                 #endregion
             };
