@@ -205,92 +205,96 @@ namespace P3PHelper.Repositories
                 new Request()
                 {
                    QuestNumber = 21,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 1 Bronze Medal",
+                   Reward = "Steel Pipe (male)\n---\nLacross Stick (female)",
+                   Available = "After Completing #14",
+                   Deadline = "None",
+                   HowToComplete = "Dropped by Gold Shadows in Yabbashah Block"
                 },
                 new Request()
                 {
                    QuestNumber = 22,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Create Vetala with Maragi",
+                   Reward = "Sugar Key",
+                   Available = "After Completing #15",
+                   Deadline = "None",
+                   HowToComplete = "Fuse Pyro Jack (Magician), Jack Frost (Magician), and Narcissus (Lovers) in a Triangle Fusion, " +
+                                    "inheriting Maragi"
                 },
                 new Request()
                 {
                    QuestNumber = 23,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Create Orthrus with Dodge Slash",
+                   Reward = "W.Outfit Yukari",
+                   Available = "After Completing #22",
+                   Deadline = "None",
+                   HowToComplete = "Fuse Valkyrie (Strength), Queen Mab (Lovers), and Ares (Chariot) in a Triangle Fusion, " +
+                                    "inhering Dodge Slash"
                 },
                 new Request()
                 {
                    QuestNumber = 24,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 5 Tiara's Hair",
+                   Reward = "Precious Egg",
+                   Available = "8/7",
+                   Deadline = "9/3",
+                   HowToComplete = "Dropped by Shouting Tiara on Floors 102 - 113"
                 },
                 new Request()
                 {
                    QuestNumber = 25,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 4 Knight's Reins",
+                   Reward = "Greaves of Dawn",
+                   Available = "8/7",
+                   Deadline = "9/3",
+                   HowToComplete = "Dropped by Champion Knights (Red Shadows) on Floors 90-113"
                 },
                 new Request()
                 {
                    QuestNumber = 26,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve fifth old document",
+                   Reward = "¥120,000",
+                   Available = "8/7",
+                   Deadline = "9/3",
+                   HowToComplete = "Reach the top of Yabbashah Block before the Full Moon"
                 },
                 new Request()
                 {
                    QuestNumber = 27,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 1 Platinum Watch",
+                   Reward = "S.Outfit Mitsuru",
+                   Available = "After Completing #16",
+                   Deadline = "None",
+                   HowToComplete = "Can be bought from the Police Station after accepting the request"
                 },
                 new Request()
                 {
                    QuestNumber = 28,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "I'd like a drink with my sister's name",
+                   Reward = "S.Outfit Junpei",
+                   Available = "9/8",
+                   Deadline = "None",
+                   HowToComplete = "Go to Port Island Station, then Station Outskirts, and get the Queen Elizabeth from Que Sera Sera"
                 },
                 new Request()
                 {
                    QuestNumber = 29,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Create Oumitsunu (Lv. 33+)",
+                   Reward = "Machine Core",
+                   Available = "After Completing #23",
+                   Deadline = "None",
+                   HowToComplete = "Fuse Ares (Chariot), Chimera (Chariot), and Ara Mitama (Chariot) in a Triangle Fusion " +
+                                    "to create Oumitsunu, then level him up to 33"
                 },
                 new Request()
                 {
                    QuestNumber = 30,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 1 Homunculus",
+                   Reward = "W.Outfit Junpei",
+                   Available = "After Completing #27",
+                   Deadline = "None",
+                   HowToComplete = "Can be found in rare chests throughout Tartarus, or bought at the " +
+                                    "Antique Store in Paulownia Mall for 1 Diamond and 1 Sapphire"
                 },
                 #endregion
                 #region 31-40
