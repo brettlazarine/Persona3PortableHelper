@@ -395,92 +395,95 @@ namespace P3PHelper.Repositories
                 new Request()
                 {
                    QuestNumber = 41,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve the seventh old document",
+                   Reward = "Megidolaon Gem",
+                   Available = "10/5",
+                   Deadline = "11/1",
+                   HowToComplete = "Reach the top of Tziah Block before the Full Moon"
                 },
                 new Request()
                 {
                    QuestNumber = 42,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Create Girimehkala",
+                   Reward = "Marionette",
+                   Available = "After Completing #36",
+                   Deadline = "None",
+                   HowToComplete = "Fuse Gurr (Moon), Rangda (Magician), Vetala (Devil), and Taraka (Hermit) in a Cross Fusion."
                 },
                 new Request()
                 {
                    QuestNumber = 43,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Create Daisoujou",
+                   Reward = "W.Outfit Ken",
+                   Available = "After Completing #42",
+                   Deadline = "None",
+                   HowToComplete = "Fuse Mithra (Temperance), Ara Mitama (Chariot), Kusi Mitama (Fortune), " +
+                                    "Saki Mitama (Lovers), and Nigi Mitama (Temperance) in a Pentagon fusion"
                 },
                 new Request()
                 {
                    QuestNumber = 44,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 6 Pink Feathers",
+                   Reward = "Berserker's Seal",
+                   Available = "11/5",
+                   Deadline = "11/30",
+                   HowToComplete = "Dropped by Gracious Cupid on Floors 181 - 190"
                 },
                 new Request()
                 {
                    QuestNumber = 45,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 3 Moon Tablets",
+                   Reward = "Space Badge",
+                   Available = "11/5",
+                   Deadline = "11/30",
+                   HowToComplete = "Dropped by Ruinous Idols (Red Shadows) on Floors 165-189"
                 },
                 new Request()
                 {
                    QuestNumber = 46,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve the last old document",
+                   Reward = "¥650,000",
+                   Available = "11/5",
+                   Deadline = "12/29",
+                   HowToComplete = "Reach the top of Harabah Block before the Full Moon"
                 },
                 new Request()
                 {
                    QuestNumber = 47,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 2 Gold Medals",
+                   Reward = "Rocket Punch",
+                   Available = "After Completing #32",
+                   Deadline = "None",
+                   HowToComplete = "Dropped by Gold Shadows in Harabah Block"
                 },
                 new Request()
                 {
                    QuestNumber = 48,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Create Alice with Megido",
+                   Reward = "Lily Petal",
+                   Available = "After Completing #47",
+                   Deadline = "None",
+                   HowToComplete = "Fuse Oberon (Emperor) and Decarabia (Fool) to make a  Nata Taishi, inheriting Megido" +
+                                    "\n---\nFuse this Nata Taishi (Chariot) with Lilim (Devil), Pixie (Lovers), " +
+                                    "and Narcissus (Lovers) in a Cross Fusion to make Alice, inheriting Megido"
                 },
                 new Request()
                 {
                    QuestNumber = 49,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 3 Sand of Time",
+                   Reward = "Atlus Stick",
+                   Available = "12/4",
+                   Deadline = "12/29",
+                   HowToComplete = "Dropped by Perpetual Sand on Floors 202 - 210"
                 },
                 new Request()
                 {
                    QuestNumber = 50,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 3 Rainbow Hairs",
+                   Reward = "Omega Drive",
+                   Available = "12/4",
+                   Deadline = "12/29",
+                   HowToComplete = "Dropped by Daring Gigas (Red Shadows) on Floors 191-213"
                 },
                 #endregion
                 #region 51-60
