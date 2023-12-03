@@ -490,92 +490,102 @@ namespace P3PHelper.Repositories
                 new Request()
                 {
                    QuestNumber = 51,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Create Lilith with Mabufudyne",
+                   Reward = "Sacrificial Idol",
+                   Available = "After Completing #48",
+                   Deadline = "None",
+                   HowToComplete = "Create Gabriel by fusing Laksmi (Empress), Hariti (Empress), and Yaksini (Empress) in a Triangle Fusion, " +
+                                    "then level Gabriel to 71 so he learns Mabufudyne" +
+                                    "\n---\n" +
+                                    "Fuse this Gabriel (Empress) with Ara Mitama (Chariot) to create Succubus, inheriting Mabufudyne" +
+                                    "\n---\n" +
+                                    "Fuse this Succubus (Devil), Vetala (Devil), Lilim (Devil), and Incubus (Devil) " +
+                                    "in Cross Fusion to make Lilith, inheriting Mabufudyne"
                 },
                 new Request()
                 {
                    QuestNumber = 52,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Create Loki (Lv. 63+)",
+                   Reward = "Masakados",
+                   Available = "After Completing #51",
+                   Deadline = "None",
+                   HowToComplete = "Fuse Legion (Fool), Ose (Fool), and Decarabia (Fool) in Triangle Fusion to obtain Loki, " +
+                                    "then level him to 63"
                 },
                 new Request()
                 {
                    QuestNumber = 53,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 1 Bloody Button",
+                   Reward = "¥5,000,000",
+                   Available = "1/1",
+                   Deadline = "None",
+                   HowToComplete = "Defeat the Reaper\n---\nSpawns after 10 minutes on the same floor, can be sped up with Cursed Cards " +
+                                    "from Shuffle Time"
                 },
                 new Request()
                 {
                    QuestNumber = 54,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 3 Platinum Medals",
+                   Reward = "Berserker's Seal",
+                   Available = "After Completing #47",
+                   Deadline = "None",
+                   HowToComplete = "Dropped by Gold Shadows in Adamah Block"
                 },
                 new Request()
                 {
                    QuestNumber = 55,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Defeat the ultimate opponent",
+                   Reward = "Omnipotent Orb",
+                   Available = "After Completing #53",
+                   Deadline = "None",
+                   HowToComplete = "Defeat the powerful foe on the 10th Floor of Monad" +
+                                    "\n---\n" +
+                                    "Worth using a guide for this fight, might even want to bring a calculator"
                 },
                 new Request()
                 {
                    QuestNumber = 56,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "I'd like to visit Paulownia Mall",
+                   Reward = "Small Cheongsam",
+                   Available = "4/30",
+                   Deadline = "5/31",
+                   HowToComplete = "Go on a date with Elizabeth/Theodore during the day, does not consume time"
                 },
                 new Request()
                 {
                    QuestNumber = 57,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "I'd like to visit Iwatodai Station",
+                   Reward = "Blue Scale",
+                   Available = "6/10",
+                   Deadline = "7/5",
+                   HowToComplete = "Go on a date with Elizabeth/Theodore during the day, does not consume time"
                 },
                 new Request()
                 {
                    QuestNumber = 58,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "I'd like to visit Naganaki Shrine",
+                   Reward = "Book of Ancients",
+                   Available = "8/7",
+                   Deadline = "9/3",
+                   HowToComplete = "Go on a date with Elizabeth/Theodore during the day, does not consume time"
                 },
                 new Request()
                 {
                    QuestNumber = 59,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "I'd like to visit Gekkoukan High",
+                   Reward = "Red Muffler",
+                   Available = "11/5",
+                   Deadline = "11/30",
+                   HowToComplete = "Go on a date with Elizabeth/Theodore during the day, does not consume time"
                 },
                 new Request()
                 {
                    QuestNumber = 60,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "I'd like to visit your room",
+                   Reward = "Rainbow Feather",
+                   Available = "12/4",
+                   Deadline = "None",
+                   HowToComplete = "Go on a date with Elizabeth/Theodore during the day, does not consume time"
                 },
                 #endregion
                 #region 61-70

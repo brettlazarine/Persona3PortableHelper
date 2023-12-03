@@ -14,6 +14,7 @@ public partial class App : Application
 
         SLinkRepository sLinkRepository = new SLinkRepository();
         DependencyService.RegisterSingleton(sLinkRepository);
+
 		RequestRepository requestRepository = new RequestRepository();
 		DependencyService.RegisterSingleton(requestRepository);
 
@@ -24,5 +25,6 @@ public partial class App : Application
 	{
 		Routing.RegisterRoute("socialLinks", typeof(SocialLinksView));
 		Routing.RegisterRoute("slinkInteraction", typeof(SLinkInteraction));
+		Routing.RegisterRoute("slinkInteraction", typeof(SLinkStory));
     }
 }
