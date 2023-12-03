@@ -301,92 +301,94 @@ namespace P3PHelper.Repositories
                 new Request()
                 {
                    QuestNumber = 31,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Find me a beautiful tile",
+                   Reward = "S.Outfit Akihiko",
+                   Available = "After Completing #28",
+                   Deadline = "None",
+                   HowToComplete = "Accept the request and then go to Port Island Station, then to Station Outskirts, " +
+                                    "then enter Mahjong Club 'Red Hawk' and win the game of Rock-Paper-Scissors (try until you win)"
                 },
                 new Request()
                 {
                    QuestNumber = 32,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 1 Silver Medal",
+                   Reward = "Bone",
+                   Available = "After Completing #21",
+                   Deadline = "None",
+                   HowToComplete = "Dropped by Gold Shadows in Tziah Block"
                 },
                 new Request()
                 {
                    QuestNumber = 33,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 5 Empress's Mirrors",
+                   Reward = "Quick Pumps",
+                   Available = "9/6",
+                   Deadline = "10/2",
+                   HowToComplete = "Dropped by Elegant Mother on Floors 126 - 138"
                 },
                 new Request()
                 {
                    QuestNumber = 34,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 3 Gold Handguards",
+                   Reward = "Bus Stop Sign",
+                   Available = "9/6",
+                   Deadline = "10/2",
+                   HowToComplete = "Dropped by Hakurou Musha (Red Shadows) on Floors 115-138"
                 },
                 new Request()
                 {
                    QuestNumber = 35,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve the sixth old document",
+                   Reward = "Bead x5",
+                   Available = "9/6",
+                   Deadline = "10/3",
+                   HowToComplete = "Reach Floor 139 before the Full Moon"
                 },
                 new Request()
                 {
                    QuestNumber = 36,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Create Black Frost",
+                   Reward = "Baseball Jersey",
+                   Available = "After Completing #29",
+                   Deadline = "None",
+                   HowToComplete = "Fuse King Frost (Emperor), Jack Frost (Magician), Pyro Jack (Magician), " +
+                                    "and Queen Mab (Lovers) in a Cross Fusion"
                 },
                 new Request()
                 {
                    QuestNumber = 37,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Bring me 3 Jack Frost Dolls",
+                   Reward = "Jack's Gloves",
+                   Available = "6/10",
+                   Deadline = "None",
+                   HowToComplete = "Go to Paulownia Mall and play the Crane Game beside Game Parade"
                 },
                 new Request()
                 {
                    QuestNumber = 38,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "I'd like to try sushi",
+                   Reward = "Scrub Brush\nDO NOT SELL THIS",
+                   Available = "10/5",
+                   Deadline = "None",
+                   HowToComplete = "Go to Naganaki Shrine and interact with the Inari Shrine"
                 },
                 new Request()
                 {
                    QuestNumber = 39,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 3 Gold Rings",
+                   Reward = "¥340,000",
+                   Available = "10/5",
+                   Deadline = "11/1",
+                   HowToComplete = "Dropped by Wondrous Magus on Floors 151 - 159"
                 },
                 new Request()
                 {
                    QuestNumber = 40,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 2 Red Armor Plates",
+                   Reward = "Spirit Bracers",
+                   Available = "10/5",
+                   Deadline = "11/1",
+                   HowToComplete = "Dropped by Scarlet Turret (Red Shadows) on Floors 140-163"
                 },
                 #endregion
                 #region 41-50
@@ -759,7 +761,7 @@ namespace P3PHelper.Repositories
                 #endregion
             };
 
-            if (App.ProgressRepo.GetRequests().Count >= 0)
+            if (App.ProgressRepo.GetRequests().Count == 0)
             {
                 LoadRequestDb(AllRequests);
             }
