@@ -39,7 +39,7 @@ namespace P3PHelper.Repositories
                 {
                    QuestNumber = 3,
                    QuestName = "I'd like to sip a Muscle Drink",
-                   Reward = "Dark Jacket (male) \n---\n Angora Sweater (female)",
+                   Reward = "Dark Jacket (male)\n---\nAngora Sweater (female)",
                    Available = "4/30",
                    Deadline = "None",
                    HowToComplete = "Can be found in chests in Tartarus or bought from Pharmacy"
@@ -69,7 +69,7 @@ namespace P3PHelper.Repositories
                    Reward = "Battle Panties",
                    Available = "5/10",
                    Deadline = "None",
-                   HowToComplete = "Fuse Pixie and Unicorn"
+                   HowToComplete = "Fuse Pixie (Lovers) and Unicorn (Priestess)"
                 },
                 new Request()
                 {
@@ -87,7 +87,7 @@ namespace P3PHelper.Repositories
                    Reward = "Torn Black Cloth",
                    Available = "After Completing #6",
                    Deadline = "None",
-                   HowToComplete = "Fuse Forneus and Yomotsu Shikome"
+                   HowToComplete = "Fuse Lilim (Devil) and Tam Lin (Lovers), inheriting Tarukaja"
                 },
                 new Request()
                 {
@@ -112,92 +112,93 @@ namespace P3PHelper.Repositories
                 new Request()
                 {
                    QuestNumber = 11,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve the third old document",
+                   Reward = "¥50,000",
+                   Available = "6/13",
+                   Deadline = "7/5",
+                   HowToComplete = "Reach the top of Arqa Block before the Full Moon"
                 },
                 new Request()
                 {
                    QuestNumber = 12,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 1 Goggle-eyed Idol",
+                   Reward = "W.Outfit Mitsuru",
+                   Available = "6/10",
+                   Deadline = "None",
+                   HowToComplete = "Trade in 2 Turquoise at Shinshoudo Antiques\n---\n" +
+                                    "Turquoise can be found from enemies in Tartarus Block 2"
                 },
                 new Request()
                 {
                    QuestNumber = 13,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve the shell of a man",
+                   Reward = "Legendary Cleaver (male)\n---\nBeam Naginata (female)",
+                   Available = "6/10",
+                   Deadline = "None",
+                   HowToComplete = "Go to the Laboratory in Gekkoukan High School after accepting the request"
                 },
                 new Request()
                 {
                    QuestNumber = 14,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 1 Steel Medal",
+                   Reward = "Spiked Bat",
+                   Available = "After Completing #7",
+                   Deadline = "None",
+                   HowToComplete = "Dropped by Gold Shadows in Arqa Block"
                 },
                 new Request()
                 {
                    QuestNumber = 15,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Create Oberon (Lv. 17+)",
+                   Reward = "W.Outfit Akihiko",
+                   Available = "After Completing #8",
+                   Deadline = "None",
+                   HowToComplete = "Fuse Jack Frost (Magician) and Alp (Lovers) to create Oberon, then level him to 17"
                 },
                 new Request()
                 {
                    QuestNumber = 16,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Bring me strong medicine",
+                   Reward = "Balm of Life",
+                   Available = "9/1",
+                   Deadline = "None",
+                   HowToComplete = "Accept the request, then visit Mr. Edogawa when Sick or Tired"
                 },
                 new Request()
                 {
                    QuestNumber = 17,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "I'd like some funky school music",
+                   Reward = "S.Outfit Main (male)\n---\nOrange Cutsew (female)",
+                   Available = "9/4",
+                   Deadline = "None",
+                   HowToComplete = "Go to the PA Room of Gekkoukan High School after accepting the request"
                 },
                 new Request()
                 {
                    QuestNumber = 18,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 5 Relic Fragments",
+                   Reward = "Land Badge",
+                   Available = "7/8",
+                   Deadline = "8/4",
+                   HowToComplete = "Dropped by Creation Relic on Floors 65 - 77"
                 },
                 new Request()
                 {
                    QuestNumber = 19,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve 3 Greasy Gears",
+                   Reward = "King of Wands",
+                   Available = "7/8",
+                   Deadline = "8/4",
+                   HowToComplete = "Dropped by Wild Drives (Red Shadows) on Floors 65-88"
                 },
                 new Request()
                 {
                    QuestNumber = 20,
-                   QuestName = "",
-                   Reward = "",
-                   Available = "",
-                   Deadline = "",
-                   HowToComplete = ""
+                   QuestName = "Retrieve the fourth old document",
+                   Reward = "Fast Retreat Skill Card",
+                   Available = "7/8",
+                   Deadline = "8/4",
+                   HowToComplete = "Reach the 89th Floor before the Full Moon"
                 },
                 #endregion
                 #region 21-30
