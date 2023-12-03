@@ -11,11 +11,13 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 
-		ProgressRepo = App.ProgressRepo;
+		//ProgressRepo = App.ProgressRepo;
 
-		var sLinks = ProgressRepo.GetSLinks();
+		//var sLinks = ProgressRepo.GetSLinks();
 
-		BindingContext = sLinks;
+		var bc = App.ProgressRepo.GetRequest(1);
+
+		BindingContext = bc;
 	}
 
 	
