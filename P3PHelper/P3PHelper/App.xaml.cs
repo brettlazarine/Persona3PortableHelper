@@ -1,4 +1,5 @@
 ﻿using P3PHelper.MVVM.Views;
+using P3PHelper.MVVM.Views.Requests;
 using P3PHelper.MVVM.Views.SLinks;
 using P3PHelper.Repositories;
 
@@ -26,5 +27,9 @@ public partial class App : Application
 		Routing.RegisterRoute("socialLinks", typeof(SocialLinksView));
 		Routing.RegisterRoute("slinkInteraction", typeof(SLinkInteraction));
 		Routing.RegisterRoute("slinkStory", typeof(SLinkStory));
+		Routing.RegisterRoute("oneTwenty", typeof(OneToTwentyView));
+		Routing.RegisterRoute("twentyoneForty", typeof(TwentyOneToFourtyView));
+		Routing.RegisterRoute("fourtyoneSixty", typeof(FourtyOneToSixtyView));
+		Routing.RegisterRoute("sixtyoneEighty", typeof(SixtyOneToEightyView));
     }
 }
