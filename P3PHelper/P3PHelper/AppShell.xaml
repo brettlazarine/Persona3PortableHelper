@@ -5,11 +5,13 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:P3PHelper"
     xmlns:views="clr-namespace:P3PHelper.MVVM.Views"
+    xmlns:requests="clr-namespace:P3PHelper.MVVM.Views.Requests"
     Shell.FlyoutBehavior="Flyout">
 
     <FlyoutItem Title="MainPage">
         <ShellContent Title="Main Page"
-                      ContentTemplate="{DataTemplate local:MainPage}" />
+            ContentTemplate="{DataTemplate local:MainPage}" />
+        
     </FlyoutItem>
 
     <FlyoutItem Title="Social Links">
@@ -17,5 +19,17 @@
             ContentTemplate="{DataTemplate views:SocialLinksView}">
             
         </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Requests">
+        <ShellContent Title="1 - 20"
+            ContentTemplate="{DataTemplate requests:OneToTwentyView}"/>
+        <ShellContent Title="21 - 40"
+            ContentTemplate="{DataTemplate requests:TwentyOneToFourtyView}"/>
+        <ShellContent Title="41 - 60"
+            ContentTemplate="{DataTemplate requests:FourtyOneToSixtyView}"/>
+        <ShellContent Title="61 - 80"
+            ContentTemplate="{DataTemplate requests:SixtyOneToEightyView}"/>
+        
     </FlyoutItem>
 </Shell>

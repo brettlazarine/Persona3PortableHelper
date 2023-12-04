@@ -10,4 +10,18 @@
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
+  <ItemGroup>
+    <MauiXaml Update="MVVM\Views\Requests\FourtyOneToSixtyView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="MVVM\Views\Requests\OneToTwentyView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="MVVM\Views\Requests\SixtyOneToEightyView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="MVVM\Views\Requests\TwentyOneToFourtyView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+  </ItemGroup>
 </Project>

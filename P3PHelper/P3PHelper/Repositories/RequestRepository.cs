@@ -805,6 +805,10 @@ namespace P3PHelper.Repositories
                         App.ProgressRepo.InsertRequest(request);
                     }
                 }
+                else
+                {
+                    return;
+                }
             }
             catch (Exception ex)
             {

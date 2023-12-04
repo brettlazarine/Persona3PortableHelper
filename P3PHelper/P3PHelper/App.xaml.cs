@@ -25,6 +25,6 @@ public partial class App : Application
 	{
 		Routing.RegisterRoute("socialLinks", typeof(SocialLinksView));
 		Routing.RegisterRoute("slinkInteraction", typeof(SLinkInteraction));
-		Routing.RegisterRoute("slinkInteraction", typeof(SLinkStory));
+		Routing.RegisterRoute("slinkStory", typeof(SLinkStory));
     }
 }
