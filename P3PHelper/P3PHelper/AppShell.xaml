@@ -24,10 +24,13 @@
     <FlyoutItem Title="Requests">
         <ShellContent Title="1 - 20"
             ContentTemplate="{DataTemplate requests:OneToTwentyView}"/>
+        
         <ShellContent Title="21 - 40"
             ContentTemplate="{DataTemplate requests:TwentyOneToFourtyView}"/>
+        
         <ShellContent Title="41 - 60"
             ContentTemplate="{DataTemplate requests:FourtyOneToSixtyView}"/>
+        
         <ShellContent Title="61 - 80"
             ContentTemplate="{DataTemplate requests:SixtyOneToEightyView}"/>
         

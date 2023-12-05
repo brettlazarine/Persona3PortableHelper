@@ -383,9 +383,9 @@
         <Setter Property="Shell.DisabledColor" Value="{AppThemeBinding Light=White, Dark=White}" />
         <Setter Property="Shell.UnselectedColor" Value="{AppThemeBinding Light=White, Dark=White}" />
         <Setter Property="Shell.NavBarHasShadow" Value="False" />
-        <Setter Property="Shell.TabBarBackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}" />
+        <Setter Property="Shell.TabBarBackgroundColor" Value="{AppThemeBinding Light={StaticResource PrimaryBlue}, Dark={StaticResource PrimaryBlue}}" />
         <Setter Property="Shell.TabBarForegroundColor" Value="{AppThemeBinding Light=White, Dark=White}" />
-        <Setter Property="Shell.TabBarTitleColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
+        <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource SecondaryBlue}" />
         <Setter Property="Shell.TabBarUnselectedColor" Value="{AppThemeBinding Light=White, Dark=White}" />
     </Style>
 
