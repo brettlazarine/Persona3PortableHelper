@@ -8,6 +8,6 @@ public partial class OneToTwentyView : ContentPage
 	public OneToTwentyView()
 	{
 		InitializeComponent();
-		BindingContext = Vm.OneTwenty;
+		BindingContext = Vm;
 	}
 }

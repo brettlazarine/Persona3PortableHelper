@@ -6,7 +6,7 @@
 
     <ScrollView>
         <CollectionView
-            ItemsSource="{Binding .}">
+            ItemsSource="{Binding OneTwenty}">
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout
                     Orientation="Vertical" />
