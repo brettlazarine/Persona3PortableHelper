@@ -2,19 +2,92 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="P3PHelper.MVVM.Views.Requests.OneToTwentyView"
-             Title="OneToTwentyView">
+             Title="Requests">
 
     <ScrollView>
         <CollectionView
             ItemsSource="{Binding OneTwenty}">
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout
-                    Orientation="Vertical" />
+                    Orientation="Vertical"/>
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Label
-                        Text="{Binding Reward}" />
+                    <Frame CornerRadius="75" BorderColor="Transparent">
+                        <Grid
+                            RowDefinitions="auto, auto"
+                            ColumnDefinitions="*, *"
+                            Padding="5">
+                            
+                            <Grid.Background>
+                                <LinearGradientBrush
+                                    EndPoint="0,1">
+                                    
+                                    <GradientStop
+                                        Color="{StaticResource PrimaryBlue}"
+                                        Offset="0" />
+                                    <GradientStop
+                                        Color="{StaticResource SecondaryBlue}"
+                                        Offset="1" />
+                                </LinearGradientBrush>
+                            </Grid.Background>
+
+                            <Label 
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Text="{Binding QuestNumber, StringFormat='Request #{0}'}"/>
+                            <CheckBox 
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                IsChecked="{Binding IsCompleted}"
+                                CheckedChanged="CheckBox_CheckedChanged"/>
+
+                            <Grid AutomationId="RequestDetails"
+                                RowDefinitions="auto, auto, auto, auto, auto, auto"
+                                ColumnDefinitions="*, *"
+                                Grid.Row="1"
+                                Grid.ColumnSpan="2"
+                                Padding="5">
+
+                                <Label
+                                    Grid.Row="0" 
+                                    Grid.ColumnSpan="2"
+                                    Text="{Binding QuestName}" />
+
+                                <Label
+                                    Grid.Row="1"
+                                    Grid.Column="0" 
+                                    Text="Available"/>
+                                <Label
+                                    Grid.Row="1"
+                                    Grid.Column="1" 
+                                    Text="Deadline"/>
+
+                                <Label
+                                    Grid.Row="2"
+                                    Grid.Column="0" 
+                                    Text="{Binding Available}"/>
+                                <Label
+                                    Grid.Row="2"
+                                    Grid.Column="1" 
+                                    Text="{Binding Deadline}"/>
+
+                                <Label
+                                    Grid.Row="3"
+                                    Grid.ColumnSpan="2"
+                                    Text="{Binding HowToComplete}"/>
+
+                                <Label
+                                    Grid.Row="4"
+                                    Grid.ColumnSpan="2"
+                                    Text="Reward"/>
+                                <Label TextColor="White" FontAttributes="Bold" FontSize="20"
+                                    Grid.Row="5"
+                                    Grid.ColumnSpan="2"
+                                    Text="{Binding Reward}" />
+                            </Grid>
+                        </Grid>
+                    </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
