@@ -1,3 +1,4 @@
+using P3PHelper.MVVM.Models;
 using P3PHelper.MVVM.ViewModels;
 using System.Diagnostics;
 
@@ -19,11 +20,15 @@ public partial class OneToTwentyView : ContentPage
 			Debug.WriteLine("*** Unexpected sender type in CheckBox_CheckedChanged ***");
 			return;
 		}
-
+		if (checkBox.BindingContext is not Request request)
+		{
+            Debug.WriteLine("*** Unexpected BindingContext type in RequestCheckBox_CheckedChanged ***");
+            return;
+        }
+		// Toggle the IsVisible property of the RequestDetails Grid
 		try
 		{
 			var parent = checkBox.Parent as Layout;
-			//Debug.WriteLine($"Parent id: {parent.AutomationId}");
 			if (parent == null)
 			{
 				Debug.WriteLine("*** Parent is null in RequestCheckBox_CheckedChanged ***");
@@ -43,6 +48,18 @@ public partial class OneToTwentyView : ContentPage
             Debug.WriteLine($"*** Error handling CheckBox tapped: {ex.Message} ***");
 
             await DisplayAlert("Error", "Error handling CheckBox tap", "OK");
+        }
+		// Update the Request in the database
+		try
+		{
+			int isCompleted = checkBox.IsChecked ? 1 : 0;
+			App.ProgressRepo.UpdateRequest(request.QuestNumber, isCompleted);
+		}
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"*** Error updating Request: {ex.Message}   ***");
+
+            await DisplayAlert("Error", "Error updating Request", "OK");
         }
     }
 }
