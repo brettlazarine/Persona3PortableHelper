@@ -13,8 +13,10 @@
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Frame CornerRadius="75" BorderColor="Transparent">
-                        <Grid
+                    <Frame 
+                        CornerRadius="75" 
+                        BorderColor="Transparent">
+                        <Grid AutomationId="Parent"
                             RowDefinitions="auto, auto"
                             ColumnDefinitions="*, *"
                             Padding="5">
@@ -40,7 +42,7 @@
                                 Grid.Row="0"
                                 Grid.Column="1"
                                 IsChecked="{Binding IsCompleted}"
-                                CheckedChanged="CheckBox_CheckedChanged"/>
+                                CheckedChanged="RequestCheckBox_CheckedChanged"/>
 
                             <Grid AutomationId="RequestDetails"
                                 RowDefinitions="auto, auto, auto, auto, auto, auto"
