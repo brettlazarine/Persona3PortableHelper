@@ -2,7 +2,28 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="P3PHelper.MVVM.Views.Requests.OneToTwentyView"
-             Title="OneToTwentyView">
+             xmlns:converters="clr-namespace:P3PHelper.Converters"
+             Title="Requests">
+
+    <ContentPage.Resources>
+        <converters:IsCompletedBoolConverter x:Key="IsCompletedBoolConverter"/>
+    </ContentPage.Resources>
+
+    <!--<ContentPage.Background>
+        <LinearGradientBrush
+            EndPoint="0,1">
+
+            <GradientStop
+                Color="{StaticResource PrimaryBlue}"
+                Offset="0" />
+            <GradientStop
+                Color="{StaticResource SecondaryBlue}"
+                Offset=".5" />
+            <GradientStop 
+                Color="White"
+                Offset="1" />
+        </LinearGradientBrush>
+    </ContentPage.Background>-->
 
     <ScrollView>
         <CollectionView
@@ -13,8 +34,82 @@
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Label
-                        Text="{Binding Reward}" />
+                    <Frame
+                        Margin="20"
+                        CornerRadius="30" 
+                        BackgroundColor="{StaticResource PrimaryBlue}"
+                        BorderColor="{StaticResource SecondaryBlue}">
+
+                        <Grid
+                            RowDefinitions="auto, auto"
+                            ColumnDefinitions="*, *"
+                            Padding="5">
+
+                            <Label 
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Style="{StaticResource RequestNumber}"
+                                Text="{Binding QuestNumber, StringFormat='Request #{0}'}" />
+                            <CheckBox
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                IsChecked="{Binding IsCompleted, Converter={StaticResource IsCompletedBoolConverter}}"
+                                CheckedChanged="RequestCheckBox_CheckedChanged" />
+
+                            <Grid AutomationId="RequestDetails"
+                                RowDefinitions="auto, auto, auto, auto, auto, auto"
+                                ColumnDefinitions="*, *"
+                                Grid.Row="1"
+                                Grid.ColumnSpan="2"
+                                Padding="5">
+
+                                <Label
+                                    Grid.Row="0" 
+                                    Grid.ColumnSpan="2"
+                                    Style="{StaticResource RequestName}"
+                                    Text="{Binding QuestName}" />
+
+                                <Label
+                                    Grid.Row="1"
+                                    Grid.Column="0" 
+                                    Style="{StaticResource AvailableDeadlineTitle}"
+                                    Text="Available" />
+                                <Label
+                                    Grid.Row="1"
+                                    Grid.Column="1" 
+                                    Style="{StaticResource AvailableDeadlineTitle}"
+                                    Text="Deadline" />
+
+                                <Label
+                                    Grid.Row="2"
+                                    Grid.Column="0" 
+                                    Style="{StaticResource AvailableDeadlineValue}"
+                                    Text="{Binding Available}" />
+                                <Label
+                                    Grid.Row="2"
+                                    Grid.Column="1" 
+                                    Style="{StaticResource AvailableDeadlineValue}"
+                                    Text="{Binding Deadline}" />
+
+                                <Label
+                                    Grid.Row="3"
+                                    Grid.ColumnSpan="2"
+                                    Style="{StaticResource HowToComplete}"
+                                    Text="{Binding HowToComplete}" />
+
+                                <Label
+                                    Grid.Row="4"
+                                    Grid.ColumnSpan="2"
+                                    Style="{StaticResource RewardTitle}"
+                                    Text="Reward" />
+                                <Label
+                                    Grid.Row="5"
+                                    Grid.ColumnSpan="2"
+                                       Style="{StaticResource RewardValue}"
+                                    Text="{Binding Reward}" />
+                            </Grid>
+                        </Grid>
+                    </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
