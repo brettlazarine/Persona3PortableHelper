@@ -14,7 +14,39 @@ namespace P3PHelper.Repositories
 
         public RequestRepository()
         {
-            AllRequests = new List<Request>()
+            if (App.ProgressRepo.GetRequests().Count == 0 || App.ProgressRepo.GetRequests() == null)
+            {
+                AllRequests = CreateRequests();
+                LoadRequestDb(AllRequests);
+            }
+        }
+
+        public void LoadRequestDb(List<Request> requests)
+        {
+            try
+            {
+                if (App.ProgressRepo.GetRequests().Count == 0)
+                {
+                    foreach (var request in requests)
+                    {
+                        App.ProgressRepo.InsertRequest(request);
+                    }
+                }
+                else
+                {
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** LoadRequestDb: " + ex.Message + " ***");
+                return;
+            }
+        }
+
+        public List<Request> CreateRequests()
+        {
+            var requests = new List<Request>()
             {
                 #region 1-10
                 new Request()
@@ -787,34 +819,7 @@ namespace P3PHelper.Repositories
                 },
                 #endregion
             };
-
-            if (App.ProgressRepo.GetRequests().Count == 0)
-            {
-                LoadRequestDb(AllRequests);
-            }
-        }
-
-        public void LoadRequestDb(List<Request> requests)
-        {
-            try
-            {
-                if (App.ProgressRepo.GetRequests().Count == 0)
-                {
-                    foreach (var request in requests)
-                    {
-                        App.ProgressRepo.InsertRequest(request);
-                    }
-                }
-                else
-                {
-                    return;
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine("*** LoadRequestDb: " + ex.Message + " ***");
-                return;
-            }
+            return requests;
         }
     }
 }

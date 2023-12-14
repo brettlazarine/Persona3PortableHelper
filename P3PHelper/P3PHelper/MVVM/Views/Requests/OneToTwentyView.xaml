@@ -9,22 +9,6 @@
         <converters:IsCompletedBoolConverter x:Key="IsCompletedBoolConverter"/>
     </ContentPage.Resources>
 
-    <!--<ContentPage.Background>
-        <LinearGradientBrush
-            EndPoint="0,1">
-
-            <GradientStop
-                Color="{StaticResource PrimaryBlue}"
-                Offset="0" />
-            <GradientStop
-                Color="{StaticResource SecondaryBlue}"
-                Offset=".5" />
-            <GradientStop 
-                Color="White"
-                Offset="1" />
-        </LinearGradientBrush>
-    </ContentPage.Background>-->
-
     <ScrollView>
         <CollectionView
             ItemsSource="{Binding OneTwenty}">
