@@ -22,7 +22,7 @@ public partial class SLinkStory : ContentPage
         TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
         arcanaName = textInfo.ToTitleCase(arcanaName);
 
-        Link = App.ProgressRepo.GetSLink(arcanaName);
+        //Link = App.ProgressRepo.GetSLink(arcanaName);
         BindingContext = Link;
     }
 
@@ -230,7 +230,7 @@ public partial class SLinkStory : ContentPage
         try
         {
             int isCompletedValue = e.Value ? 1 : 0;
-            App.ProgressRepo.UpdateRankUp(rank.RankUpId, isCompletedValue);
+            //App.ProgressRepo.UpdateRankUp(rank.RankUpId, isCompletedValue);
         }
         catch (Exception ex)
         {

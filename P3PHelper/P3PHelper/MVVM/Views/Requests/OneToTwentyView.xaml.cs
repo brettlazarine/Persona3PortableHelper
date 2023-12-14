@@ -53,7 +53,7 @@ public partial class OneToTwentyView : ContentPage
 		try
 		{
 			int isCompleted = checkBox.IsChecked ? 1 : 0;
-			App.ProgressRepo.UpdateRequest(request.QuestNumber, isCompleted);
+			//App.ProgressRepo.UpdateRequest(request.QuestNumber, isCompleted);
 		}
         catch (Exception ex)
         {

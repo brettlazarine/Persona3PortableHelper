@@ -14,28 +14,28 @@ namespace P3PHelper.Repositories
 
         public RequestRepository()
         {
-            if (App.ProgressRepo.GetRequests().Count == 0 || App.ProgressRepo.GetRequests() == null)
-            {
-                AllRequests = CreateRequests();
-                LoadRequestDb(AllRequests);
-            }
+            //if (App.ProgressRepo.GetRequests().Count == 0 || App.ProgressRepo.GetRequests() == null)
+            //{
+            //    AllRequests = CreateRequests();
+            //    LoadRequestDb(AllRequests);
+            //}
         }
 
         public void LoadRequestDb(List<Request> requests)
         {
             try
             {
-                if (App.ProgressRepo.GetRequests().Count == 0)
-                {
-                    foreach (var request in requests)
-                    {
-                        App.ProgressRepo.InsertRequest(request);
-                    }
-                }
-                else
-                {
-                    return;
-                }
+                //if (App.ProgressRepo.GetRequests().Count == 0)
+                //{
+                //    foreach (var request in requests)
+                //    {
+                //        App.ProgressRepo.InsertRequest(request);
+                //    }
+                //}
+                //else
+                //{
+                //    return;
+                //}
             }
             catch (Exception ex)
             {

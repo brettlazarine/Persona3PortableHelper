@@ -12,23 +12,7 @@
             <Label Text="It will also help you with the Persona Compendium." FontSize="Medium" HorizontalOptions="Center" />
             <Label Text="This app is not affiliated with Atlus or the Persona series." FontSize="Medium" HorizontalOptions="Center" />
 
-            <!--<CollectionView ItemsSource="{Binding .}">
-                <CollectionView.ItemsLayout>
-                    <LinearItemsLayout Orientation="Vertical" />
-                </CollectionView.ItemsLayout>
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Label Text="{Binding Arcana}" />
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>-->
-
-            <Label Text="{Binding QuestNumber}" />
-            <Label Text="{Binding QuestName}" />
-            <Label Text="{Binding Reward}" />
-            <Label Text="{Binding Available}" />
-            <Label Text="{Binding Deadline}" />
-            <Label Text="{Binding HowToComplete}" />
+            <Label Text="{Binding Arcana}" />
         </StackLayout>
     </ScrollView>
 

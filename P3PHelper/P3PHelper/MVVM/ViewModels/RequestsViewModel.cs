@@ -18,25 +18,25 @@ namespace P3PHelper.MVVM.ViewModels
 
         public RequestsViewModel()
         {
-            foreach (var req in App.ProgressRepo.GetRequests())
-            {
-                if (req.QuestNumber <= 20)
-                {
-                    OneTwenty.Add(req);
-                }
-                else if (req.QuestNumber <= 40)
-                {
-                    TwentyOneFourty.Add(req);
-                }
-                else if (req.QuestNumber <= 60)
-                {
-                    FourtyOneSixty.Add(req);
-                }
-                else if (req.QuestNumber <= 80)
-                {
-                    SixtyOneEighty.Add(req);
-                }
-            }
+            //foreach (var req in App.ProgressRepo.GetRequests())
+            //{
+            //    if (req.QuestNumber <= 20)
+            //    {
+            //        OneTwenty.Add(req);
+            //    }
+            //    else if (req.QuestNumber <= 40)
+            //    {
+            //        TwentyOneFourty.Add(req);
+            //    }
+            //    else if (req.QuestNumber <= 60)
+            //    {
+            //        FourtyOneSixty.Add(req);
+            //    }
+            //    else if (req.QuestNumber <= 80)
+            //    {
+            //        SixtyOneEighty.Add(req);
+            //    }
+            //}
         }
 
         private async void RequestCheckBoxChangedVM(object sender, CheckedChangedEventArgs e)
@@ -79,7 +79,7 @@ namespace P3PHelper.MVVM.ViewModels
             try
             {
                 int isCompleted = checkBox.IsChecked ? 1 : 0;
-                App.ProgressRepo.UpdateRequest(request.QuestNumber, isCompleted);
+                //App.ProgressRepo.UpdateRequest(request.QuestNumber, isCompleted);
             }
             catch (Exception ex)
             {

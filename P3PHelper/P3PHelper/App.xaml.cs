@@ -2,22 +2,29 @@
 using P3PHelper.MVVM.Views.Requests;
 using P3PHelper.MVVM.Views.SLinks;
 using P3PHelper.Repositories;
+using System.Diagnostics;
 
 namespace P3PHelper;
 
 public partial class App : Application
 {
 	public static ProgressRepository ProgressRepo { get; private set; }
-	public App(ProgressRepository repo)
+	public App()
 	{
 		InitializeComponent();
-		ProgressRepo = repo;
+		//ProgressRepo = repo;
 
-        SLinkRepository sLinkRepository = new SLinkRepository();
-        DependencyService.RegisterSingleton(sLinkRepository);
+		//Constants.InitializeDatabaseAsync().ConfigureAwait(false);
+		//CheckDatabaseFile();
 
-		RequestRepository requestRepository = new RequestRepository();
-		DependencyService.RegisterSingleton(requestRepository);
+
+
+
+        //SLinkRepository sLinkRepository = new SLinkRepository();
+        //DependencyService.RegisterSingleton(sLinkRepository);
+
+		//RequestRepository requestRepository = new RequestRepository();
+		//DependencyService.RegisterSingleton(requestRepository);
 
         MainPage = new AppShell();
 	}
@@ -32,4 +39,18 @@ public partial class App : Application
 		Routing.RegisterRoute("fourtyoneSixty", typeof(FourtyOneToSixtyView));
 		Routing.RegisterRoute("sixtyoneEighty", typeof(SixtyOneToEightyView));
     }
+
+    public static void CheckDatabaseFile()
+    {
+        var dbPath = Constants.DatabasePath;
+        if (File.Exists(dbPath))
+        {
+            Debug.WriteLine("*** Database file exists. ***");
+        }
+        else
+        {
+            Debug.WriteLine("*** Database file does not exist. ***");
+        }
+    }
+
 }
