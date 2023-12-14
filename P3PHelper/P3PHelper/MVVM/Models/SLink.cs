@@ -7,7 +7,7 @@ namespace P3PHelper.MVVM.Models
     [Table("SLinks")]
     public class SLink : ISLinks
     {
-        [PrimaryKey]
+        [PrimaryKey, Indexed]
         public string Arcana { get; set; }
         
         public string MaleName { get; set; }
