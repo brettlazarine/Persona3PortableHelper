@@ -12,6 +12,12 @@ public partial class SLinkInteraction : ContentPage
 		InitializeComponent();
 	}
 
+    public SLinkInteraction(InteractionStoryViewModel vm)
+    {
+        InitializeComponent();
+        BindingContext = vm;
+    }
+
     public SLinkInteraction(string arcanaName)
     {
         InitializeComponent();

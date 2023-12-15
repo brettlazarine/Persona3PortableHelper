@@ -12,6 +12,8 @@ public partial class App : Application
 	public App()
 	{
 		InitializeComponent();
+
+		ProgressRepository.InitializeDatabase();
 		//ProgressRepo = repo;
 
 		//Constants.InitializeDatabaseAsync().ConfigureAwait(false);

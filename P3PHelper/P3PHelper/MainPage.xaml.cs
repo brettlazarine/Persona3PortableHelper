@@ -19,20 +19,21 @@ public partial class MainPage : ContentPage
 		//var sLinks = ProgressRepo.GetSLinks();
 
 
-		var assembly = IntrospectionExtensions.GetTypeInfo(typeof(App)).Assembly;
-		using (Stream stream = assembly.GetManifestResourceStream("P3PHelper.Resources.Raw.persona3.db3"))
-		{
-			using (MemoryStream memoryStream = new MemoryStream())
-			{
-				stream.CopyTo(memoryStream);
-				File.WriteAllBytes(ProgressRepository.DbPath, memoryStream.ToArray());
-			}
-		}
+		//var assembly = IntrospectionExtensions.GetTypeInfo(typeof(App)).Assembly;
+		//using (Stream stream = assembly.GetManifestResourceStream("P3PHelper.Resources.Raw.persona3.db3"))
+		//{
+		//	using (MemoryStream memoryStream = new MemoryStream())
+		//	{
+		//		stream.CopyTo(memoryStream);
+		//		File.WriteAllBytes(ProgressRepository.DbPath, memoryStream.ToArray());
+		//	}
+		//}
 
 		ProgressRepository repo = new();
 		var link = repo.GetSLinks().FirstOrDefault();
 		BindingContext = link;
 
+		Debug.WriteLine($"*** Boolean: {link.MaleRequiresPersona} ***");
 		//var bc = App.ProgressRepo.GetSLinks().FirstOrDefault();
 		//try
 		//{
@@ -46,6 +47,6 @@ public partial class MainPage : ContentPage
 		//BindingContext = bc;
 	}
 
-	
+    
 }
 

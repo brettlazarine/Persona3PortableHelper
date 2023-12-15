@@ -1,4 +1,5 @@
-﻿using P3PHelper.Abstractions;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using P3PHelper.Abstractions;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
 
@@ -25,9 +26,7 @@ namespace P3PHelper.MVVM.Models
         public string MaleAvailability { get; set; }
         
         public string FemaleAvailability { get; set; }
-        
-        public bool MaleRequiresPersona { get; set; }
-        
+        public bool MaleRequiresPersona { get; set;}
         public bool FemaleRequiresPersona { get; set; }
 
         public SLink()

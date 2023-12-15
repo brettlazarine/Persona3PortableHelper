@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,6 +16,10 @@ namespace P3PHelper.Repositories
     {
         SQLiteConnection connection;
         public static string DbPath { get; } = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "persona3.db3");
+        public const SQLiteOpenFlags Flags =
+            SQLiteOpenFlags.ReadWrite |
+            SQLiteOpenFlags.Create |
+            SQLiteOpenFlags.SharedCache;
 
         public ProgressRepository()
         {
@@ -23,7 +28,9 @@ namespace P3PHelper.Repositories
             //connection.CreateTable<RankUp>();
             //connection.CreateTable<Request>();
 
-            connection = new SQLiteConnection(DbPath);
+
+
+            connection = new SQLiteConnection(DbPath, Flags);
             connection.CreateTable<SLink>();
         }
 
@@ -33,7 +40,38 @@ namespace P3PHelper.Repositories
             return connection.Table<SLink>().ToList();
         }
 
-        
+        public SLink GetSLink(string arcanaName)
+        {
+            return connection.Table<SLink>().Where(s => s.Arcana == arcanaName).FirstOrDefault();
+        }
+        public void UpdateSLink(string arcana, int isCompleted)
+        {
+            var newData = new SLink
+            {
+                Arcana = arcana,
+                //MaleRequiresPersona = isCompleted
+            };
+            //connection.Execute($"UPDATE RankUp SET IsCompleted = {newData.IsCompleted} WHERE RankUpId = {newData.RankUpId};");
+            //connection.Execute($"UPDATE SLink SET MaleRequiresPersona = {link.MaleRequiresPersona} WHERE Arcana = {link.Arcana};");
+            //connection.Execute("UPDATE SLink SET MaleRequiresPersona = ? WHERE Arcana = ?", isCompleted, arcana);
+            //connection.Execute($"UPDATE SLink SET MaleRequiresPersona = {newData.MaleRequiresPersona} WHERE Arcana = '{newData.Arcana}';");
+        }
+
+        public static void InitializeDatabase()
+        {
+            var dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "persona3.db3");
+            if (!File.Exists(dbPath))
+            {
+                var assembly = IntrospectionExtensions.GetTypeInfo(typeof(App)).Assembly;
+                using (Stream stream = assembly.GetManifestResourceStream("P3PHelper.Resources.Raw.persona3.db3"))
+                using (var fileStream = File.Create(dbPath))
+                {
+                    stream.CopyTo(fileStream);
+                }
+            }
+        }
+
+
 
         //public List<SLink> GetSLinks()
         //{
@@ -61,7 +99,7 @@ namespace P3PHelper.Repositories
         //        var link = connection.Table<SLink>().Where(s => s.Arcana == arcanaName).FirstOrDefault();
         //        link.MaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == link.Arcana && r.IsMale == 1).ToList();
         //        link.FemaleRankUps = connection.Table<RankUp>().Where(r => r.Arcana == link.Arcana && r.IsMale == 0).ToList();
-                
+
         //        return link;
         //    }
         //    catch (Exception ex)
@@ -166,7 +204,7 @@ namespace P3PHelper.Repositories
         //        Debug.WriteLine("*** InsertFemaleRankUp: " + ex.Message + " ***");
         //    }
         //}
-        
+
         //public void UpdateRankUp(int rankId, int isCompleted)
         //{
         //    try
