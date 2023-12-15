@@ -28,6 +28,7 @@ namespace P3PHelper.MVVM.Models
         public List<(string Question, string Answer)> RankInteractions { get; set; }
 
         // Serialized property for storing in the database
+        
         public string SerializedRankInteractions
         {
             get => JsonConvert.SerializeObject(RankInteractions);

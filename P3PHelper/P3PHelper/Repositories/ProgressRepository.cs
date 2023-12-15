@@ -1,4 +1,5 @@
-﻿using P3PHelper.MVVM.Models;
+﻿using Newtonsoft.Json;
+using P3PHelper.MVVM.Models;
 using SQLite;
 using SQLiteNetExtensions.Extensions;
 using System;
@@ -32,6 +33,7 @@ namespace P3PHelper.Repositories
 
             connection = new SQLiteConnection(DbPath, Flags);
             connection.CreateTable<SLink>();
+            connection.CreateTable<ArcanaRankUp>();
         }
 
         #region SLinks
@@ -65,6 +67,16 @@ namespace P3PHelper.Repositories
             //connection.Execute($"UPDATE SLink SET MaleRequiresPersona = {link.MaleRequiresPersona} WHERE Arcana = {link.Arcana};");
             //connection.Execute("UPDATE SLink SET MaleRequiresPersona = ? WHERE Arcana = ?", isCompleted, arcana);
             //connection.Execute($"UPDATE SLink SET MaleRequiresPersona = {newData.MaleRequiresPersona} WHERE Arcana = '{newData.Arcana}';");
+        }
+
+        public List<ArcanaRankUp> GetArcanaRankUps()
+        {
+            var arcanaRankUpsData = connection.Table<ArcanaRankUp>().ToList();
+            foreach (var item in arcanaRankUpsData)
+            {
+                item.RankUps = JsonConvert.DeserializeObject<Dictionary<string, RankInteractionDetails>>(item.SerializedRankUps);
+            }
+            return arcanaRankUpsData;
         }
 
         public static void InitializeDatabase()

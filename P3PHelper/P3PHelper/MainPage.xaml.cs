@@ -33,10 +33,22 @@ public partial class MainPage : ContentPage
 		var link = repo.GetSLinks().FirstOrDefault();
 		BindingContext = link;
 
-		var singleLink = repo.GetSLink("Aeon");
-        Debug.WriteLine($"*** Arcana: {singleLink.Arcana} ***");
+		//var singleLink = repo.GetSLink("Aeon");
+		//Debug.WriteLine($"*** Arcana: {singleLink.Arcana} ***");
 
-        Debug.WriteLine($"*** Name: {singleLink.MaleName} ***");
+		//Debug.WriteLine($"*** Name: {singleLink.MaleName} ***");
+
+		try
+		{
+			var ranks = repo.GetArcanaRankUps();
+			Debug.WriteLine("*** AFTER RANKS ***");
+		}
+		catch (Exception ex)
+		{
+			   Debug.WriteLine($"*** Error: {ex.Message} ***");
+		}
+
+
 		//var bc = App.ProgressRepo.GetSLinks().FirstOrDefault();
 		//try
 		//{
