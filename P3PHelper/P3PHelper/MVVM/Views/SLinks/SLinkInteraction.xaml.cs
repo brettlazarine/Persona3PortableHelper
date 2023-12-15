@@ -7,6 +7,7 @@ namespace P3PHelper.MVVM.Views.SLinks;
 public partial class SLinkInteraction : ContentPage
 {
     public SLink Link { get; set; }
+    public InteractionStoryViewModel Vm { get; set; }
     public SLinkInteraction()
 	{
 		InitializeComponent();
@@ -15,7 +16,8 @@ public partial class SLinkInteraction : ContentPage
     public SLinkInteraction(InteractionStoryViewModel vm)
     {
         InitializeComponent();
-        BindingContext = vm;
+        Vm = vm;
+        BindingContext = Vm;
     }
 
     public SLinkInteraction(string arcanaName)

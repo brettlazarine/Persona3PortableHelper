@@ -33,7 +33,10 @@ public partial class MainPage : ContentPage
 		var link = repo.GetSLinks().FirstOrDefault();
 		BindingContext = link;
 
-		Debug.WriteLine($"*** Boolean: {link.MaleRequiresPersona} ***");
+		var singleLink = repo.GetSLink("Aeon");
+        Debug.WriteLine($"*** Arcana: {singleLink.Arcana} ***");
+
+        Debug.WriteLine($"*** Boolean: {singleLink.MaleRequiresPersona} ***");
 		//var bc = App.ProgressRepo.GetSLinks().FirstOrDefault();
 		//try
 		//{

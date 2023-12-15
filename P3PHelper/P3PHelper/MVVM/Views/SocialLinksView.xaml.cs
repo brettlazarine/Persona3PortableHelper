@@ -3,6 +3,7 @@ using Microsoft.Maui.Controls.Xaml;
 using P3PHelper.MVVM.ViewModels;
 using P3PHelper.MVVM.Views.SLinks;
 using System.Diagnostics;
+using System.Globalization;
 
 namespace P3PHelper.MVVM.Views;
 
@@ -31,6 +32,8 @@ public partial class SocialLinksView : ContentPage
         try
         {
             ArcanaName = (sender as ImageButton).AutomationId.ToString().ToLower();
+            TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
+            ArcanaName = textInfo.ToTitleCase(ArcanaName);
             var vm = new InteractionStoryViewModel(ArcanaName);
             // The hangedman nav causing errors, this will work but is not clean
             // Consider trying source again when refactoring

@@ -1,5 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using P3PHelper.MVVM.Models;
+using P3PHelper.Repositories;
+using System.Diagnostics;
 
 namespace P3PHelper.MVVM.ViewModels
 {
@@ -18,7 +20,17 @@ namespace P3PHelper.MVVM.ViewModels
 
         public InteractionStoryViewModel(string arcanaName)
         {
-            Link = App.ProgressRepo.GetSLink(arcanaName);
+            Debug.WriteLine("*** BEFORE GETSLINK ***");
+            try
+            {
+                var repo = new ProgressRepository();
+                Link = repo.GetSLink(arcanaName);
+                Debug.WriteLine($"*** Link: {Link.Arcana} ***");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"*** Error getting SLink: {ex.Message} ***");
+            }
         }
 
         public double AdjustY(double y)

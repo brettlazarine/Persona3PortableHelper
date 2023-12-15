@@ -42,7 +42,17 @@ namespace P3PHelper.Repositories
 
         public SLink GetSLink(string arcanaName)
         {
-            return connection.Table<SLink>().Where(s => s.Arcana == arcanaName).FirstOrDefault();
+            // ... previous checks ...
+
+            var result = connection.Table<SLink>().Where(s => s.Arcana == arcanaName).FirstOrDefault();
+
+            //var links = connection.Table<SLink>().ToList();
+            //var result = links.Where(s => s.Arcana == arcanaName).FirstOrDefault();
+            if (result == null)
+            {
+                Debug.WriteLine($"*** No SLink found for ArcanaName: {arcanaName} ***");
+            }
+            return result;
         }
         public void UpdateSLink(string arcana, int isCompleted)
         {
