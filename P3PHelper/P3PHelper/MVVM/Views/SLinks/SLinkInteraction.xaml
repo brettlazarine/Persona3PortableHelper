@@ -108,7 +108,7 @@
                 <CollectionView
                     Grid.Row="1"
                     Grid.Column="0"
-                    ItemsSource="{Binding MaleRankUps}">
+                    ItemsSource="{Binding RankUp}">
                     
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout
@@ -131,7 +131,7 @@
                                     <Label x:Name="Rank"
                                         Grid.Column="0"
                                         Style="{StaticResource SLinkQuestion}"
-                                        Text="{Binding RankNumber, StringFormat='Rank {0}'}" />
+                                        Text="{Binding RankUps.Key, StringFormat='Rank {0}'}" />
                                     <CheckBox 
                                         Grid.Column="1"
                                         IsChecked="{Binding IsCompleted, Converter={StaticResource IsCompletedBoolConverter}}" 

@@ -40,13 +40,23 @@ public partial class MainPage : ContentPage
 
 		try
 		{
-			var ranks = repo.GetArcanaRankUps();
+			var ranks = repo.GetRankUps();
 			Debug.WriteLine("*** AFTER RANKS ***");
 		}
 		catch (Exception ex)
 		{
 			   Debug.WriteLine($"*** Error: {ex.Message} ***");
 		}
+
+		try
+		{
+			var rank = repo.GetRankUp("Aeon");
+			Debug.WriteLine("*** AFTER RANK ***");
+		}
+		catch (Exception ex)
+		{
+            Debug.WriteLine($"*** Error: {ex.Message} ***");
+        }
 
 
 		//var bc = App.ProgressRepo.GetSLinks().FirstOrDefault();

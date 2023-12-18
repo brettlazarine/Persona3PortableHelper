@@ -33,7 +33,8 @@ namespace P3PHelper.Repositories
 
             connection = new SQLiteConnection(DbPath, Flags);
             connection.CreateTable<SLink>();
-            connection.CreateTable<ArcanaRankUp>();
+            //connection.CreateTable<ArcanaRankUp>();
+            //connection.CreateTable<RankUp>();
         }
 
         #region SLinks
@@ -77,6 +78,45 @@ namespace P3PHelper.Repositories
                 item.RankUps = JsonConvert.DeserializeObject<Dictionary<string, RankInteractionDetails>>(item.SerializedRankUps);
             }
             return arcanaRankUpsData;
+        }
+
+        public ArcanaRankUp GetArcanaRankUp(string arcana)
+        {
+            var arcanaRankUpData = connection.Table<ArcanaRankUp>().Where(a => a.Arcana == arcana).FirstOrDefault();
+            arcanaRankUpData.RankUps = JsonConvert.DeserializeObject<Dictionary<string, RankInteractionDetails>>(arcanaRankUpData.SerializedRankUps);
+            return arcanaRankUpData;
+        }
+
+        public List<RankUp> GetRankUps()
+        {
+            try
+            {
+                Debug.WriteLine("*** GETRANKUPS CONNECTION ***");
+                var r = connection.Table<RankUp>().ToList();
+                Debug.WriteLine("*** GETRANKUPS AFTER CONNECTION ***");
+                return r;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetRankUps: " + ex.Message + " ***");
+                return null;
+            }
+        }
+
+        public RankUp GetRankUp(string arcana)
+        {
+            try
+            {
+                Debug.WriteLine("*** GETRANKUP CONNECTION ***");
+                var r = connection.Table<RankUp>().Where(r => r.Arcana == arcana).FirstOrDefault();
+                Debug.WriteLine("*** GETRANKUP AFTER CONNECTION ***");
+                return r;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetRankUp: " + ex.Message + " ***");
+                return null;
+            }
         }
 
         public static void InitializeDatabase()

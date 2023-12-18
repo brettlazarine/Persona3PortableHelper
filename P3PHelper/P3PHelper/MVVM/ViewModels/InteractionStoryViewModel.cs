@@ -8,6 +8,12 @@ namespace P3PHelper.MVVM.ViewModels
     public partial class InteractionStoryViewModel : ObservableObject
     {
         public SLink Link { get; set; }
+        public List<RankUp> RankUp { get; set; } = new();
+        public List<RankInteraction> MaleInteractions { get; set; } = new();
+        public List<RankInteraction> FemaleInteractions { get; set; } = new();
+
+        //public List<(int rankNumber, int isCompleted, List<(string question, string answer>)>)> 
+
         public List<String> ScrollRanks = new()
         {
             "Rank 8", "Rank 9", "Rank 10"
@@ -31,6 +37,26 @@ namespace P3PHelper.MVVM.ViewModels
             {
                 Debug.WriteLine($"*** Error getting SLink: {ex.Message} ***");
             }
+            Debug.WriteLine("*** BEFORE GETRANKUP ***");
+            try
+            {
+                var repo = new ProgressRepository();
+                //RankUp = repo.GetRankUp(arcanaName);
+                //Debug.WriteLine($"*** RankUps: {RankUp.RankInteractions} ***");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"*** Error getting RankUps: {ex.Message} ***");
+            }
+
+            //if (RankUp != null)
+            //{
+            //    foreach (var rank in RankUp)
+            //    {
+            //        MaleInteractions.Add(rank.Value.Male);
+            //        FemaleInteractions.Add(rank.Value.Female);
+            //    }
+            //}
         }
 
         public double AdjustY(double y)

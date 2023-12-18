@@ -32,12 +32,19 @@ namespace P3PHelper.MVVM.Models
         public string SerializedRankInteractions
         {
             get => JsonConvert.SerializeObject(RankInteractions);
-            set => RankInteractions = JsonConvert.DeserializeObject<List<(string, string)>>(value);
+            set
+            {
+                var tempDictList = JsonConvert.DeserializeObject<List<Dictionary<string, string>>>(value);
+                RankInteractions = tempDictList
+                    .SelectMany(dict => dict)
+                    .Select(kvp => (kvp.Key, kvp.Value))
+                    .ToList();
+            }
         }
 
         public RankUp()
         {
-            IsMale = 1;
+            //IsMale = 1;
         }
     }
 }
