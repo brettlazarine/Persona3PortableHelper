@@ -35,6 +35,7 @@ public partial class SocialLinksView : ContentPage
             TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
             ArcanaName = textInfo.ToTitleCase(ArcanaName);
             var vm = new InteractionStoryViewModel(ArcanaName);
+            await vm.EnsureInitializedAsync(ArcanaName);
             // The hangedman nav causing errors, this will work but is not clean
             // Consider trying source again when refactoring
             if (ArcanaName == "hanged man")

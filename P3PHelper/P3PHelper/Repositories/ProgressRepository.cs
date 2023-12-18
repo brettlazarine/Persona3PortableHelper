@@ -42,6 +42,10 @@ namespace P3PHelper.Repositories
         {
             return connection.Table<SLink>().ToList();
         }
+        public async Task<List<SLink>> GetSLinksAsync()
+        {
+            return await Task.Run(() => connection.Table<SLink>().ToList());
+        }
 
         public SLink GetSLink(string arcanaName)
         {
@@ -57,6 +61,20 @@ namespace P3PHelper.Repositories
             }
             return result;
         }
+        public async Task<SLink> GetSLinkAsync(string arcanaName)
+        {
+            return await Task.Run(() =>
+            {
+                var result = connection.Table<SLink>().FirstOrDefault(s => s.Arcana == arcanaName);
+                if (result == null)
+                {
+                    Debug.WriteLine($"*** No SLink found for ArcanaName: {arcanaName} ***");
+                }
+                return result;
+            });
+        }
+
+
         public void UpdateSLink(string arcana, int isCompleted)
         {
             var newData = new SLink
@@ -118,6 +136,25 @@ namespace P3PHelper.Repositories
                 return null;
             }
         }
+        public async Task<List<RankUp>> GetRankUpAsync(string arcana)
+        {
+            return await Task.Run(() =>
+            {
+                try
+                {
+                    //Debug.WriteLine("*** GETRANKUP CONNECTION ***");
+                    var rankUps = connection.Table<RankUp>().Where(r => r.Arcana == arcana).ToList();
+                    //Debug.WriteLine("*** GETRANKUP AFTER CONNECTION ***");
+                    return rankUps;
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("*** GetRankUpAsync: " + ex.Message + " ***");
+                    return null;
+                }
+            });
+        }
+
 
         public void UpdateRankUp(int id, int isCompleted)
         {
