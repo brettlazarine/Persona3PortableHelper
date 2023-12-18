@@ -8,7 +8,7 @@ namespace P3PHelper.MVVM.Models
     public partial class RankUp : ObservableObject
     {
         [PrimaryKey, Unique, AutoIncrement]
-        public int RankUpId { get; set; }
+        public int Id { get; set; }
 
         [ForeignKey(nameof(Arcana)), Indexed]
         public string Arcana { get; set; }

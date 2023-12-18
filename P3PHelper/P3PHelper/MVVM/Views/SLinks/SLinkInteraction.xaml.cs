@@ -1,5 +1,6 @@
 using P3PHelper.MVVM.Models;
 using P3PHelper.MVVM.ViewModels;
+using P3PHelper.Repositories;
 using System.Diagnostics;
 using System.Globalization;
 
@@ -97,66 +98,66 @@ public partial class SLinkInteraction : ContentPage
     #endregion
 
     #region Female Arrow Tap Events
-    private void FemaleDate_Tapped(object sender, TappedEventArgs e)
-    {
-        if (sender is not Image arrow)
-        {
-            Debug.WriteLine("*** Unexpected sender type in FemaleDate_Tapped ***");
-            return;
-        }
+    //private void FemaleDate_Tapped(object sender, TappedEventArgs e)
+    //{
+    //    if (sender is not Image arrow)
+    //    {
+    //        Debug.WriteLine("*** Unexpected sender type in FemaleDate_Tapped ***");
+    //        return;
+    //    }
 
-        try
-        {
-            FemaleDate.IsVisible = !FemaleDate.IsVisible;
-            arrow.Rotation = FemaleDate.IsVisible ? 180 : 0;
-        }
-        catch (Exception ex)
-        {
-            Debug.WriteLine($"*** Error handling FemaleDate tap: {ex.Message} ***");
+    //    try
+    //    {
+    //        FemaleDate.IsVisible = !FemaleDate.IsVisible;
+    //        arrow.Rotation = FemaleDate.IsVisible ? 180 : 0;
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        Debug.WriteLine($"*** Error handling FemaleDate tap: {ex.Message} ***");
 
-            DisplayAlert("Error", "Error handling FemaleDate tap", "OK");
-        }
-    }
-    private void FemaleHow_Tapped(object sender, TappedEventArgs e)
-    {
-        if (sender is not Image arrow)
-        {
-            Debug.WriteLine("*** Unexpected sender type in FemaleHow_Tapped ***");
-            return;
-        }
+    //        DisplayAlert("Error", "Error handling FemaleDate tap", "OK");
+    //    }
+    //}
+    //private void FemaleHow_Tapped(object sender, TappedEventArgs e)
+    //{
+    //    if (sender is not Image arrow)
+    //    {
+    //        Debug.WriteLine("*** Unexpected sender type in FemaleHow_Tapped ***");
+    //        return;
+    //    }
 
-        try
-        {
-            FemaleHow.IsVisible = !FemaleHow.IsVisible;
-            arrow.Rotation = FemaleHow.IsVisible ? 180 : 0;
-        }
-        catch (Exception ex)
-        {
-            Debug.WriteLine($"*** Error handling FemaleHow tap: {ex.Message} ***");
+    //    try
+    //    {
+    //        FemaleHow.IsVisible = !FemaleHow.IsVisible;
+    //        arrow.Rotation = FemaleHow.IsVisible ? 180 : 0;
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        Debug.WriteLine($"*** Error handling FemaleHow tap: {ex.Message} ***");
 
-            DisplayAlert("Error", "Error handling FemaleHow tap", "OK");
-        }
-    }
-    private void FemaleAvailability_Tapped(object sender, TappedEventArgs e)
-    {
-        if (sender is not Image arrow)
-        {
-            Debug.WriteLine("*** Unexpected sender type in FemaleAvailability_Tapped ***");
-            return;
-        }
+    //        DisplayAlert("Error", "Error handling FemaleHow tap", "OK");
+    //    }
+    //}
+    //private void FemaleAvailability_Tapped(object sender, TappedEventArgs e)
+    //{
+    //    if (sender is not Image arrow)
+    //    {
+    //        Debug.WriteLine("*** Unexpected sender type in FemaleAvailability_Tapped ***");
+    //        return;
+    //    }
 
-        try
-        {
-            FemaleAvailability.IsVisible = !FemaleAvailability.IsVisible;
-            arrow.Rotation = FemaleAvailability.IsVisible ? 180 : 0;
-        }
-        catch (Exception ex)
-        {
-            Debug.WriteLine($"*** Error handling FemaleAvailability tap: {ex.Message} ***");
+    //    try
+    //    {
+    //        FemaleAvailability.IsVisible = !FemaleAvailability.IsVisible;
+    //        arrow.Rotation = FemaleAvailability.IsVisible ? 180 : 0;
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        Debug.WriteLine($"*** Error handling FemaleAvailability tap: {ex.Message} ***");
 
-            DisplayAlert("Error", "Error handling FemaleAvailability tap", "OK");
-        }
-    }
+    //        DisplayAlert("Error", "Error handling FemaleAvailability tap", "OK");
+    //    }
+    //}
     #endregion
 
     private async void RankStackArrow_Tapped(object sender, EventArgs e)
@@ -235,6 +236,8 @@ public partial class SLinkInteraction : ContentPage
         try
         {
             int isCompletedValue = e.Value ? 1 : 0;
+            var repo = new ProgressRepository();
+            repo.UpdateRankUp(rank.Id, isCompletedValue);
             //App.ProgressRepo.UpdateRankUp(rank.RankUpId, isCompletedValue);
         }
         catch (Exception ex)

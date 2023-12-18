@@ -34,7 +34,7 @@ namespace P3PHelper.Repositories
             connection = new SQLiteConnection(DbPath, Flags);
             connection.CreateTable<SLink>();
             //connection.CreateTable<ArcanaRankUp>();
-            //connection.CreateTable<RankUp>();
+            connection.CreateTable<RankUp>();
         }
 
         #region SLinks
@@ -103,12 +103,12 @@ namespace P3PHelper.Repositories
             }
         }
 
-        public RankUp GetRankUp(string arcana)
+        public List<RankUp> GetRankUp(string arcana)
         {
             try
             {
                 Debug.WriteLine("*** GETRANKUP CONNECTION ***");
-                var r = connection.Table<RankUp>().Where(r => r.Arcana == arcana).FirstOrDefault();
+                var r = connection.Table<RankUp>().Where(r => r.Arcana == arcana).ToList();
                 Debug.WriteLine("*** GETRANKUP AFTER CONNECTION ***");
                 return r;
             }
@@ -116,6 +116,19 @@ namespace P3PHelper.Repositories
             {
                 Debug.WriteLine("*** GetRankUp: " + ex.Message + " ***");
                 return null;
+            }
+        }
+
+        public void UpdateRankUp(int id, int isCompleted)
+        {
+            try
+            {
+                connection.Execute("UPDATE RankUp SET IsCompleted = ? WHERE Id = ?", isCompleted, id);
+                //connection.Execute($"UPDATE RankUp SET IsCompleted = {newData.IsCompleted} WHERE RankUpId = {newData.RankUpId};");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** UpdateRankUp: " + ex.Message + " ***");
             }
         }
 

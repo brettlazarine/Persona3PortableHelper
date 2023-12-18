@@ -9,8 +9,8 @@ namespace P3PHelper.MVVM.ViewModels
     {
         public SLink Link { get; set; }
         public List<RankUp> RankUp { get; set; } = new();
-        public List<RankInteraction> MaleInteractions { get; set; } = new();
-        public List<RankInteraction> FemaleInteractions { get; set; } = new();
+        public List<RankUp> MaleInteractions { get; set; } = new();
+        public List<RankUp> FemaleInteractions { get; set; } = new();
 
         //public List<(int rankNumber, int isCompleted, List<(string question, string answer>)>)> 
 
@@ -41,22 +41,28 @@ namespace P3PHelper.MVVM.ViewModels
             try
             {
                 var repo = new ProgressRepository();
-                //RankUp = repo.GetRankUp(arcanaName);
-                //Debug.WriteLine($"*** RankUps: {RankUp.RankInteractions} ***");
+                RankUp = repo.GetRankUp(arcanaName);
+                Debug.WriteLine($"*** RankUps: {RankUp.Count} ***");
             }
             catch (Exception ex)
             {
                 Debug.WriteLine($"*** Error getting RankUps: {ex.Message} ***");
             }
 
-            //if (RankUp != null)
-            //{
-            //    foreach (var rank in RankUp)
-            //    {
-            //        MaleInteractions.Add(rank.Value.Male);
-            //        FemaleInteractions.Add(rank.Value.Female);
-            //    }
-            //}
+            if (RankUp != null)
+            {
+                foreach (var rank in RankUp)
+                {
+                    if (rank.IsMale == 1)
+                    {
+                        MaleInteractions.Add(rank);
+                    }
+                    else
+                    {
+                        FemaleInteractions.Add(rank);
+                    }
+                }
+            }
         }
 
         public double AdjustY(double y)
