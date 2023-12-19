@@ -9,8 +9,9 @@ namespace P3PHelper.MVVM.Views.SLinks;
 public partial class SLinkStory : ContentPage
 {
     public SLink Link { get; set; }
-    
-	public SLinkStory()
+    public InteractionStoryViewModel Vm { get; set; }
+
+    public SLinkStory()
 	{
 		InitializeComponent();
 	}
@@ -18,7 +19,8 @@ public partial class SLinkStory : ContentPage
     public SLinkStory(InteractionStoryViewModel vm)
     {
         InitializeComponent();
-        BindingContext = vm;
+        Vm = vm;
+        BindingContext = Vm;
     }
 
     public SLinkStory(string arcanaName)
@@ -236,6 +238,8 @@ public partial class SLinkStory : ContentPage
         try
         {
             int isCompletedValue = e.Value ? 1 : 0;
+            var repo = new ProgressRepository();
+            repo.UpdateRankUp(rank.Id, isCompletedValue);
             //App.ProgressRepo.UpdateRankUp(rank.RankUpId, isCompletedValue);
         }
         catch (Exception ex)

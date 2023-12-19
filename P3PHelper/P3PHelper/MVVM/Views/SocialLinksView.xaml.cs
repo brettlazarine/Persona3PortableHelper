@@ -38,11 +38,11 @@ public partial class SocialLinksView : ContentPage
             await vm.EnsureInitializedAsync(ArcanaName);
             // The hangedman nav causing errors, this will work but is not clean
             // Consider trying source again when refactoring
-            if (ArcanaName == "hanged man")
+            if (ArcanaName.ToLower() == "hanged man")
             {
                 await Navigation.PushAsync(new SLinkInteraction(vm));
             }
-            else if (Vm.StorySLinks.Contains(ArcanaName))
+            else if (Vm.StorySLinks.Contains(ArcanaName.ToLower()))
             {
                 await Navigation.PushAsync(new SLinkStory(vm));
             }
