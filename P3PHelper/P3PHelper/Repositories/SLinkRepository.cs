@@ -900,7 +900,7 @@ namespace P3PHelper.Repositories
             //    // Male
             //    MaleName = "Hidetoshi Odagiri",
             //    MaleUnlockDate = "4/27",
-            //    MaleHowToUnlock = "Starting on 4/27, talk to Ms. Toriumi in the Faculty Office about joining the Student Council." +
+            //    MaleHowToUnlock = "Starting on 4/27, talk to Ms. Toriumi in the Faculty Office about joining the Student Council. " +
             //        "Then go to the Student Council Room on the 2nd Floor.",
             //    MaleAvailability = "Can be found in the Student Council Room on Monday, Wednesday, and Friday.",
             //    MaleRankUps = new List<RankUp>
@@ -1001,7 +1001,7 @@ namespace P3PHelper.Repositories
             //    // Female
             //    FemaleName = "Hidetoshi Odagiri",
             //    FemaleUnlockDate = "4/27",
-            //    FemaleHowToUnlock = "Starting on 4/27, talk to Ms. Toriumi in the Faculty Office about joining the Student Council." +
+            //    FemaleHowToUnlock = "Starting on 4/27, talk to Ms. Toriumi in the Faculty Office about joining the Student Council. " +
             //        "Then go to the Student Council Room on the 2nd Floor.",
             //    FemaleAvailability = "Can be found in the Student Council Room on Monday, Wednesday, and Friday.",
             //    FemaleRankUps = new List<RankUp>
