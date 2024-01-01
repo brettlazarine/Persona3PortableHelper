@@ -3476,7 +3476,7 @@ namespace P3PHelper.Repositories
             //    FemaleName = "Shinjiro Aragaki",
             //    FemaleUnlockDate = "9/7",
             //    FemaleHowToUnlock = "Talk to him in the Dormitory Lounge at night.",
-            //    FemaleAvailability = "",
+            //    FemaleAvailability = "Found in the Dormitory Lounge on Monday, Wednesday, Friday, and Saturday at night.",
             //    FemaleRequiresPersona = false,
             //    FemaleRankUps = new List<RankUp>
             //    {
