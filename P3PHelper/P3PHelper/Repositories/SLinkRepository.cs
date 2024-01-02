@@ -4473,7 +4473,7 @@ namespace P3PHelper.Repositories
             //            RankInteractions = new List<(string, string)>
             //            {
             //                ("So... I'd like you to congratulate me. As of today, I am a free individual." ,
-            //                "You finished the SLink?  +3")
+            //                "You finished the story?  +3")
             //            }
             //        },
             //        new RankUp()
