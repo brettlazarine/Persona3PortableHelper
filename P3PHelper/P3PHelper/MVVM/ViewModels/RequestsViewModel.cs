@@ -1,4 +1,5 @@
 ﻿using P3PHelper.MVVM.Models;
+using P3PHelper.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -11,6 +12,8 @@ namespace P3PHelper.MVVM.ViewModels
 {
     public class RequestsViewModel
     {
+        ProgressRepository ProgressRepo = new();
+
         public List<Request> OneTwenty { get; set; } = new();
         public List<Request> TwentyOneFourty { get; set; } = new();
         public List<Request> FourtyOneSixty { get; set; } = new();
@@ -18,8 +21,10 @@ namespace P3PHelper.MVVM.ViewModels
 
         public RequestsViewModel()
         {
-            foreach (var req in App.ProgressRepo.GetRequests())
+            foreach (var req in ProgressRepo.GetRequests())
             {
+                req.HowToComplete = req.HowToComplete.Replace("\\n", Environment.NewLine);
+                req.Reward = req.Reward.Replace("\\n", Environment.NewLine);
                 if (req.QuestNumber <= 20)
                 {
                     OneTwenty.Add(req);
@@ -79,7 +84,7 @@ namespace P3PHelper.MVVM.ViewModels
             try
             {
                 int isCompleted = checkBox.IsChecked ? 1 : 0;
-                App.ProgressRepo.UpdateRequest(request.QuestNumber, isCompleted);
+                //App.ProgressRepo.UpdateRequest(request.QuestNumber, isCompleted);
             }
             catch (Exception ex)
             {

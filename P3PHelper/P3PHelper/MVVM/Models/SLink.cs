@@ -1,13 +1,14 @@
-﻿using P3PHelper.Abstractions;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using P3PHelper.Abstractions;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
 
 namespace P3PHelper.MVVM.Models
 {
-    [Table("SLinks")]
+    //[Table("SLinks")]
     public class SLink : ISLinks
     {
-        [PrimaryKey, Indexed]
+        [PrimaryKey]
         public string Arcana { get; set; }
         
         public string MaleName { get; set; }
@@ -25,19 +26,11 @@ namespace P3PHelper.MVVM.Models
         public string MaleAvailability { get; set; }
         
         public string FemaleAvailability { get; set; }
-        
-        public bool MaleRequiresPersona { get; set; }
-        
+        public bool MaleRequiresPersona { get; set;}
         public bool FemaleRequiresPersona { get; set; }
-        [OneToMany(CascadeOperations = CascadeOperation.All)]
-        public List<RankUp> MaleRankUps { get; set; }
-        [OneToMany(CascadeOperations = CascadeOperation.All)]
-        public List<RankUp> FemaleRankUps { get; set; }
 
         public SLink()
         {
-            MaleRequiresPersona = true;
-            FemaleRequiresPersona = true;
         }
     }
 }

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="P3PHelper.MVVM.Views.SLinks.SLinkStory"
-             xmlns:converters="clr-namespace:P3PHelper.Converters">
+             xmlns:converters="clr-namespace:P3PHelper.Converters" Title="Story">
 
     <ContentPage.Resources>
         <converters:SLinkImageConverter x:Key="SLinkImageConverter" />
@@ -20,11 +20,11 @@
                 <Label 
                     Grid.Row="0"
                     Style="{StaticResource Arcana}"
-                    Text="{Binding Arcana}" />
+                    Text="{Binding Link.Arcana}" />
                 <Image 
                     Grid.Row="1"
                     HeightRequest="150"
-                    Source="{Binding Arcana, StringFormat='{0}.png', Converter={StaticResource SLinkImageConverter}}"  />
+                    Source="{Binding Link.Arcana, StringFormat='{0}.png', Converter={StaticResource SLinkImageConverter}}"  />
             </Grid>
 
             <Grid
@@ -43,7 +43,7 @@
                             Text="Name" />
                         <Label
                             Style="{StaticResource MalePropertyValues}"
-                            Text="{Binding MaleName}" />
+                            Text="{Binding Link.MaleName}" />
                     </VerticalStackLayout>
                     <!--MALE DATE-->
                     <VerticalStackLayout>
@@ -61,7 +61,7 @@
                         <Label x:Name="MaleDate"
                             Style="{StaticResource MalePropertyValues}"
                             IsVisible="false"
-                            Text="{Binding MaleUnlockDate}" />
+                            Text="{Binding Link.MaleUnlockDate}" />
                     </VerticalStackLayout>
                     <!--MALE HOW-->
                     <VerticalStackLayout>
@@ -79,7 +79,7 @@
                         <Label x:Name="MaleHow"
                             Style="{StaticResource MalePropertyValues}"
                             IsVisible="false"
-                            Text="{Binding MaleHowToUnlock}" />
+                            Text="{Binding Link.MaleHowToUnlock}" />
                     </VerticalStackLayout>
                     <!--MALE AVAILABILITY-->
                     <VerticalStackLayout>
@@ -97,18 +97,18 @@
                         <Label x:Name="MaleAvailability"
                             Style="{StaticResource MalePropertyValues}"
                             IsVisible="false"
-                            Text="{Binding MaleAvailability}" />
+                            Text="{Binding Link.MaleAvailability}" />
                     </VerticalStackLayout>
                     <!--MALE REQUIRES PERSONA-->
                     <Label
                         Style="{StaticResource MalePropertyTitles}"
-                        Text="{Binding MaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
+                        Text="{Binding Link.MaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
                 </VerticalStackLayout>
 
                 <CollectionView
                     Grid.Row="1"
                     Grid.Column="0"
-                    ItemsSource="{Binding MaleRankUps}">
+                    ItemsSource="{Binding MaleInteractions}">
                     
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout
@@ -219,7 +219,7 @@
                             Text="Name" />      
                         <Label
                             Style="{StaticResource FemalePropertyValues}"
-                            Text="{Binding FemaleName}" />
+                            Text="{Binding Link.FemaleName}" />
                     </VerticalStackLayout>
                     <!--FEMALE DATE-->
                     <VerticalStackLayout>
@@ -237,7 +237,7 @@
                         <Label x:Name="FemaleDate"
                             Style="{StaticResource FemalePropertyValues}"
                             IsVisible="false"
-                            Text="{Binding FemaleUnlockDate}" />
+                            Text="{Binding Link.FemaleUnlockDate}" />
                     </VerticalStackLayout>
                     <!--FEMALE HOW-->
                     <VerticalStackLayout>
@@ -255,7 +255,7 @@
                         <Label x:Name="FemaleHow"
                             Style="{StaticResource FemalePropertyValues}"
                             IsVisible="false"
-                            Text="{Binding FemaleHowToUnlock}" />
+                            Text="{Binding Link.FemaleHowToUnlock}" />
                     </VerticalStackLayout>
                     <!--FEMALE AVAILABILITY-->
                     <VerticalStackLayout>
@@ -273,18 +273,18 @@
                         <Label x:Name="FemaleAvailability"
                             Style="{StaticResource FemalePropertyValues}"
                             IsVisible="false"
-                            Text="{Binding FemaleAvailability}" />
+                            Text="{Binding Link.FemaleAvailability}" />
                     </VerticalStackLayout>
                     <!--FEMALE REQUIRES PERSONA-->
                     <Label
                         Style="{StaticResource FemalePropertyTitles}"
-                        Text="{Binding FemaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
+                        Text="{Binding Link.FemaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
                 </VerticalStackLayout>
 
                 <CollectionView 
                     Grid.Row="1"
                     Grid.Column="2"
-                    ItemsSource="{Binding FemaleRankUps}">
+                    ItemsSource="{Binding FemaleInteractions}">
                     
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout

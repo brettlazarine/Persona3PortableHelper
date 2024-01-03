@@ -50,6 +50,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiAsset Remove="Resources\Raw\persona3.db3" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Fonts\PTSerif-Regular.ttf" />
 	  <None Remove="Resources\Images\aeon.svg" />
 	  <None Remove="Resources\Images\blueDownArrow.png" />
@@ -76,6 +80,10 @@
 	  <None Remove="Resources\Images\sun.png" />
 	  <None Remove="Resources\Images\temperance.png" />
 	  <None Remove="Resources\Images\tower.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Resources\Raw\persona3.db3" />
 	</ItemGroup>
 
 	<ItemGroup>

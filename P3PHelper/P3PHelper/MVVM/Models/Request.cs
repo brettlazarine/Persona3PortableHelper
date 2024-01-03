@@ -23,7 +23,7 @@ namespace P3PHelper.MVVM.Models
 
         public Request()
         {
-            IsCompleted = 0;
+            //IsCompleted = 0;
         }
     }
 }
