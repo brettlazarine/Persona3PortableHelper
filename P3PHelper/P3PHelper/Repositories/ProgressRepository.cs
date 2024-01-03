@@ -35,9 +35,9 @@ namespace P3PHelper.Repositories
             connection.CreateTable<SLink>();
             //connection.CreateTable<ArcanaRankUp>();
             connection.CreateTable<RankUp>();
+            connection.CreateTable<Request>();
         }
 
-        #region SLinks
         public List<SLink> GetSLinks()
         {
             return connection.Table<SLink>().ToList();
@@ -183,6 +183,29 @@ namespace P3PHelper.Repositories
             }
         }
 
+        #region Requests
+        public List<Request> GetRequests()
+        {
+            return connection.Table<Request>().ToList();
+        }
+        public async Task<List<Request>> GetRequestsAsync()
+        {
+            return await Task.Run(() => connection.Table<Request>().ToList());
+        }
+
+        public void UpdateRequest(int questNumber, int isCompleted)
+        {
+            try
+            {
+                connection.Execute("UPDATE Request SET IsCompleted = ? WHERE QuestNumber = ?", isCompleted, questNumber);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** UpdateRequest: " + ex.Message + " ***");
+            }
+        }
+        #endregion
+
 
 
         //public List<SLink> GetSLinks()
@@ -247,7 +270,6 @@ namespace P3PHelper.Repositories
         //        Debug.WriteLine("*** InsertSLink: " + ex.Message + " ***");
         //    }
         //}
-        #endregion
 
         //#region RankUps
         //public List<RankUp> GetRankUps()

@@ -33,43 +33,17 @@ public partial class MainPage : ContentPage
 		var link = repo.GetSLinks().FirstOrDefault();
 		BindingContext = link;
 
-		//var singleLink = repo.GetSLink("Aeon");
-		//Debug.WriteLine($"*** Arcana: {singleLink.Arcana} ***");
-
-		//Debug.WriteLine($"*** Name: {singleLink.MaleName} ***");
-
 		try
 		{
-			var ranks = repo.GetRankUps();
-			Debug.WriteLine("*** AFTER RANKS ***");
-		}
-		catch (Exception ex)
-		{
-			   Debug.WriteLine($"*** Error: {ex.Message} ***");
-		}
-
-		try
-		{
-			var rank = repo.GetRankUp("Aeon");
-			Debug.WriteLine("*** AFTER RANK ***");
-		}
-		catch (Exception ex)
-		{
-            Debug.WriteLine($"*** Error: {ex.Message} ***");
+			var reqs = repo.GetRequests();
+            Debug.WriteLine($"*** {reqs.Count} requests ***");
         }
-
-
-		//var bc = App.ProgressRepo.GetSLinks().FirstOrDefault();
-		//try
-		//{
-
-		//Debug.WriteLine($"*** bc: {bc.Arcana} ***");
-		//}
-		//catch (Exception ex)
-		//{
-  //          Debug.WriteLine($"*** bc: {ex.Message} ***");
-  //      }
-		//BindingContext = bc;
+		catch (Exception ex)
+		{
+            Debug.WriteLine("*** " + ex.Message + " ***");
+        }
+		Debug.WriteLine("*** AFTER GETREQUESTS ***");
+		
 	}
 
     
