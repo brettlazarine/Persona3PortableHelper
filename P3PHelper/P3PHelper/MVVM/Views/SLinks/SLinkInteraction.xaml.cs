@@ -1,5 +1,6 @@
 using P3PHelper.MVVM.Models;
 using P3PHelper.MVVM.ViewModels;
+using P3PHelper.Repositories;
 using System.Diagnostics;
 using System.Globalization;
 
@@ -7,10 +8,18 @@ namespace P3PHelper.MVVM.Views.SLinks;
 public partial class SLinkInteraction : ContentPage
 {
     public SLink Link { get; set; }
+    public InteractionStoryViewModel Vm { get; set; }
     public SLinkInteraction()
 	{
 		InitializeComponent();
 	}
+
+    public SLinkInteraction(InteractionStoryViewModel vm)
+    {
+        InitializeComponent();
+        Vm = vm;
+        BindingContext = Vm;
+    }
 
     public SLinkInteraction(string arcanaName)
     {
@@ -19,7 +28,7 @@ public partial class SLinkInteraction : ContentPage
         TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
         arcanaName = textInfo.ToTitleCase(arcanaName);
 
-        Link = App.ProgressRepo.GetSLink(arcanaName);
+        //Link = App.ProgressRepo.GetSLink(arcanaName);
         BindingContext = Link;
     }
 
@@ -227,7 +236,9 @@ public partial class SLinkInteraction : ContentPage
         try
         {
             int isCompletedValue = e.Value ? 1 : 0;
-            App.ProgressRepo.UpdateRankUp(rank.RankUpId, isCompletedValue);
+            var repo = new ProgressRepository();
+            repo.UpdateRankUp(rank.Id, isCompletedValue);
+            //App.ProgressRepo.UpdateRankUp(rank.RankUpId, isCompletedValue);
         }
         catch (Exception ex)
         {

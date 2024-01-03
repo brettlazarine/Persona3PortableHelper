@@ -1,0 +1,103 @@
+AEON
+{
+	"1": {
+		"Male": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"Any response.\", \"Answer\": \"Any repsponse.\"}]"
+		},
+		"Female": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"Any response.\", \"Answer\": \"Any repsponse.\"}]"
+		}
+	},
+	"2": {
+		"Male": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"What about you? Do you… like this town?\", \"Answer\": \"I like it.  +3\"}]"
+		},
+		"Female": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"What about you? Do you… like this town?\", \"Answer\": \"I like it.  +3\"}]"
+		}
+	},
+	"3": {
+		"Male": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"……\", \"Answer\": \"That’s not true.  +3\"}]"
+		},
+		"Female": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"……\", \"Answer\": \"That’s not true.  +3\"}]"
+		}
+	},
+	"4": {
+		"Male": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"It seems the old lady will suffer greatly if they remain separated for much longer…\", \"Answer\": \"All right. +3\"}]"
+		},
+		"Female": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"It seems the old lady will suffer greatly if they remain separated for much longer…\", \"Answer\": \"Sure.  +3\"}]"
+		}
+	},
+	"5": {
+		"Male": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"It seems that 'living’ is something that can’t be done alone…\", \"Answer\": \"You may be right.  +3\"}]"
+		},
+		"Female": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"It seems that ‘living’ is something that can’t be done alone…\", \"Answer\": \"You may be right.  +3\"}]"
+		}
+	},
+	"6": {
+		"Male": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"Did I do something wrong?\", \"Answer\": \"No, you didn't.  +3\nOR\nHe saw me as a boyfriend.  +3\"}]"
+		},
+		"Female": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"Did I do something wrong?\", \"Answer\": \"He wanted to date you.  +3\nOR\nNo you didn’t.  +3\"}]"
+		}
+	},
+	"7": {
+		"Male": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"Any response.\", \"Answer\": \"Any repsponse.\"}]"
+		},
+		"Female": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"Any response.\", \"Answer\": \"Any repsponse.\"}]"
+		}
+	},
+	"8": {
+		"Male": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"I was just curious…\", \"Answer\": \"I’m doing it now.  +3\"}]"
+		},
+		"Female": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"I was just curious…\", \"Answer\": \"Not yet…  +3\nOR\nSometimes.  +3\"}]"
+		}
+	},
+	"9": {
+		"Male": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"January 31st…\", \"Answer\": \"You’re right.  +3\"}]"
+		},
+		"Female": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"January 31st…\", \"Answer\": \"Yeah, huh.  +3\"}]"
+		}
+	},
+	"10": {
+		"Male": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"Any response.\", \"Answer\": \"Any repsponse.\"}]"
+		},
+		"Female": {
+			"IsCompleted": 0,
+			"SerializedRankInteractions": "[{\"Question\": \"Any response.\", \"Answer\": \"Any repsponse.\"}]"
+		}
+	}
+}

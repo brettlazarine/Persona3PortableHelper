@@ -9,11 +9,19 @@ namespace P3PHelper.MVVM.Views.SLinks;
 public partial class SLinkStory : ContentPage
 {
     public SLink Link { get; set; }
-    
-	public SLinkStory()
+    public InteractionStoryViewModel Vm { get; set; }
+
+    public SLinkStory()
 	{
 		InitializeComponent();
 	}
+
+    public SLinkStory(InteractionStoryViewModel vm)
+    {
+        InitializeComponent();
+        Vm = vm;
+        BindingContext = Vm;
+    }
 
     public SLinkStory(string arcanaName)
     {
@@ -22,7 +30,7 @@ public partial class SLinkStory : ContentPage
         TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
         arcanaName = textInfo.ToTitleCase(arcanaName);
 
-        Link = App.ProgressRepo.GetSLink(arcanaName);
+        //Link = App.ProgressRepo.GetSLink(arcanaName);
         BindingContext = Link;
     }
 
@@ -230,7 +238,9 @@ public partial class SLinkStory : ContentPage
         try
         {
             int isCompletedValue = e.Value ? 1 : 0;
-            App.ProgressRepo.UpdateRankUp(rank.RankUpId, isCompletedValue);
+            var repo = new ProgressRepository();
+            repo.UpdateRankUp(rank.Id, isCompletedValue);
+            //App.ProgressRepo.UpdateRankUp(rank.RankUpId, isCompletedValue);
         }
         catch (Exception ex)
         {

@@ -20,11 +20,11 @@
                 <Label 
                     Grid.Row="0"
                     Style="{StaticResource Arcana}"
-                    Text="{Binding Arcana}" />
+                    Text="{Binding Link.Arcana}" />
                 <Image 
                     Grid.Row="1"
                     HeightRequest="150"
-                    Source="{Binding Arcana, StringFormat='{0}.png', Converter={StaticResource SLinkImageConverter}}"  />
+                    Source="{Binding Link.Arcana, StringFormat='{0}.png', Converter={StaticResource SLinkImageConverter}}"  />
             </Grid>
 
             <Grid
@@ -43,7 +43,7 @@
                             Text="Name" />
                         <Label
                             Style="{StaticResource MalePropertyValues}"
-                            Text="{Binding MaleName}" />
+                            Text="{Binding Link.MaleName}" />
                     </VerticalStackLayout>
                     <!--MALE DATE-->
                     <VerticalStackLayout>
@@ -61,7 +61,7 @@
                         <Label x:Name="MaleDate"
                             Style="{StaticResource MalePropertyValues}"
                             IsVisible="false"
-                            Text="{Binding MaleUnlockDate}" />
+                            Text="{Binding Link.MaleUnlockDate}" />
                     </VerticalStackLayout>
                     <!--MALE HOW-->
                     <VerticalStackLayout>
@@ -79,7 +79,7 @@
                         <Label x:Name="MaleHow"
                             Style="{StaticResource MalePropertyValues}"
                             IsVisible="false"
-                            Text="{Binding MaleHowToUnlock}" />
+                            Text="{Binding Link.MaleHowToUnlock}" />
                     </VerticalStackLayout>
                     <!--MALE AVAILABILITY-->
                     <VerticalStackLayout>
@@ -97,25 +97,25 @@
                         <Label x:Name="MaleAvailability"
                             Style="{StaticResource MalePropertyValues}"
                             IsVisible="false"
-                            Text="{Binding MaleAvailability}" />
+                            Text="{Binding Link.MaleAvailability}" />
                     </VerticalStackLayout>
                     <!--MALE REQUIRES PERSONA-->
                     <Label
                         Style="{StaticResource MalePropertyTitles}"
-                        Text="{Binding MaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
+                        Text="{Binding Link.MaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
                 </VerticalStackLayout>
-                
+
                 <CollectionView
                     Grid.Row="1"
                     Grid.Column="0"
-                    ItemsSource="{Binding MaleRankUps}">
-                    
+                    ItemsSource="{Binding MaleInteractions}">
+
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout
                             Orientation="Vertical" 
                             ItemSpacing="10" />
                     </CollectionView.ItemsLayout>
-                    
+
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <Grid 
@@ -127,7 +127,7 @@
                                     Padding="20, 0"
                                     VerticalOptions="Center"
                                     BackgroundColor="{StaticResource PrimaryBlue}">
-                                    
+
                                     <Label x:Name="Rank"
                                         Grid.Column="0"
                                         Style="{StaticResource SLinkQuestion}"
@@ -136,12 +136,12 @@
                                         Grid.Column="1"
                                         IsChecked="{Binding IsCompleted, Converter={StaticResource IsCompletedBoolConverter}}" 
                                         CheckedChanged="IsCompletedCheckBox_CheckedChanged"/>
-                                    
+
                                     <!--Bind for AutoScroll-->
                                     <Label AutomationId="RankHolder" 
                                         IsVisible="false"
                                         Text="{Binding Source={x:Reference Rank}, Path=Text}" />
-                                    
+
                                     <Image
                                         Grid.Column="2"
                                         Style="{StaticResource DownArrow}"
@@ -158,30 +158,30 @@
                                 <VerticalStackLayout AutomationId="QuestionResponse"
                                     Grid.Row="1"
                                     HorizontalOptions="CenterAndExpand"
-                                    IsVisible="false">
-                                    
+                                    IsVisible="False">
+
                                     <CollectionView
                                         ItemsSource="{Binding RankInteractions}">
-                                        
+
                                         <CollectionView.ItemsLayout>
                                             <LinearItemsLayout
                                                 Orientation="Vertical" 
                                                 ItemSpacing="0" />
                                         </CollectionView.ItemsLayout>
-                                        
+
                                         <CollectionView.ItemTemplate>
                                             <DataTemplate>
                                                 <VerticalStackLayout
                                                     BackgroundColor="{StaticResource SecondaryBlue}"
                                                     Padding="10">
-                                                    
+
                                                     <Label
                                                         Style="{StaticResource MaleQuestionTitle}"
                                                         Text="Question" />
                                                     <Label
                                                         Style="{StaticResource MaleQuestion}"
                                                         Text="{Binding [0]}" />
-                                                    
+
                                                     <Label
                                                         Style="{StaticResource MaleResponseTitle}"
                                                         Text="Response" />
@@ -197,7 +197,7 @@
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
-                
+
                 <!--DIVIDER-->
                 <BoxView 
                     Grid.RowSpan="2"
@@ -220,7 +220,7 @@
                             Text="Name" />
                         <Label
                             Style="{StaticResource FemalePropertyValues}"
-                            Text="{Binding FemaleName}" />
+                            Text="{Binding Link.FemaleName}" />
                     </VerticalStackLayout>
                     <!--FEMALE DATE-->
                     <VerticalStackLayout>
@@ -238,7 +238,7 @@
                         <Label x:Name="FemaleDate"
                             Style="{StaticResource FemalePropertyValues}"
                             IsVisible="false"
-                            Text="{Binding FemaleUnlockDate}" />
+                            Text="{Binding Link.FemaleUnlockDate}" />
                     </VerticalStackLayout>
                     <!--FEMALE HOW-->
                     <VerticalStackLayout>
@@ -256,7 +256,7 @@
                         <Label x:Name="FemaleHow"
                             Style="{StaticResource FemalePropertyValues}"
                             IsVisible="false"
-                            Text="{Binding FemaleHowToUnlock}" />
+                            Text="{Binding Link.FemaleHowToUnlock}" />
                     </VerticalStackLayout>
                     <!--FEMALE AVAILABILITY-->
                     <VerticalStackLayout>
@@ -274,18 +274,18 @@
                         <Label x:Name="FemaleAvailability"
                             Style="{StaticResource FemalePropertyValues}"
                             IsVisible="false"
-                            Text="{Binding FemaleAvailability}" />
+                            Text="{Binding Link.FemaleAvailability}" />
                     </VerticalStackLayout>
                     <!--FEMALE REQUIRES PERSONA-->
                     <Label
                         Style="{StaticResource FemalePropertyTitles}"
-                        Text="{Binding FemaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
+                        Text="{Binding Link.FemaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
                 </VerticalStackLayout>
 
                 <CollectionView 
                     Grid.Row="1"
                     Grid.Column="2"
-                    ItemsSource="{Binding FemaleRankUps}">
+                    ItemsSource="{Binding FemaleInteractions}">
                     
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout

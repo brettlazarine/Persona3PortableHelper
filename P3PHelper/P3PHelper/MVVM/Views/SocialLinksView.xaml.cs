@@ -3,6 +3,7 @@ using Microsoft.Maui.Controls.Xaml;
 using P3PHelper.MVVM.ViewModels;
 using P3PHelper.MVVM.Views.SLinks;
 using System.Diagnostics;
+using System.Globalization;
 
 namespace P3PHelper.MVVM.Views;
 
@@ -31,19 +32,23 @@ public partial class SocialLinksView : ContentPage
         try
         {
             ArcanaName = (sender as ImageButton).AutomationId.ToString().ToLower();
+            TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
+            ArcanaName = textInfo.ToTitleCase(ArcanaName);
+            var vm = new InteractionStoryViewModel(ArcanaName);
+            await vm.EnsureInitializedAsync(ArcanaName);
             // The hangedman nav causing errors, this will work but is not clean
             // Consider trying source again when refactoring
-            if (ArcanaName == "hanged man")
+            if (ArcanaName.ToLower() == "hanged man")
             {
-                await Navigation.PushAsync(new SLinkInteraction("hangedman"));
+                await Navigation.PushAsync(new SLinkInteraction(vm));
             }
-            else if (Vm.StorySLinks.Contains(ArcanaName))
+            else if (Vm.StorySLinks.Contains(ArcanaName.ToLower()))
             {
-                await Navigation.PushAsync(new SLinkStory(ArcanaName));
+                await Navigation.PushAsync(new SLinkStory(vm));
             }
             else
             {
-                await Navigation.PushAsync(new SLinkInteraction(ArcanaName));
+                await Navigation.PushAsync(new SLinkInteraction(vm));
             }
         }
         catch (Exception ex)
