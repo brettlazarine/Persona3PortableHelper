@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "geb7Ha+3u+jqsItv37GJ9nFkbUzMZJc/40r2S7rEMrxZcId9j81JYpk7HBpNT+Ws0c+7gJ0pP0pnNLmDNkTBdg==",
+  "dgSpecHash": "EPP4gbslpGbqaqM+G4GaTzVPtjq3EgsoYcSlM32I9eo6pkZuX8VsFgkwVQk8f595GoRCUcX4cmMGeyuwHmzuOA==",
   "success": true,
   "projectFilePath": "C:\\GitHubRepos\\Persona3PHelper\\Persona3PortableHelper\\P3PHelper\\P3PHelper\\P3PHelper.csproj",
   "expectedPackageFiles": [
@@ -166,12 +166,12 @@
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.maui.essentials.ref.win\\7.0.101\\microsoft.maui.essentials.ref.win.7.0.101.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.maui.core.runtime.win\\7.0.101\\microsoft.maui.core.runtime.win.7.0.101.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.31\\microsoft.windows.sdk.net.ref.10.0.19041.31.nupkg.sha512",
-    "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.14\\microsoft.aspnetcore.app.runtime.win-x64.7.0.14.nupkg.sha512",
+    "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.15\\microsoft.aspnetcore.app.runtime.win-x64.7.0.15.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.maui.controls.ref.win\\7.0.101\\microsoft.maui.controls.ref.win.7.0.101.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.maui.core.ref.win\\7.0.101\\microsoft.maui.core.ref.win.7.0.101.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.maui.essentials.runtime.win\\7.0.101\\microsoft.maui.essentials.runtime.win.7.0.101.nupkg.sha512",
-    "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.14\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.14.nupkg.sha512",
-    "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.14\\microsoft.netcore.app.runtime.win-x64.7.0.14.nupkg.sha512",
+    "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.15\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.15.nupkg.sha512",
+    "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.15\\microsoft.netcore.app.runtime.win-x64.7.0.15.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.maui.controls.runtime.win\\7.0.101\\microsoft.maui.controls.runtime.win.7.0.101.nupkg.sha512"
   ],
   "logs": []
