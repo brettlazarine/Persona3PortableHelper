@@ -33,6 +33,10 @@ public partial class MainPage : ContentPage
 		var link = repo.GetSLinks().FirstOrDefault();
 		BindingContext = link;
 
+		repo.GetSLinks();
+		repo.GetRankUps();
+		repo.GetRequests();
+
 		try
 		{
 			var reqs = repo.GetRequests();
