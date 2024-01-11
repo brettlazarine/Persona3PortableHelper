@@ -1,6 +1,7 @@
 using P3PHelper.MVVM.Models;
 using P3PHelper.MVVM.ViewModels;
 using P3PHelper.Repositories;
+using P3PHelper.Utilities;
 using System.Diagnostics;
 
 namespace P3PHelper.MVVM.Views.Requests;
@@ -12,8 +13,19 @@ public partial class OneToTwentyView : ContentPage
 	public OneToTwentyView()
 	{
 		InitializeComponent();
-		BindingContext = Vm;
-	}
+		BindingContext = Vm.OneTwenty;
+
+        try
+        {
+            var name = this.GetName();
+            Debug.WriteLine($"*** {name} ***");
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine("*** " + ex.Message + " ***");
+        }
+        Debug.WriteLine("***  ***");
+    }
 
     private async void RequestCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
     {

@@ -42,6 +42,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = P3PHelper.MVVM.Views.Reque
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\Requests\OneToTwentyView.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\Requests\OneToTwentyView.xaml
 
+[C:/GitHubRepos/Persona3PHelper/Persona3PortableHelper/P3PHelper/P3PHelper/MVVM/Views/Requests/RequestsTemplateView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = P3PHelper.MVVM.Views.Requests.RequestsTemplateView.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\Requests\RequestsTemplateView.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\Requests\RequestsTemplateView.xaml
+
 [C:/GitHubRepos/Persona3PHelper/Persona3PortableHelper/P3PHelper/P3PHelper/MVVM/Views/Requests/SixtyOneToEightyView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = P3PHelper.MVVM.Views.Requests.SixtyOneToEightyView.xaml

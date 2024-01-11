@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:requestViews="clr-namespace:P3PHelper.MVVM.Views.Requests"
              x:Class="P3PHelper.MVVM.Views.Requests.SixtyOneToEightyView"
              Title="SixtyOneToEightyView">
-    <VerticalStackLayout>
-        <Label 
-            Text="61 to 80"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <ContentPage.Content>
+        <requestViews:RequestsTemplateView />
+    </ContentPage.Content>
 </ContentPage>

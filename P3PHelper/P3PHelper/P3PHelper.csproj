@@ -104,6 +104,9 @@
 	  <MauiXaml Update="MVVM\Views\Requests\OneToTwentyView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\Requests\RequestsTemplateView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="MVVM\Views\Requests\SixtyOneToEightyView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
