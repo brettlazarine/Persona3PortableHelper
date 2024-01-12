@@ -1,5 +1,6 @@
 ﻿using P3PHelper.MVVM.Models;
 using P3PHelper.Repositories;
+using P3PHelper.Utilities;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Reflection;
@@ -39,14 +40,14 @@ public partial class MainPage : ContentPage
 
 		try
 		{
-			var reqs = repo.GetRequests();
-            Debug.WriteLine($"*** {reqs.Count} requests ***");
+			var name = this.GetName();
+            Debug.WriteLine($"*** {name} ***");
         }
 		catch (Exception ex)
 		{
             Debug.WriteLine("*** " + ex.Message + " ***");
         }
-		Debug.WriteLine("*** AFTER GETREQUESTS ***");
+		Debug.WriteLine("***  ***");
 		
 	}
 

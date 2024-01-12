@@ -1,4 +1,5 @@
-﻿using P3PHelper.MVVM.Models;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using P3PHelper.MVVM.Models;
 using P3PHelper.Repositories;
 using System;
 using System.Collections.Generic;
@@ -10,9 +11,12 @@ using System.Windows.Input;
 
 namespace P3PHelper.MVVM.ViewModels
 {
-    public class RequestsViewModel
+    public partial class RequestsViewModel: ObservableObject
     {
         ProgressRepository ProgressRepo = new();
+
+        [ObservableProperty]
+        List<Request> currentRequest;
 
         public List<Request> OneTwenty { get; set; } = new();
         public List<Request> TwentyOneFourty { get; set; } = new();
@@ -41,6 +45,31 @@ namespace P3PHelper.MVVM.ViewModels
                 {
                     SixtyOneEighty.Add(req);
                 }
+            }
+        }
+
+        // Avoided this, verify that it is not needed
+        public List<Request> SetCurrentRequests(string groupName)
+        {
+            if (groupName == "One To Twenty View")
+            {
+                return OneTwenty;
+            }
+            else if (groupName == "Twenty One Fourty View")
+            {
+                return TwentyOneFourty;
+            }
+            else if (groupName == "Fourty One Sixty View")
+            {
+                return FourtyOneSixty;
+            }
+            else if (groupName == "Sixty One Eighty View")
+            {
+                return SixtyOneEighty;
+            }
+            else
+            {
+                return null;
             }
         }
 

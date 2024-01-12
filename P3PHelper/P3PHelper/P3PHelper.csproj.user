@@ -17,6 +17,9 @@
     <MauiXaml Update="MVVM\Views\Requests\OneToTwentyView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="MVVM\Views\Requests\RequestsTemplateView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="MVVM\Views\Requests\SixtyOneToEightyView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
