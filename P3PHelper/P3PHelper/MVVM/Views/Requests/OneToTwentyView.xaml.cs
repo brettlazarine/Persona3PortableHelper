@@ -7,7 +7,7 @@ using System.Diagnostics;
 namespace P3PHelper.MVVM.Views.Requests;
 
 public partial class OneToTwentyView : ContentPage
-{
+{//CONSIDER USING DROPDOWNS TO LOAD THE REQUESTS INDIVIDUALLY
 	public RequestsViewModel Vm = new();
 	ProgressRepository ProgressRepo = new();
 	public OneToTwentyView()

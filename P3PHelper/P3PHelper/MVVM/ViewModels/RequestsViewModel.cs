@@ -48,6 +48,7 @@ namespace P3PHelper.MVVM.ViewModels
             }
         }
 
+        // Avoided this, verify that it is not needed
         public List<Request> SetCurrentRequests(string groupName)
         {
             if (groupName == "One To Twenty View")

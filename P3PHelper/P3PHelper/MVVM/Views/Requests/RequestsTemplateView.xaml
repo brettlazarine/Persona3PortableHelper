@@ -38,7 +38,11 @@
                             Grid.Column="1"
                             IsChecked="{Binding IsCompleted, Converter={StaticResource IsCompletedBoolConverter}}"
                             CheckedChanged="RequestCheckBox_CheckedChanged" />
-
+                            <!--<CheckBox>
+                                <CheckBox.GestureRecognizers>
+                                    <TapGestureRecognizer Command="RequestCheckBox_Tapped" />
+                                </CheckBox.GestureRecognizers>
+                            </CheckBox>-->
                             <Grid AutomationId="RequestDetails"
                             RowDefinitions="auto, auto, auto, auto, auto, auto"
                             ColumnDefinitions="*, *"
