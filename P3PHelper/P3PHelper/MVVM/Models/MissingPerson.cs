@@ -1,4 +1,5 @@
-﻿using P3PHelper.Abstractions;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using P3PHelper.Abstractions;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -9,8 +10,9 @@ using System.Threading.Tasks;
 
 namespace P3PHelper.MVVM.Models
 {
-    public class MissingPerson : IMissingPerson
+    public partial class MissingPerson : ObservableObject, IMissingPerson
     {
+
         [PrimaryKey, Indexed]
         public int Id { get; set; }
         public string Name { get; set; }
@@ -18,6 +20,11 @@ namespace P3PHelper.MVVM.Models
         public string Deadline { get; set; }
         public string Info { get; set; }
         public string Reward { get; set; }
-        public int IsCompleted { get; set; }
+        private int _isCompleted;
+        public int IsCompleted
+        {
+            get { return _isCompleted; }
+            set { SetProperty(ref _isCompleted, value); }
+        }
     }
 }
