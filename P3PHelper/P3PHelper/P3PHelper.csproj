@@ -98,6 +98,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="MVVM\Views\MissingPersons\MissingPersonsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="MVVM\Views\Requests\FourtyOneToSixtyView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

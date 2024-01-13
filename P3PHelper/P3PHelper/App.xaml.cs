@@ -1,4 +1,5 @@
 ﻿using P3PHelper.MVVM.Views;
+using P3PHelper.MVVM.Views.MissingPersons;
 using P3PHelper.MVVM.Views.Requests;
 using P3PHelper.MVVM.Views.SLinks;
 using P3PHelper.Repositories;
@@ -40,6 +41,7 @@ public partial class App : Application
 		Routing.RegisterRoute("twentyoneForty", typeof(TwentyOneToFourtyView));
 		Routing.RegisterRoute("fourtyoneSixty", typeof(FourtyOneToSixtyView));
 		Routing.RegisterRoute("sixtyoneEighty", typeof(SixtyOneToEightyView));
+		Routing.RegisterRoute("missingPersons", typeof(MissingPersonsView));
     }
 
     public static void CheckDatabaseFile()
