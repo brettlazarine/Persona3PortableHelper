@@ -1,8 +1,112 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:P3PHelper.Converters"
              x:Class="P3PHelper.MVVM.Views.MissingPersons.MissingPersonsView"
-             Title="MissingPersonsView">
-    
-    
+             Title="Missing Persons">
+
+    <ContentPage.Resources>
+        <converters:IsCompletedBoolConverter x:Key="IsCompletedBoolConverter"/>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <!-- Consider moving this informative to an interactive button ( ? shaped button maybe ) in a corner -->
+            <Label
+                Text="In order to claim these rewards, you must speak with Officer Kurosawa in the Police Station after saving the missing person." 
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                FontSize="Subtitle"
+                FontAttributes="Bold"
+                TextColor="{StaticResource PrimaryBlue}"/>
+
+            <CollectionView
+            ItemsSource="{Binding MissingPeople}">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout
+                        Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame
+                            Margin="20"
+                            CornerRadius="30" 
+                            BackgroundColor="{StaticResource PrimaryBlue}"
+                            BorderColor="{StaticResource SecondaryBlue}">
+
+                            <Grid
+                                RowDefinitions="auto, auto"
+                                ColumnDefinitions="*, *"
+                                Padding="5">
+
+                                <Label 
+                                    Grid.Row="0"
+                                    Grid.Column="0" 
+                                    Style="{StaticResource MissingPersonName}"
+                                    Text="{Binding Name}"/>
+                                <CheckBox 
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    IsChecked="{Binding IsCompleted, Converter={StaticResource IsCompletedBoolConverter}}" 
+                                    CheckedChanged="MissingPersonCheckBox_CheckedChanged"/>
+
+                                <Grid AutomationId="MissingPersonInfo"
+                                    RowDefinitions="auto, auto, auto, auto, auto"
+                                    ColumnDefinitions="*, *"
+                                    Grid.Row="1"
+                                    Grid.Column="0"
+                                    Grid.ColumnSpan="2"
+                                    Padding="5"
+                                      RowSpacing="5">
+
+                                    <Label 
+                                        Grid.Row="0"
+                                        Grid.Column="0"
+                                        Style="{StaticResource AvailableDeadlineTitle}"
+                                        Text="Available" />
+                                    <Label
+                                        Grid.Row="0"
+                                        Grid.Column="1"
+                                        Style="{StaticResource AvailableDeadlineTitle}"
+                                        Text="Deadline" />
+
+                                    <Label
+                                        Grid.Row="1"
+                                        Grid.Column="0"
+                                        Style="{StaticResource AvailableDeadlineValue}"
+                                        Text="{Binding Available}" />
+                                    <Label
+                                        Grid.Row="1"
+                                        Grid.Column="1"
+                                        Style="{StaticResource AvailableDeadlineValue}"
+                                        Text="{Binding Deadline}" />
+
+                                    <Label
+                                        Grid.Row="2"
+                                        Grid.Column="0"
+                                        Grid.ColumnSpan="2"
+                                        Style="{StaticResource MissingPersonInfo}"
+                                        Text="{Binding Info}" />
+
+                                    <Label 
+                                        Grid.Row="3"
+                                        Grid.Column="0"
+                                        Grid.ColumnSpan="2"
+                                        Style="{StaticResource MissingPersonRewardTitle}"
+                                        Text="Reward" />
+                                    <Label
+                                        Grid.Row="4"
+                                        Grid.Column="0"
+                                        Grid.ColumnSpan="2"
+                                        Style="{StaticResource MissingPersonReward}"
+                                        Text="{Binding Reward}" />
+                                </Grid>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
