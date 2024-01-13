@@ -11,6 +11,9 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="MVVM\Views\MissingPersons\MissingPersonsView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="MVVM\Views\Requests\FourtyOneToSixtyView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
