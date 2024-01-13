@@ -23,7 +23,7 @@ jobs:
     - name: Install .NET MAUI
       run: dotnet workload install maui
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore P3PHelper/P3PHelper/P3PHelper.csproj
     - name: Build
       run: dotnet build P3PHelper/P3PHelper/P3PHelper.csproj -c Release -f net7.0android -- no-restore
     - name: Test
