@@ -8,12 +8,12 @@ namespace P3PHelper.Abstractions
 {
     public interface IRequests
     {
-        public int QuestNumber { get; set; }
-        public string QuestName { get; set; }
-        public string Reward { get; set; }
-        public string Available { get; set; }
-        public string Deadline { get; set; }
-        public string HowToComplete { get; set; }
-        public int IsCompleted { get; set; }
+        int QuestNumber { get; set; }
+        string QuestName { get; set; }
+        string Reward { get; set; }
+        string Available { get; set; }
+        string Deadline { get; set; }
+        string HowToComplete { get; set; }
+        int IsCompleted { get; set; }
     }
 }

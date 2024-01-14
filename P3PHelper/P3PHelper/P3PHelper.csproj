@@ -116,6 +116,15 @@
 	  <MauiXaml Update="MVVM\Views\Requests\TwentyOneToFourtyView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\SchoolQuestions\SchoolQuestionsCompletedView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\SchoolQuestions\SchoolQuestionsTemplateView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\SchoolQuestions\SchoolQuestionsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="MVVM\Views\SLinks\SLinkInteraction.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

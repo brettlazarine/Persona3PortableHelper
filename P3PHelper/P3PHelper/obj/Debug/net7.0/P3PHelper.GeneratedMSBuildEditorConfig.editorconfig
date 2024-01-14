@@ -66,6 +66,24 @@ build_metadata.AdditionalFiles.ManifestResourceName = P3PHelper.MVVM.Views.Reque
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\Requests\TwentyOneToFourtyView.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\Requests\TwentyOneToFourtyView.xaml
 
+[C:/GitHubRepos/Persona3PHelper/Persona3PortableHelper/P3PHelper/P3PHelper/MVVM/Views/SchoolQuestions/SchoolQuestionsCompletedView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = P3PHelper.MVVM.Views.SchoolQuestions.SchoolQuestionsCompletedView.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\SchoolQuestions\SchoolQuestionsCompletedView.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\SchoolQuestions\SchoolQuestionsCompletedView.xaml
+
+[C:/GitHubRepos/Persona3PHelper/Persona3PortableHelper/P3PHelper/P3PHelper/MVVM/Views/SchoolQuestions/SchoolQuestionsTemplateView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = P3PHelper.MVVM.Views.SchoolQuestions.SchoolQuestionsTemplateView.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\SchoolQuestions\SchoolQuestionsTemplateView.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\SchoolQuestions\SchoolQuestionsTemplateView.xaml
+
+[C:/GitHubRepos/Persona3PHelper/Persona3PortableHelper/P3PHelper/P3PHelper/MVVM/Views/SchoolQuestions/SchoolQuestionsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = P3PHelper.MVVM.Views.SchoolQuestions.SchoolQuestionsView.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\SchoolQuestions\SchoolQuestionsView.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\SchoolQuestions\SchoolQuestionsView.xaml
+
 [C:/GitHubRepos/Persona3PHelper/Persona3PortableHelper/P3PHelper/P3PHelper/MVVM/Views/SLinks/SLinkInteraction.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = P3PHelper.MVVM.Views.SLinks.SLinkInteraction.xaml

@@ -22,7 +22,7 @@
                 TextColor="{StaticResource PrimaryBlue}"/>
 
             <CollectionView
-            ItemsSource="{Binding MissingPeople}">
+                ItemsSource="{Binding MissingPeople}">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout
                         Orientation="Vertical" />
