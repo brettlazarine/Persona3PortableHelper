@@ -7,6 +7,7 @@
     xmlns:views="clr-namespace:P3PHelper.MVVM.Views"
     xmlns:requests="clr-namespace:P3PHelper.MVVM.Views.Requests"
     xmlns:missingPersons="clr-namespace:P3PHelper.MVVM.Views.MissingPersons"
+    xmlns:schoolQuestions="clr-namespace:P3PHelper.MVVM.Views.SchoolQuestions"
     Shell.FlyoutBehavior="Flyout">
 
     <FlyoutItem Title="MainPage">
@@ -40,5 +41,13 @@
     <FlyoutItem Title="Missing Persons">
         <ShellContent Title="Missing Persons" Route="missingPersons"
                       ContentTemplate="{DataTemplate missingPersons:MissingPersonsView}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="School Questions">
+        <ShellContent Title="Incomplete"
+                      ContentTemplate="{DataTemplate schoolQuestions:SchoolQuestionsView}" />
+
+        <ShellContent Title="Complete"
+                        ContentTemplate="{DataTemplate schoolQuestions:SchoolQuestionsCompletedView}" />
     </FlyoutItem>
 </Shell>

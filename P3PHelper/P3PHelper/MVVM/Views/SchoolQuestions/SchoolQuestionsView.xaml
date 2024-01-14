@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:schoolQuestions="clr-namespace:P3PHelper.MVVM.Views.SchoolQuestions"
+             x:Class="P3PHelper.MVVM.Views.SchoolQuestions.SchoolQuestionsView"
+             Title="SchoolQuestionsView"
+             x:Name="ThisPage">
+
+    <ContentPage.Content>
+        <schoolQuestions:SchoolQuestionsTemplateView />
+    </ContentPage.Content>
+</ContentPage>
