@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "/kQ+DyMP0J7RW0aCukzYHY2/ydiec60bOwI96fAWhZtAbFjFbKtdHdEUlPzg77wMnRnC/1TOEa0qzmpM+gHnEQ==",
+  "dgSpecHash": "zGf2XWBkcwf0/1ADWiJQljgCdqWXpK8ycNfjBpWQTd3F47mphRK46l/mBN5N6v2gcown0b/FGdEVsn4een7Oyg==",
   "success": true,
   "projectFilePath": "C:\\GitHubRepos\\Persona3PHelper\\Persona3PortableHelper\\P3PHelper\\UnitTests\\UnitTests.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jblaz\\.nuget\\packages\\communitytoolkit.maui\\6.0.0\\communitytoolkit.maui.6.0.0.nupkg.sha512",
+    "C:\\Users\\jblaz\\.nuget\\packages\\communitytoolkit.maui.core\\6.0.0\\communitytoolkit.maui.core.6.0.0.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.appcenter\\5.0.3\\microsoft.appcenter.5.0.3.nupkg.sha512",

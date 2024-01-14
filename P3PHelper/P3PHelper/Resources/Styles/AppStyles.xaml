@@ -228,4 +228,29 @@
         <Setter Property="HorizontalTextAlignment" Value="Center" />
     </Style>
     <!--#endregion-->
+    
+    <!--#region School Questions-->
+    <Style TargetType="Label" x:Key="SchoolQuestionsDate">
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="FontSize" Value="Title" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+    </Style>
+    <Style TargetType="Label" x:Key="SchoolQuestion">
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="FontSize" Value="Medium" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+        <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
+    <Style TargetType="Label" x:Key="SchoolAnswer">
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="FontSize" Value="Subtitle" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+    </Style>
+    <!--#endregion-->
 </ResourceDictionary>

@@ -29,5 +29,14 @@
     <MauiXaml Update="MVVM\Views\Requests\TwentyOneToFourtyView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="MVVM\Views\SchoolQuestions\SchoolQuestionsCompletedView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="MVVM\Views\SchoolQuestions\SchoolQuestionsTemplateView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="MVVM\Views\SchoolQuestions\SchoolQuestionsView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
   </ItemGroup>
 </Project>

@@ -1997,3 +1997,10 @@ C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\De
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\assets\System.Xml.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\assets\CommunityToolkit.Maui.Core.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\assets\CommunityToolkit.Maui.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\src\crc64159f3caeb1269279\MauiDrawingView.java
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\src\crc64159f3caeb1269279\MauiPopup.java
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\src\crc64159f3caeb1269279\MauiSemanticOrderView.java
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\src\crc648fc34c62be8fbbff\Snackbar_SnackbarCallback.java
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-android\android\src\crc64d6358e7bf64fbac4\SpeechToTextImplementation_SpeechRecognitionListener.java

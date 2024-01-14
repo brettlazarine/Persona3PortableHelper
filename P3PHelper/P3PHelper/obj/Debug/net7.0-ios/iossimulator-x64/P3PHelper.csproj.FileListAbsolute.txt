@@ -228,7 +228,6 @@ C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\bin\De
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\bin\Debug\net7.0-ios\iossimulator-x64\libxamarin-dotnet-debug.dylib
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\bin\Debug\net7.0-ios\iossimulator-x64\libxamarin-dotnet.a
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\bin\Debug\net7.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
-C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-ios\iossimulator-x64\build-signature\signature
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-ios\iossimulator-x64\mauiimage.inputs
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-ios\iossimulator-x64\mauifont.inputs
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-ios\iossimulator-x64\mauisplash.inputs

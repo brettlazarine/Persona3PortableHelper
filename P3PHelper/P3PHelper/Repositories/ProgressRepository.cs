@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 namespace P3PHelper.Repositories
 {
     public class ProgressRepository
-    {
+    { // Look into implementing yield returns for database calls
         SQLiteConnection connection;
         public static string DbPath { get; } = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "persona3.db3");
         public const SQLiteOpenFlags Flags =
@@ -37,6 +37,7 @@ namespace P3PHelper.Repositories
             connection.CreateTable<RankUp>();
             connection.CreateTable<Request>();
             connection.CreateTable<MissingPerson>();
+            connection.CreateTable<SchoolQuestion>();
             // DON'T FORGET TO ADD NEW TABLES TO THIS LIST AS THEY ARE CREATED IN THE DATABASE
         }
 
@@ -241,6 +242,56 @@ namespace P3PHelper.Repositories
             {
                 Debug.WriteLine("*** UpdateMissingPerson: " + ex.Message + " ***");
             }
+        }
+        #endregion
+
+        #region SchoolQuestions
+        public List<SchoolQuestion> GetSchoolQuestions()
+        {
+            return connection.Table<SchoolQuestion>().ToList();
+        }
+        public async Task<List<SchoolQuestion>> GetSchoolQuestionsAsync()
+        {
+            return await Task.Run(() => connection.Table<SchoolQuestion>().ToList());
+        }
+
+        public SchoolQuestion GetSchoolQuestion(int id)
+        {
+            return connection.Table<SchoolQuestion>().Where(s => s.Id == id).FirstOrDefault();
+        }
+        public async Task<SchoolQuestion> GetSchoolQuestionAsync(int id)
+        {
+            return await Task.Run(() => connection.Table<SchoolQuestion>().Where(s => s.Id == id).FirstOrDefault());
+        }
+
+        public void UpdateSchoolQuestion(int id, int isCompleted)
+        {
+            Debug.WriteLine("*** UpdateSchoolQuestion ***");
+            try
+            {
+                connection.Execute("UPDATE SchoolQuestion SET IsCompleted = ? WHERE Id = ?", isCompleted, id);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** UpdateSchoolQuestion: " + ex.Message + " ***");
+            }
+            Debug.WriteLine("*** UpdateSchoolQuestion END ***");
+        }
+        public async Task<SchoolQuestion> UpdateSchoolQuestionAsync(int id, int isCompleted)
+        {
+            return await Task.Run(() =>
+            {
+                try
+                {
+                    connection.Execute("UPDATE SchoolQuestion SET IsCompleted = ? WHERE Id = ?", isCompleted, id);
+                    return connection.Table<SchoolQuestion>().Where(s => s.Id == id).FirstOrDefault();
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("*** UpdateSchoolQuestion: " + ex.Message + " ***");
+                    return null;
+                }
+            });
         }
         #endregion
     }
