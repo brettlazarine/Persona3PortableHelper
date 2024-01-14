@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 namespace P3PHelper.Repositories
 {
     public class ProgressRepository
-    {
+    { // Look into implementing yield returns for database calls
         SQLiteConnection connection;
         public static string DbPath { get; } = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "persona3.db3");
         public const SQLiteOpenFlags Flags =
