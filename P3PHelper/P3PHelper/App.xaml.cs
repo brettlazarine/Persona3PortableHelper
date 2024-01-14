@@ -1,4 +1,5 @@
-﻿using P3PHelper.MVVM.Views;
+﻿using P3PHelper.MVVM.ViewModels;
+using P3PHelper.MVVM.Views;
 using P3PHelper.MVVM.Views.MissingPersons;
 using P3PHelper.MVVM.Views.Requests;
 using P3PHelper.MVVM.Views.SchoolQuestions;
@@ -29,6 +30,8 @@ public partial class App : Application
 
 		//RequestRepository requestRepository = new RequestRepository();
 		//DependencyService.RegisterSingleton(requestRepository);
+
+		DependencyService.RegisterSingleton<SchoolQuestionsViewModel>(new SchoolQuestionsViewModel());
 
         MainPage = new AppShell();
 	}

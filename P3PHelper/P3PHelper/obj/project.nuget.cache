@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "geb7Ha+3u+jqsItv37GJ9nFkbUzMZJc/40r2S7rEMrxZcId9j81JYpk7HBpNT+Ws0c+7gJ0pP0pnNLmDNkTBdg==",
+  "dgSpecHash": "Et1wpKtmuVdHHkk8nADlZyyX0GZk20rG1uUQaQJ3bHSobbvolUgiznWLvh8829m2K2+aX1IWJaqS5RsgGDCKrg==",
   "success": true,
   "projectFilePath": "C:\\GitHubRepos\\Persona3PHelper\\Persona3PortableHelper\\P3PHelper\\P3PHelper\\P3PHelper.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jblaz\\.nuget\\packages\\communitytoolkit.maui\\6.0.0\\communitytoolkit.maui.6.0.0.nupkg.sha512",
+    "C:\\Users\\jblaz\\.nuget\\packages\\communitytoolkit.maui.core\\6.0.0\\communitytoolkit.maui.core.6.0.0.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\microsoft.appcenter\\5.0.3\\microsoft.appcenter.5.0.3.nupkg.sha512",
@@ -48,6 +50,7 @@
     "C:\\Users\\jblaz\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\jblaz\\.nuget\\packages\\system.speech\\7.0.0\\system.speech.7.0.0.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\xamarin.android.glide\\4.13.2.2\\xamarin.android.glide.4.13.2.2.nupkg.sha512",
     "C:\\Users\\jblaz\\.nuget\\packages\\xamarin.android.glide.annotations\\4.13.2.2\\xamarin.android.glide.annotations.4.13.2.2.nupkg.sha512",

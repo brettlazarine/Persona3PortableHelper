@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:schoolQuestions="clr-namespace:P3PHelper.MVVM.Views.SchoolQuestions"
              x:Class="P3PHelper.MVVM.Views.SchoolQuestions.SchoolQuestionsView"
-             Title="SchoolQuestionsView">
+             Title="SchoolQuestionsView"
+             x:Name="ThisPage">
 
     <ContentPage.Content>
         <schoolQuestions:SchoolQuestionsTemplateView />

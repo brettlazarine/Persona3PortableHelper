@@ -5,19 +5,14 @@ namespace P3PHelper.MVVM.Views.SchoolQuestions;
 
 public partial class SchoolQuestionsCompletedView : ContentPage
 {
-    ProgressRepository ProgressRepo = new();
-    SchoolQuestionsViewModel vm = new();
+    SchoolQuestionsViewModel _vm;
 
     public SchoolQuestionsCompletedView()
 	{
 		InitializeComponent();
 
-        vm.CurrentViewQuestions = vm.Complete;
-        BindingContext = vm;
+        _vm = DependencyService.Get<SchoolQuestionsViewModel>();
+        _vm.CurrentViewQuestions = _vm.Complete;
+        BindingContext = _vm;
 	}
-
-    private void SchoolQuestionCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
-    {
-
-    }
 }

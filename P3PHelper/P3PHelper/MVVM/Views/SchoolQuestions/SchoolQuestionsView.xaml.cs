@@ -1,23 +1,25 @@
+using P3PHelper.MVVM.Models;
 using P3PHelper.MVVM.ViewModels;
 using P3PHelper.Repositories;
+using System.Diagnostics;
 
 namespace P3PHelper.MVVM.Views.SchoolQuestions;
 
 public partial class SchoolQuestionsView : ContentPage
 {
-	ProgressRepository ProgressRepo = new();
-	SchoolQuestionsViewModel vm = new();
+	SchoolQuestionsViewModel _vm;
 
 	public SchoolQuestionsView()
 	{
 		InitializeComponent();
 
-		vm.CurrentViewQuestions = vm.Incomplete;
-		BindingContext = vm;
+		_vm= DependencyService.Get<SchoolQuestionsViewModel>();
+		_vm.CurrentViewQuestions = _vm.Incomplete;
+		BindingContext = _vm;
+
+		foreach (var n in _vm.Complete)
+		{
+            Debug.WriteLine($"*** {n.Id} ***");
+        }
 	}
-
-    private void SchoolQuestionCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
-    {
-
-    }
 }

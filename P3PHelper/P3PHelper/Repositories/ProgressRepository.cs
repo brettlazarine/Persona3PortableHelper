@@ -266,6 +266,7 @@ namespace P3PHelper.Repositories
 
         public void UpdateSchoolQuestion(int id, int isCompleted)
         {
+            Debug.WriteLine("*** UpdateSchoolQuestion ***");
             try
             {
                 connection.Execute("UPDATE SchoolQuestion SET IsCompleted = ? WHERE Id = ?", isCompleted, id);
@@ -274,6 +275,7 @@ namespace P3PHelper.Repositories
             {
                 Debug.WriteLine("*** UpdateSchoolQuestion: " + ex.Message + " ***");
             }
+            Debug.WriteLine("*** UpdateSchoolQuestion END ***");
         }
         public async Task<SchoolQuestion> UpdateSchoolQuestionAsync(int id, int isCompleted)
         {

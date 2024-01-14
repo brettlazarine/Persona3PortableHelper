@@ -17,5 +17,6 @@ namespace P3PHelper.MVVM.Models
             get { return _isCompleted; }
             set { SetProperty(ref _isCompleted, value); }
         }
+        public int Index { get; set; }
     }
 }
