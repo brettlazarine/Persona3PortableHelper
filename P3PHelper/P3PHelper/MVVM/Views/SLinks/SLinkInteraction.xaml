@@ -9,371 +9,322 @@
         <converters:SLinkNeedsPersonaConverter x:Key="SLinkNeedsPersonaConverter" />
         <converters:IsCompletedBoolConverter x:Key="IsCompletedBoolConverter" />
     </ContentPage.Resources>
-    
+
     <ScrollView x:Name="scrollView">
-        <StackLayout
-            Padding="10">
-            <!--ARCANA and IMAGE-->
-            <Grid 
+        <Grid ColumnSpacing="5"
+            ColumnDefinitions="*, .1, *"
+            RowDefinitions="auto, auto"
+                >
+                <!--ARCANA and IMAGE-->
+                <Grid 
+                Grid.Row="0"
+                Grid.ColumnSpan="3"
                 RowDefinitions="auto, auto">
-                
-                <Label 
+
+                    <Label 
                     Grid.Row="0"
                     Style="{StaticResource Arcana}"
                     Text="{Binding Link.Arcana}" />
-                <Image 
+                    <Image 
                     Grid.Row="1"
                     HeightRequest="150"
                     Source="{Binding Link.Arcana, StringFormat='{0}.png', Converter={StaticResource SLinkImageConverter}}"  />
-            </Grid>
+                </Grid>
 
-            <Grid
-                ColumnDefinitions=".45*, .1*, .45*"
-                RowDefinitions="auto, auto">
-                <!--MALE COLUMN-->
-                <VerticalStackLayout
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    HorizontalOptions="Center"
-                    Padding="0, 15">
-                    <!--MALE NAME-->
-                    <VerticalStackLayout>
+            <ScrollView
+                Grid.Row="1"
+                Grid.Column="0">
+
+                <VerticalStackLayout>
+                    <!--MALE DETAILS-->
+                    <VerticalStackLayout
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            HorizontalOptions="Center"
+                            Padding="0, 15">
+                        <!--MALE NAME-->
+                        <VerticalStackLayout>
+                            <Label
+                Style="{StaticResource MalePropertyTitles}"
+                Text="Name" />
+                            <Label
+                Style="{StaticResource MalePropertyValues}"
+                Text="{Binding Link.MaleName}" />
+                        </VerticalStackLayout>
+                        <!--MALE DATE-->
+                        <VerticalStackLayout>
+                            <Label
+                Style="{StaticResource MalePropertyTitles}"
+                Text="Unlock Date" />
+                            <Image
+                Style="{StaticResource DownArrow}"
+                Source="bluedownarrow.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                        Tapped="MaleDate_Tapped" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label x:Name="MaleDate"
+                Style="{StaticResource MalePropertyValues}"
+                IsVisible="false"
+                Text="{Binding Link.MaleUnlockDate}" />
+                        </VerticalStackLayout>
+                        <!--MALE HOW-->
+                        <VerticalStackLayout>
+                            <Label
+                Style="{StaticResource MalePropertyTitles}"
+                Text="How to Unlock" />
+                            <Image
+                Style="{StaticResource DownArrow}"
+                Source="bluedownarrow.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                        Tapped="MaleHow_Tapped" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label x:Name="MaleHow"
+                Style="{StaticResource MalePropertyValues}"
+                IsVisible="false"
+                Text="{Binding Link.MaleHowToUnlock}" />
+                        </VerticalStackLayout>
+                        <!--MALE AVAILABILITY-->
+                        <VerticalStackLayout>
+                            <Label
+                Style="{StaticResource MalePropertyTitles}"
+                Text="Availability" />
+                            <Image
+                Style="{StaticResource DownArrow}"
+                Source="bluedownarrow.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                        Tapped="MaleAvailability_Tapped" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label x:Name="MaleAvailability"
+                Style="{StaticResource MalePropertyValues}"
+                IsVisible="false"
+                Text="{Binding Link.MaleAvailability}" />
+                        </VerticalStackLayout>
+                        <!--MALE REQUIRES PERSONA-->
                         <Label
-                            Style="{StaticResource MalePropertyTitles}"
-                            Text="Name" />
-                        <Label
-                            Style="{StaticResource MalePropertyValues}"
-                            Text="{Binding Link.MaleName}" />
+            Style="{StaticResource MalePropertyTitles}"
+            Text="{Binding Link.MaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
                     </VerticalStackLayout>
-                    <!--MALE DATE-->
-                    <VerticalStackLayout>
-                        <Label
-                            Style="{StaticResource MalePropertyTitles}"
-                            Text="Unlock Date" />
-                        <Image
-                            Style="{StaticResource DownArrow}"
-                            Source="bluedownarrow.png">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer
-                                    Tapped="MaleDate_Tapped" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                        <Label x:Name="MaleDate"
-                            Style="{StaticResource MalePropertyValues}"
-                            IsVisible="false"
-                            Text="{Binding Link.MaleUnlockDate}" />
-                    </VerticalStackLayout>
-                    <!--MALE HOW-->
-                    <VerticalStackLayout>
-                        <Label
-                            Style="{StaticResource MalePropertyTitles}"
-                            Text="How to Unlock" />
-                        <Image
-                            Style="{StaticResource DownArrow}"
-                            Source="bluedownarrow.png">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer
-                                    Tapped="MaleHow_Tapped" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                        <Label x:Name="MaleHow"
-                            Style="{StaticResource MalePropertyValues}"
-                            IsVisible="false"
-                            Text="{Binding Link.MaleHowToUnlock}" />
-                    </VerticalStackLayout>
-                    <!--MALE AVAILABILITY-->
-                    <VerticalStackLayout>
-                        <Label
-                            Style="{StaticResource MalePropertyTitles}"
-                            Text="Availability" />
-                        <Image
-                            Style="{StaticResource DownArrow}"
-                            Source="bluedownarrow.png">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer
-                                    Tapped="MaleAvailability_Tapped" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                        <Label x:Name="MaleAvailability"
-                            Style="{StaticResource MalePropertyValues}"
-                            IsVisible="false"
-                            Text="{Binding Link.MaleAvailability}" />
-                    </VerticalStackLayout>
-                    <!--MALE REQUIRES PERSONA-->
-                    <Label
-                        Style="{StaticResource MalePropertyTitles}"
-                        Text="{Binding Link.MaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
+
+                    <CollectionView
+                            ItemsSource="{Binding MaleInteractions}">
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout
+                                    Orientation="Vertical" 
+                                    ItemSpacing="10" />
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame
+                                    Margin="20"
+                                    CornerRadius="30" 
+                                    BackgroundColor="{StaticResource PrimaryBlue}"
+                                    BorderColor="{StaticResource SecondaryBlue}">
+
+                                    <Grid
+                                        RowDefinitions="auto, auto">
+                                        <!--RANK AND CHECK-->
+                                        <HorizontalStackLayout
+                                            Grid.Row="0">
+
+                                            <Label
+                                                Style="{StaticResource SLinkQuestion}"
+                                                Text="{Binding RankNumber, StringFormat='Rank {0}'}"/>
+                                            <CheckBox
+                                                />
+                                        </HorizontalStackLayout>
+                                        <CollectionView
+                                            Grid.Row="1"
+                                            ItemsSource="{Binding RankInteractions}">
+                                            <CollectionView.ItemsLayout>
+                                                <LinearItemsLayout
+                                                    Orientation="Vertical" 
+                                                    ItemSpacing="10"/>
+                                            </CollectionView.ItemsLayout>
+                                            <CollectionView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <VerticalStackLayout>
+                                                        <Label
+                                                            Style="{StaticResource MaleQuestionTitle}"
+                                                            Text="Question" />
+                                                        <Label
+                                                            Style="{StaticResource MaleQuestion}"
+                                                            Text="{Binding [0]}" />
+
+                                                        <Label
+                                                            Style="{StaticResource MaleResponseTitle}"
+                                                            Text="Response" />
+                                                        <Label
+                                                            Style="{StaticResource MaleResponse}"
+                                                            Text="{Binding [1]}" />
+                                                    </VerticalStackLayout>
+                                                </DataTemplate>
+                                            </CollectionView.ItemTemplate>
+                                        </CollectionView>
+                                    </Grid>
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </VerticalStackLayout>
-
-                <CollectionView
-                    Grid.Row="1"
-                    Grid.Column="0"
-                    ItemsSource="{Binding MaleInteractions}">
-
-                    <CollectionView.ItemsLayout>
-                        <LinearItemsLayout
-                            Orientation="Vertical" 
-                            ItemSpacing="10" />
-                    </CollectionView.ItemsLayout>
-
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid 
-                                RowDefinitions="auto, auto">
-                                <!--Rank Check Arrow-->
-                                <Grid
-                                    ColumnDefinitions="auto, auto, auto"
-                                    HorizontalOptions="Fill"
-                                    Padding="20, 0"
-                                    VerticalOptions="Center"
-                                    BackgroundColor="{StaticResource PrimaryBlue}">
-
-                                    <Label x:Name="Rank"
-                                        Grid.Column="0"
-                                        Style="{StaticResource SLinkQuestion}"
-                                        Text="{Binding RankNumber, StringFormat='Rank {0}'}" />
-                                    <CheckBox 
-                                        Grid.Column="1"
-                                        IsChecked="{Binding IsCompleted, Converter={StaticResource IsCompletedBoolConverter}}" 
-                                        CheckedChanged="IsCompletedCheckBox_CheckedChanged"/>
-
-                                    <!--Bind for AutoScroll-->
-                                    <Label AutomationId="RankHolder" 
-                                        IsVisible="false"
-                                        Text="{Binding Source={x:Reference Rank}, Path=Text}" />
-
-                                    <Image
-                                        Grid.Column="2"
-                                        Style="{StaticResource DownArrow}"
-                                        VerticalOptions="Center"
-                                        HorizontalOptions="End"
-                                        Source="downarrow.png">
-                                        <Image.GestureRecognizers>
-                                            <TapGestureRecognizer
-                                                Tapped="RankStackArrow_Tapped" />
-                                        </Image.GestureRecognizers>
-                                    </Image>
-                                </Grid>
-                                <!--Question and Response-->
-                                <VerticalStackLayout AutomationId="QuestionResponse"
-                                    Grid.Row="1"
-                                    HorizontalOptions="CenterAndExpand"
-                                    IsVisible="False">
-
-                                    <CollectionView
-                                        ItemsSource="{Binding RankInteractions}">
-
-                                        <CollectionView.ItemsLayout>
-                                            <LinearItemsLayout
-                                                Orientation="Vertical" 
-                                                ItemSpacing="0" />
-                                        </CollectionView.ItemsLayout>
-
-                                        <CollectionView.ItemTemplate>
-                                            <DataTemplate>
-                                                <VerticalStackLayout
-                                                    BackgroundColor="{StaticResource SecondaryBlue}"
-                                                    Padding="10">
-
-                                                    <Label
-                                                        Style="{StaticResource MaleQuestionTitle}"
-                                                        Text="Question" />
-                                                    <Label
-                                                        Style="{StaticResource MaleQuestion}"
-                                                        Text="{Binding [0]}" />
-
-                                                    <Label
-                                                        Style="{StaticResource MaleResponseTitle}"
-                                                        Text="Response" />
-                                                    <Label
-                                                        Style="{StaticResource MaleResponse}"
-                                                        Text="{Binding [1]}" />
-                                                </VerticalStackLayout>
-                                            </DataTemplate>
-                                        </CollectionView.ItemTemplate>
-                                    </CollectionView>
-                                </VerticalStackLayout>
-                            </Grid>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
+            </ScrollView>
+            
 
                 <!--DIVIDER-->
                 <BoxView 
-                    Grid.RowSpan="2"
+                    Grid.Row="1"
                     Margin="0, 10, 0, 0"
                     WidthRequest="1"
                     Grid.Column="1"
                     Color="Transparent"
                     BackgroundColor="{StaticResource PrimaryBlue}" />
-                
-                <!--FEMALE COLUMN-->
-                <VerticalStackLayout
-                    Grid.Row="0"
-                    Grid.Column="2"
-                    HorizontalOptions="Center"
-                    Padding="0, 15">
-                    <!--FEMALE NAME-->
-                    <VerticalStackLayout>
+            
+            <ScrollView
+                Grid.Row="1"
+                Grid.Column="2">
+                <VerticalStackLayout>
+                    <!--FEMALE DETAILS-->
+                    <VerticalStackLayout
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        HorizontalOptions="Center"
+                        Padding="0, 15">
+                        <!--FEMALE NAME-->
+                        <VerticalStackLayout>
+                            <Label
+                                Style="{StaticResource FemalePropertyTitles}"
+                                Text="Name" />
+                            <Label
+                                Style="{StaticResource FemalePropertyValues}"
+                                Text="{Binding Link.FemaleName}" />
+                        </VerticalStackLayout>
+                        <!--FEMALE DATE-->
+                        <VerticalStackLayout>
+                            <Label
+                                Style="{StaticResource FemalePropertyTitles}"
+                                Text="Unlock Date" />
+                            <Image
+                                Style="{StaticResource DownArrow}"
+                                Source="pinkdownarrow.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Tapped="FemaleDate_Tapped" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label x:Name="FemaleDate"
+                                Style="{StaticResource FemalePropertyValues}"
+                                IsVisible="false"
+                                Text="{Binding Link.FemaleUnlockDate}" />
+                        </VerticalStackLayout>
+                        <!--FEMALE HOW-->
+                        <VerticalStackLayout>
+                            <Label
+                                Style="{StaticResource FemalePropertyTitles}"
+                                Text="How to Unlock" />
+                            <Image
+                                Style="{StaticResource DownArrow}"
+                                Source="pinkdownarrow.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Tapped="FemaleHow_Tapped" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label x:Name="FemaleHow"
+                                Style="{StaticResource FemalePropertyValues}"
+                                IsVisible="false"
+                                Text="{Binding Link.FemaleHowToUnlock}" />
+                        </VerticalStackLayout>
+                        <!--FEMALE AVAILABILITY-->
+                        <VerticalStackLayout>
+                            <Label
+                                Style="{StaticResource FemalePropertyTitles}"
+                                Text="Availability" />
+                            <Image
+                                Style="{StaticResource DownArrow}"
+                                Source="pinkdownarrow.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Tapped="FemaleAvailability_Tapped" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label x:Name="FemaleAvailability"
+                                Style="{StaticResource FemalePropertyValues}"
+                                IsVisible="false"
+                                Text="{Binding Link.FemaleAvailability}" />
+                        </VerticalStackLayout>
+                        <!--FEMALE REQUIRES PERSONA-->
                         <Label
                             Style="{StaticResource FemalePropertyTitles}"
-                            Text="Name" />
-                        <Label
-                            Style="{StaticResource FemalePropertyValues}"
-                            Text="{Binding Link.FemaleName}" />
+                            Text="{Binding Link.FemaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
                     </VerticalStackLayout>
-                    <!--FEMALE DATE-->
-                    <VerticalStackLayout>
-                        <Label
-                            Style="{StaticResource FemalePropertyTitles}"
-                            Text="Unlock Date" />
-                        <Image
-                            Style="{StaticResource DownArrow}"
-                            Source="pinkdownarrow.png">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer
-                                    Tapped="FemaleDate_Tapped" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                        <Label x:Name="FemaleDate"
-                            Style="{StaticResource FemalePropertyValues}"
-                            IsVisible="false"
-                            Text="{Binding Link.FemaleUnlockDate}" />
-                    </VerticalStackLayout>
-                    <!--FEMALE HOW-->
-                    <VerticalStackLayout>
-                        <Label
-                            Style="{StaticResource FemalePropertyTitles}"
-                            Text="How to Unlock" />
-                        <Image
-                            Style="{StaticResource DownArrow}"
-                            Source="pinkdownarrow.png">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer
-                                    Tapped="FemaleHow_Tapped" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                        <Label x:Name="FemaleHow"
-                            Style="{StaticResource FemalePropertyValues}"
-                            IsVisible="false"
-                            Text="{Binding Link.FemaleHowToUnlock}" />
-                    </VerticalStackLayout>
-                    <!--FEMALE AVAILABILITY-->
-                    <VerticalStackLayout>
-                        <Label
-                            Style="{StaticResource FemalePropertyTitles}"
-                            Text="Availability" />
-                        <Image
-                            Style="{StaticResource DownArrow}"
-                            Source="pinkdownarrow.png">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer
-                                    Tapped="FemaleAvailability_Tapped" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                        <Label x:Name="FemaleAvailability"
-                            Style="{StaticResource FemalePropertyValues}"
-                            IsVisible="false"
-                            Text="{Binding Link.FemaleAvailability}" />
-                    </VerticalStackLayout>
-                    <!--FEMALE REQUIRES PERSONA-->
-                    <Label
-                        Style="{StaticResource FemalePropertyTitles}"
-                        Text="{Binding Link.FemaleRequiresPersona, Converter={StaticResource SLinkNeedsPersonaConverter}}" />
-                </VerticalStackLayout>
 
-                <CollectionView 
-                    Grid.Row="1"
-                    Grid.Column="2"
-                    ItemsSource="{Binding FemaleInteractions}">
-                    
-                    <CollectionView.ItemsLayout>
-                        <LinearItemsLayout
-                            Orientation="Vertical" 
-                            ItemSpacing="10" />
-                    </CollectionView.ItemsLayout>
-                    
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid 
-                                RowDefinitions="auto, auto">
-                                <!--Rank Check Arrow-->
-                                <Grid
-                                    ColumnDefinitions="auto, auto, auto"
-                                    HorizontalOptions="Fill"
-                                    Padding="20, 0"
-                                    VerticalOptions="Center"
-                                    BackgroundColor="{StaticResource PrimaryPink}">
-                                    
-                                    <Label x:Name="Rank"
-                                        Grid.Column="0"
-                                        Style="{StaticResource SLinkQuestion}"
-                                        Text="{Binding RankNumber, StringFormat='Rank {0}'}" />
-                                    <CheckBox 
-                                        Grid.Column="1"
-                                        IsChecked="{Binding IsCompleted, Converter={StaticResource IsCompletedBoolConverter}}" 
-                                        CheckedChanged="IsCompletedCheckBox_CheckedChanged"/>
-                                    
-                                    <!--Bind for AutoScroll-->
-                                    <Label AutomationId="RankHolder" 
-                                           IsVisible="false"
-                                           Text="{Binding Source={x:Reference Rank}, Path=Text}" />
-                                    
-                                    <Image
-                                        Grid.Column="2"
-                                        Style="{StaticResource DownArrow}"
-                                        VerticalOptions="Center"
-                                        HorizontalOptions="End"
-                                        Source="downarrow.png">
-                                        <Image.GestureRecognizers>
-                                            <TapGestureRecognizer
-                                                Tapped="RankStackArrow_Tapped" />
-                                        </Image.GestureRecognizers>
-                                    </Image>
-                                </Grid>
-                                <!--Question and Response-->
-                                <VerticalStackLayout AutomationId="QuestionResponse"
-                                    Grid.Row="1"
-                                    HorizontalOptions="CenterAndExpand"
-                                    IsVisible="false">
-                                    
-                                    <CollectionView
-                                        ItemsSource="{Binding RankInteractions}">
-                                        
-                                        <CollectionView.ItemsLayout>
-                                            <LinearItemsLayout
-                                                Orientation="Vertical" 
-                                                ItemSpacing="0" />
-                                        </CollectionView.ItemsLayout>
-                                        
-                                        <CollectionView.ItemTemplate>
-                                            <DataTemplate>
-                                                <VerticalStackLayout
-                                                    BackgroundColor="{StaticResource SecondaryPink}"
-                                                    Padding="10">
-                                                    
-                                                    <Label
-                                                        Style="{StaticResource FemaleQuestionTitle}"
-                                                        Text="Question" />
-                                                    <Label
-                                                        Style="{StaticResource FemaleQuestion}"
-                                                        Text="{Binding [0]}" />
-                                                    <Label
-                                                        Style="{StaticResource FemaleResponseTitle}"
-                                                        Text="Response" />
-                                                    <Label
-                                                        Style="{StaticResource FemaleResponse}"
-                                                        Text="{Binding [1]}" />
-                                                </VerticalStackLayout>
-                                            </DataTemplate>
-                                        </CollectionView.ItemTemplate>
-                                    </CollectionView>
-                                </VerticalStackLayout>
-                            </Grid>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </StackLayout>
+                    <CollectionView
+                        ItemsSource="{Binding FemaleInteractions}">
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout
+                                Orientation="Vertical" 
+                                ItemSpacing="10" />
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame
+                                    Margin="20"
+                                    CornerRadius="30" 
+                                    BackgroundColor="{StaticResource PrimaryPink}"
+                                    BorderColor="{StaticResource SecondaryPink}">
+
+                                    <Grid
+                                        RowDefinitions="auto, auto">
+                                        <!--RANK AND CHECK-->
+                                        <HorizontalStackLayout
+                                            Grid.Row="0">
+
+                                            <Label
+                                                Style="{StaticResource SLinkQuestion}"
+                                                Text="{Binding RankNumber, StringFormat='Rank {0}'}"/>
+                                            <CheckBox
+                                                />
+                                        </HorizontalStackLayout>
+                                        <CollectionView
+                                            Grid.Row="1"
+                                            ItemsSource="{Binding RankInteractions}">
+                                            <CollectionView.ItemsLayout>
+                                                <LinearItemsLayout
+                                                    Orientation="Vertical" 
+                                                    ItemSpacing="10"/>
+                                            </CollectionView.ItemsLayout>
+                                            <CollectionView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <VerticalStackLayout>
+                                                        <Label
+                                                            Style="{StaticResource FemaleQuestionTitle}"
+                                                            Text="Question" />
+                                                        <Label
+                                                            Style="{StaticResource FemaleQuestion}"
+                                                            Text="{Binding [0]}" />
+
+                                                        <Label
+                                                            Style="{StaticResource FemaleResponseTitle}"
+                                                            Text="Response" />
+                                                        <Label
+                                                            Style="{StaticResource FemaleResponse}"
+                                                            Text="{Binding [1]}" />
+                                                    </VerticalStackLayout>
+                                                </DataTemplate>
+                                            </CollectionView.ItemTemplate>
+                                        </CollectionView>
+                                    </Grid>
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+            </ScrollView>
+        </Grid>
     </ScrollView>
 </ContentPage>
