@@ -14,7 +14,7 @@ namespace P3PHelper.Converters
             }
             else
             {
-                return "A Persona is NOT required for faster rank-ups, but you can use one if you would like.";
+                return "A Persona is NOT required for faster rank-ups!";
             }
         }
 

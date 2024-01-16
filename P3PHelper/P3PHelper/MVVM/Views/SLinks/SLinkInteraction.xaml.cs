@@ -188,7 +188,7 @@ public partial class SLinkInteraction : ContentPage
                 questionResponseStack.IsVisible = !questionResponseStack.IsVisible;
                 arrow.Rotation = questionResponseStack.IsVisible ? 180 : 0;
 
-                double bottomY = scrollView.ContentSize.Height - scrollView.Height;
+                //double bottomY = scrollView.ContentSize.Height - scrollView.Height;
 
                 if (questionResponseStack.IsVisible)
                 {
@@ -202,7 +202,7 @@ public partial class SLinkInteraction : ContentPage
 
                     if (vm.ScrollRanks.Contains(txt2))
                     {
-                        await scrollView.ScrollToAsync(0, vm.AdjustY(bottomY), true);
+                        //await scrollView.ScrollToAsync(0, vm.AdjustY(bottomY), true);
                     }
                 }
             }
