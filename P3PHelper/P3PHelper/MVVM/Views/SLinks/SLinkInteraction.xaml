@@ -158,7 +158,7 @@
 
                                                         <Label
                                                             Style="{StaticResource MaleResponseTitle}"
-                                                            Text="Date" />
+                                                            Text="Response" />
                                                         <Label
                                                             Style="{StaticResource MaleResponse}"
                                                             Text="{Binding [1]}" />
@@ -310,7 +310,7 @@
 
                                                         <Label
                                                             Style="{StaticResource FemaleResponseTitle}"
-                                                            Text="Date" />
+                                                            Text="Response" />
                                                         <Label
                                                             Style="{StaticResource FemaleResponse}"
                                                             Text="{Binding [1]}" />
