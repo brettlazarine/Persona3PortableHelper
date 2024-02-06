@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("P3PHelper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8fa4eb277cc7346326f69459d32ca34b6456e425")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+98d8fe5047e95d10e8a951916456b2b6ffe3d614")]
 [assembly: System.Reflection.AssemblyProductAttribute("P3PHelper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("P3PHelper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

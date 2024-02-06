@@ -1,4 +1,5 @@
-﻿namespace P3PHelper.MVVM.Models
+﻿
+namespace P3PHelper.MVVM.Models
 {
     public class SLinkTapInfo
     {

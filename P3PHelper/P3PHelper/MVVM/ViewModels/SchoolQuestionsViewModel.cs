@@ -14,9 +14,9 @@ namespace P3PHelper.MVVM.ViewModels
 
         public ObservableCollection<SchoolQuestion> CurrentViewQuestions { get; set; } = new();
 
+        ProgressRepository ProgressRepo = new();
         public ICommand SchoolQuestionCheckedCommand { get; }
 
-        ProgressRepository ProgressRepo = new();
 
         public SchoolQuestionsViewModel()
         {
@@ -26,23 +26,23 @@ namespace P3PHelper.MVVM.ViewModels
 
             SchoolQuestionCheckedCommand = new Command<SchoolQuestion>(HandleSchoolQuestionChecked);
         }
-
-        // Null check is required because the event is fired when the CompletedView is first loaded
+        // THIS NEEDS TO BE MADE ASYNCHRONOUS, POSSIBLY TO TASK
         private void HandleSchoolQuestionChecked(SchoolQuestion schoolQuestion)
         {
+            // Null check is required because the event is fired when the CompletedView is first loaded
             Debug.WriteLine("*** HandleSchoolQuestionChecked ***");
-            // Logic to update the collections
             if (schoolQuestion is null)
             {
                 Debug.WriteLine("*** schoolQuestion is null ***");
                 return;
             }    
 
+            // Logic to update the collections
             ProgressRepo.UpdateSchoolQuestion(schoolQuestion.Id, schoolQuestion.IsCompleted);
 
             CurrentViewQuestions.Remove(schoolQuestion);
 
-            if (schoolQuestion.IsCompleted == 1)
+            if (schoolQuestion.IsCompleted is 1)
             {
                 Incomplete.Remove(schoolQuestion);
                 if (!Complete.Contains(schoolQuestion))

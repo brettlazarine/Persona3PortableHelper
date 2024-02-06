@@ -3,6 +3,8 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "P3PHelper.dll" comes first in this list. */
 		"P3PHelper.dll",
+		"CommunityToolkit.Maui.dll",
+		"CommunityToolkit.Maui.Core.dll",
 		"CommunityToolkit.Mvvm.dll",
 		"Microsoft.AppCenter.dll",
 		"Microsoft.AppCenter.Analytics.dll",
