@@ -24,21 +24,27 @@ namespace P3PHelper.Repositories
 
         public ProgressRepository()
         {
-            //connection = new SQLiteConnection(Constants.DatabasePath, Constants.Flags);
-           // connection.CreateTable<SLink>();
-            //connection.CreateTable<RankUp>();
-            //connection.CreateTable<Request>();
-
-
-
             connection = new SQLiteConnection(DbPath, Flags);
             connection.CreateTable<SLink>();
-            //connection.CreateTable<ArcanaRankUp>();
             connection.CreateTable<RankUp>();
             connection.CreateTable<Request>();
             connection.CreateTable<MissingPerson>();
             connection.CreateTable<SchoolQuestion>();
             // DON'T FORGET TO ADD NEW TABLES TO THIS LIST AS THEY ARE CREATED IN THE DATABASE
+        }
+
+        public static void InitializeDatabase()
+        {
+            var dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "persona3.db3");
+            if (!File.Exists(dbPath))
+            {
+                var assembly = IntrospectionExtensions.GetTypeInfo(typeof(App)).Assembly;
+                using (Stream stream = assembly.GetManifestResourceStream("P3PHelper.Resources.Raw.persona3.db3"))
+                using (var fileStream = File.Create(dbPath))
+                {
+                    stream.CopyTo(fileStream);
+                }
+            }
         }
 
         #region SLinks
@@ -53,12 +59,8 @@ namespace P3PHelper.Repositories
 
         public SLink GetSLink(string arcanaName)
         {
-            // ... previous checks ...
-
             var result = connection.Table<SLink>().Where(s => s.Arcana == arcanaName).FirstOrDefault();
 
-            //var links = connection.Table<SLink>().ToList();
-            //var result = links.Where(s => s.Arcana == arcanaName).FirstOrDefault();
             if (result == null)
             {
                 Debug.WriteLine($"*** No SLink found for ArcanaName: {arcanaName} ***");
@@ -77,21 +79,15 @@ namespace P3PHelper.Repositories
                 return result;
             });
         }
-
-
+        // MAY BE UNNECESSARY, CONSIDER REMOVING
         public void UpdateSLink(string arcana, int isCompleted)
         {
             var newData = new SLink
             {
-                Arcana = arcana,
-                //MaleRequiresPersona = isCompleted
+                Arcana = arcana
             };
-            //connection.Execute($"UPDATE RankUp SET IsCompleted = {newData.IsCompleted} WHERE RankUpId = {newData.RankUpId};");
-            //connection.Execute($"UPDATE SLink SET MaleRequiresPersona = {link.MaleRequiresPersona} WHERE Arcana = {link.Arcana};");
-            //connection.Execute("UPDATE SLink SET MaleRequiresPersona = ? WHERE Arcana = ?", isCompleted, arcana);
-            //connection.Execute($"UPDATE SLink SET MaleRequiresPersona = {newData.MaleRequiresPersona} WHERE Arcana = '{newData.Arcana}';");
         }
-
+        // NO LONGER USING THIS MODEL
         public List<ArcanaRankUp> GetArcanaRankUps()
         {
             var arcanaRankUpsData = connection.Table<ArcanaRankUp>().ToList();
@@ -104,6 +100,7 @@ namespace P3PHelper.Repositories
         #endregion
 
         #region RankUps
+        // NO LONGER USING THIS MODEL
         public ArcanaRankUp GetArcanaRankUp(string arcana)
         {
             var arcanaRankUpData = connection.Table<ArcanaRankUp>().Where(a => a.Arcana == arcana).FirstOrDefault();
@@ -115,9 +112,7 @@ namespace P3PHelper.Repositories
         {
             try
             {
-                Debug.WriteLine("*** GETRANKUPS CONNECTION ***");
                 var r = connection.Table<RankUp>().ToList();
-                Debug.WriteLine("*** GETRANKUPS AFTER CONNECTION ***");
                 return r;
             }
             catch (Exception ex)
@@ -131,9 +126,7 @@ namespace P3PHelper.Repositories
         {
             try
             {
-                Debug.WriteLine("*** GETRANKUP CONNECTION ***");
                 var r = connection.Table<RankUp>().Where(r => r.Arcana == arcana).ToList();
-                Debug.WriteLine("*** GETRANKUP AFTER CONNECTION ***");
                 return r;
             }
             catch (Exception ex)
@@ -148,9 +141,7 @@ namespace P3PHelper.Repositories
             {
                 try
                 {
-                    //Debug.WriteLine("*** GETRANKUP CONNECTION ***");
                     var rankUps = connection.Table<RankUp>().Where(r => r.Arcana == arcana).ToList();
-                    //Debug.WriteLine("*** GETRANKUP AFTER CONNECTION ***");
                     return rankUps;
                 }
                 catch (Exception ex)
@@ -161,13 +152,11 @@ namespace P3PHelper.Repositories
             });
         }
 
-
         public void UpdateRankUp(int id, int isCompleted)
         {
             try
             {
                 connection.Execute("UPDATE RankUp SET IsCompleted = ? WHERE Id = ?", isCompleted, id);
-                //connection.Execute($"UPDATE RankUp SET IsCompleted = {newData.IsCompleted} WHERE RankUpId = {newData.RankUpId};");
             }
             catch (Exception ex)
             {
@@ -175,20 +164,6 @@ namespace P3PHelper.Repositories
             }
         }
         #endregion
-
-        public static void InitializeDatabase()
-        {
-            var dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "persona3.db3");
-            if (!File.Exists(dbPath))
-            {
-                var assembly = IntrospectionExtensions.GetTypeInfo(typeof(App)).Assembly;
-                using (Stream stream = assembly.GetManifestResourceStream("P3PHelper.Resources.Raw.persona3.db3"))
-                using (var fileStream = File.Create(dbPath))
-                {
-                    stream.CopyTo(fileStream);
-                }
-            }
-        }
 
         #region Requests
         public List<Request> GetRequests()
@@ -266,7 +241,6 @@ namespace P3PHelper.Repositories
 
         public void UpdateSchoolQuestion(int id, int isCompleted)
         {
-            Debug.WriteLine("*** UpdateSchoolQuestion ***");
             try
             {
                 connection.Execute("UPDATE SchoolQuestion SET IsCompleted = ? WHERE Id = ?", isCompleted, id);
@@ -275,8 +249,8 @@ namespace P3PHelper.Repositories
             {
                 Debug.WriteLine("*** UpdateSchoolQuestion: " + ex.Message + " ***");
             }
-            Debug.WriteLine("*** UpdateSchoolQuestion END ***");
         }
+        // THIS NEEDS REFACTORING
         public async Task<SchoolQuestion> UpdateSchoolQuestionAsync(int id, int isCompleted)
         {
             return await Task.Run(() =>

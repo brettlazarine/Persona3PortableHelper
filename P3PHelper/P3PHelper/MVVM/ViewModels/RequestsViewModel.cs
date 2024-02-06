@@ -1,13 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using P3PHelper.MVVM.Models;
 using P3PHelper.Repositories;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 
 namespace P3PHelper.MVVM.ViewModels
 {
@@ -17,7 +11,6 @@ namespace P3PHelper.MVVM.ViewModels
 
         [ObservableProperty]
         List<Request> currentRequest;
-
         public List<Request> OneTwenty { get; set; } = new();
         public List<Request> TwentyOneFourty { get; set; } = new();
         public List<Request> FourtyOneSixty { get; set; } = new();
@@ -27,6 +20,7 @@ namespace P3PHelper.MVVM.ViewModels
         {
             foreach (var req in ProgressRepo.GetRequests())
             {
+                // From SQLite, the newlines are escaped, so need to replace them with the actual newline character
                 req.HowToComplete = req.HowToComplete.Replace("\\n", Environment.NewLine);
                 req.Reward = req.Reward.Replace("\\n", Environment.NewLine);
                 if (req.QuestNumber <= 20)
@@ -72,7 +66,7 @@ namespace P3PHelper.MVVM.ViewModels
                 return null;
             }
         }
-
+        // MAY NEED TO MAKE THIS A TASK, VIEWS NEED TO REFERENCE THIS VM
         private async void RequestCheckBoxChangedVM(object sender, CheckedChangedEventArgs e)
         {
             if (sender is not CheckBox checkBox)
@@ -85,11 +79,12 @@ namespace P3PHelper.MVVM.ViewModels
                 Debug.WriteLine("*** Unexpected BindingContext type in RequestCheckBox_CheckedChanged ***");
                 return;
             }
+
             // Toggle the IsVisible property of the RequestDetails Grid
             try
             {
                 var parent = checkBox.Parent as Layout;
-                if (parent == null)
+                if (parent is null)
                 {
                     Debug.WriteLine("*** Parent is null in RequestCheckBox_CheckedChanged ***");
                     return;
@@ -98,7 +93,7 @@ namespace P3PHelper.MVVM.ViewModels
                 var hider = parent.Children
                     .OfType<Grid>()
                     .FirstOrDefault(x => x.AutomationId == "RequestDetails");
-                if (hider != null)
+                if (hider is not null)
                 {
                     hider.IsVisible = !hider.IsVisible;
                 }
@@ -109,7 +104,10 @@ namespace P3PHelper.MVVM.ViewModels
 
                 await App.Current.MainPage.DisplayAlert("Error", "Error handling CheckBox tap", "OK");
             }
+
             // Update the Request in the database
+            // NEEDS TO REFLECT THE CHANGE IN DB DESIGN, NO LONGER USING CLASS REPOS
+            // REFERENCE CODEBEHIND FOR IMPLEMENTATION
             try
             {
                 int isCompleted = checkBox.IsChecked ? 1 : 0;

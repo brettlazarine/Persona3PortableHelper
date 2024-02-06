@@ -7,24 +7,14 @@ using System.Diagnostics;
 namespace P3PHelper.MVVM.Views.Requests;
 
 public partial class OneToTwentyView : ContentPage
-{//CONSIDER USING DROPDOWNS TO LOAD THE REQUESTS INDIVIDUALLY
+{
 	public RequestsViewModel Vm = new();
 	ProgressRepository ProgressRepo = new();
+
 	public OneToTwentyView()
 	{
 		InitializeComponent();
 		BindingContext = Vm.OneTwenty;
-
-        try
-        {
-            var name = this.GetName();
-            Debug.WriteLine($"*** {name} ***");
-        }
-        catch (Exception ex)
-        {
-            Debug.WriteLine("*** " + ex.Message + " ***");
-        }
-        Debug.WriteLine("***  ***");
     }
 
     private async void RequestCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
@@ -39,11 +29,12 @@ public partial class OneToTwentyView : ContentPage
             Debug.WriteLine("*** Unexpected BindingContext type in RequestCheckBox_CheckedChanged ***");
             return;
         }
+
 		// Toggle the IsVisible property of the RequestDetails Grid
 		try
 		{
 			var parent = checkBox.Parent as Layout;
-			if (parent == null)
+			if (parent is null)
 			{
 				Debug.WriteLine("*** Parent is null in RequestCheckBox_CheckedChanged ***");
 				return;
@@ -63,11 +54,11 @@ public partial class OneToTwentyView : ContentPage
 
             await DisplayAlert("Error", "Error handling CheckBox tap", "OK");
         }
+
 		// Update the Request in the database
 		try
 		{
 			int isCompleted = checkBox.IsChecked ? 1 : 0;
-			//App.ProgressRepo.UpdateRequest(request.QuestNumber, isCompleted);
 			ProgressRepo.UpdateRequest(request.QuestNumber, isCompleted);
 		}
         catch (Exception ex)

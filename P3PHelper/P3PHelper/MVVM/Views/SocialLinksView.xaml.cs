@@ -20,7 +20,7 @@ public partial class SocialLinksView : ContentPage
         Vm = new SocialLinksViewModel();
         BindingContext = Vm;
 	}
-
+    // MOVE TO VIEWMODEL
     public async void NavigateToSLink(object sender, EventArgs e)
     {
         if (sender is not ImageButton)

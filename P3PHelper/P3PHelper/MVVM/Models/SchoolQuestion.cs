@@ -4,7 +4,7 @@ using SQLite;
 
 namespace P3PHelper.MVVM.Models
 {
-    public class SchoolQuestion : ObservableObject
+    public partial class SchoolQuestion : ObservableObject, ISchoolQuestion
     {
         [PrimaryKey, Indexed]
         public int Id { get; set; }
