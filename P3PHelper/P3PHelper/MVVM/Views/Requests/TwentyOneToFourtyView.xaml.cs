@@ -16,6 +16,7 @@ public partial class TwentyOneToFourtyView : ContentPage
         BindingContext = Vm.TwentyOneFourty;
 	}
 
+    // MOVE TO VIEWMODEL
     private async void RequestCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
     {
         if (sender is not CheckBox checkBox)
@@ -28,6 +29,7 @@ public partial class TwentyOneToFourtyView : ContentPage
             Debug.WriteLine("*** Unexpected BindingContext type in RequestCheckBox_CheckedChanged ***");
             return;
         }
+
         // Toggle the IsVisible property of the RequestDetails Grid
         try
         {
@@ -52,11 +54,11 @@ public partial class TwentyOneToFourtyView : ContentPage
 
             await DisplayAlert("Error", "Error handling CheckBox tap", "OK");
         }
+
         // Update the Request in the database
         try
         {
             int isCompleted = checkBox.IsChecked ? 1 : 0;
-            //App.ProgressRepo.UpdateRequest(request.QuestNumber, isCompleted);
             ProgressRepo.UpdateRequest(request.QuestNumber, isCompleted);
         }
         catch (Exception ex)

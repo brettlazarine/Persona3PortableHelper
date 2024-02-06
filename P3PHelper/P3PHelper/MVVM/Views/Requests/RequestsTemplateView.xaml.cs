@@ -13,6 +13,7 @@ public partial class RequestsTemplateView : ContentView
 		InitializeComponent();
     }
 
+    // MOVE TO VIEWMODEL
     private async void RequestCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
     {
         if (sender is not CheckBox checkBox)
@@ -25,6 +26,7 @@ public partial class RequestsTemplateView : ContentView
             Debug.WriteLine("*** Unexpected BindingContext type in RequestCheckBox_CheckedChanged ***");
             return;
         }
+
         // Toggle the IsVisible property of the RequestDetails Grid
         try
         {
@@ -46,22 +48,18 @@ public partial class RequestsTemplateView : ContentView
         catch (Exception ex)
         {
             Debug.WriteLine($"*** Error handling CheckBox tapped: {ex.Message} ***");
-
-            //await DisplayAlert("Error", "Error handling CheckBox tap", "OK");
         }
+
         // Update the Request in the database
         try
         {
             int isCompleted = checkBox.IsChecked ? 1 : 0;
-            //App.ProgressRepo.UpdateRequest(request.QuestNumber, isCompleted);
             var ProgressRepo = new ProgressRepository();
             ProgressRepo.UpdateRequest(request.QuestNumber, isCompleted);
         }
         catch (Exception ex)
         {
             Debug.WriteLine($"*** Error updating Request: {ex.Message}   ***");
-
-            //await DisplayAlert("Error", "Error updating Request", "OK");
         }
     }
 }
