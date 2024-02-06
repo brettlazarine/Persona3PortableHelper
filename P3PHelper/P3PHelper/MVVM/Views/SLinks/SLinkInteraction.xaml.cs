@@ -20,7 +20,7 @@ public partial class SLinkInteraction : ContentPage
         Vm = vm;
         BindingContext = Vm;
     }
-
+    // CAN PROBABLY REMOVE THIS CTOR
     public SLinkInteraction(string arcanaName)
     {
         InitializeComponent();
@@ -28,7 +28,6 @@ public partial class SLinkInteraction : ContentPage
         TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
         arcanaName = textInfo.ToTitleCase(arcanaName);
 
-        //Link = App.ProgressRepo.GetSLink(arcanaName);
         BindingContext = Link;
     }
 

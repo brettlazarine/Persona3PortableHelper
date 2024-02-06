@@ -16,10 +16,5 @@ public partial class SchoolQuestionsView : ContentPage
 		_vm= DependencyService.Get<SchoolQuestionsViewModel>();
 		_vm.CurrentViewQuestions = _vm.Incomplete;
 		BindingContext = _vm;
-
-		foreach (var n in _vm.Complete)
-		{
-            Debug.WriteLine($"*** {n.Id} ***");
-        }
 	}
 }
