@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace P3PHelper
-{
+{// DOUBLECHECK THE USE OF THIS CLASS
     public static class Constants
     {
         public static SQLiteConnection Connection;
@@ -23,20 +23,9 @@ namespace P3PHelper
             get
             {
                 var dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), DBFileName);
-                //EnsureDatabaseExists(dbPath);
                 return dbPath;
             }
         }
-
-        //private static void EnsureDatabaseExists(string dbPath)
-        //{
-        //    if (!File.Exists(dbPath))
-        //    {
-        //        using var stream = FileSystem.OpenAppPackageFileAsync("persona3.db").Result;
-        //        using var newStream = File.OpenWrite(dbPath);
-        //        stream.CopyTo(newStream);
-        //    }
-        //}
 
         public static async Task InitializeDatabaseAsync()
         {
@@ -58,7 +47,6 @@ namespace P3PHelper
             }
             catch (Exception ex)
             {
-                // Handle or log the exception
                 Debug.WriteLine($"*** Error while initializing database: {ex.Message} ***");
             }
         }

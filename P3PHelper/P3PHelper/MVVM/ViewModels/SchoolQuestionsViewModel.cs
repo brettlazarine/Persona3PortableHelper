@@ -30,7 +30,6 @@ namespace P3PHelper.MVVM.ViewModels
         private void HandleSchoolQuestionChecked(SchoolQuestion schoolQuestion)
         {
             // Null check is required because the event is fired when the CompletedView is first loaded
-            Debug.WriteLine("*** HandleSchoolQuestionChecked ***");
             if (schoolQuestion is null)
             {
                 Debug.WriteLine("*** schoolQuestion is null ***");

@@ -17,19 +17,6 @@ public partial class App : Application
 		InitializeComponent();
 
 		ProgressRepository.InitializeDatabase();
-		//ProgressRepo = repo;
-
-		//Constants.InitializeDatabaseAsync().ConfigureAwait(false);
-		//CheckDatabaseFile();
-
-
-
-
-        //SLinkRepository sLinkRepository = new SLinkRepository();
-        //DependencyService.RegisterSingleton(sLinkRepository);
-
-		//RequestRepository requestRepository = new RequestRepository();
-		//DependencyService.RegisterSingleton(requestRepository);
 
 		DependencyService.RegisterSingleton<SchoolQuestionsViewModel>(new SchoolQuestionsViewModel());
 
@@ -49,7 +36,7 @@ public partial class App : Application
 		Routing.RegisterRoute("schoolQuestions", typeof(SchoolQuestionsView));
 		Routing.RegisterRoute("schoolQuestionsCompleted", typeof(SchoolQuestionsCompletedView));
     }
-
+	// WAS USED FOR TROUBLESHOOTING, CAN PROBABLY BE REMOVED
     public static void CheckDatabaseFile()
     {
         var dbPath = Constants.DatabasePath;
