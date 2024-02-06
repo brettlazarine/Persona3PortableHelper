@@ -1,10 +1,5 @@
 ﻿using P3PHelper.MVVM.Models;
 using P3PHelper.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace P3PHelper.MVVM.ViewModels
 {
@@ -17,6 +12,7 @@ namespace P3PHelper.MVVM.ViewModels
         {
             foreach (var person in ProgressRepo.GetMissingPersons())
             {
+                // From SQLite, the newlines are escaped, so need to replace them with the actual newline character
                 person.Info = person.Info.Replace("\\n", Environment.NewLine);
                 MissingPeople.Add(person);
             }

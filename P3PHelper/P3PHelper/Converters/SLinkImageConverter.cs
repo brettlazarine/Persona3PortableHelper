@@ -8,7 +8,7 @@ namespace P3PHelper.Converters
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             var name = value.ToString().ToLower();
-            if (name == "hanged man")
+            if (name is "hanged man")
             {
                 return "hangedman";
             }

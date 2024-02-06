@@ -15,6 +15,7 @@ public partial class MissingPersonsView : ContentPage
 		BindingContext = viewModel;
 	}
 
+    // MOVE TO VIEWMODEL
     private void MissingPersonCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
     {
         if (sender is not CheckBox checkBox)
@@ -27,6 +28,7 @@ public partial class MissingPersonsView : ContentPage
             Debug.WriteLine("*** Unexpected BindingContext type in RequestCheckBox_CheckedChanged ***");
             return;
         }
+
         // Toggle the IsVisible property of the MissingPersonInfo Grid
         try
         {
@@ -50,6 +52,7 @@ public partial class MissingPersonsView : ContentPage
             Debug.WriteLine("*** " + ex.Message + " ***");
             DisplayAlert("Error", "Error handling CheckBox tap", "OK");
         }
+
         // Update the MissingPerson in the database
         try
         {

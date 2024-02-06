@@ -1,3 +1,5 @@
+obj\Release\net7.0-android\android-arm\aot\CommunityToolkit.Maui.dll.so
+obj\Release\net7.0-android\android-arm\aot\CommunityToolkit.Maui.Core.dll.so
 obj\Release\net7.0-android\android-arm\aot\CommunityToolkit.Mvvm.dll.so
 obj\Release\net7.0-android\android-arm\aot\Microsoft.AppCenter.dll.so
 obj\Release\net7.0-android\android-arm\aot\Microsoft.AppCenter.Analytics.dll.so
@@ -51,6 +53,7 @@ obj\Release\net7.0-android\android-arm\aot\Xamarin.Kotlin.StdLib.dll.so
 obj\Release\net7.0-android\android-arm\aot\Xamarin.KotlinX.Coroutines.Core.Jvm.dll.so
 obj\Release\net7.0-android\android-arm\aot\Microsoft.CSharp.dll.so
 obj\Release\net7.0-android\android-arm\aot\System.Collections.Concurrent.dll.so
+obj\Release\net7.0-android\android-arm\aot\System.Collections.Immutable.dll.so
 obj\Release\net7.0-android\android-arm\aot\System.Collections.NonGeneric.dll.so
 obj\Release\net7.0-android\android-arm\aot\System.Collections.Specialized.dll.so
 obj\Release\net7.0-android\android-arm\aot\System.Collections.dll.so
@@ -70,6 +73,7 @@ obj\Release\net7.0-android\android-arm\aot\System.Linq.Expressions.dll.so
 obj\Release\net7.0-android\android-arm\aot\System.Linq.dll.so
 obj\Release\net7.0-android\android-arm\aot\System.Memory.dll.so
 obj\Release\net7.0-android\android-arm\aot\System.Net.Http.dll.so
+obj\Release\net7.0-android\android-arm\aot\System.Net.Mail.dll.so
 obj\Release\net7.0-android\android-arm\aot\System.Net.Primitives.dll.so
 obj\Release\net7.0-android\android-arm\aot\System.Net.Requests.dll.so
 obj\Release\net7.0-android\android-arm\aot\System.Numerics.Vectors.dll.so
@@ -94,6 +98,7 @@ obj\Release\net7.0-android\android-arm\aot\System.Text.Encoding.Extensions.dll.s
 obj\Release\net7.0-android\android-arm\aot\System.Text.RegularExpressions.dll.so
 obj\Release\net7.0-android\android-arm\aot\System.Threading.Thread.dll.so
 obj\Release\net7.0-android\android-arm\aot\System.Threading.dll.so
+obj\Release\net7.0-android\android-arm\aot\System.Web.HttpUtility.dll.so
 obj\Release\net7.0-android\android-arm\aot\System.Xml.Linq.dll.so
 obj\Release\net7.0-android\android-arm\aot\System.Xml.ReaderWriter.dll.so
 obj\Release\net7.0-android\android-arm\aot\System.Xml.XDocument.dll.so

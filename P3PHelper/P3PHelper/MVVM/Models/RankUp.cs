@@ -1,11 +1,12 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Newtonsoft.Json;
+using P3PHelper.Abstractions;
 using SQLite;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace P3PHelper.MVVM.Models
 {
-    public partial class RankUp : ObservableObject
+    public partial class RankUp : ObservableObject, IRankUp
     {
         [PrimaryKey, Unique, AutoIncrement]
         public int Id { get; set; }

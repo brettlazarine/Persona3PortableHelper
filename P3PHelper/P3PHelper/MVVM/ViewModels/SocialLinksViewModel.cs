@@ -14,6 +14,7 @@ namespace P3PHelper.MVVM.ViewModels
 
         public SocialLinksViewModel()
         {
+            // Placeholder for navigation and data binding
             TapInfo = new()
             {
                 new SLinkTapInfo()

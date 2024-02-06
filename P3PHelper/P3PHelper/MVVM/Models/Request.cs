@@ -4,7 +4,7 @@ using SQLite;
 
 namespace P3PHelper.MVVM.Models
 {
-    public class Request : ObservableObject , IRequests
+    public class Request : ObservableObject , IRequest
     {
         [PrimaryKey, Indexed]
         public int QuestNumber { get; set; }

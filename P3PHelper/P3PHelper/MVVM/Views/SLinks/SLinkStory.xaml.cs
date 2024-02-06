@@ -22,7 +22,7 @@ public partial class SLinkStory : ContentPage
         Vm = vm;
         BindingContext = Vm;
     }
-
+    // CAN PROBABLY REMOVE THIS CTOR
     public SLinkStory(string arcanaName)
     {
         InitializeComponent();
@@ -30,10 +30,9 @@ public partial class SLinkStory : ContentPage
         TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
         arcanaName = textInfo.ToTitleCase(arcanaName);
 
-        //Link = App.ProgressRepo.GetSLink(arcanaName);
         BindingContext = Link;
     }
-
+    // MOVE TO VIEWMODEL
     #region Male Arrow Tap Events
     private void MaleDate_Tapped(object sender, TappedEventArgs e)
     {
@@ -98,7 +97,7 @@ public partial class SLinkStory : ContentPage
         }
     }
     #endregion
-
+    //MOVE TO VIEWMODEL
     #region Female Arrow Tap Events
     private void FemaleDate_Tapped(object sender, TappedEventArgs e)
     {
@@ -161,7 +160,7 @@ public partial class SLinkStory : ContentPage
         }
     }
     #endregion
-
+    // MOVE TO VIEWMODEL
     private async void RankStackArrow_Tapped(object sender, EventArgs e)
     {
         if (sender is not Image arrow)
@@ -220,7 +219,7 @@ public partial class SLinkStory : ContentPage
             await DisplayAlert("Error", "Error handling RankStackArrow tap", "OK");
         }
     }
-
+    // MOVE TO VIEWMODEL
     private void IsCompletedCheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
     {
         if (sender is not CheckBox box)
