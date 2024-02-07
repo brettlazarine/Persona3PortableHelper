@@ -34,29 +34,37 @@ namespace P3PHelper.MVVM.ViewModels
             {
                 Debug.WriteLine("*** schoolQuestion is null ***");
                 return;
-            }    
+            }
 
-            // Logic to update the collections
-            ProgressRepo.UpdateSchoolQuestion(schoolQuestion.Id, schoolQuestion.IsCompleted);
-
-            CurrentViewQuestions.Remove(schoolQuestion);
-
-            if (schoolQuestion.IsCompleted is 1)
+            try
             {
-                Incomplete.Remove(schoolQuestion);
-                if (!Complete.Contains(schoolQuestion))
+                // Logic to update the collections
+                ProgressRepo.UpdateSchoolQuestion(schoolQuestion.Id, schoolQuestion.IsCompleted);
+
+                CurrentViewQuestions.Remove(schoolQuestion);
+
+                if (schoolQuestion.IsCompleted is 1)
                 {
-                    AddQuestionAtIndex(schoolQuestion, Complete);
+                    Incomplete.Remove(schoolQuestion);
+                    if (!Complete.Contains(schoolQuestion))
+                    {
+                        AddQuestionAtIndex(schoolQuestion, Complete);
+                    }
+                }
+                else
+                {
+                    Complete.Remove(schoolQuestion);
+                    if (!Incomplete.Contains(schoolQuestion))
+                    {
+                        AddQuestionAtIndex(schoolQuestion, Incomplete);
+                    }
                 }
             }
-            else
+            catch (Exception ex)
             {
-                Complete.Remove(schoolQuestion);
-                if (!Incomplete.Contains(schoolQuestion))
-                {
-                    AddQuestionAtIndex(schoolQuestion, Incomplete);
-                }
+                Debug.WriteLine($"*** HandleSchoolQuestionChecked error: {ex.Message} ***");
             }
+            
         }
 
         public void AddQuestionAtIndex(SchoolQuestion entry, ObservableCollection<SchoolQuestion> collection)
