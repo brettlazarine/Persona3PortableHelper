@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="P3PHelper.MVVM.Views.SLinks.SLinkInteraction"
-             xmlns:converters="clr-namespace:P3PHelper.Converters">
+             xmlns:converters="clr-namespace:P3PHelper.Converters"
+             x:Name="ThisPage">
 
     <ContentPage.Resources>
         <converters:SLinkImageConverter x:Key="SLinkImageConverter" />
         <converters:SLinkNeedsPersonaConverter x:Key="SLinkNeedsPersonaConverter" />
         <converters:IsCompletedBoolConverter x:Key="IsCompletedBoolConverter" />
+        <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
     </ContentPage.Resources>
 
     <ScrollView x:Name="scrollView">
@@ -54,20 +57,22 @@
                         <!--MALE DATE-->
                         <VerticalStackLayout>
                             <Label
-                Style="{StaticResource MalePropertyTitles}"
-                Text="Unlock Date" />
+                                Style="{StaticResource MalePropertyTitles}"
+                                Text="Unlock Date" />
                             <Image
-                Style="{StaticResource DownArrow}"
-                Source="bluedownarrow.png">
+                                Style="{StaticResource DownArrow}"
+                                Source="bluedownarrow.png"
+                                Rotation="{Binding MaleDateArrowRotation}">
                                 <Image.GestureRecognizers>
                                     <TapGestureRecognizer
-                        Tapped="MaleDate_Tapped" />
+                                        Command="{Binding MaleDateCommand}" />
                                 </Image.GestureRecognizers>
+
                             </Image>
                             <Label x:Name="MaleDate"
-                Style="{StaticResource MalePropertyValues}"
-                IsVisible="false"
-                Text="{Binding Link.MaleUnlockDate}" />
+                                Style="{StaticResource MalePropertyValues}"
+                                IsVisible="{Binding MaleDateVisible}"
+                                Text="{Binding Link.MaleUnlockDate}" />
                         </VerticalStackLayout>
                         <!--MALE HOW-->
                         <VerticalStackLayout>

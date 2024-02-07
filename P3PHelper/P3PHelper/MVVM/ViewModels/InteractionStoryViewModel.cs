@@ -1,7 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using P3PHelper.MVVM.Models;
 using P3PHelper.Repositories;
 using System.Diagnostics;
+using System.Windows.Input;
 
 namespace P3PHelper.MVVM.ViewModels
 {
@@ -17,6 +19,21 @@ namespace P3PHelper.MVVM.ViewModels
             }
         }
 
+        #region Male UI
+        public bool _maleDateVisible;
+        public bool MaleDateVisible
+        {
+            get { return _maleDateVisible; }
+            set { SetProperty(ref _maleDateVisible, value); }
+        }
+        public double _maleDateArrowRotation;
+        public double MaleDateArrowRotation
+        {
+            get { return _maleDateArrowRotation; }
+            set { SetProperty(ref _maleDateArrowRotation, value); }
+        }
+        #endregion
+
         public SLink Link { get; set; }
         public List<RankUp> RankUp { get; set; } = new();
         public List<RankUp> MaleInteractions { get; set; } = new();
@@ -27,16 +44,31 @@ namespace P3PHelper.MVVM.ViewModels
             "Rank 8", "Rank 9", "Rank 10"
         };
 
+        public ICommand MaleDateCommand { get; }
+
         public InteractionStoryViewModel()
         {
-            
-        }
-        // THIS CTOR IS NO LONGER IN USE
-        public InteractionStoryViewModel(string arcanaName)
-        {
-            
+            MaleDateCommand = new RelayCommand(MaleDateTapped);
         }
 
+        public void MaleDateTapped()
+        {
+            try
+            {
+                MaleDateVisible = !MaleDateVisible;
+                MaleDateArrowRotation = MaleDateVisible ? 180 : 0;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"*** Error handling MaleDate tap: {ex.Message} ***");
+            }
+        }
+        // CHECK THE USE OF THIS CTOR, COMMANDS GO HERE
+        public InteractionStoryViewModel(string arcanaName)
+        {
+            MaleDateCommand = new RelayCommand(MaleDateTapped);
+        }
+        // MAY BE UNNECESSARY
         public async Task GetSLinkInfo(string arcanaName)
         {
             var repo = new ProgressRepository();
