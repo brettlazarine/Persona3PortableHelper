@@ -31,7 +31,7 @@ namespace P3PHelper.MVVM.ViewModels
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("*** " + ex.Message + " ***");
+                Debug.WriteLine($"*** HandleMIssingPersonChecked {ex.Message} ***");
             }
         }
     }
