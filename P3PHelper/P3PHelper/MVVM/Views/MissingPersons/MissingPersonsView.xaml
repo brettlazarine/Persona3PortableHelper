@@ -2,11 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:converters="clr-namespace:P3PHelper.Converters"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="P3PHelper.MVVM.Views.MissingPersons.MissingPersonsView"
-             Title="Missing Persons">
+             Title="Missing Persons"
+             x:Name="ThisPage">
 
     <ContentPage.Resources>
         <converters:IsCompletedBoolConverter x:Key="IsCompletedBoolConverter"/>
+        <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
     </ContentPage.Resources>
 
     <ScrollView>
@@ -45,20 +48,27 @@
                                     Grid.Column="0" 
                                     Style="{StaticResource MissingPersonName}"
                                     Text="{Binding Name}"/>
-                                <CheckBox 
+                                <CheckBox x:Name="MissingPersonCheckBox"
                                     Grid.Row="0"
                                     Grid.Column="1"
-                                    IsChecked="{Binding IsCompleted, Converter={StaticResource IsCompletedBoolConverter}}" 
-                                    CheckedChanged="MissingPersonCheckBox_CheckedChanged"/>
+                                    IsChecked="{Binding IsCompleted, Converter={StaticResource IsCompletedBoolConverter}}">
+                                    <CheckBox.Behaviors>
+                                        <toolkit:EventToCommandBehavior 
+                                            EventName="CheckedChanged"
+                                            Command="{Binding Source={x:Reference ThisPage}, Path=BindingContext.MissingPersonCheckedCommand}"
+                                            CommandParameter="{Binding .}" />
+                                    </CheckBox.Behaviors>
+                                </CheckBox>
 
-                                <Grid AutomationId="MissingPersonInfo"
-                                    RowDefinitions="auto, auto, auto, auto, auto"
-                                    ColumnDefinitions="*, *"
-                                    Grid.Row="1"
-                                    Grid.Column="0"
-                                    Grid.ColumnSpan="2"
-                                    Padding="5"
-                                      RowSpacing="5">
+                                    <Grid AutomationId="MissingPersonInfo"
+                                        RowDefinitions="auto, auto, auto, auto, auto"
+                                        ColumnDefinitions="*, *"
+                                        Grid.Row="1"
+                                        Grid.Column="0"
+                                        Grid.ColumnSpan="2"
+                                        Padding="5"
+                                        RowSpacing="5"
+                                        IsVisible="{Binding IsChecked, Source={x:Reference MissingPersonCheckBox}, Converter={StaticResource BoolToVisibilityConverter}}">
 
                                     <Label 
                                         Grid.Row="0"

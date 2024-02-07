@@ -26,7 +26,7 @@ namespace P3PHelper.MVVM.ViewModels
 
             SchoolQuestionCheckedCommand = new Command<SchoolQuestion>(HandleSchoolQuestionChecked);
         }
-        // THIS NEEDS TO BE MADE ASYNCHRONOUS, POSSIBLY TO TASK
+        // THIS NEEDS TO BE MADE ASYNCHRONOUS
         private void HandleSchoolQuestionChecked(SchoolQuestion schoolQuestion)
         {
             // Null check is required because the event is fired when the CompletedView is first loaded
