@@ -141,11 +141,20 @@
                                                 Style="{StaticResource SLinkQuestion}"
                                                 Text="{Binding RankNumber, StringFormat='Rank {0}'}"/>
                                             <CheckBox
-                                                />
+                                                IsChecked="{Binding IsCompleted, Converter={StaticResource IsCompletedBoolConverter}}"
+                                                x:Name="MaleRankCheckBox">
+                                                <CheckBox.Behaviors>
+                                                    <toolkit:EventToCommandBehavior
+                                                        EventName="CheckedChanged"
+                                                        Command="{Binding Source={x:Reference ThisPage}, Path=BindingContext.RankCheckedCommand}"
+                                                        CommandParameter="{Binding .}"/>
+                                                </CheckBox.Behaviors>
+                                            </CheckBox>
                                         </HorizontalStackLayout>
                                         <CollectionView
                                             Grid.Row="1"
-                                            ItemsSource="{Binding RankInteractions}">
+                                            ItemsSource="{Binding RankInteractions}"
+                                            IsVisible="{Binding IsChecked, Source={x:Reference MaleRankCheckBox}, Converter={StaticResource BoolToVisibilityConverter}}">
                                             <CollectionView.ItemsLayout>
                                                 <LinearItemsLayout
                                                     Orientation="Vertical" 
@@ -296,11 +305,20 @@
                                                 Style="{StaticResource SLinkQuestion}"
                                                 Text="{Binding RankNumber, StringFormat='Rank {0}'}"/>
                                             <CheckBox
-                                                />
+                                                IsChecked="{Binding IsCompleted, Converter={StaticResource IsCompletedBoolConverter}}"
+                                                x:Name="FemaleRankCheckBox">
+                                                <CheckBox.Behaviors>
+                                                    <toolkit:EventToCommandBehavior
+                                                        EventName="CheckedChanged"
+                                                        Command="{Binding Source={x:Reference ThisPage}, Path=BindingContext.RankCheckedCommand}"
+                                                        CommandParameter="{Binding .}"/>
+                                                </CheckBox.Behaviors>
+                                            </CheckBox>
                                         </HorizontalStackLayout>
                                         <CollectionView
                                             Grid.Row="1"
-                                            ItemsSource="{Binding RankInteractions}">
+                                            ItemsSource="{Binding RankInteractions}"
+                                            IsVisible="{Binding IsChecked, Source={x:Reference FemaleRankCheckBox}, Converter={StaticResource BoolToVisibilityConverter}}">
                                             <CollectionView.ItemsLayout>
                                                 <LinearItemsLayout
                                                     Orientation="Vertical" 

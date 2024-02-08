@@ -1,9 +1,16 @@
 ﻿using P3PHelper.MVVM.Models;
+using P3PHelper.MVVM.Views.SLinks;
+using System.Diagnostics;
+using System.Globalization;
+using System.Windows.Input;
 
 namespace P3PHelper.MVVM.ViewModels
 {
     public class SocialLinksViewModel
     {
+        private INavigation Navigation { get; set; }
+        private Page Page { get; set; } = new Page();
+
         public List<SLinkTapInfo> TapInfo { get; set; }
         public List<string> StorySLinks { get; set; } = new()
         {
@@ -11,6 +18,8 @@ namespace P3PHelper.MVVM.ViewModels
             "fool",
             "judgment"
         };
+
+        public ICommand NaviageToSLinkCommand { get; }
 
         public SocialLinksViewModel()
         {
@@ -128,8 +137,35 @@ namespace P3PHelper.MVVM.ViewModels
                     ImageSource = "tower"
                 },
             };
+
+            NaviageToSLinkCommand = new Command<SLinkTapInfo>(NavigateToSLink);
         }
 
-        
+        private async void NavigateToSLink(SLinkTapInfo tapInfo)
+        {
+            try
+            {
+                var arcanaName = tapInfo.ArcanaName;
+                Debug.WriteLine($"*** Navigating to {arcanaName} ***");
+
+                var vm = new InteractionStoryViewModel(arcanaName);
+                await vm.EnsureInitializedAsync(arcanaName);
+
+                if (StorySLinks.Contains(arcanaName.ToLower()))
+                {
+                    //await Navigation.PushAsync(new SLinkStory(vm));
+                    await Shell.Current.GoToAsync("slinkInteraction");
+                }
+                else
+                {
+                    await Navigation.PushAsync(new SLinkInteraction(vm));
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"*** Error handling SLink navigation: {ex.Message} ***");
+                await Page.DisplayAlert("Error", "Error navigating to SLink", "OK");
+            }
+        }
     }
 }

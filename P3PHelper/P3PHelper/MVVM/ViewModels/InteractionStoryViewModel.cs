@@ -10,6 +10,7 @@ namespace P3PHelper.MVVM.ViewModels
 {
     public partial class InteractionStoryViewModel : ObservableObject
     {
+        ProgressRepository ProgressRepo = new();
         // CONSIDER A SIMPLER IMPLEMENTATION, THEN TEST RELEASE SPEED
         private bool _isInitialized = false;
         public async Task EnsureInitializedAsync(string arcanaName)
@@ -131,6 +132,9 @@ namespace P3PHelper.MVVM.ViewModels
         public ICommand FemaleDateCommand { get; }
         public ICommand FemaleHowCommand { get; }
         public ICommand FemaleAvailabilityCommand { get; }
+
+        // RankUp
+        public ICommand RankCheckedCommand { get; }
         #endregion
 
         public InteractionStoryViewModel(string arcanaName)
@@ -142,6 +146,8 @@ namespace P3PHelper.MVVM.ViewModels
             FemaleDateCommand = new RelayCommand(FemaleDateTapped);
             FemaleHowCommand = new RelayCommand(FemaleHowTapped);
             FemaleAvailabilityCommand = new RelayCommand(FemaleAvailabilityTapped);
+
+            RankCheckedCommand = new Command<RankUp>(HandleRankChecked);
         }
         // SHOULD BE CLEAR AFTER MOVING FROM CB TO VM, WILL NEED TO ADJUST TESTS FOR PARAMETERIZED CTOR
         public InteractionStoryViewModel()
@@ -230,6 +236,18 @@ namespace P3PHelper.MVVM.ViewModels
             }
         }
         #endregion
+
+        public void HandleRankChecked(RankUp rank)
+        {
+            try
+            {
+                ProgressRepo.UpdateRankUp(rank.Id, rank.IsCompleted);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"*** HandleRankChecked {ex.Message} ***");
+            }
+        }
 
         public async Task GetSLinkInfo(string arcanaName)
         {
