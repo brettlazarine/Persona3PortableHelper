@@ -1,6 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Microsoft.VisualBasic;
 using P3PHelper.MVVM.Models;
 using P3PHelper.Repositories;
 using System.Diagnostics;
@@ -152,11 +151,11 @@ namespace P3PHelper.MVVM.ViewModels
         // SHOULD BE CLEAR AFTER MOVING FROM CB TO VM, WILL NEED TO ADJUST TESTS FOR PARAMETERIZED CTOR
         public InteractionStoryViewModel()
         {
-            MaleDateCommand = new RelayCommand(MaleDateTapped);
+
         }
 
         #region Male Events
-        public void MaleDateTapped()
+        public async void MaleDateTapped()
         {
             try
             {
@@ -166,10 +165,11 @@ namespace P3PHelper.MVVM.ViewModels
             catch (Exception ex)
             {
                 Debug.WriteLine($"*** Error handling MaleDate tap: {ex.Message} ***");
+                await App.Current.MainPage.DisplayAlert("Error", "An error occurred expanding the section", "OK");
             }
         }
 
-        public void MaleHowTapped()
+        public async void MaleHowTapped()
         {
             try
             {
@@ -179,10 +179,11 @@ namespace P3PHelper.MVVM.ViewModels
             catch (Exception ex)
             {
                 Debug.WriteLine($"*** Error handling MaleHow tap: {ex.Message} ***");
+                await App.Current.MainPage.DisplayAlert("Error", "An error occurred expanding the section", "OK");
             }
         }
 
-        public void MaleAvailabilityTapped()
+        public async void MaleAvailabilityTapped()
         {
             try
             {
@@ -192,12 +193,13 @@ namespace P3PHelper.MVVM.ViewModels
             catch (Exception ex)
             {
                 Debug.WriteLine($"*** Error handling MaleAvailability tap: {ex.Message} ***");
+                await App.Current.MainPage.DisplayAlert("Error", "An error occurred expanding the section", "OK");
             }
         }
         #endregion
 
         #region Female Events
-        public void FemaleDateTapped()
+        public async void FemaleDateTapped()
         {
             try
             {
@@ -207,10 +209,11 @@ namespace P3PHelper.MVVM.ViewModels
             catch (Exception ex)
             {
                 Debug.WriteLine($"*** Error handling FemaleDate tap: {ex.Message} ***");
+                await App.Current.MainPage.DisplayAlert("Error", "An error occurred expanding the section", "OK");
             }
         }
 
-        public void FemaleHowTapped()
+        public async void FemaleHowTapped()
         {
             try
             {
@@ -220,10 +223,11 @@ namespace P3PHelper.MVVM.ViewModels
             catch (Exception ex)
             {
                 Debug.WriteLine($"*** Error handling FemaleHow tap: {ex.Message} ***");
+                await App.Current.MainPage.DisplayAlert("Error", "An error occurred expanding the section", "OK");
             }
         }
 
-        public void FemaleAvailabilityTapped()
+        public async void FemaleAvailabilityTapped()
         {
             try
             {
@@ -233,6 +237,7 @@ namespace P3PHelper.MVVM.ViewModels
             catch (Exception ex)
             {
                 Debug.WriteLine($"*** Error handling FemaleAvailability tap: {ex.Message} ***");
+                await App.Current.MainPage.DisplayAlert("Error", "An error occurred expanding the section", "OK");
             }
         }
         #endregion
@@ -241,7 +246,7 @@ namespace P3PHelper.MVVM.ViewModels
         {
             if (rank is null)
             {
-                // Null check because the event fires when the page is loaded
+                // Null check is required because the event is fired when the view is first loaded
                 return;
             }
             try
@@ -251,11 +256,17 @@ namespace P3PHelper.MVVM.ViewModels
             catch (Exception ex)
             {
                 Debug.WriteLine($"*** HandleRankChecked {ex.Message} ***");
+                App.Current.MainPage.DisplayAlert("Error", "An error occurred while updating the social link rank", "OK");
             }
         }
 
         public async Task GetSLinkInfo(string arcanaName)
         {
+            if (arcanaName is null)
+            {
+                Debug.WriteLine("*** arcanaName is null ***");
+                return;
+            }
             var repo = new ProgressRepository();
             try
             {
@@ -280,6 +291,7 @@ namespace P3PHelper.MVVM.ViewModels
             catch (Exception ex)
             {
                 Debug.WriteLine($"*** Error getting SLink: {ex.Message} ***");
+                await App.Current.MainPage.DisplayAlert("Error", "An error occurred while getting the social link information", "OK");
             }
         }
         // ONLY USED FOR UNIT TESTING CURRENTLY, CAN BE REMOVED WHEN TESTS ARE COMPLETELY REMADE

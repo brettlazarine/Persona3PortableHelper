@@ -10,8 +10,6 @@ namespace P3PHelper.MVVM.ViewModels
     {
         ProgressRepository ProgressRepo = new();
 
-        //[ObservableProperty]
-        //List<Request> currentRequest;
         public List<Request> OneTwenty { get; set; } = new();
         public List<Request> TwentyOneFourty { get; set; } = new();
         public List<Request> FourtyOneSixty { get; set; } = new();
@@ -51,41 +49,21 @@ namespace P3PHelper.MVVM.ViewModels
             RequestCheckedCommand = new Command<Request>(HandleRequestChecked);
         }
 
-        // Avoided this, verify that it is not needed
-        public List<Request> SetCurrentRequests(string groupName)
+        private async void HandleRequestChecked(Request request)
         {
-            if (groupName == "One To Twenty View")
+            if (request is null)
             {
-                return OneTwenty;
+                // Null check is required because the event is fired when the view is first loaded
+                return;
             }
-            else if (groupName == "Twenty One Fourty View")
-            {
-                return TwentyOneFourty;
-            }
-            else if (groupName == "Fourty One Sixty View")
-            {
-                return FourtyOneSixty;
-            }
-            else if (groupName == "Sixty One Eighty View")
-            {
-                return SixtyOneEighty;
-            }
-            else
-            {
-                return null;
-            }
-        }
-
-        private void HandleRequestChecked(Request request)
-        {
             try
             {
-                // TRY THIS WITHOUT THE TERNARY
-                ProgressRepo.UpdateRequest(request.QuestNumber, request.IsCompleted == 1 ? 1 : 0);
+                ProgressRepo.UpdateRequest(request.QuestNumber, request.IsCompleted);
             }
             catch (Exception ex)
             {
                 Debug.WriteLine($"*** HandleRequestChecked {ex.Message} ***");
+                await App.Current.MainPage.DisplayAlert("Error", "An error occurred while updating the request", "OK");
             }
         }
     }

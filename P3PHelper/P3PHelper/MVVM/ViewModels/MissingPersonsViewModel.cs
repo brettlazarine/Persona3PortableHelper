@@ -23,16 +23,21 @@ namespace P3PHelper.MVVM.ViewModels
             MissingPersonCheckedCommand = new Command<MissingPerson>(HandleMissingPersonChecked);
         }
 
-        private void HandleMissingPersonChecked(MissingPerson missingPerson)
+        private async void HandleMissingPersonChecked(MissingPerson missingPerson)
         {
+            if (missingPerson == null)
+            {
+                // Null check is required because the event is fired when the view is first loaded 
+                return;
+            }
             try
             {
-                // TRY THIS WITHOUT THE TERNARY
-                ProgressRepo.UpdateMissingPerson(missingPerson.Id, missingPerson.IsCompleted == 1 ? 1 : 0);
+                ProgressRepo.UpdateMissingPerson(missingPerson.Id, missingPerson.IsCompleted);
             }
             catch (Exception ex)
             {
                 Debug.WriteLine($"*** HandleMIssingPersonChecked {ex.Message} ***");
+                await Application.Current.MainPage.DisplayAlert("Error", "An error occurred while updating the missing person", "OK");
             }
         }
     }

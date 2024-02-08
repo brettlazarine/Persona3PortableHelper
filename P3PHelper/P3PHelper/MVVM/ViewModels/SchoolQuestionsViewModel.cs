@@ -26,21 +26,20 @@ namespace P3PHelper.MVVM.ViewModels
 
             SchoolQuestionCheckedCommand = new Command<SchoolQuestion>(HandleSchoolQuestionChecked);
         }
-        // THIS NEEDS TO BE MADE ASYNCHRONOUS
-        private void HandleSchoolQuestionChecked(SchoolQuestion schoolQuestion)
+        
+        private async void HandleSchoolQuestionChecked(SchoolQuestion schoolQuestion)
         {
-            // Null check is required because the event is fired when the CompletedView is first loaded
+            // Null check is required because the event is fired when the view is first loaded
             if (schoolQuestion is null)
             {
-                Debug.WriteLine("*** schoolQuestion is null ***");
                 return;
             }
 
             try
             {
-                // Logic to update the collections
                 ProgressRepo.UpdateSchoolQuestion(schoolQuestion.Id, schoolQuestion.IsCompleted);
 
+                // Logic to arrange question collections
                 CurrentViewQuestions.Remove(schoolQuestion);
 
                 if (schoolQuestion.IsCompleted is 1)
@@ -63,11 +62,12 @@ namespace P3PHelper.MVVM.ViewModels
             catch (Exception ex)
             {
                 Debug.WriteLine($"*** HandleSchoolQuestionChecked error: {ex.Message} ***");
+                await App.Current.MainPage.DisplayAlert("Error", "An error occurred while updating the school question", "OK");
             }
             
         }
 
-        public void AddQuestionAtIndex(SchoolQuestion entry, ObservableCollection<SchoolQuestion> collection)
+        public async void AddQuestionAtIndex(SchoolQuestion entry, ObservableCollection<SchoolQuestion> collection)
         {
             try
             {
@@ -90,6 +90,7 @@ namespace P3PHelper.MVVM.ViewModels
             catch (Exception ex)
             {
                 Debug.WriteLine($"*** AddQuestionAtIndex error: {ex.Message} ***");
+                await App.Current.MainPage.DisplayAlert("Error", "An error occurred while indexing the school question", "OK");
             }
         }
     }

@@ -9,7 +9,6 @@ namespace P3PHelper.MVVM.ViewModels
     public class SocialLinksViewModel
     {
         private INavigation Navigation { get; set; } = Application.Current?.MainPage?.Navigation;
-        private Page Page { get; set; } = new Page();
 
         public List<SLinkTapInfo> TapInfo { get; set; }
         public List<string> StorySLinks { get; set; } = new()
@@ -143,6 +142,12 @@ namespace P3PHelper.MVVM.ViewModels
 
         private async void NavigateToSLink(SLinkTapInfo tapInfo)
         {
+            if (tapInfo is null)
+            {
+                Debug.WriteLine("*** tapInfo is null ***");
+                await Application.Current.MainPage.DisplayAlert("Error", "Error navigating to SLink.", "OK");
+                return;
+            }
             try
             {
                 var arcanaName = tapInfo.ArcanaName;
@@ -154,7 +159,6 @@ namespace P3PHelper.MVVM.ViewModels
                 if (StorySLinks.Contains(arcanaName.ToLower()))
                 {
                     await Navigation.PushAsync(new SLinkStory(vm));
-                    //await Shell.Current.GoToAsync("slinkInteraction");
                 }
                 else
                 {
