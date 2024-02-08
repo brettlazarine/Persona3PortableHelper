@@ -80,7 +80,7 @@ namespace P3PHelper.MVVM.ViewModels
         {
             try
             {
-                Debug.WriteLine($"*** HandleRequestChecked {request.QuestNumber} ***");
+                // TRY THIS WITHOUT THE TERNARY
                 ProgressRepo.UpdateRequest(request.QuestNumber, request.IsCompleted == 1 ? 1 : 0);
             }
             catch (Exception ex)

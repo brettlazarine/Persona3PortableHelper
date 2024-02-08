@@ -27,6 +27,7 @@ namespace P3PHelper.MVVM.ViewModels
         {
             try
             {
+                // TRY THIS WITHOUT THE TERNARY
                 ProgressRepo.UpdateMissingPerson(missingPerson.Id, missingPerson.IsCompleted == 1 ? 1 : 0);
             }
             catch (Exception ex)
