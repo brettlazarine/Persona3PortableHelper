@@ -239,6 +239,11 @@ namespace P3PHelper.MVVM.ViewModels
 
         public void HandleRankChecked(RankUp rank)
         {
+            if (rank is null)
+            {
+                // Null check because the event fires when the page is loaded
+                return;
+            }
             try
             {
                 ProgressRepo.UpdateRankUp(rank.Id, rank.IsCompleted);

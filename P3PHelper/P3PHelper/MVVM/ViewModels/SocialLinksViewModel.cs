@@ -8,7 +8,7 @@ namespace P3PHelper.MVVM.ViewModels
 {
     public class SocialLinksViewModel
     {
-        private INavigation Navigation { get; set; }
+        private INavigation Navigation { get; set; } = Application.Current?.MainPage?.Navigation;
         private Page Page { get; set; } = new Page();
 
         public List<SLinkTapInfo> TapInfo { get; set; }
@@ -153,8 +153,8 @@ namespace P3PHelper.MVVM.ViewModels
 
                 if (StorySLinks.Contains(arcanaName.ToLower()))
                 {
-                    //await Navigation.PushAsync(new SLinkStory(vm));
-                    await Shell.Current.GoToAsync("slinkInteraction");
+                    await Navigation.PushAsync(new SLinkStory(vm));
+                    //await Shell.Current.GoToAsync("slinkInteraction");
                 }
                 else
                 {
@@ -164,7 +164,7 @@ namespace P3PHelper.MVVM.ViewModels
             catch (Exception ex)
             {
                 Debug.WriteLine($"*** Error handling SLink navigation: {ex.Message} ***");
-                await Page.DisplayAlert("Error", "Error navigating to SLink", "OK");
+                await Application.Current.MainPage.DisplayAlert("Error", "Error navigating to SLink. Please try again.", "OK");
             }
         }
     }
