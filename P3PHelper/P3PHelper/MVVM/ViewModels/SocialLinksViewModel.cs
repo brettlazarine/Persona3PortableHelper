@@ -156,7 +156,7 @@ namespace P3PHelper.MVVM.ViewModels
                 var arcanaName = tapInfo.ArcanaName;
                 Debug.WriteLine($"*** Navigating to {arcanaName} ***");
 
-                var vm = new InteractionStoryViewModel(arcanaName);
+                var vm = new InteractionStoryViewModel(arcanaName, _progressRepository);
                 await vm.EnsureInitializedAsync(arcanaName);
 
                 if (StorySLinks.Contains(arcanaName.ToLower()))
