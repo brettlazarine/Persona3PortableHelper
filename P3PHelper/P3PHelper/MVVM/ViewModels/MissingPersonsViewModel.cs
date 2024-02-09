@@ -1,4 +1,5 @@
-﻿using P3PHelper.MVVM.Models;
+﻿using P3PHelper.Abstractions;
+using P3PHelper.MVVM.Models;
 using P3PHelper.Repositories;
 using System.Diagnostics;
 using System.Windows.Input;
@@ -7,13 +8,15 @@ namespace P3PHelper.MVVM.ViewModels
 {
     public class MissingPersonsViewModel
     {
+        IProgressRepository _progressRepositoy;
         public List<MissingPerson> MissingPeople { get; set; } = new();
-        public ProgressRepository ProgressRepo { get; set; } = new();
         public ICommand MissingPersonCheckedCommand { get; }
 
-        public MissingPersonsViewModel()
+        public MissingPersonsViewModel(IProgressRepository progressRepository)
         {
-            foreach (var person in ProgressRepo.GetMissingPersons())
+            _progressRepositoy = progressRepository;
+
+            foreach (var person in _progressRepositoy.GetMissingPersons())
             {
                 // From SQLite, the newlines are escaped, so need to replace them with the actual newline character
                 person.Info = person.Info.Replace("\\n", Environment.NewLine);
@@ -32,7 +35,7 @@ namespace P3PHelper.MVVM.ViewModels
             }
             try
             {
-                ProgressRepo.UpdateMissingPerson(missingPerson.Id, missingPerson.IsCompleted);
+                _progressRepositoy.UpdateMissingPerson(missingPerson.Id, missingPerson.IsCompleted);
             }
             catch (Exception ex)
             {

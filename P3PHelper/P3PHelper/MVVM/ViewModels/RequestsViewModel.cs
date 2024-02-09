@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using P3PHelper.Abstractions;
 using P3PHelper.MVVM.Models;
 using P3PHelper.Repositories;
 using System.Diagnostics;
@@ -8,7 +9,7 @@ namespace P3PHelper.MVVM.ViewModels
 {
     public partial class RequestsViewModel: ObservableObject
     {
-        ProgressRepository ProgressRepo = new();
+        IProgressRepository _progressRepository;
 
         public List<Request> OneTwenty { get; set; } = new();
         public List<Request> TwentyOneFourty { get; set; } = new();
@@ -19,9 +20,10 @@ namespace P3PHelper.MVVM.ViewModels
 
         public ICommand RequestCheckedCommand { get; }
 
-        public RequestsViewModel()
+        public RequestsViewModel(IProgressRepository progressRepository)
         {
-            foreach (var req in ProgressRepo.GetRequests())
+            _progressRepository = progressRepository;
+            foreach (var req in _progressRepository.GetRequests())
             {
                 // From SQLite, the newlines are escaped, so need to replace them with the actual newline character
                 req.HowToComplete = req.HowToComplete.Replace("\\n", Environment.NewLine);
@@ -58,7 +60,7 @@ namespace P3PHelper.MVVM.ViewModels
             }
             try
             {
-                ProgressRepo.UpdateRequest(request.QuestNumber, request.IsCompleted);
+                _progressRepository.UpdateRequest(request.QuestNumber, request.IsCompleted);
             }
             catch (Exception ex)
             {

@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using P3PHelper.Abstractions;
 using P3PHelper.MVVM.Models;
 using SQLite;
 using System.Diagnostics;
@@ -6,7 +7,7 @@ using System.Reflection;
 
 namespace P3PHelper.Repositories
 {
-    public class ProgressRepository
+    public class ProgressRepository : IProgressRepository
     { // Look into implementing yield returns for database calls
         SQLiteConnection connection;
         SQLiteAsyncConnection connectionAsync;

@@ -7,11 +7,11 @@ namespace P3PHelper.MVVM.Views.Requests;
 
 public partial class FourtyOneToSixtyView : ContentPage
 {
-    public RequestsViewModel Vm = new();
-    public FourtyOneToSixtyView()
+    public FourtyOneToSixtyView(RequestsViewModel viewModel)
 	{
 		InitializeComponent();
-        Vm.CurrentRequests = Vm.FourtyOneSixty;
-        BindingContext = Vm;
+
+        viewModel.CurrentRequests = viewModel.FourtyOneSixty;
+        BindingContext = viewModel;
 	}
 }
