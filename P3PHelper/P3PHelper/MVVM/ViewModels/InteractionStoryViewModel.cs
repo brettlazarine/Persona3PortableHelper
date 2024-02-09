@@ -270,11 +270,10 @@ namespace P3PHelper.MVVM.ViewModels
                 Debug.WriteLine("*** arcanaName is null ***");
                 return;
             }
-            var repo = new ProgressRepository();
             try
             {
-                Link = await repo.GetSLinkAsync(arcanaName);
-                RankUp = await repo.GetRankUpAsync(arcanaName);
+                Link = await _progressRepository.GetSLinkAsync(arcanaName);
+                RankUp = await _progressRepository.GetRankUpAsync(arcanaName);
 
                 if (RankUp != null)
                 {

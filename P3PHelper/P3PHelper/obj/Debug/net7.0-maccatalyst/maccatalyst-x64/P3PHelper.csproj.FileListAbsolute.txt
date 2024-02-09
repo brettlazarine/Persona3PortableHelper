@@ -306,3 +306,5 @@ C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\De
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\P3PHelper.pdb
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\P3PHelper.genruntimeconfig.cache
 C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\ref\P3PHelper.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.dll
+C:\GitHubRepos\Persona3PHelper\Persona3PortableHelper\P3PHelper\P3PHelper\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.Core.dll
