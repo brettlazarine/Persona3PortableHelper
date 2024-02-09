@@ -26,7 +26,7 @@ namespace P3PHelper.MVVM.ViewModels
             MissingPersonCheckedCommand = new Command<MissingPerson>(HandleMissingPersonChecked);
         }
 
-        private async void HandleMissingPersonChecked(MissingPerson missingPerson)
+        public async void HandleMissingPersonChecked(MissingPerson missingPerson)
         {
             if (missingPerson == null)
             {

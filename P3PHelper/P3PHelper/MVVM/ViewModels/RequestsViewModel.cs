@@ -51,7 +51,7 @@ namespace P3PHelper.MVVM.ViewModels
             RequestCheckedCommand = new Command<Request>(HandleRequestChecked);
         }
 
-        private async void HandleRequestChecked(Request request)
+        public async void HandleRequestChecked(Request request)
         {
             if (request is null)
             {
