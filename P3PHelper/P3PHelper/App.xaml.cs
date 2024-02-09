@@ -18,7 +18,7 @@ public partial class App : Application
 
 		ProgressRepository.InitializeDatabase();
 
-		DependencyService.RegisterSingleton<SchoolQuestionsViewModel>(new SchoolQuestionsViewModel());
+		//DependencyService.RegisterSingleton<SchoolQuestionsViewModel>(new SchoolQuestionsViewModel());
 
         MainPage = new AppShell();
 	}

@@ -9,14 +9,12 @@ namespace P3PHelper.MVVM.Views;
 
 public partial class SocialLinksView : ContentPage
 {
-    public SocialLinksViewModel Vm { get; set; }
 
-	public SocialLinksView()
+	public SocialLinksView(SocialLinksViewModel viewModel)
 	{
 		InitializeComponent();
 
         //Crashes.GenerateTestCrash();
-        Vm = new SocialLinksViewModel();
-        BindingContext = Vm;
+        BindingContext =viewModel;
 	}
 }

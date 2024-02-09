@@ -1,4 +1,5 @@
-﻿using P3PHelper.MVVM.Models;
+﻿using P3PHelper.Abstractions;
+using P3PHelper.MVVM.Models;
 using P3PHelper.MVVM.Views.SLinks;
 using System.Diagnostics;
 using System.Globalization;
@@ -8,6 +9,7 @@ namespace P3PHelper.MVVM.ViewModels
 {
     public class SocialLinksViewModel
     {
+        IProgressRepository _progressRepository;
         private INavigation Navigation { get; set; } = Application.Current?.MainPage?.Navigation;
 
         public List<SLinkTapInfo> TapInfo { get; set; }
@@ -20,8 +22,9 @@ namespace P3PHelper.MVVM.ViewModels
 
         public ICommand NaviageToSLinkCommand { get; }
 
-        public SocialLinksViewModel()
+        public SocialLinksViewModel(IProgressRepository progressRepository)
         {
+            _progressRepository = progressRepository;
             // Placeholder for navigation and data binding
             TapInfo = new()
             {
