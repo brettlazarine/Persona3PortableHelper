@@ -8,12 +8,11 @@ namespace P3PHelper.MVVM.Views.Requests;
 
 public partial class OneToTwentyView : ContentPage
 {
-	public RequestsViewModel Vm = new();
-
-	public OneToTwentyView()
+	public OneToTwentyView(RequestsViewModel viewModel)
 	{
 		InitializeComponent();
-		Vm.CurrentRequests = Vm.OneTwenty;
-		BindingContext = Vm;
+
+		viewModel.CurrentRequests = viewModel.OneTwenty;
+		BindingContext = viewModel;
     }
 }
