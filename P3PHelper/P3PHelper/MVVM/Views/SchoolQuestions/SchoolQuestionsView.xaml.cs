@@ -7,14 +7,11 @@ namespace P3PHelper.MVVM.Views.SchoolQuestions;
 
 public partial class SchoolQuestionsView : ContentPage
 {
-	SchoolQuestionsViewModel _vm;
-
-	public SchoolQuestionsView()
+	public SchoolQuestionsView(SchoolQuestionsViewModel viewModel)
 	{
 		InitializeComponent();
 
-		_vm= DependencyService.Get<SchoolQuestionsViewModel>();
-		_vm.CurrentViewQuestions = _vm.Incomplete;
-		BindingContext = _vm;
+		viewModel.CurrentViewQuestions = viewModel.Incomplete;
+		BindingContext = viewModel;
 	}
 }

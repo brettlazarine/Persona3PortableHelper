@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using P3PHelper.Abstractions;
 using P3PHelper.MVVM.Models;
 using P3PHelper.Repositories;
 using System.Diagnostics;
@@ -9,7 +10,7 @@ namespace P3PHelper.MVVM.ViewModels
 {
     public partial class InteractionStoryViewModel : ObservableObject
     {
-        ProgressRepository ProgressRepo = new();
+        IProgressRepository _progressRepository;
         // CONSIDER A SIMPLER IMPLEMENTATION, THEN TEST RELEASE SPEED
         private bool _isInitialized = false;
         public async Task EnsureInitializedAsync(string arcanaName)
@@ -136,8 +137,10 @@ namespace P3PHelper.MVVM.ViewModels
         public ICommand RankCheckedCommand { get; }
         #endregion
 
-        public InteractionStoryViewModel(string arcanaName)
+        public InteractionStoryViewModel(string arcanaName, IProgressRepository progressRepository)
         {
+            _progressRepository = progressRepository;
+
             MaleDateCommand = new RelayCommand(MaleDateTapped);
             MaleHowCommand = new RelayCommand(MaleHowTapped);
             MaleAvailabilityCommand = new RelayCommand(MaleAvailabilityTapped);
@@ -251,7 +254,7 @@ namespace P3PHelper.MVVM.ViewModels
             }
             try
             {
-                ProgressRepo.UpdateRankUp(rank.Id, rank.IsCompleted);
+                _progressRepository.UpdateRankUp(rank.Id, rank.IsCompleted);
             }
             catch (Exception ex)
             {
