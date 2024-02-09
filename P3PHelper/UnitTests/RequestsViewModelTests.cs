@@ -5,7 +5,7 @@ namespace UnitTests
     public class RequestsViewModelTests
     {
         private readonly Mock<IProgressRepository> _mockProgressRepository;
-        RequestsViewModel _viewModel;
+        private readonly RequestsViewModel _viewModel;
 
         public RequestsViewModelTests()
         {
