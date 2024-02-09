@@ -1,21 +1,15 @@
 ﻿using Newtonsoft.Json;
 using P3PHelper.MVVM.Models;
 using SQLite;
-using SQLiteNetExtensions.Extensions;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Globalization;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace P3PHelper.Repositories
 {
     public class ProgressRepository
     { // Look into implementing yield returns for database calls
         SQLiteConnection connection;
+        SQLiteAsyncConnection connectionAsync;
         public static string DbPath { get; } = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "persona3.db3");
         public const SQLiteOpenFlags Flags =
             SQLiteOpenFlags.ReadWrite |
@@ -25,6 +19,7 @@ namespace P3PHelper.Repositories
         public ProgressRepository()
         {
             connection = new SQLiteConnection(DbPath, Flags);
+            connectionAsync = new SQLiteAsyncConnection(DbPath, Flags);
             connection.CreateTable<SLink>();
             connection.CreateTable<RankUp>();
             connection.CreateTable<Request>();
@@ -50,34 +45,52 @@ namespace P3PHelper.Repositories
         #region SLinks
         public List<SLink> GetSLinks()
         {
-            return connection.Table<SLink>().ToList();
+            try
+            {
+                return connection.Table<SLink>().ToList();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"*** GetSLinks: {ex.Message} ***");
+                return null;
+            }
         }
         public async Task<List<SLink>> GetSLinksAsync()
         {
-            return await Task.Run(() => connection.Table<SLink>().ToList());
+            try
+            {
+                return await connectionAsync.Table<SLink>().ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"*** GetSLinksAsync: {ex.Message} ***");
+                return null;
+            }
         }
 
         public SLink GetSLink(string arcanaName)
         {
-            var result = connection.Table<SLink>().Where(s => s.Arcana == arcanaName).FirstOrDefault();
-
-            if (result == null)
+            try
             {
-                Debug.WriteLine($"*** No SLink found for ArcanaName: {arcanaName} ***");
+                return connection.Table<SLink>().Where(s => s.Arcana == arcanaName).FirstOrDefault();
             }
-            return result;
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"*** GetSLink: {ex.Message} ***");
+                return null;
+            }
         }
         public async Task<SLink> GetSLinkAsync(string arcanaName)
         {
-            return await Task.Run(() =>
+            try
             {
-                var result = connection.Table<SLink>().FirstOrDefault(s => s.Arcana == arcanaName);
-                if (result == null)
-                {
-                    Debug.WriteLine($"*** No SLink found for ArcanaName: {arcanaName} ***");
-                }
-                return result;
-            });
+                return await connectionAsync.Table<SLink>().Where(s => s.Arcana == arcanaName).FirstOrDefaultAsync();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"*** GetSLinkAsync: {ex.Message} ***");
+                return null;
+            }
         }
         // MAY BE UNNECESSARY, CONSIDER REMOVING
         public void UpdateSLink(string arcana, int isCompleted)
@@ -112,12 +125,23 @@ namespace P3PHelper.Repositories
         {
             try
             {
-                var r = connection.Table<RankUp>().ToList();
-                return r;
+                return connection.Table<RankUp>().ToList();
             }
             catch (Exception ex)
             {
                 Debug.WriteLine("*** GetRankUps: " + ex.Message + " ***");
+                return null;
+            }
+        }
+        public async Task<List<RankUp>> GetRankUpsAsync()
+        {
+            try
+            {
+                return await connectionAsync.Table<RankUp>().ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetRankUpsAsync: " + ex.Message + " ***");
                 return null;
             }
         }
@@ -126,8 +150,7 @@ namespace P3PHelper.Repositories
         {
             try
             {
-                var r = connection.Table<RankUp>().Where(r => r.Arcana == arcana).ToList();
-                return r;
+                return connection.Table<RankUp>().Where(r => r.Arcana == arcana).ToList();
             }
             catch (Exception ex)
             {
@@ -137,19 +160,15 @@ namespace P3PHelper.Repositories
         }
         public async Task<List<RankUp>> GetRankUpAsync(string arcana)
         {
-            return await Task.Run(() =>
+            try
             {
-                try
-                {
-                    var rankUps = connection.Table<RankUp>().Where(r => r.Arcana == arcana).ToList();
-                    return rankUps;
-                }
-                catch (Exception ex)
-                {
-                    Debug.WriteLine("*** GetRankUpAsync: " + ex.Message + " ***");
-                    return null;
-                }
-            });
+                return await connectionAsync.Table<RankUp>().Where(r => r.Arcana == arcana).ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetRankUpAsync: " + ex.Message + " ***");
+                return null;
+            }
         }
 
         public void UpdateRankUp(int id, int isCompleted)
@@ -163,16 +182,69 @@ namespace P3PHelper.Repositories
                 Debug.WriteLine("*** UpdateRankUp: " + ex.Message + " ***");
             }
         }
+        public async Task<int> UpdateRankUpAsync(int id, int isCompleted)
+        {
+            try
+            {
+                return await connectionAsync.ExecuteAsync("UPDATE RankUp SET IsCompleted = ? WHERE Id = ?", isCompleted, id);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** UpdateRankUpAsync: " + ex.Message + " ***");
+                return 0;
+            }
+        }
         #endregion
 
         #region Requests
         public List<Request> GetRequests()
         {
-            return connection.Table<Request>().ToList();
+            try
+            {
+                return connection.Table<Request>().ToList();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetRequests: " + ex.Message + " ***");
+                return null;
+            }
         }
         public async Task<List<Request>> GetRequestsAsync()
         {
-            return await Task.Run(() => connection.Table<Request>().ToList());
+            try
+            {
+                return await connectionAsync.Table<Request>().ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetRequestsAsync: " + ex.Message + " ***");
+                return null;
+            }
+        }
+
+        public Request GetRequest(int questNumber)
+        {
+            try
+            {
+                return connection.Table<Request>().Where(r => r.QuestNumber == questNumber).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetRequest: " + ex.Message + " ***");
+                return null;
+            }
+        }
+        public async Task<Request> GetRequestAsync(int questNumber)
+        {
+            try
+            {
+                return await connectionAsync.Table<Request>().Where(r => r.QuestNumber == questNumber).FirstOrDefaultAsync();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetRequestAsync: " + ex.Message + " ***");
+                return null;
+            }
         }
 
         public void UpdateRequest(int questNumber, int isCompleted)
@@ -186,25 +258,69 @@ namespace P3PHelper.Repositories
                 Debug.WriteLine("*** UpdateRequest: " + ex.Message + " ***");
             }
         }
+        public async Task<int> UpdateRequestAsync(int questNumber, int isCompleted)
+        {
+            try
+            {
+                return await connectionAsync.ExecuteAsync("UPDATE Request SET IsCompleted = ? WHERE QuestNumber = ?", isCompleted, questNumber);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** UpdateRequestAsync: " + ex.Message + " ***");
+                return 0;
+            }
+        }
         #endregion
 
         #region MissingPersons
         public List<MissingPerson> GetMissingPersons()
         {
-            return connection.Table<MissingPerson>().ToList();
+            try
+            {
+                return connection.Table<MissingPerson>().ToList();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetMissingPersons: " + ex.Message + " ***");
+                return null;
+            }
         }
         public async Task<List<MissingPerson>> GetMissingPersonsAsync()
         {
-            return await Task.Run(() => connection.Table<MissingPerson>().ToList());
+            try
+            {
+                return await connectionAsync.Table<MissingPerson>().ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetMissingPersonsAsync: " + ex.Message + " ***");
+                return null;
+            }
         }
 
         public MissingPerson GetMissingPerson(int id)
         {
-            return connection.Table<MissingPerson>().Where(m => m.Id == id).FirstOrDefault();
+            try
+            {
+                return connection.Table<MissingPerson>().Where(m => m.Id == id).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetMissingPerson: " + ex.Message + " ***");
+                return null;
+            }
         }
         public async Task<MissingPerson> GetMissingPersonAsync(int id)
         {
-            return await Task.Run(() => connection.Table<MissingPerson>().Where(m => m.Id == id).FirstOrDefault());
+            try
+            {
+                return await connectionAsync.Table<MissingPerson>().Where(m => m.Id == id).FirstOrDefaultAsync();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetMissingPersonAsync: " + ex.Message + " ***");
+                return null;
+            }
         }
 
         public void UpdateMissingPerson(int id, int isCompleted)
@@ -218,25 +334,69 @@ namespace P3PHelper.Repositories
                 Debug.WriteLine("*** UpdateMissingPerson: " + ex.Message + " ***");
             }
         }
+        public async Task<int> UpdateMissingPersonAsync(int id, int isCompleted)
+        {
+            try
+            {
+                return await connectionAsync.ExecuteAsync("UPDATE MissingPerson SET IsCompleted = ? WHERE Id = ?", isCompleted, id);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** UpdateMissingPersonAsync: " + ex.Message + " ***");
+                return 0;
+            }
+        }
         #endregion
 
         #region SchoolQuestions
         public List<SchoolQuestion> GetSchoolQuestions()
         {
-            return connection.Table<SchoolQuestion>().ToList();
+            try
+            {
+                return connection.Table<SchoolQuestion>().ToList();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetSchoolQuestions: " + ex.Message + " ***");
+                return null;
+            }
         }
         public async Task<List<SchoolQuestion>> GetSchoolQuestionsAsync()
         {
-            return await Task.Run(() => connection.Table<SchoolQuestion>().ToList());
+            try
+            {
+                return await connectionAsync.Table<SchoolQuestion>().ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetSchoolQuestionsAsync: " + ex.Message + " ***");
+                return null;
+            }
         }
 
         public SchoolQuestion GetSchoolQuestion(int id)
         {
-            return connection.Table<SchoolQuestion>().Where(s => s.Id == id).FirstOrDefault();
+            try
+            {
+                return connection.Table<SchoolQuestion>().Where(s => s.Id == id).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetSchoolQuestion: " + ex.Message + " ***");
+                return null;
+            }
         }
         public async Task<SchoolQuestion> GetSchoolQuestionAsync(int id)
         {
-            return await Task.Run(() => connection.Table<SchoolQuestion>().Where(s => s.Id == id).FirstOrDefault());
+            try
+            {
+                return await connectionAsync.Table<SchoolQuestion>().Where(s => s.Id == id).FirstOrDefaultAsync();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("*** GetSchoolQuestionAsync: " + ex.Message + " ***");
+                return null;
+            }
         }
 
         public void UpdateSchoolQuestion(int id, int isCompleted)
@@ -250,22 +410,17 @@ namespace P3PHelper.Repositories
                 Debug.WriteLine("*** UpdateSchoolQuestion: " + ex.Message + " ***");
             }
         }
-        // THIS NEEDS REFACTORING
-        public async Task<SchoolQuestion> UpdateSchoolQuestionAsync(int id, int isCompleted)
+        public async Task<int> UpdateSchoolQuestionAsync(int id, int isCompleted)
         {
-            return await Task.Run(() =>
+            try
             {
-                try
-                {
-                    connection.Execute("UPDATE SchoolQuestion SET IsCompleted = ? WHERE Id = ?", isCompleted, id);
-                    return connection.Table<SchoolQuestion>().Where(s => s.Id == id).FirstOrDefault();
-                }
+                return await connectionAsync.ExecuteAsync("UPDATE SchoolQuestion SET IsCompleted = ? WHERE Id = ?", isCompleted, id);
+            }
                 catch (Exception ex)
-                {
-                    Debug.WriteLine("*** UpdateSchoolQuestion: " + ex.Message + " ***");
-                    return null;
-                }
-            });
+            {
+                Debug.WriteLine("*** UpdateSchoolQuestionAsync: " + ex.Message + " ***");
+                return 0;
+            }
         }
         #endregion
     }
