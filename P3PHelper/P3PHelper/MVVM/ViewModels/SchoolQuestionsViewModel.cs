@@ -29,7 +29,7 @@ namespace P3PHelper.MVVM.ViewModels
             SchoolQuestionCheckedCommand = new Command<SchoolQuestion>(HandleSchoolQuestionChecked);
         }
         
-        private async void HandleSchoolQuestionChecked(SchoolQuestion schoolQuestion)
+        public async void HandleSchoolQuestionChecked(SchoolQuestion schoolQuestion)
         {
             // Null check is required because the event is fired when the view is first loaded
             if (schoolQuestion is null)
