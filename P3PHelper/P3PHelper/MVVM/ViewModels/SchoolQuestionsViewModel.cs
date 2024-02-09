@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using P3PHelper.Abstractions;
 using P3PHelper.MVVM.Models;
 using P3PHelper.Repositories;
 using System.Collections.ObjectModel;
@@ -9,18 +10,19 @@ namespace P3PHelper.MVVM.ViewModels
 {
     public class SchoolQuestionsViewModel : ObservableObject
     {
+        IProgressRepository _progressRepository;
         public ObservableCollection<SchoolQuestion> Incomplete { get; set; }
         public ObservableCollection<SchoolQuestion> Complete { get; set; }
 
         public ObservableCollection<SchoolQuestion> CurrentViewQuestions { get; set; } = new();
-
-        ProgressRepository ProgressRepo = new();
         public ICommand SchoolQuestionCheckedCommand { get; }
 
 
-        public SchoolQuestionsViewModel()
+        public SchoolQuestionsViewModel(IProgressRepository progressRepository)
         {
-            var questions = ProgressRepo.GetSchoolQuestions();
+            _progressRepository = progressRepository;
+
+            var questions = _progressRepository.GetSchoolQuestions();
             Incomplete = new ObservableCollection<SchoolQuestion>(questions.Where(x => x.IsCompleted == 0));
             Complete = new ObservableCollection<SchoolQuestion>(questions.Where(x => x.IsCompleted == 1));
 
@@ -37,7 +39,7 @@ namespace P3PHelper.MVVM.ViewModels
 
             try
             {
-                ProgressRepo.UpdateSchoolQuestion(schoolQuestion.Id, schoolQuestion.IsCompleted);
+                _progressRepository.UpdateSchoolQuestion(schoolQuestion.Id, schoolQuestion.IsCompleted);
 
                 // Logic to arrange question collections
                 CurrentViewQuestions.Remove(schoolQuestion);
