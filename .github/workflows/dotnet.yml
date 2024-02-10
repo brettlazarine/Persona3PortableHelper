@@ -31,5 +31,9 @@ jobs:
         distribution: 'adopt' # Specify the JDK distribution
     - name: Build
       run: dotnet build P3PHelper/P3PHelper/P3PHelper.csproj -c Release -f net7.0-android --no-restore
+
+    - name: Restore test dependencies
+      run: dotnet restore P3PHelper/UnitTests/UnitTests.csproj
+
     - name: Test
-      run: dotnet test P3PHelper/UnitTests/UnitTests.csproj --no-build --verbosity normal
+      run: dotnet test P3PHelper/UnitTests/UnitTests.csproj --verbosity normal
