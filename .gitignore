@@ -361,3 +361,18 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+*.v2
+P3PHelper/.vs/P3PHelper/v17/.suo
+P3PHelper/.vs/P3PHelper/v17/HierarchyCache.v1.txt
+P3PHelper/.vs/P3PHelper/v17/TestStore/0/testlog.manifest
+*.bin
+P3PHelper/P3PHelper/obj/Debug/net7.0-android/P3PHelper.AssemblyInfo.cs
+P3PHelper/P3PHelper/obj/Debug/net7.0-android/P3PHelper.AssemblyInfoInputs.cache
+P3PHelper/P3PHelper/obj/Debug/net7.0-ios/iossimulator-x64/P3PHelper.AssemblyInfo.cs
+P3PHelper/P3PHelper/obj/Debug/net7.0-ios/iossimulator-x64/P3PHelper.AssemblyInfoInputs.cache
+P3PHelper/P3PHelper/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/P3PHelper.AssemblyInfo.cs
+P3PHelper/P3PHelper/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/P3PHelper.AssemblyInfoInputs.cache
+P3PHelper/P3PHelper/obj/Debug/net7.0-windows10.0.19041.0/win10-x64/P3PHelper.AssemblyInfo.cs
+P3PHelper/P3PHelper/obj/Debug/net7.0-windows10.0.19041.0/win10-x64/P3PHelper.AssemblyInfoInputs.cache
+P3PHelper/P3PHelper/obj/Debug/net7.0/P3PHelper.AssemblyInfo.cs
+P3PHelper/P3PHelper/obj/Debug/net7.0/P3PHelper.AssemblyInfoInputs.cache
